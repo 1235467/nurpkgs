@@ -39,8 +39,8 @@ rustPlatform.buildRustPackage {
   ];
 
   meta = with lib; {
-    description = "AV1 re-encoding using ffmpeg, svt-av1 & vmaf";
-    homepage = "https://github.com/alexheretic/ab-av1";
+    description = "An attempt to write Anime4K in Rust";
+    homepage = "https://github.com/andraantariksa/Anime4K-rs";
     license = licenses.mit;
     maintainers = [ ];
   };
