@@ -18,6 +18,7 @@
   av1an = pkgs.callPackage ./pkgs/av1an { };
   Anime4k-rs = pkgs.callPackage ./pkgs/Anime4k-rs { };
   onedrive-fuse = pkgs.callPackage ./pkgs/onedrive-fuse { };
+  jjwxcCrawler = pkgs.callPackage ./pkgs/jjwxcCrawler { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
