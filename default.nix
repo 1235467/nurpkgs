@@ -16,6 +16,7 @@
 
   ab-av1 = pkgs.callPackage ./pkgs/ab-av1 { };
   av1an = pkgs.callPackage ./pkgs/av1an { };
+  Anime4k-rs = pkgs.callPackage ./pkgs/Anime4k-rs { };
 
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
