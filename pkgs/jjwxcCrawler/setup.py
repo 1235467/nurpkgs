@@ -7,5 +7,5 @@ setup(name='jjwxcCrawler',
       # Modules to import from other scripts:
       packages=find_packages(),
       # Executables
-      scripts=["main.py"],
+      scripts=["jjwxcCrawler"],
      )

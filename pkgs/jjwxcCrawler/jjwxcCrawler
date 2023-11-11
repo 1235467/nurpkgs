@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # 晋江文学城 爬虫
 # 使用安卓 App 的 Api
 # Api 接口通过抓包和逆向获得
