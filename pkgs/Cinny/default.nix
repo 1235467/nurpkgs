@@ -8,7 +8,7 @@
 #, dbus
 #, glib
 #, glib-networking
-#, libayatana-appindicator
+, libayatana-appindicator
 , webkitgtk
 #, makeDesktopItem
 }:
@@ -44,7 +44,7 @@ rustPlatform.buildRustPackage rec {
     #dbus
     #glib
     #glib-networking
-    #libayatana-appindicator
+    libayatana-appindicator
     webkitgtk
   ];
 
