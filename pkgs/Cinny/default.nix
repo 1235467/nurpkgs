@@ -48,6 +48,9 @@ rustPlatform.buildRustPackage rec {
     webkitgtk
   ];
 
+  postInstall = ''
+    mv $out/bin/app $out/bin/cinny
+  '';
   # The prepack script runs the build script, which we'd rather do in the build phase.
 
   meta = with lib; {
