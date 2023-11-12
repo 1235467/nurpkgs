@@ -22,6 +22,7 @@
   DownOnSpot = pkgs.callPackage ./pkgs/DownOnSpot { };
   reflac = pkgs.callPackage ./pkgs/reflac { };
   idntag = pkgs.callPackage ./pkgs/idntag { };
+  ncmdump-rs = pkgs.callPackage ./pkgs/ncmdump.rs { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
