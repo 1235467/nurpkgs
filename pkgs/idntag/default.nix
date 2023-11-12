@@ -69,9 +69,9 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    description = "Cross-platform command-line AV1 / VP9 / HEVC / H264 encoding framework with per scene quality encoding";
-    homepage = "https://github.com/master-of-zen/av1an";
-    license = licenses.gpl3;
+    description = "Automatically identify, tag and rename audio files on Linux and macOS";
+    homepage = "https://github.com/d99kris/idntag";
+    license = licenses.mit;
     maintainers = [];
   };
 }
