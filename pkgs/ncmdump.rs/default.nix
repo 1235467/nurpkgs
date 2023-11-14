@@ -1,7 +1,7 @@
 { lib
 , fetchFromGitHub
 , rustPlatform
-#, ffmpeg
+  #, ffmpeg
 , ...
 }:
 let

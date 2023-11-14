@@ -5,10 +5,10 @@ buildPythonApplication {
   version = "1.0";
 
   propagatedBuildInputs = [
-  html2text
-  pydes
-  requests
-  tenacity
+    html2text
+    pydes
+    requests
+    tenacity
   ];
 
   src = ./.;

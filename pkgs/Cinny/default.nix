@@ -1,16 +1,16 @@
 { lib
 , fetchFromGitHub
 , rustPlatform
-#, copyDesktopItems
-#, wrapGAppsHook
+  #, copyDesktopItems
+  #, wrapGAppsHook
 , pkg-config
 , openssl
-#, dbus
-#, glib
-#, glib-networking
+  #, dbus
+  #, glib
+  #, glib-networking
 , libayatana-appindicator
 , webkitgtk
-#, makeDesktopItem
+  #, makeDesktopItem
 }:
 
 rustPlatform.buildRustPackage rec {

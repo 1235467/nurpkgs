@@ -1,18 +1,18 @@
-{
-  lib,
-  stdenv,
-  fetchFromGitHub,
-  git,
-  cmake,
-  mp3info,
-  taglib,
-  chromaprint,
-  #libchromaprint-tools,
-  ffmpeg,
-  #pkg-config,
-  python3,
-  python3Packages,
-  makeWrapper,
+{ lib
+, stdenv
+, fetchFromGitHub
+, git
+, cmake
+, mp3info
+, taglib
+, chromaprint
+, #libchromaprint-tools,
+  ffmpeg
+, #pkg-config,
+  python3
+, python3Packages
+, makeWrapper
+,
 }:
 let
   pname = "idntag";
@@ -54,10 +54,10 @@ stdenv.mkDerivation rec {
     makeWrapper
   ];
   cmakeFlags = [
-   # "-DBUILD_SHARED_LIBS=ON"
-   # "-DOQS_BUILD_ONLY_LIB=1"
-   # "-DOQS_USE_OPENSSL=OFF"
-   # "-DOQS_DIST_BUILD=ON"
+    # "-DBUILD_SHARED_LIBS=ON"
+    # "-DOQS_BUILD_ONLY_LIB=1"
+    # "-DOQS_USE_OPENSSL=OFF"
+    # "-DOQS_DIST_BUILD=ON"
   ];
 
   postInstall = ''
@@ -72,6 +72,6 @@ stdenv.mkDerivation rec {
     description = "Automatically identify, tag and rename audio files on Linux and macOS";
     homepage = "https://github.com/d99kris/idntag";
     license = licenses.mit;
-    maintainers = [];
+    maintainers = [ ];
   };
 }

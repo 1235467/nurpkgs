@@ -10,7 +10,7 @@ let
   sha256 = "sha256-vrHDzDTrLPaDHXwgWJplCOQT6YdcWaEu28Rx1yXlgNk=";
 in
 stdenv.mkDerivation rec {
-  inherit pname version ;
+  inherit pname version;
   src = fetchFromGitHub {
     owner = "chungy";
     repo = pname;
@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
 
   ];
   buildInputs = [
-  asciidoc
+    asciidoc
   ];
 
   buildPhase = ''

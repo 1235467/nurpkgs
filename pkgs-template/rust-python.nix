@@ -1,17 +1,17 @@
-{
-  lib,
-  fetchFromGitHub,
-  rustPlatform,
-  vapoursynth,
-  ffmpeg,
-  x264,
-  libaom,
-  rav1e,
-  nasm,
-  pkg-config,
-  python3,
-  python3Packages,
-  makeWrapper,
+{ lib
+, fetchFromGitHub
+, rustPlatform
+, vapoursynth
+, ffmpeg
+, x264
+, libaom
+, rav1e
+, nasm
+, pkg-config
+, python3
+, python3Packages
+, makeWrapper
+,
 }:
 let
   pname = "av1an";
@@ -59,6 +59,6 @@ rustPlatform.buildRustPackage {
     description = "Cross-platform command-line AV1 / VP9 / HEVC / H264 encoding framework with per scene quality encoding";
     homepage = "https://github.com/master-of-zen/av1an";
     license = licenses.gpl3;
-    maintainers = [];
+    maintainers = [ ];
   };
 }
