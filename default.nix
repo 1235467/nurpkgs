@@ -23,9 +23,9 @@
   reflac = pkgs.callPackage ./pkgs/reflac { };
   idntag = pkgs.callPackage ./pkgs/idntag { };
   ncmdump-rs = pkgs.callPackage ./pkgs/ncmdump.rs { };
-  cinny = pkgs.callPackage ./pkgs/Cinny { };
+  #cinny = pkgs.callPackage ./pkgs/Cinny { };
   # Broken
-  #cider = pkgs.callPackage ./pkgs/cider { };
+  cider = pkgs.callPackage ./pkgs/cider { };
   rescrobbled = pkgs.callPackage ./pkgs/rescrobbled { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
