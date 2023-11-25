@@ -27,6 +27,7 @@
   # Broken
   cider = pkgs.callPackage ./pkgs/cider { };
   rescrobbled = pkgs.callPackage ./pkgs/rescrobbled { };
+  swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
