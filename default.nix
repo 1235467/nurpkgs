@@ -28,6 +28,7 @@
   cider = pkgs.callPackage ./pkgs/cider { };
   rescrobbled = pkgs.callPackage ./pkgs/rescrobbled { };
   swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
+  Penguin-Subtitle-Player  = pkgs.libsForQt5.callPackage ./pkgs/Penguin-Subtitle-Player { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
