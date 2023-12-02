@@ -31,6 +31,7 @@
   Penguin-Subtitle-Player  = pkgs.libsForQt5.callPackage ./pkgs/Penguin-Subtitle-Player { };
   waylyrics = pkgs.callPackage ./pkgs/waylyrics {};
   vkbasalt = pkgs.callPackage ./pkgs/vkbasalt {};
+  HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
