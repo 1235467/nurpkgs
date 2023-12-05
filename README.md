@@ -10,3 +10,8 @@
 
 ### garnix status  
 [![built with garnix](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fgarnix.io%2Fapi%2Fbadges%2F1235467%2Fnurpkgs%3Fbranch%3Dmaster)](https://garnix.io)
+
+#### Broken Packages
+* av1an aarch64
+* cider aarch64
+* cinny aarch64 x86_64-linux
