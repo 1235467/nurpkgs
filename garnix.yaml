@@ -1,5 +1,8 @@
 builds:
- exclude: []
+ exclude: [
+"packages.aarch64-linux.cider"
+"packages.aarch64-linux.av1an"
+]
  include:
  - '*.x86_64-linux.*'
  - 'packages.aarch64-linux.*'
