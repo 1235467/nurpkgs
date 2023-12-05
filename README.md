@@ -14,4 +14,3 @@
 #### Broken Packages
 * av1an aarch64
 * cider aarch64
-* cinny aarch64 x86_64-linux
