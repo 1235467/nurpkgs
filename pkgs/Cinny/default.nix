@@ -10,6 +10,7 @@
   #, glib-networking
 , libayatana-appindicator
 , webkitgtk
+, libappindicator-gtk3
   #, makeDesktopItem
 }:
 
@@ -46,6 +47,7 @@ rustPlatform.buildRustPackage rec {
     #glib-networking
     libayatana-appindicator
     webkitgtk
+    libappindicator-gtk3
   ];
 
   postInstall = ''
