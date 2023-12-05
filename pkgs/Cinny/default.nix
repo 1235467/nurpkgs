@@ -10,7 +10,7 @@
   #, glib-networking
 , libayatana-appindicator
 , webkitgtk
-, libappindicator-gtk3
+#, libappindicator-gtk3
   #, makeDesktopItem
 }:
 
@@ -47,11 +47,14 @@ rustPlatform.buildRustPackage rec {
     #glib-networking
     libayatana-appindicator
     webkitgtk
-    libappindicator-gtk3
+    #libappindicator-gtk3
   ];
 
   postInstall = ''
     mv $out/bin/app $out/bin/cinny
+    mkdir -p $out/lib
+    cp -r ${pkgs.libayatana-appindicator}/lib/libayatana-appindicator3.so $out/lib/
+    cp -r ${pkgs.libayatana-appindicator}/lib/libayatana-appindicator3.so.1 $out/lib/
   '';
   # The prepack script runs the build script, which we'd rather do in the build phase.
 
