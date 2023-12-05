@@ -53,8 +53,8 @@ rustPlatform.buildRustPackage rec {
   postInstall = ''
     mv $out/bin/app $out/bin/cinny
     mkdir -p $out/lib
-    cp -r ${pkgs.libayatana-appindicator}/lib/libayatana-appindicator3.so $out/lib/
-    cp -r ${pkgs.libayatana-appindicator}/lib/libayatana-appindicator3.so.1 $out/lib/
+    cp -r ${libayatana-appindicator}/lib/libayatana-appindicator3.so $out/lib/
+    cp -r ${libayatana-appindicator}/lib/libayatana-appindicator3.so.1 $out/lib/
   '';
   # The prepack script runs the build script, which we'd rather do in the build phase.
 
