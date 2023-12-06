@@ -2,6 +2,7 @@
 , fetchFromGitHub
 , lib
 , asciidoc
+, flac
 , ...
 }:
 let
@@ -23,7 +24,7 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [
     asciidoc
-    pkgs.flac
+    flac
   ];
 
   buildPhase = ''
