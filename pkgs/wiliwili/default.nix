@@ -16,7 +16,7 @@
 #, useDsl ? true
 , wayland-protocols
 , wayland
-, glfw
+, libGL
 }:
 let
   wrapQtAppsHook = libsForQt5.qt5.wrapQtAppsHook;
@@ -54,6 +54,7 @@ stdenv.mkDerivation rec {
     wayland-protocols
     wayland
     glfw
+    libGL
   ];
 
   cmakeFlags = [
