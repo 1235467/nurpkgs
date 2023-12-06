@@ -54,8 +54,8 @@ stdenv.mkDerivation rec {
     "-DPLATFORM_DESKTOP=ON"
     "-DUSE_SYSTEM_CURL=ON"
     "-DWIN32_TERMINAL=OFF"
-    "-DINSTALL=ON"
-    "-DUSE_SDL2=${if useDsl then "ON" else "OFF"}"
+    #"-DINSTALL=ON"
+    #"-DUSE_SDL2=${if useDsl then "ON" else "OFF"}"
   ];
 
   meta = with lib; {
