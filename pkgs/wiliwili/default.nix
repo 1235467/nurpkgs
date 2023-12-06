@@ -53,7 +53,6 @@ stdenv.mkDerivation rec {
     openssl
     wayland-protocols
     wayland
-    glfw
     libGL
   ];
 
