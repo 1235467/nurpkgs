@@ -13,7 +13,8 @@
 , mbedtls
 , openssl
 , curl
-, useDsl ? true
+#, useDsl ? true
+, wayland-protocols
 }:
 let
   wrapQtAppsHook = libsForQt5.qt5.wrapQtAppsHook;
@@ -48,6 +49,7 @@ stdenv.mkDerivation rec {
     SDL2
     mbedtls
     openssl
+    wayland-protocols
   ];
 
   cmakeFlags = [
