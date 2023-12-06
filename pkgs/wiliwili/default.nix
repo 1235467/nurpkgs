@@ -17,18 +17,17 @@
 }:
 let
   wrapQtAppsHook = libsForQt5.qt5.wrapQtAppsHook;
-#  inherit ((builtins.getFlake "github:NixOS/nixpkgs/23485f23ff8536592b5178a5d244f84da770bc87").legacyPackages.${stdenv.system}) curl;
 in
 stdenv.mkDerivation rec {
   pname = "wiliwili";
-  version = "1.1.1";
+  version = "1.2.2";
 
   src = fetchFromGitHub {
     owner = "xfangfang";
     repo = "wiliwili";
     rev = "v${version}";
     fetchSubmodules = true;
-    hash = "sha256-+bYa8xczSr56E9JgjWIZiaj4kfdk+w2aUTuQi+DcZq4=";
+    hash = "sha256-85UJ1d7z4jRzKDRDao1ENjJjPxIi/I3P7zP2SDXNpzI=";
   };
 
   nativeBuildInputs = [
