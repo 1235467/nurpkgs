@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [
     asciidoc
-    flac
+    pkgs.flac
   ];
 
   buildPhase = ''
