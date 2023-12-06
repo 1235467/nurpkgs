@@ -15,6 +15,7 @@
 , curl
 #, useDsl ? true
 , wayland-protocols
+, wayland-client
 }:
 let
   wrapQtAppsHook = libsForQt5.qt5.wrapQtAppsHook;
@@ -50,6 +51,7 @@ stdenv.mkDerivation rec {
     mbedtls
     openssl
     wayland-protocols
+    wayland-client
   ];
 
   cmakeFlags = [
