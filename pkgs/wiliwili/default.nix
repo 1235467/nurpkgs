@@ -53,8 +53,11 @@ stdenv.mkDerivation rec {
   cmakeFlags = [
     "-DPLATFORM_DESKTOP=ON"
     "-DUSE_SYSTEM_CURL=ON"
-    "-DWIN32_TERMINAL=OFF"
-    #"-DINSTALL=ON"
+    #"-DWIN32_TERMINAL=OFF"
+    "-DINSTALL=ON"
+    "-DGLFW_BUILD_WAYLAND=ON"
+    "-DGLFW_BUILD_X11=ON"
+    "-DCMAKE_BUILD_TYPE=Release"
     #"-DUSE_SDL2=${if useDsl then "ON" else "OFF"}"
   ];
 
