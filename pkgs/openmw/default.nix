@@ -54,18 +54,18 @@ let
 in
 stdenv.mkDerivation rec {
   pname = "openmw";
-  version = "0.48.0";
+  version = "102d2c4b43345208aff1ba8351d4167d47c59605";
 
   src = fetchFromGitLab {
     owner = "OpenMW";
     repo = "openmw";
-    rev = "${pname}-${version}";
-    hash = "sha256-zkjVt3GfQZsFXl2Ht3lCuQtDMYQWxhdFO4aGSb3rsyo=";
+    rev = "102d2c4b43345208aff1ba8351d4167d47c59605";
+    hash = "sha256-PkY6iyblM7g3CkrDc0agJT9O2mo1ZwIhSXNndWCfzVg=";
   };
-  openmw = fetchurl {
-   url = "https://m5y6.c17.e2-5.dev/patch/openmw.zip";
-   sha256 = "sha256-J+nIaW3sM7uldC0rddTgzVKx6ZwxeGCrAPsN4ngOmoc=";
-  };
+  #openmw = fetchurl {
+  # url = "https://m5y6.c17.e2-5.dev/patch/openmw.zip";
+  # sha256 = "sha256-J+nIaW3sM7uldC0rddTgzVKx6ZwxeGCrAPsN4ngOmoc=";
+  #};
   postPatch = ''
     sed '1i#include <memory>' -i components/myguiplatform/myguidatamanager.cpp # gcc12
   '' + lib.optionalString stdenv.isDarwin ''
@@ -101,14 +101,17 @@ stdenv.mkDerivation rec {
   ] ++ lib.optionals stdenv.isDarwin [
     "-DOPENMW_OSX_DEPLOYMENT=ON"
   ];
-  postInstall = ''
-    mkdir -p tmp
-    cp ${openmw} tmp/openmw.zip
-    cd tmp && 7z x openmw.zip
-    cd ..
-    rm -rf tmp/openmw.zip
-    cp -rf tmp/* $out/share/games/openmw/
-  '';
+
+  # GBK seem to be broken currently
+
+  #postInstall = ''
+  #  mkdir -p tmp
+  #  cp ${openmw} tmp/openmw.zip
+  #  cd tmp && 7z x openmw.zip
+  #  cd ..
+  #  rm -rf tmp/openmw.zip
+  #  cp -rf tmp/* $out/share/games/openmw/
+  #'';
 
 
   meta = with lib; {
