@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
   };
   openmw = fetchurl {
    url = "https://m5y6.c17.e2-5.dev/patch/openmw.zip";
-   sha256 = "";
+   sha256 = "sha256-J+nIaW3sM7uldC0rddTgzVKx6ZwxeGCrAPsN4ngOmoc=";
   };
   postPatch = ''
     sed '1i#include <memory>' -i components/myguiplatform/myguidatamanager.cpp # gcc12
