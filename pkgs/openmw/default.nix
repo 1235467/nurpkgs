@@ -1,6 +1,7 @@
 { lib
 , stdenv
 , fetchFromGitLab
+, fetchurl
 , fetchpatch
 , cmake
 , pkg-config
@@ -18,7 +19,6 @@
 , recastnavigation
 , unshield
 , yaml-cpp
-, wget
 , p7zip
 }:
 
@@ -62,7 +62,10 @@ stdenv.mkDerivation rec {
     rev = "${pname}-${version}";
     hash = "sha256-zkjVt3GfQZsFXl2Ht3lCuQtDMYQWxhdFO4aGSb3rsyo=";
   };
-
+  openmw = fetchurl {
+   url = "https://m5y6.c17.e2-5.dev/patch/openmw.zip";
+   sha256 = "";
+  };
   postPatch = ''
     sed '1i#include <memory>' -i components/myguiplatform/myguidatamanager.cpp # gcc12
   '' + lib.optionalString stdenv.isDarwin ''
@@ -89,7 +92,6 @@ stdenv.mkDerivation rec {
     recastnavigation
     unshield
     yaml-cpp
-    wget
     p7zip
   ];
 
@@ -100,9 +102,8 @@ stdenv.mkDerivation rec {
     "-DOPENMW_OSX_DEPLOYMENT=ON"
   ];
   postInstall = ''
-    wget https://m5y6.c17.e2-5.dev/patch/openmw.zip
     mkdir -p tmp
-    mv openmw.zip tmp
+    mv ${openmw} tmp/openmw.zip
     cd tmp && 7z x openmw.zip
     cd ..
     rm -rf tmp/openmw.zip
