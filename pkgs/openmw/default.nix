@@ -103,7 +103,7 @@ stdenv.mkDerivation rec {
   ];
   postInstall = ''
     mkdir -p tmp
-    mv ${openmw} tmp/openmw.zip
+    cp ${openmw} tmp/openmw.zip
     cd tmp && 7z x openmw.zip
     cd ..
     rm -rf tmp/openmw.zip
