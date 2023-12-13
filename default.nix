@@ -33,7 +33,7 @@
   vkbasalt = pkgs.callPackage ./pkgs/vkbasalt {};
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch {};
   sakaya = pkgs.callPackage ./pkgs/sakaya {};
-  openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
+  #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
