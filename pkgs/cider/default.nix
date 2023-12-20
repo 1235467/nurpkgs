@@ -7,7 +7,7 @@ appimageTools.wrapType2 rec {
 
   src = fetchurl {
    url = "https://cider.m5y6.c17.e2-5.dev/Cider-${version}.AppImage";
-   sha256 = "sha256-5SRgDp/5As5iOBiFxcOAYeLld3RnKPxxzMshLh02pzk=";
+   sha256 = "sha256-4LGy+K+u0mUbFuiLlvQkxW5T+HwXSZYyZRUJNOVlO0Q=";
   };
 
   extraInstallCommands = let

@@ -33,6 +33,7 @@
   vkbasalt = pkgs.callPackage ./pkgs/vkbasalt {};
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch {};
   sakaya = pkgs.callPackage ./pkgs/sakaya {};
+  #mongodb = pkgs.callPackage ./pkgs/mongodb {};
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
