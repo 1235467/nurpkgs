@@ -1,5 +1,10 @@
 { appimageTools, lib, fetchurl }:
-
+let
+  patch-4_3_0-rc = fetchurl {
+  url = "https://cider.m5y6.c17.e2-5.dev/4.3.0-rc.zip";
+  sha256 = "";
+  };
+in
 appimageTools.wrapType2 rec {
   pname = "cider";
   version = "2.3.0";
