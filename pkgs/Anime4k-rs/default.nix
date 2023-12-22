@@ -8,8 +8,8 @@
 }:
 let
   pname = "Anime4K-rs";
-  version = "ff4c2b18d7c2356d0226d248c39c57fc22e08b2d";
-  sha256 = "";
+  version = "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29";
+  sha256 = "sha256-7CvYbc4U9kIwV2ELkd4lqKC1ynCwqizpXBXJamSGDig=";
   cargoHash = "";
 in
 rustPlatform.buildRustPackage {
