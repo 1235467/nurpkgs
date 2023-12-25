@@ -13,6 +13,7 @@
 , xorg
 , libunwind
 , libdovi
+, xxHash
 }:
 
 stdenv.mkDerivation rec {
@@ -32,6 +33,7 @@ stdenv.mkDerivation rec {
     ninja
     pkg-config
     vulkan-headers
+    xxHash
     python3Packages.jinja2
     python3Packages.glad2
   ];
