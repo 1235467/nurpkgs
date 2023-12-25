@@ -181,7 +181,7 @@
 , bzip2
 , clang
 , celt
-, dav1d
+#, dav1d
 , fdk_aac
 , fontconfig
 , freetype
@@ -262,6 +262,7 @@
  *  Testing
  */
 , testers
+, pkgs ? import <nixpkgs> { }
 }:
 
 /* Maintainer notes:
@@ -279,6 +280,7 @@
 
 let
   inherit (lib) optional optionals optionalString enableFeature versionAtLeast;
+  dav1d = pkgs.callPackage ../dav1d {};
 in
 
 
