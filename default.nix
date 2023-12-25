@@ -44,4 +44,7 @@
   mongodb = pkgs.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
 
+  #test
+  ffmpeg = pkgs.callPackage ./pkgs/dependency/ffmpeg {};
+
 }
