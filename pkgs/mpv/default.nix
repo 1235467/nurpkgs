@@ -9,7 +9,7 @@
 , ninja
 , pkg-config
 , python3
-, ffmpeg
+#, ffmpeg
 , freefont_ttf
 , freetype
 , libass
@@ -98,6 +98,7 @@ let
     })
     else stdenv;
   libplacebo = pkgs.callPackage ../dependency/libplacebo {};
+  ffmpeg = pkgs.callPackage ../dependency/ffmpeg {};
 in stdenv'.mkDerivation (finalAttrs: {
   pname = "mpv";
   version = "0.37.0";
