@@ -19,7 +19,8 @@
 , libuchardet
 , libiconv
 , xcbuild
-#, sigtool
+
+, pkgs ? import <nixpkgs> { }
 
 , waylandSupport ? stdenv.isLinux
   , wayland
@@ -40,7 +41,7 @@
   , libcdio-paranoia
 
 , vulkanSupport ? stdenv.isLinux
-  , libplacebo
+  #, libplacebo
   , shaderc # instead of spirv-cross
   , vulkan-headers
   , vulkan-loader
@@ -96,9 +97,10 @@ let
       targetPlatform = overrideSDK old.targetPlatform "10.15";
     })
     else stdenv;
+  libplacebo = pkgs.callPackage ../libplacebo {};
 in stdenv'.mkDerivation (finalAttrs: {
   pname = "mpv";
-  version = "0.36.0";
+  version = "0.37.0";
 
   outputs = [ "out" "dev" "man" ];
 
@@ -106,7 +108,7 @@ in stdenv'.mkDerivation (finalAttrs: {
     owner = "mpv-player";
     repo = "mpv";
     rev = "v${finalAttrs.version}";
-    hash = "sha256-82moFbWvfc1awXih0d0D+dHqYbIoGNZ77RmafQ80IOY=";
+    hash = "sha256-izAz9Iiam7tJAWIQkmn2cKOfoaog8oPKq4sOUtp1nvU=";
   };
 
   patches = [
