@@ -9,7 +9,7 @@
 , ninja
 , pkg-config
 , python3
-#, ffmpeg
+  #, ffmpeg
 , freefont_ttf
 , freetype
 , libass
@@ -23,60 +23,87 @@
 , pkgs ? import <nixpkgs> { }
 
 , waylandSupport ? stdenv.isLinux
-  , wayland
-  , wayland-protocols
-  , wayland-scanner
-  , libxkbcommon
+, wayland
+, wayland-protocols
+, wayland-scanner
+, libxkbcommon
 
 , x11Support ? stdenv.isLinux
-  , libGLU, libGL
-  , libX11
-  , libXext
-  , libXxf86vm
-  , libXrandr
-  , libXpresent
+, libGLU
+, libGL
+, libX11
+, libXext
+, libXxf86vm
+, libXrandr
+, libXpresent
 
 , cddaSupport ? true
-  , libcdio
-  , libcdio-paranoia
+, libcdio
+, libcdio-paranoia
 
 , vulkanSupport ? stdenv.isLinux
   #, libplacebo
-  , shaderc # instead of spirv-cross
-  , vulkan-headers
-  , vulkan-loader
+, shaderc # instead of spirv-cross
+, vulkan-headers
+, vulkan-loader
 
 , drmSupport ? stdenv.isLinux
-  , libdrm
-  , mesa
+, libdrm
+, mesa
 
-, alsaSupport        ? stdenv.isLinux, alsa-lib
-, archiveSupport     ? true,           libarchive
-, bluraySupport      ? true,           libbluray
-, bs2bSupport        ? true,           libbs2b
-, cacaSupport        ? true,           libcaca
-, cmsSupport         ? true,           lcms2
-, dvdnavSupport      ? stdenv.isLinux, libdvdnav
-, dvbinSupport       ? stdenv.isLinux
-, jackaudioSupport   ? false,          libjack2
-, javascriptSupport  ? true,           mujs
-, libpngSupport      ? true,           libpng
-, openalSupport      ? true,           openalSoft
-, pulseSupport       ? config.pulseaudio or stdenv.isLinux, libpulseaudio
-, pipewireSupport    ? stdenv.isLinux, pipewire
-, rubberbandSupport  ? true,           rubberband
-, screenSaverSupport ? true,           libXScrnSaver
-, sdl2Support        ? true,           SDL2
-, sixelSupport       ? false,          libsixel
-, speexSupport       ? true,           speex
-, swiftSupport       ? stdenv.isDarwin, swift
-, theoraSupport      ? true,           libtheora
-, vaapiSupport       ? x11Support || waylandSupport, libva
-, vapoursynthSupport ? false,          vapoursynth
-, vdpauSupport       ? true,           libvdpau
-, xineramaSupport    ? stdenv.isLinux, libXinerama
-, xvSupport          ? stdenv.isLinux, libXv
-, zimgSupport        ? true,           zimg
+, alsaSupport ? stdenv.isLinux
+, alsa-lib
+, archiveSupport ? true
+, libarchive
+, bluraySupport ? true
+, libbluray
+, bs2bSupport ? true
+, libbs2b
+, cacaSupport ? true
+, libcaca
+, cmsSupport ? true
+, lcms2
+, dvdnavSupport ? stdenv.isLinux
+, libdvdnav
+, dvbinSupport ? stdenv.isLinux
+, jackaudioSupport ? false
+, libjack2
+, javascriptSupport ? true
+, mujs
+, libpngSupport ? true
+, libpng
+, openalSupport ? true
+, openalSoft
+, pulseSupport ? config.pulseaudio or stdenv.isLinux
+, libpulseaudio
+, pipewireSupport ? stdenv.isLinux
+, pipewire
+, rubberbandSupport ? true
+, rubberband
+, screenSaverSupport ? true
+, libXScrnSaver
+, sdl2Support ? true
+, SDL2
+, sixelSupport ? false
+, libsixel
+, speexSupport ? true
+, speex
+, swiftSupport ? stdenv.isDarwin
+, swift
+, theoraSupport ? true
+, libtheora
+, vaapiSupport ? x11Support || waylandSupport
+, libva
+, vapoursynthSupport ? false
+, vapoursynth
+, vdpauSupport ? true
+, libvdpau
+, xineramaSupport ? stdenv.isLinux
+, libXinerama
+, xvSupport ? stdenv.isLinux
+, libXv
+, zimgSupport ? true
+, zimg
 , darwin
 }:
 
@@ -90,16 +117,20 @@ let
       darwinMinVersion = version;
     };
 
-  stdenv' = if swiftSupport && stdenv.isDarwin && stdenv.isx86_64
-    then stdenv.override (old: {
-      buildPlatform = overrideSDK old.buildPlatform "10.15";
-      hostPlatform = overrideSDK old.hostPlatform "10.15";
-      targetPlatform = overrideSDK old.targetPlatform "10.15";
-    })
+  stdenv' =
+    if swiftSupport && stdenv.isDarwin && stdenv.isx86_64
+    then
+      stdenv.override
+        (old: {
+          buildPlatform = overrideSDK old.buildPlatform "10.15";
+          hostPlatform = overrideSDK old.hostPlatform "10.15";
+          targetPlatform = overrideSDK old.targetPlatform "10.15";
+        })
     else stdenv;
-  libplacebo = pkgs.callPackage ../dependency/libplacebo {};
-  ffmpeg = pkgs.callPackage ../dependency/ffmpeg {};
-in stdenv'.mkDerivation (finalAttrs: {
+  libplacebo = pkgs.callPackage ../dependency/libplacebo { };
+  ffmpeg = pkgs.callPackage ../dependency/ffmpeg { };
+in
+stdenv'.mkDerivation (finalAttrs: {
   pname = "mpv";
   version = "0.37.0";
 
@@ -169,40 +200,40 @@ in stdenv'.mkDerivation (finalAttrs: {
     libpthreadstubs
     libuchardet
     luaEnv
-  ] ++ lib.optionals alsaSupport        [ alsa-lib ]
-    ++ lib.optionals archiveSupport     [ libarchive ]
-    ++ lib.optionals bluraySupport      [ libbluray ]
-    ++ lib.optionals bs2bSupport        [ libbs2b ]
-    ++ lib.optionals cacaSupport        [ libcaca ]
-    ++ lib.optionals cddaSupport        [ libcdio libcdio-paranoia ]
-    ++ lib.optionals cmsSupport         [ lcms2 ]
-    ++ lib.optionals drmSupport         [ libdrm mesa ]
-    ++ lib.optionals dvdnavSupport      [ libdvdnav libdvdnav.libdvdread ]
-    ++ lib.optionals jackaudioSupport   [ libjack2 ]
-    ++ lib.optionals javascriptSupport  [ mujs ]
-    ++ lib.optionals libpngSupport      [ libpng ]
-    ++ lib.optionals openalSupport      [ openalSoft ]
-    ++ lib.optionals pipewireSupport    [ pipewire ]
-    ++ lib.optionals pulseSupport       [ libpulseaudio ]
-    ++ lib.optionals rubberbandSupport  [ rubberband ]
-    ++ lib.optionals screenSaverSupport [ libXScrnSaver ]
-    ++ lib.optionals sdl2Support        [ SDL2 ]
-    ++ lib.optionals sixelSupport       [ libsixel ]
-    ++ lib.optionals speexSupport       [ speex ]
-    ++ lib.optionals theoraSupport      [ libtheora ]
-    ++ lib.optionals vaapiSupport       [ libva ]
-    ++ lib.optionals vapoursynthSupport [ vapoursynth ]
-    ++ lib.optionals vdpauSupport       [ libvdpau ]
-    ++ lib.optionals vulkanSupport      [ libplacebo shaderc vulkan-headers vulkan-loader ]
-    ++ lib.optionals waylandSupport     [ wayland wayland-protocols libxkbcommon ]
-    ++ lib.optionals x11Support         [ libX11 libXext libGLU libGL libXxf86vm libXrandr libXpresent ]
-    ++ lib.optionals xineramaSupport    [ libXinerama ]
-    ++ lib.optionals xvSupport          [ libXv ]
-    ++ lib.optionals zimgSupport        [ zimg ]
-    ++ lib.optionals stdenv.isLinux     [ nv-codec-headers-11 ]
-    ++ lib.optionals stdenv.isDarwin    [ libiconv ]
-    ++ lib.optionals stdenv.isDarwin    [ CoreFoundation Cocoa CoreAudio MediaPlayer Accelerate ]
-    ++ lib.optionals (stdenv.isDarwin && swiftSupport) [ AVFoundation CoreMedia ];
+  ] ++ lib.optionals alsaSupport [ alsa-lib ]
+  ++ lib.optionals archiveSupport [ libarchive ]
+  ++ lib.optionals bluraySupport [ libbluray ]
+  ++ lib.optionals bs2bSupport [ libbs2b ]
+  ++ lib.optionals cacaSupport [ libcaca ]
+  ++ lib.optionals cddaSupport [ libcdio libcdio-paranoia ]
+  ++ lib.optionals cmsSupport [ lcms2 ]
+  ++ lib.optionals drmSupport [ libdrm mesa ]
+  ++ lib.optionals dvdnavSupport [ libdvdnav libdvdnav.libdvdread ]
+  ++ lib.optionals jackaudioSupport [ libjack2 ]
+  ++ lib.optionals javascriptSupport [ mujs ]
+  ++ lib.optionals libpngSupport [ libpng ]
+  ++ lib.optionals openalSupport [ openalSoft ]
+  ++ lib.optionals pipewireSupport [ pipewire ]
+  ++ lib.optionals pulseSupport [ libpulseaudio ]
+  ++ lib.optionals rubberbandSupport [ rubberband ]
+  ++ lib.optionals screenSaverSupport [ libXScrnSaver ]
+  ++ lib.optionals sdl2Support [ SDL2 ]
+  ++ lib.optionals sixelSupport [ libsixel ]
+  ++ lib.optionals speexSupport [ speex ]
+  ++ lib.optionals theoraSupport [ libtheora ]
+  ++ lib.optionals vaapiSupport [ libva ]
+  ++ lib.optionals vapoursynthSupport [ vapoursynth ]
+  ++ lib.optionals vdpauSupport [ libvdpau ]
+  ++ lib.optionals vulkanSupport [ libplacebo shaderc vulkan-headers vulkan-loader ]
+  ++ lib.optionals waylandSupport [ wayland wayland-protocols libxkbcommon ]
+  ++ lib.optionals x11Support [ libX11 libXext libGLU libGL libXxf86vm libXrandr libXpresent ]
+  ++ lib.optionals xineramaSupport [ libXinerama ]
+  ++ lib.optionals xvSupport [ libXv ]
+  ++ lib.optionals zimgSupport [ zimg ]
+  ++ lib.optionals stdenv.isLinux [ nv-codec-headers-11 ]
+  ++ lib.optionals stdenv.isDarwin [ libiconv ]
+  ++ lib.optionals stdenv.isDarwin [ CoreFoundation Cocoa CoreAudio MediaPlayer Accelerate ]
+  ++ lib.optionals (stdenv.isDarwin && swiftSupport) [ AVFoundation CoreMedia ];
 
   postBuild = lib.optionalString stdenv.isDarwin ''
     pushd .. # Must be run from the source dir because it uses relative paths
@@ -238,16 +269,16 @@ in stdenv'.mkDerivation (finalAttrs: {
 
   passthru = {
     inherit
-    # The wrapper consults luaEnv and lua.version
-    luaEnv
-    lua
-    # In the wrapper, we want to reference vapoursynth which has the `python3`
-    # passthru attribute (which has the `sitePrefix` attribute). This way we'll
-    # be sure that in the wrapper we'll use the same python3.sitePrefix used to
-    # build vapoursynth.
-    vapoursynthSupport
-    vapoursynth
-    ;
+      # The wrapper consults luaEnv and lua.version
+      luaEnv
+      lua
+      # In the wrapper, we want to reference vapoursynth which has the `python3`
+      # passthru attribute (which has the `sitePrefix` attribute). This way we'll
+      # be sure that in the wrapper we'll use the same python3.sitePrefix used to
+      # build vapoursynth.
+      vapoursynthSupport
+      vapoursynth
+      ;
   };
 
   meta = with lib; {

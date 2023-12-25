@@ -1,7 +1,7 @@
 { lib
 , stdenv
 , fetchurl
-#, scons_3_1_2
+  #, scons_3_1_2
 
 , boost
 , gperftools
@@ -9,7 +9,7 @@
 , snappy
 , zlib
 , yaml-cpp
-#, sasl
+  #, sasl
 , openssl
 , libpcap
 , python3
@@ -23,27 +23,29 @@
 
 with lib;
 
-{ version, sha256, patches ? []
+{ version
+, sha256
+, patches ? [ ]
 , license ? lib.licenses.sspl
 }:
 
 let
   variants = rec {
-      python = scons.python.withPackages (ps: with ps; [
-        pyyaml
-        cheetah3
-        psutil
-        setuptools
-        packaging
-        pymongo
-      ]);
+    python = scons.python.withPackages (ps: with ps; [
+      pyyaml
+      cheetah3
+      psutil
+      setuptools
+      packaging
+      pymongo
+    ]);
 
-      #scons = scons_3_1_2;
+    #scons = scons_3_1_2;
 
-      mozjsVersion = "60";
-      mozjsReplace = "defined(HAVE___SINCOS)";
+    mozjsVersion = "60";
+    mozjsReplace = "defined(HAVE___SINCOS)";
 
-    };
+  };
 
   system-libraries = [
     "boost"
@@ -60,7 +62,8 @@ let
   inherit (lib) systems subtractLists;
   version = "6.0.11";
 
-in stdenv.mkDerivation rec {
+in
+stdenv.mkDerivation rec {
   inherit version;
   pname = "mongodb";
 
@@ -70,7 +73,7 @@ in stdenv.mkDerivation rec {
   };
 
   nativeBuildInputs = [ variants.scons ]
-                      ++ lib.optionals (versionAtLeast version "4.4") [ xz ];
+    ++ lib.optionals (versionAtLeast version "4.4") [ xz ];
 
   buildInputs = [
     boost
@@ -84,7 +87,7 @@ in stdenv.mkDerivation rec {
     sasl
     snappy
     zlib
-];
+  ];
   # MongoDB keeps track of its build parameters, which tricks nix into
   # keeping dependencies to build inputs in the final output.
   # We remove the build flags from buildInfo data.
@@ -94,7 +97,7 @@ in stdenv.mkDerivation rec {
     # fix environment variable reading
     substituteInPlace SConstruct \
         --replace "env = Environment(" "env = Environment(ENV = os.environ,"
-   '' + lib.optionalString (versionAtLeast version "4.4") ''
+  '' + lib.optionalString (versionAtLeast version "4.4") ''
     # Fix debug gcc 11 and clang 12 builds on Fedora
     # https://github.com/mongodb/mongo/commit/e78b2bf6eaa0c43bd76dbb841add167b443d2bb0.patch
     substituteInPlace src/mongo/db/query/plan_summary_stats.h --replace '#include <string>' '#include <optional>

@@ -13,7 +13,7 @@
 , mbedtls
 , openssl
 , curl
-#, useDsl ? true
+  #, useDsl ? true
 , wayland-protocols
 , wayland
 , libglvnd
@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     python3
   ];
 
-  buildInputs = [ 
+  buildInputs = [
     mpv
     dbus
     curl

@@ -12,23 +12,23 @@
 } @ args:
 let
   lzma = fetchFromGitHub {
-    owner  = "sisong";
-    repo   = "lzma";
-    rev    = "e2ff7f0c42d722bad95cce4a26966eaf8685487d";
+    owner = "sisong";
+    repo = "lzma";
+    rev = "e2ff7f0c42d722bad95cce4a26966eaf8685487d";
     sha256 = "sha256-iF5HGJI592ikzf2gYwlQtSmHmrUrLxfn13TWrG9+yZU=";
     fetchSubmodules = true;
   };
   zstd = fetchFromGitHub {
-    owner  = "sisong";
-    repo   = "zstd";
-    rev    = "db2ba8ffc12a8222c27a4d7964a65c57459ddf92";
+    owner = "sisong";
+    repo = "zstd";
+    rev = "db2ba8ffc12a8222c27a4d7964a65c57459ddf92";
     sha256 = "sha256-1zs+4kl92Ps9hJTSO8VBjBZqJmcEmMNDcEijh3Y41Sk=";
     fetchSubmodules = true;
   };
   md5 = fetchFromGitHub {
-    owner  = "sisong";
-    repo   = "libmd5";
-    rev    = "51edeb63ec3f456f4950922c5011c326a062fbce";
+    owner = "sisong";
+    repo = "libmd5";
+    rev = "51edeb63ec3f456f4950922c5011c326a062fbce";
     sha256 = "sha256-xjr3WQvG28xDPAONtE6jYkW8nlMfV0KL6HE4csI08YI=";
     fetchSubmodules = true;
   };
@@ -57,12 +57,12 @@ stdenv.mkDerivation rec {
     chmod 777 -R zstd/
     chmod 777 -R libmd5/
   '';
-#    preConfigure = ''
-#     mkdir -p build/_deps
-#     cp -r ${IXWebSocket} build/_deps/ixwebsocket-src
-#     chmod -R +w build/_deps/
-#   '';
-#   doCheck = false;
+  #    preConfigure = ''
+  #     mkdir -p build/_deps
+  #     cp -r ${IXWebSocket} build/_deps/ixwebsocket-src
+  #     chmod -R +w build/_deps/
+  #   '';
+  #   doCheck = false;
   patches = [ ./local.patch ];
   # 并行编译，大幅加快打包速度，默认是启用的。对于极少数并行编译会失败的软件包，才需要禁用。
   enableParallelBuilding = true;
@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     cp hpatchz $out/bin
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
-  nativeBuildInputs = [ pkg-config bzip2 xz zstd lzma zlib];
+  nativeBuildInputs = [ pkg-config bzip2 xz zstd lzma zlib ];
   BuildInputs = [ bzip2 xz zstd lzma zlib ];
 
 

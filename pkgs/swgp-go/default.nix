@@ -8,7 +8,7 @@ buildGoModule {
     owner = "database64128";
     repo = "swgp-go";
     rev = "eabed5f55311abea5d57bd01d4be4381d24a4c7c";
-    sha256 ="sha256-lKLaTzaO/PplB+GpNicaqLcHhPVceSdRmvmdWYlLGc4=";
+    sha256 = "sha256-lKLaTzaO/PplB+GpNicaqLcHhPVceSdRmvmdWYlLGc4=";
   };
 
   vendorHash = "sha256-3CjYLzLL4q/qCGxkqhSOCjQhe9RqSpmH5d7K3p257Tw=";

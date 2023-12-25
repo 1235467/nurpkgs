@@ -5,13 +5,15 @@ appimageTools.wrapType2 rec {
   name = "${pname}";
 
   src = fetchurl {
-   url = "https://m5y6.c17.e2-5.dev/hydrogen/Hydrogen.AppImage";
-   sha256 = "sha256-wB14EMoB9pd/aPLO1ntU2qZvqlmwS2qqK1s0wd81xyU=";
+    url = "https://m5y6.c17.e2-5.dev/hydrogen/Hydrogen.AppImage";
+    sha256 = "sha256-wB14EMoB9pd/aPLO1ntU2qZvqlmwS2qqK1s0wd81xyU=";
   };
 
-  extraInstallCommands = let
-    contents = appimageTools.extract { inherit name src; };
-  in ''
+  extraInstallCommands =
+    let
+      contents = appimageTools.extract { inherit name src; };
+    in
+    ''
 
     install -m 444 -D ${contents}/${pname}.desktop -t $out/share/applications
     substituteInPlace $out/share/applications/${pname}.desktop \

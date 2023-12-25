@@ -14,9 +14,9 @@ rustPlatform.buildRustPackage rec
 
   cargoLock.lockFile = ./Cargo.lock;
   cargoLock.outputHashes = {
-         "ncmapi-0.1.13" = "sha256-wh9RsyuS1L7rnz1jh2A27s6wUvyH8cNgUywPORIimmg=";
-         "qqmusic-rs-0.1.0" = "sha256-ePUbZShvRRiurzEGm0mAetrFj0NU305t9uh4c0UthrM=";
-       };
+    "ncmapi-0.1.13" = "sha256-wh9RsyuS1L7rnz1jh2A27s6wUvyH8cNgUywPORIimmg=";
+    "qqmusic-rs-0.1.0" = "sha256-ePUbZShvRRiurzEGm0mAetrFj0NU305t9uh4c0UthrM=";
+  };
 
   nativeBuildInputs = [ pkg-config wrapGAppsHook4 ];
   buildInputs = [ gtk4 openssl dbus glib ];
@@ -29,21 +29,21 @@ rustPlatform.buildRustPackage rec
   WAYLYRICS_THEME_PRESETS_DIR = "${placeholder "out"}/share/waylyrics/themes";
 
   postInstall = ''
-  mkdir -p $out/share/waylyrics
-  mkdir -p $out/share/glib-2.0/schemas
-  cp  io.poly000.waylyrics.gschema.xml $out/share/glib-2.0/schemas/
-  glib-compile-schemas $out/share/glib-2.0/schemas/
-  mkdir -p $out/share/waylyrics/themes
-  cp -arv themes/* "$out/share/waylyrics/themes/"
-  cp -arv res/* "$out/share/"
-  cp -vr themes $out/share/waylyrics/
-  # Install schema
-  mkdir -p $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas
-  cp io.poly000.waylyrics.gschema.xml $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas/
-  glib-compile-schemas $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas/
-  # Install icons
-  cp -vr res/icons $out/share/
-   '';
+    mkdir -p $out/share/waylyrics
+    mkdir -p $out/share/glib-2.0/schemas
+    cp  io.poly000.waylyrics.gschema.xml $out/share/glib-2.0/schemas/
+    glib-compile-schemas $out/share/glib-2.0/schemas/
+    mkdir -p $out/share/waylyrics/themes
+    cp -arv themes/* "$out/share/waylyrics/themes/"
+    cp -arv res/* "$out/share/"
+    cp -vr themes $out/share/waylyrics/
+    # Install schema
+    mkdir -p $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas
+    cp io.poly000.waylyrics.gschema.xml $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas/
+    glib-compile-schemas $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas/
+    # Install icons
+    cp -vr res/icons $out/share/
+  '';
 
   meta = with lib; {
     description = "On screen lyrics for Wayland with NetEase Music source";

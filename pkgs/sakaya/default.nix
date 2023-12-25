@@ -19,8 +19,8 @@ rustPlatform.buildRustPackage {
     inherit sha256;
   };
   cargoLock = {
-        lockFile = ./Cargo.lock;
-      };
+    lockFile = ./Cargo.lock;
+  };
 
 
   nativeBuildInputs = [
@@ -28,11 +28,11 @@ rustPlatform.buildRustPackage {
   ];
 
   postInstall = ''
-        installManPage target/man/sakaya.1
+    installManPage target/man/sakaya.1
 
-        installShellCompletion --cmd sakaya \
-          --bash <(cat target/completions/sakaya.bash) \
-          --fish <(cat target/completions/sakaya.fish) \
-          --zsh <(cat target/completions/_sakaya)
-      '';
+    installShellCompletion --cmd sakaya \
+      --bash <(cat target/completions/sakaya.bash) \
+      --fish <(cat target/completions/sakaya.fish) \
+      --zsh <(cat target/completions/_sakaya)
+  '';
 }

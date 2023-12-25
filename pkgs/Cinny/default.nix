@@ -10,7 +10,7 @@
   #, glib-networking
 , libayatana-appindicator
 , webkitgtk
-#, libappindicator-gtk3
+  #, libappindicator-gtk3
   #, makeDesktopItem
 }:
 

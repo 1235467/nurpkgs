@@ -1,6 +1,14 @@
-{ version, sha256, extraPatches ? [] }:
+{ version, sha256, extraPatches ? [ ] }:
 
-{ lib, stdenv, buildPackages, removeReferencesTo, addOpenGLRunpath, pkg-config, perl, texinfo, yasm
+{ lib
+, stdenv
+, buildPackages
+, removeReferencesTo
+, addOpenGLRunpath
+, pkg-config
+, perl
+, texinfo
+, yasm
 
 , ffmpegVariant ? "small" # Decides which dependencies are enabled by default
 
@@ -105,16 +113,16 @@
 , withZlib ? withHeadlessDeps
 , withZmq ? withFullDeps # Message passing
 
-/*
- *  Licensing options (yes some are listed twice, filters and such are not listed)
- */
+  /*
+   *  Licensing options (yes some are listed twice, filters and such are not listed)
+   */
 , withGPL ? true
 , withGPLv3 ? true
 , withUnfree ? false
 
-/*
- *  Build options
- */
+  /*
+   *  Build options
+   */
 , withSmallBuild ? false # Optimize for size instead of speed
 , withRuntimeCPUDetection ? true # Detect CPU capabilities at runtime (disable to compile natively)
 , withGrayscale ? withFullDeps # Full grayscale support
@@ -124,64 +132,64 @@
 , withMultithread ? true # Multithreading via pthreads/win32 threads
 , withNetwork ? withHeadlessDeps # Network support
 , withPixelutils ? withHeadlessDeps # Pixel utils in libavutil
-/*
- *  Program options
- */
+  /*
+   *  Program options
+   */
 , buildFfmpeg ? withHeadlessDeps # Build ffmpeg executable
 , buildFfplay ? withFullDeps # Build ffplay executable
 , buildFfprobe ? withHeadlessDeps # Build ffprobe executable
 , buildQtFaststart ? withFullDeps # Build qt-faststart executable
 , withBin ? buildFfmpeg || buildFfplay || buildFfprobe || buildQtFaststart
-/*
- *  Library options
- */
+  /*
+   *  Library options
+   */
 , buildAvcodec ? withHeadlessDeps # Build avcodec library
 , buildAvdevice ? withHeadlessDeps # Build avdevice library
 , buildAvfilter ? withHeadlessDeps # Build avfilter library
 , buildAvformat ? withHeadlessDeps # Build avformat library
-# Deprecated but depended upon by some packages.
-# https://github.com/NixOS/nixpkgs/pull/211834#issuecomment-1417435991)
+  # Deprecated but depended upon by some packages.
+  # https://github.com/NixOS/nixpkgs/pull/211834#issuecomment-1417435991)
 , buildAvresample ? withHeadlessDeps && lib.versionOlder version "5" # Build avresample library
 , buildAvutil ? withHeadlessDeps # Build avutil library
 , buildPostproc ? withHeadlessDeps # Build postproc library
 , buildSwresample ? withHeadlessDeps # Build swresample library
 , buildSwscale ? withHeadlessDeps # Build swscale library
 , withLib ? buildAvcodec
-  || buildAvdevice
-  || buildAvfilter
-  || buildAvformat
-  || buildAvutil
-  || buildPostproc
-  || buildSwresample
-  || buildSwscale
-/*
- *  Documentation options
- */
+    || buildAvdevice
+    || buildAvfilter
+    || buildAvformat
+    || buildAvutil
+    || buildPostproc
+    || buildSwresample
+    || buildSwscale
+  /*
+   *  Documentation options
+   */
 , withDocumentation ? withHtmlDoc || withManPages || withPodDoc || withTxtDoc
 , withHtmlDoc ? withHeadlessDeps # HTML documentation pages
 , withManPages ? withHeadlessDeps # Man documentation pages
 , withPodDoc ? withHeadlessDeps # POD documentation pages
 , withTxtDoc ? withHeadlessDeps # Text documentation pages
-# Whether a "doc" output will be produced. Note that withManPages does not produce
-# a "doc" output because its files go to "man".
+  # Whether a "doc" output will be produced. Note that withManPages does not produce
+  # a "doc" output because its files go to "man".
 , withDoc ? withDocumentation && (withHtmlDoc || withPodDoc || withTxtDoc)
 
-/*
- *  Developer options
- */
+  /*
+   *  Developer options
+   */
 , withDebug ? false
 , withOptimisations ? true
 , withExtraWarnings ? false
 , withStripping ? false
 
-/*
- *  External libraries options
- */
+  /*
+   *  External libraries options
+   */
 , alsa-lib
 , bzip2
 , clang
 , celt
-#, dav1d
+  #, dav1d
 , fdk_aac
 , fontconfig
 , freetype
@@ -258,9 +266,9 @@
 , vulkan-headers
 , vulkan-loader
 , glslang
-/*
- *  Testing
- */
+  /*
+   *  Testing
+   */
 , testers
 , pkgs ? import <nixpkgs> { }
 }:
@@ -280,7 +288,7 @@
 
 let
   inherit (lib) optional optionals optionalString enableFeature versionAtLeast;
-  dav1d = pkgs.callPackage ../dav1d {};
+  dav1d = pkgs.callPackage ../dav1d { };
 in
 
 
@@ -299,21 +307,21 @@ assert withPixelutils -> buildAvutil;
  *  Program dependencies
  */
 assert buildFfmpeg -> buildAvcodec
-                     && buildAvfilter
-                     && buildAvformat
-                     && (buildSwresample || buildAvresample);
+  && buildAvfilter
+  && buildAvformat
+  && (buildSwresample || buildAvresample);
 assert buildFfplay -> buildAvcodec
-                     && buildAvformat
-                     && buildSwscale
-                     && (buildSwresample || buildAvresample);
+  && buildAvformat
+  && buildSwscale
+  && (buildSwresample || buildAvresample);
 assert buildFfprobe -> buildAvcodec && buildAvformat;
 /*
  *  Library dependencies
  */
 assert buildAvcodec -> buildAvutil; # configure flag since 0.6
 assert buildAvdevice -> buildAvformat
-                       && buildAvcodec
-                       && buildAvutil; # configure flag since 0.6
+  && buildAvcodec
+  && buildAvutil; # configure flag since 0.6
 assert buildAvformat -> buildAvcodec && buildAvutil; # configure flag since 0.6
 assert buildPostproc -> buildAvutil;
 assert buildSwscale -> buildAvutil;
@@ -343,14 +351,15 @@ stdenv.mkDerivation (finalAttrs: {
 
   patches = map (patch: fetchpatch patch) (extraPatches
     ++ (lib.optional (lib.versionAtLeast version "6" && lib.versionOlder version "6.1")
-      { # this can be removed post 6.1
-        name = "fix_aacps_tablegen";
-        url = "https://git.ffmpeg.org/gitweb/ffmpeg.git/patch/814178f92647be2411516bbb82f48532373d2554";
-        hash = "sha256-FQV9/PiarPXCm45ldtCsxGHjlrriL8DKpn1LaKJ8owI=";
-      }
-    ));
+    {
+      # this can be removed post 6.1
+      name = "fix_aacps_tablegen";
+      url = "https://git.ffmpeg.org/gitweb/ffmpeg.git/patch/814178f92647be2411516bbb82f48532373d2554";
+      hash = "sha256-FQV9/PiarPXCm45ldtCsxGHjlrriL8DKpn1LaKJ8owI=";
+    }
+  ));
 
-  configurePlatforms = [];
+  configurePlatforms = [ ];
   setOutputFlags = false; # Only accepts some of them
   configureFlags = [
     #mingw64 is internally treated as mingw32, so 32 and 64 make no difference here
@@ -530,91 +539,92 @@ stdenv.mkDerivation (finalAttrs: {
   # configure binary, include, library dir etc., this causes references in
   # outputs where we don't want them. Patch the generated config.h to remove all
   # such references except for data.
-  postConfigure = let
-    toStrip = map placeholder (lib.remove "data" finalAttrs.outputs) # We want to keep references to the data dir.
-      ++ lib.optional (stdenv.hostPlatform != stdenv.buildPlatform) buildPackages.stdenv.cc;
-  in
+  postConfigure =
+    let
+      toStrip = map placeholder (lib.remove "data" finalAttrs.outputs) # We want to keep references to the data dir.
+        ++ lib.optional (stdenv.hostPlatform != stdenv.buildPlatform) buildPackages.stdenv.cc;
+    in
     "remove-references-to ${lib.concatStringsSep " " (map (o: "-t ${o}") toStrip)} config.h";
 
   strictDeps = true;
 
   nativeBuildInputs = [ removeReferencesTo addOpenGLRunpath perl pkg-config texinfo yasm ]
-  ++ optionals withCudaLLVM [ clang ];
+    ++ optionals withCudaLLVM [ clang ];
 
   # TODO This was always in buildInputs before, why?
   buildInputs = optionals withFullDeps [ libdc1394 ]
-  ++ optionals (withFullDeps && !stdenv.isDarwin) [ libraw1394 ] # TODO where does this belong to
-  ++ optionals (withNvdec || withNvenc) [ (if (lib.versionAtLeast version "6") then nv-codec-headers-11 else nv-codec-headers) ]
-  ++ optionals withAlsa [ alsa-lib ]
-  ++ optionals withAom [ libaom ]
-  ++ optionals withAss [ libass ]
-  ++ optionals withBluray [ libbluray ]
-  ++ optionals withBs2b [ libbs2b ]
-  ++ optionals withBzlib [ bzip2 ]
-  ++ optionals withCaca [ libcaca ]
-  ++ optionals withCelt [ celt ]
-  ++ optionals withDav1d [ dav1d ]
-  ++ optionals withDrm [ libdrm ]
-  ++ optionals withFdkAac [ fdk_aac ]
-  ++ optionals withFontconfig [ fontconfig ]
-  ++ optionals withFreetype [ freetype ]
-  ++ optionals withFrei0r [ frei0r ]
-  ++ optionals withFribidi [ fribidi ]
-  ++ optionals withGlslang [ glslang ]
-  ++ optionals withGme [ game-music-emu ]
-  ++ optionals withGnutls [ gnutls ]
-  ++ optionals withGsm [ gsm ]
-  ++ optionals withIconv [ libiconv ] # On Linux this should be in libc, do we really need it?
-  ++ optionals withJack [ libjack2 ]
-  ++ optionals withLadspa [ ladspaH ]
-  ++ optionals withLibplacebo [ libplacebo vulkan-headers ]
-  ++ optionals withLzma [ xz ]
-  ++ optionals withMfx [ intel-media-sdk ]
-  ++ optionals withModplug [ libmodplug ]
-  ++ optionals withMp3lame [ lame ]
-  ++ optionals withMysofa [ libmysofa ]
-  ++ optionals withOgg [ libogg ]
-  ++ optionals withOpenal [ openal ]
-  ++ optionals withOpencl [ ocl-icd opencl-headers ]
-  ++ optionals withOpencoreAmrnb [ opencore-amr ]
-  ++ optionals withOpengl [ libGL libGLU ]
-  ++ optionals withOpenh264 [ openh264 ]
-  ++ optionals withOpenjpeg [ openjpeg ]
-  ++ optionals withOpenmpt [ libopenmpt ]
-  ++ optionals withOpus [ libopus ]
-  ++ optionals withPulse [ libpulseaudio ]
-  ++ optionals withRav1e [ rav1e ]
-  ++ optionals withRtmp [ rtmpdump ]
-  ++ optionals withSamba [ samba ]
-  ++ optionals withSdl2 [ SDL2 ]
-  ++ optionals withSoxr [ soxr ]
-  ++ optionals withSpeex [ speex ]
-  ++ optionals withSrt [ srt ]
-  ++ optionals withSsh [ libssh ]
-  ++ optionals withSvg [ librsvg ]
-  ++ optionals withSvtav1 [ svt-av1 ]
-  ++ optionals withTensorflow [ libtensorflow ]
-  ++ optionals withTheora [ libtheora ]
-  ++ optionals withVaapi [ (if withSmallDeps then libva else libva-minimal) ]
-  ++ optionals withVdpau [ libvdpau ]
-  ++ optionals withVidStab [ vid-stab ]
-  ++ optionals withVmaf [ libvmaf ]
-  ++ optionals withVoAmrwbenc [ vo-amrwbenc ]
-  ++ optionals withVorbis [ libvorbis ]
-  ++ optionals withVpx [ libvpx ]
-  ++ optionals withV4l2 [ libv4l ]
-  ++ optionals withVulkan [ vulkan-headers vulkan-loader ]
-  ++ optionals withWebp [ libwebp ]
-  ++ optionals withX264 [ x264 ]
-  ++ optionals withX265 [ x265 ]
-  ++ optionals withXavs [ xavs ]
-  ++ optionals withXcb [ libxcb ]
-  ++ optionals withXlib [ libX11 libXv libXext ]
-  ++ optionals withXml2 [ libxml2 ]
-  ++ optionals withXvid [ xvidcore ]
-  ++ optionals withZimg [ zimg ]
-  ++ optionals withZlib [ zlib ]
-  ++ optionals withZmq [ zeromq4 ];
+    ++ optionals (withFullDeps && !stdenv.isDarwin) [ libraw1394 ] # TODO where does this belong to
+    ++ optionals (withNvdec || withNvenc) [ (if (lib.versionAtLeast version "6") then nv-codec-headers-11 else nv-codec-headers) ]
+    ++ optionals withAlsa [ alsa-lib ]
+    ++ optionals withAom [ libaom ]
+    ++ optionals withAss [ libass ]
+    ++ optionals withBluray [ libbluray ]
+    ++ optionals withBs2b [ libbs2b ]
+    ++ optionals withBzlib [ bzip2 ]
+    ++ optionals withCaca [ libcaca ]
+    ++ optionals withCelt [ celt ]
+    ++ optionals withDav1d [ dav1d ]
+    ++ optionals withDrm [ libdrm ]
+    ++ optionals withFdkAac [ fdk_aac ]
+    ++ optionals withFontconfig [ fontconfig ]
+    ++ optionals withFreetype [ freetype ]
+    ++ optionals withFrei0r [ frei0r ]
+    ++ optionals withFribidi [ fribidi ]
+    ++ optionals withGlslang [ glslang ]
+    ++ optionals withGme [ game-music-emu ]
+    ++ optionals withGnutls [ gnutls ]
+    ++ optionals withGsm [ gsm ]
+    ++ optionals withIconv [ libiconv ] # On Linux this should be in libc, do we really need it?
+    ++ optionals withJack [ libjack2 ]
+    ++ optionals withLadspa [ ladspaH ]
+    ++ optionals withLibplacebo [ libplacebo vulkan-headers ]
+    ++ optionals withLzma [ xz ]
+    ++ optionals withMfx [ intel-media-sdk ]
+    ++ optionals withModplug [ libmodplug ]
+    ++ optionals withMp3lame [ lame ]
+    ++ optionals withMysofa [ libmysofa ]
+    ++ optionals withOgg [ libogg ]
+    ++ optionals withOpenal [ openal ]
+    ++ optionals withOpencl [ ocl-icd opencl-headers ]
+    ++ optionals withOpencoreAmrnb [ opencore-amr ]
+    ++ optionals withOpengl [ libGL libGLU ]
+    ++ optionals withOpenh264 [ openh264 ]
+    ++ optionals withOpenjpeg [ openjpeg ]
+    ++ optionals withOpenmpt [ libopenmpt ]
+    ++ optionals withOpus [ libopus ]
+    ++ optionals withPulse [ libpulseaudio ]
+    ++ optionals withRav1e [ rav1e ]
+    ++ optionals withRtmp [ rtmpdump ]
+    ++ optionals withSamba [ samba ]
+    ++ optionals withSdl2 [ SDL2 ]
+    ++ optionals withSoxr [ soxr ]
+    ++ optionals withSpeex [ speex ]
+    ++ optionals withSrt [ srt ]
+    ++ optionals withSsh [ libssh ]
+    ++ optionals withSvg [ librsvg ]
+    ++ optionals withSvtav1 [ svt-av1 ]
+    ++ optionals withTensorflow [ libtensorflow ]
+    ++ optionals withTheora [ libtheora ]
+    ++ optionals withVaapi [ (if withSmallDeps then libva else libva-minimal) ]
+    ++ optionals withVdpau [ libvdpau ]
+    ++ optionals withVidStab [ vid-stab ]
+    ++ optionals withVmaf [ libvmaf ]
+    ++ optionals withVoAmrwbenc [ vo-amrwbenc ]
+    ++ optionals withVorbis [ libvorbis ]
+    ++ optionals withVpx [ libvpx ]
+    ++ optionals withV4l2 [ libv4l ]
+    ++ optionals withVulkan [ vulkan-headers vulkan-loader ]
+    ++ optionals withWebp [ libwebp ]
+    ++ optionals withX264 [ x264 ]
+    ++ optionals withX265 [ x265 ]
+    ++ optionals withXavs [ xavs ]
+    ++ optionals withXcb [ libxcb ]
+    ++ optionals withXlib [ libX11 libXv libXext ]
+    ++ optionals withXml2 [ libxml2 ]
+    ++ optionals withXvid [ xvidcore ]
+    ++ optionals withZimg [ zimg ]
+    ++ optionals withZlib [ zlib ]
+    ++ optionals withZmq [ zeromq4 ];
 
   buildFlags = [ "all" ]
     ++ optional buildQtFaststart "tools/qt-faststart"; # Build qt-faststart executable
@@ -622,22 +632,24 @@ stdenv.mkDerivation (finalAttrs: {
   doCheck = stdenv.hostPlatform == stdenv.buildPlatform;
 
   # Fails with SIGABRT otherwise FIXME: Why?
-  checkPhase = let
-    ldLibraryPathEnv = if stdenv.isDarwin then "DYLD_LIBRARY_PATH" else "LD_LIBRARY_PATH";
-    libsToLink = [ ]
-      ++ optional buildAvcodec "libavcodec"
-      ++ optional buildAvdevice "libavdevice"
-      ++ optional buildAvfilter "libavfilter"
-      ++ optional buildAvformat "libavformat"
-      ++ optional buildAvresample "libavresample"
-      ++ optional buildAvutil "libavutil"
-      ++ optional buildPostproc "libpostproc"
-      ++ optional buildSwresample "libswresample"
-      ++ optional buildSwscale "libswscale"
-    ;
-  in ''
-    ${ldLibraryPathEnv}="${lib.concatStringsSep ":" libsToLink}" make check -j$NIX_BUILD_CORES
-  '';
+  checkPhase =
+    let
+      ldLibraryPathEnv = if stdenv.isDarwin then "DYLD_LIBRARY_PATH" else "LD_LIBRARY_PATH";
+      libsToLink = [ ]
+        ++ optional buildAvcodec "libavcodec"
+        ++ optional buildAvdevice "libavdevice"
+        ++ optional buildAvfilter "libavfilter"
+        ++ optional buildAvformat "libavformat"
+        ++ optional buildAvresample "libavresample"
+        ++ optional buildAvutil "libavutil"
+        ++ optional buildPostproc "libpostproc"
+        ++ optional buildSwresample "libswresample"
+        ++ optional buildSwscale "libswscale"
+      ;
+    in
+    ''
+      ${ldLibraryPathEnv}="${lib.concatStringsSep ":" libsToLink}" make check -j$NIX_BUILD_CORES
+    '';
 
   outputs = optionals withBin [ "bin" ] # The first output is the one that gets symlinked by default!
     ++ optionals withLib [ "lib" "dev" ]
