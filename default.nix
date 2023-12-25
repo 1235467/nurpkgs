@@ -23,9 +23,8 @@
   reflac = pkgs.callPackage ./pkgs/reflac { };
   idntag = pkgs.callPackage ./pkgs/idntag { };
   ncmdump-rs = pkgs.callPackage ./pkgs/ncmdump.rs { };
-  #cinny = pkgs.callPackage ./pkgs/Cinny { };
-  # Broken
   cider = pkgs.callPackage ./pkgs/cider { };
+  hydrogen-music = pkgs.callPackage ./pkgs/hydrogen-music {};
   rescrobbled = pkgs.callPackage ./pkgs/rescrobbled { };
   swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
   Penguin-Subtitle-Player  = pkgs.libsForQt5.callPackage ./pkgs/Penguin-Subtitle-Player { };
