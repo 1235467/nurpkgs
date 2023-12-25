@@ -34,6 +34,9 @@
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch {};
   sakaya = pkgs.callPackage ./pkgs/sakaya {};
   mpv = pkgs.callPackage ./pkgs/mpv {};
+  libplacebo = pkgs.callPackage ./pkgs/libplacebo {}; 
+ 
+  #garnix built pkgs from nixpkgs
   mongodb = pkgs.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
   #wechat = pkgs.callPackage ./pkgs/wechat {};
