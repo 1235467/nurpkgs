@@ -35,6 +35,7 @@
   sakaya = pkgs.callPackage ./pkgs/sakaya {};
   mpv = pkgs.callPackage ./pkgs/mpv {};
   mongodb = pkgs.mongodb;
+  cudaPackages_12.cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
