@@ -34,14 +34,14 @@
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch {};
   sakaya = pkgs.callPackage ./pkgs/sakaya {};
   mpv = pkgs.callPackage ./pkgs/mpv {};
-  libplacebo = pkgs.callPackage ./pkgs/libplacebo {}; 
- 
-  #garnix built pkgs from nixpkgs
-  mongodb = pkgs.mongodb;
-  cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
+
+  #garnix built pkgs from nixpkgs
+  mongodb = pkgs.mongodb;
+  cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
+
 }

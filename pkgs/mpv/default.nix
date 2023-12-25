@@ -97,7 +97,7 @@ let
       targetPlatform = overrideSDK old.targetPlatform "10.15";
     })
     else stdenv;
-  libplacebo = pkgs.callPackage ../libplacebo {};
+  libplacebo = pkgs.callPackage ../dependency/libplacebo {};
 in stdenv'.mkDerivation (finalAttrs: {
   pname = "mpv";
   version = "0.37.0";
