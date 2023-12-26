@@ -1,29 +1,20 @@
 { lib
-, fetchFromGitHub
 , ffmpeg
-, buildDotnetModule
+#, buildDotnetGlobalTool
 , dotnetCorePackages
+, callPackage
 , ...
 }:
 let
   pname = "BBDown";
   version = "1.6.1";
-  sha256 = "sha256-foTgCQKzYZc4aDxiAeoXR4jdEytqnkCt1Rwr2ztostM=";
+  nugetSha256 = "sha256-FujKRBiuvbndxPo/SF7dOQbRqLr85mYl9Kay0W+CvkU=";
+  buildDotnetGlobalTool = callPackage ../dependency/buildDotnetGlobalTool {};
+
 in
-  buildDotnetModule rec {
-  inherit pname version;
+  buildDotnetGlobalTool rec {
+  inherit pname version nugetSha256;
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
-  nugetDeps = ./BBDown-deps.nix;
-
-  src = fetchFromGitHub {
-    owner = "nilaoda";
-    repo = pname;
-    rev = version;
-    inherit sha256;
-  };
-
-  projectFile = "BBDown/BBDown.csproj";
-
   meta = with lib; {
     description = "Bilibili Downloader";
     homepage = "https://github.com/nilaoda/BBDown";
