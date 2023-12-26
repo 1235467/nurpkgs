@@ -15,6 +15,7 @@ in
   buildDotnetGlobalTool rec {
   inherit pname version nugetSha256;
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
+  dotnet-runtime = dotnetCorePackages.sdk_8_0;
   meta = with lib; {
     description = "Bilibili Downloader";
     homepage = "https://github.com/nilaoda/BBDown";
