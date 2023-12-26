@@ -7,7 +7,7 @@
 }:
 let
   pname = "BBDown";
-  version = "1196918e709f883eabfe3122ccad824b8f551381";
+  version = "1.6.1";
   sha256 = "sha256-foTgCQKzYZc4aDxiAeoXR4jdEytqnkCt1Rwr2ztostM=";
 in
   buildDotnetModule rec {
