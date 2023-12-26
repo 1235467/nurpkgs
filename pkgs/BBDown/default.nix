@@ -17,7 +17,8 @@ in
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
   dotnet-runtime = dotnetCorePackages.sdk_8_0;
   postInstall = ''
-    ln -s /media/gamedisk/Projects/BBDown/dl/BBDown.data $out/lib/BBDown/
+    mkdir -p $out/lib/BBDown/
+    ln -s ~/.config/BBDown/BBDown.data $out/lib/BBDown/
   '';
   meta = with lib; {
     description = "Bilibili Downloader";
