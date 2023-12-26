@@ -13,7 +13,8 @@ in
   buildDotnetModule rec {
   inherit pname version;
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
- 
+  nugetDeps = ./BBDown-deps.nix;
+
   src = fetchFromGitHub {
     owner = "nilaoda";
     repo = pname;
