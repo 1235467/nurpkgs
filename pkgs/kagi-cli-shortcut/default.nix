@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
   # 此选项禁用了对 CMake 软件包的一些自动修正
   #dontFixCmake = true;
   buildPhase = ''
-    gcc -o kagi ${src}/kagi.c -lcurl
+    gcc -o kagi ${src}/kagi-cli-shortcut.c -lcurl
   '';
   installPhase = ''
     mkdir -p $out/bin
