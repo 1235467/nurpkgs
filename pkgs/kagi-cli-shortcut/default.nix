@@ -3,6 +3,7 @@
 , stdenv
 , fetchFromGitHub
 , gcc
+, curl
 , ...
 } @ args:
 
@@ -45,7 +46,7 @@ stdenv.mkDerivation rec {
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
   nativeBuildInputs = [ gcc ];
-  BuildInputs = [  ];
+  BuildInputs = [ curl ];
 
 
   # stdenv.mkDerivation 自动帮你完成其余的步骤
