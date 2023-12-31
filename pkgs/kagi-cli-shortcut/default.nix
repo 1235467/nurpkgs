@@ -45,8 +45,8 @@ stdenv.mkDerivation rec {
     cp kagi $out/bin
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
-  nativeBuildInputs = [ gcc ];
-  BuildInputs = [ curl ];
+  nativeBuildInputs = [ gcc curl ];
+  BuildInputs = [  ];
 
 
   # stdenv.mkDerivation 自动帮你完成其余的步骤
