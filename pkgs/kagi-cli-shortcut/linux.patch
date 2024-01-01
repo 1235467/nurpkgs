@@ -1,0 +1,13 @@
+diff --git a/kagi-cli-shortcut.c b/kagi-cli-shortcut.c
+index 48be4b4..2193fcd 100644
+--- a/kagi-cli-shortcut.c
++++ b/kagi-cli-shortcut.c
+@@ -74,7 +74,7 @@ int main(int argc, char *argv[]) {
+     snprintf(cmd, sizeof(cmd), "%s \"%s\"", cli_browser, url);
+   } else {
+     // Replace 'xdg-open' with 'open' for macOS
+-    snprintf(cmd, sizeof(cmd), "open \"%s\"", url);
++    snprintf(cmd, sizeof(cmd), "xdg-open \"%s\"", url);
+   }
+
+   int result = system(cmd);

@@ -32,6 +32,8 @@ stdenv.mkDerivation rec {
   #     chmod -R +w build/_deps/
   #   '';
   doCheck = false;
+
+  patches = [ ./linux.patch ];
   # 并行编译，大幅加快打包速度，默认是启用的。对于极少数并行编译会失败的软件包，才需要禁用。
   enableParallelBuilding = true;
   # 如果基于 CMake 的软件包在打包时出现了奇怪的错误，可以尝试启用此选项
