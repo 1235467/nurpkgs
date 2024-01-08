@@ -9,7 +9,7 @@ rustPlatform.buildRustPackage rec
     owner = "poly000";
     repo = pname;
     rev = version;
-    hash = "";
+    hash = "sha256-tOcepv6rVRmShokly0YQb4+R0tlo7+IqCgZpwaW5+XM=";
   };
 
   cargoLock.lockFile = ./Cargo.lock;
