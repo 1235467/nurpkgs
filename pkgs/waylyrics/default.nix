@@ -3,13 +3,13 @@
 rustPlatform.buildRustPackage rec
 {
   pname = "waylyrics";
-  version = "dd2772c7f0e8828489fc8be0ad9c75aabf0e0cb2";
+  version = "68fe983c781ec9fc477d28b38d1c3d6f6fe4e40a";
 
   src = fetchFromGitHub {
     owner = "poly000";
     repo = pname;
-    rev = "dd2772c7f0e8828489fc8be0ad9c75aabf0e0cb2";
-    hash = "sha256-Ylz7SwCir0w9oJQy3mCQSGzWjsYhPgRbNPU0MDhkqO0=";
+    rev = version;
+    hash = "";
   };
 
   cargoLock.lockFile = ./Cargo.lock;
