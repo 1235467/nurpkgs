@@ -29,3 +29,4 @@
 * vkbasalt older version
 * waylyrics
 * kagi-cli-shortcut
+* open-snell
