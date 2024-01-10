@@ -8,7 +8,7 @@
 
 { pkgs ? import <nixpkgs> { } }:
 
-{
+rec {
   # The `lib`, `modules`, and `overlay` names are special
   lib = import ./lib { inherit pkgs; }; # functions
   modules = import ./modules; # NixOS modules
@@ -37,6 +37,7 @@
   kagi-cli-shortcut = pkgs.callPackage ./pkgs/kagi-cli-shortcut {};
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
   altera-quartuses = pkgs.callPackage ./pkgs/altera-quartus { };
+  quartus = altera-quartuses.altera-quartus-prime-lite;
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
