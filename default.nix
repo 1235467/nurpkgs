@@ -45,5 +45,5 @@ rec {
   #garnix built pkgs from nixpkgs
   mongodb = pkgs.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
-
+  quartus-prime-lite = pkgs.quartus-prime-lite
 }
