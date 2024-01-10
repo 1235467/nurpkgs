@@ -36,6 +36,7 @@
   BBDown = pkgs.callPackage ./pkgs/BBDown {};
   kagi-cli-shortcut = pkgs.callPackage ./pkgs/kagi-cli-shortcut {};
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
+  altera-quartuses = pkgs.callPackage ./pkgs/altera-quartus { };
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
