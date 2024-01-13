@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     owner = "videolan";
     repo = pname;
     rev = version;
-    hash = "";
+    hash = "sha256-2Ez0w7VdDveGnLS+126wY8c7kEkiUhE0KGwvTxdgRFg=";
   };
 
   outputs = [ "out" "dev" ];
