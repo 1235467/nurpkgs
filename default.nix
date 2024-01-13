@@ -36,6 +36,8 @@ rec {
   BBDown = pkgs.callPackage ./pkgs/BBDown {};
   kagi-cli-shortcut = pkgs.callPackage ./pkgs/kagi-cli-shortcut {};
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
+  pynat = pkgs.callPackage ./pkgs/pynat { };
+  pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
@@ -45,5 +47,5 @@ rec {
   #garnix built pkgs from nixpkgs
   mongodb = pkgs.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
-  quartus-prime-lite = pkgs.quartus-prime-lite;
+  #quartus-prime-lite = pkgs.quartus-prime-lite;
 }
