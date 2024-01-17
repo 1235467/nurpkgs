@@ -6,7 +6,10 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{ pkgs ? import <nixpkgs> { } }:
+{
+  pkgs ? import <nixpkgs> { }
+, pkgs-stable ? import <nixpkgs> { }
+}:
 
 rec {
   # The `lib`, `modules`, and `overlay` names are special
@@ -32,8 +35,8 @@ rec {
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch { };
   sakaya = pkgs.callPackage ./pkgs/sakaya { };
   mpv = pkgs.callPackage ./pkgs/mpv { };
-  BBDown = pkgs.callPackage ./pkgs/BBDown {};
-  kagi-cli-shortcut = pkgs.callPackage ./pkgs/kagi-cli-shortcut {};
+  BBDown = pkgs.callPackage ./pkgs/BBDown { };
+  kagi-cli-shortcut = pkgs.callPackage ./pkgs/kagi-cli-shortcut { };
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
   pynat = pkgs.callPackage ./pkgs/pynat { };
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
@@ -45,7 +48,7 @@ rec {
   # ...
 
   #garnix built pkgs from nixpkgs
-  mongodb = pkgs.mongodb;
+  mongodb = pkgs-stable.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
   #quartus-prime-lite = pkgs.quartus-prime-lite;
 }
