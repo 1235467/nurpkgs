@@ -29,7 +29,6 @@ rec {
   swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
   Penguin-Subtitle-Player = pkgs.libsForQt5.callPackage ./pkgs/Penguin-Subtitle-Player { };
   waylyrics = pkgs.callPackage ./pkgs/waylyrics { };
-  vkbasalt = pkgs.callPackage ./pkgs/vkbasalt { };
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch { };
   sakaya = pkgs.callPackage ./pkgs/sakaya { };
   mpv = pkgs.callPackage ./pkgs/mpv { };
