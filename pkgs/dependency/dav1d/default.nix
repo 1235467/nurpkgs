@@ -46,6 +46,8 @@ stdenv.mkDerivation rec {
   mesonFlags = [
     "-Denable_tools=${lib.boolToString withTools}"
     "-Denable_examples=${lib.boolToString withExamples}"
+    ''-Dc_args="-march=x86-64-v3"''
+    ''-Dcpp_args="-march=x86-64-v3"''
   ];
 
   doCheck = true;
