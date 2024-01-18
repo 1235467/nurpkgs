@@ -40,6 +40,7 @@ rec {
   pynat = pkgs.callPackage ./pkgs/pynat { };
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
   wemeet = pkgs.callPackage ./pkgs/wemeet { };
+  feishu = pkgs.callPackage ./pkgs/feishu { };
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
