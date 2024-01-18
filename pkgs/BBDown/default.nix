@@ -17,7 +17,6 @@ in
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
   dotnet-runtime = dotnetCorePackages.sdk_8_0;
   nativeBuildInputs = [
-    uutils-coreutils
   ];
   buildInputs = [
     ffmpeg
