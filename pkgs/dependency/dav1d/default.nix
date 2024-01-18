@@ -50,7 +50,6 @@ stdenv.mkDerivation rec {
     "-Denable_tools=${lib.boolToString withTools}"
     "-Denable_examples=${lib.boolToString withExamples}"
     "-Db_lto=true"
-    "-Db_pgo=use"
   ];
 
   doCheck = true;
