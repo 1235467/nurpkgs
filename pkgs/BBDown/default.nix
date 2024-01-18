@@ -1,5 +1,4 @@
 { lib
-, ffmpeg
 #, buildDotnetGlobalTool
 , dotnetCorePackages
 , callPackage
