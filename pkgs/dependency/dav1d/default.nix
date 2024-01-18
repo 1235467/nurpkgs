@@ -37,8 +37,8 @@ stdenv.mkDerivation rec {
 
   outputs = [ "out" "dev" ];
   preConfigure = ''
-    export CFLAGS="-march=x86-64-v3 -mtune=skylake -O3"
-    CXXFLAGS="-march=x86-64-v3 -mtune=skylake -O3"
+    export CFLAGS="-march=x86-64-v3 -mtune=skylake"
+    CXXFLAGS="-march=x86-64-v3 -mtune=skylake"
   '';
   nativeBuildInputs = [ meson ninja nasm pkg-config ];
   # TODO: doxygen (currently only HTML and not build by default).
@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     "-Db_lto=true"
   ];
 
-  doCheck = false;
+  doCheck = true;
 
   passthru.tests = {
     inherit
