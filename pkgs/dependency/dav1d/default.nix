@@ -36,7 +36,10 @@ stdenv.mkDerivation rec {
   };
 
   outputs = [ "out" "dev" ];
-
+  preConfigure = ''
+    export CFLAGS="-march=x86-64-v3 -mtune=skylake -O3"
+    CXXFLAGS="-march=x86-64-v3 -mtune=skylake -O3"
+  '';
   nativeBuildInputs = [ meson ninja nasm pkg-config ];
   # TODO: doxygen (currently only HTML and not build by default).
   buildInputs = [ xxHash ]
@@ -46,8 +49,8 @@ stdenv.mkDerivation rec {
   mesonFlags = [
     "-Denable_tools=${lib.boolToString withTools}"
     "-Denable_examples=${lib.boolToString withExamples}"
-    ''-Dc_args="-march=x86-64-v3"''
-    ''-Dcpp_args="-march=x86-64-v3"''
+    ''-Dc_args="-march=x86-64-v3 -mtune=skylake -O3"''
+    ''-Dcpp_args="-march=x86-64-v3 -mtune=skylake -O3"''
     "-Db_lto=true"
   ];
 
