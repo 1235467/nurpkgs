@@ -3,6 +3,7 @@
 , lib
 , asciidoc
 , flac
+, makeWrapper
 , ...
 }:
 let
@@ -20,7 +21,7 @@ stdenv.mkDerivation rec {
   };
 
   nativeBuildInputs = [
-
+    makeWrapper
   ];
   buildInputs = [
     asciidoc
@@ -33,6 +34,8 @@ stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/bin
     cp reflac $out/bin
+    wrapProgram $out/bin/reflac \
+        --prefix PATH : ${lib.makeBinPath [ asciidoc flac ]}
   '';
 
   meta = with lib; {
