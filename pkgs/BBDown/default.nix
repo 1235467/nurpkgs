@@ -2,10 +2,7 @@
 #, buildDotnetGlobalTool
 , dotnetCorePackages
 , callPackage
-, makeWrapper
 , ffmpeg
-, bash
-, uutils-coreutils
 , ...
 }:
 let
@@ -20,19 +17,14 @@ in
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
   dotnet-runtime = dotnetCorePackages.sdk_8_0;
   nativeBuildInputs = [
-    makeWrapper
     uutils-coreutils
   ];
   buildInputs = [
     ffmpeg
-    bash
   ];
   postInstall = ''
     mkdir -p $out/lib/BBDown/
     ln -s /home/hakutaku/.config/BBDown/BBDown.data $out/lib/BBDown/
-    chmod +x $out/bin/BBDown
-    wrapProgram $out/bin/BBDown \
-        --prefix PATH : ${lib.makeBinPath [ ffmpeg bash ]}
   '';
 
   meta = with lib; {
