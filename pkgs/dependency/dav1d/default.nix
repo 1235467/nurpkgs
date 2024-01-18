@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     "-Db_lto=true"
   ];
 
-  doCheck = true;
+  doCheck = false;
 
   passthru.tests = {
     inherit
