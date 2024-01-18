@@ -35,6 +35,7 @@
   # Feature flags
 , withAlsa ? withHeadlessDeps && stdenv.isLinux # Alsa in/output supporT
 , withAom ? withFullDeps # AV1 reference encoder
+, withAribcaption ? withFullDeps && lib.versionAtLeast version "6.1" # ARIB STD-B24 Caption Decoder/Renderer
 , withAss ? withHeadlessDeps && stdenv.hostPlatform == stdenv.buildPlatform # (Advanced) SubStation Alpha subtitle rendering
 , withBluray ? withFullDeps # BluRay reading
 , withBs2b ? withFullDeps # bs2b DSP library
@@ -203,6 +204,7 @@
 , lame
 , libass
 , libaom
+, libaribcaption
 , libbluray
 , libbs2b
 , libcaca
@@ -236,7 +238,7 @@
 , libxml2
 , xz
 , nv-codec-headers
-, nv-codec-headers-11
+, nv-codec-headers-12
 , openal
 , ocl-icd # OpenCL ICD
 , opencl-headers  # OpenCL headers
@@ -343,10 +345,6 @@ stdenv.mkDerivation (finalAttrs: {
       --replace /usr/local/lib/frei0r-1 ${frei0r}/lib/frei0r-1
     substituteInPlace doc/filters.texi \
       --replace /usr/local/lib/frei0r-1 ${frei0r}/lib/frei0r-1
-  '' + lib.optionalString withVulkan ''
-    # FIXME: horrible hack, remove for next release
-    substituteInPlace libavutil/hwcontext_vulkan.c \
-      --replace VK_EXT_VIDEO_DECODE VK_KHR_VIDEO_DECODE
   '';
 
   patches = map (patch: fetchpatch patch) (extraPatches
@@ -441,6 +439,7 @@ stdenv.mkDerivation (finalAttrs: {
      *  External libraries
      */
     (enableFeature withAlsa "alsa")
+    (optionalString withAribcaption "--enable-libaribcaption")
     (enableFeature withBzlib "bzlib")
     (enableFeature withCelt "libcelt")
     (enableFeature withCuda "cuda")
@@ -554,9 +553,10 @@ stdenv.mkDerivation (finalAttrs: {
   # TODO This was always in buildInputs before, why?
   buildInputs = optionals withFullDeps [ libdc1394 ]
     ++ optionals (withFullDeps && !stdenv.isDarwin) [ libraw1394 ] # TODO where does this belong to
-    ++ optionals (withNvdec || withNvenc) [ (if (lib.versionAtLeast version "6") then nv-codec-headers-11 else nv-codec-headers) ]
+    ++ optionals (withNvdec || withNvenc) [ (if (lib.versionAtLeast version "6") then nv-codec-headers-12 else nv-codec-headers) ]
     ++ optionals withAlsa [ alsa-lib ]
     ++ optionals withAom [ libaom ]
+    ++ optionals withAribcaption [ libaribcaption ]
     ++ optionals withAss [ libass ]
     ++ optionals withBluray [ libbluray ]
     ++ optionals withBs2b [ libbs2b ]

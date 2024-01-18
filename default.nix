@@ -6,8 +6,7 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{
-  pkgs ? import <nixpkgs> { }
+{ pkgs ? import <nixpkgs> { }
 , pkgs-stable ? import <nixpkgs> { }
 }:
 
