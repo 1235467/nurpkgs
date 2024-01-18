@@ -3,6 +3,7 @@
 , lib
 , asciidoc
 , flac
+, bash
 , makeWrapper
 , ...
 }:
@@ -26,6 +27,7 @@ stdenv.mkDerivation rec {
   buildInputs = [
     asciidoc
     flac
+    bash
   ];
 
   buildPhase = ''
@@ -35,7 +37,7 @@ stdenv.mkDerivation rec {
     mkdir -p $out/bin
     cp reflac $out/bin
     wrapProgram $out/bin/reflac \
-        --prefix PATH : ${lib.makeBinPath [ asciidoc flac ]}
+        --prefix PATH : ${lib.makeBinPath [ asciidoc flac bash]}
   '';
 
   meta = with lib; {

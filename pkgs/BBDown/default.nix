@@ -4,6 +4,7 @@
 , callPackage
 , makeWrapper
 , ffmpeg
+, bash
 , ...
 }:
 let
@@ -22,12 +23,14 @@ in
   ];
   buildInputs = [
     ffmpeg
+    bash
   ];
   postInstall = ''
     mkdir -p $out/lib/BBDown/
     ln -s /home/hakutaku/.config/BBDown/BBDown.data $out/lib/BBDown/
+    chmod +x $out/bin/BBDown
     wrapProgram $out/bin/BBDown \
-        --prefix PATH : ${lib.makeBinPath [ ffmpeg ]}
+        --prefix PATH : ${lib.makeBinPath [ ffmpeg bash ]}
   '';
 
   meta = with lib; {
