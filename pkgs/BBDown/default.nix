@@ -5,6 +5,7 @@
 , makeWrapper
 , ffmpeg
 , bash
+, uutils-coreutils
 , ...
 }:
 let
@@ -20,6 +21,7 @@ in
   dotnet-runtime = dotnetCorePackages.sdk_8_0;
   nativeBuildInputs = [
     makeWrapper
+    uutils-coreutils
   ];
   buildInputs = [
     ffmpeg
