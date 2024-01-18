@@ -48,6 +48,7 @@ stdenv.mkDerivation rec {
     "-Denable_examples=${lib.boolToString withExamples}"
     ''-Dc_args="-march=x86-64-v3"''
     ''-Dcpp_args="-march=x86-64-v3"''
+    "-Db_lto=true"
   ];
 
   doCheck = true;
