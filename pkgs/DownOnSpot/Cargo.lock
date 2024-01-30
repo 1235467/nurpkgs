@@ -1631,7 +1631,7 @@ dependencies = [
 
 [[package]]
 name = "librespot"
-version = "0.4.2"
+version =
 source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "base64 0.13.1",
@@ -1657,7 +1657,7 @@ dependencies = [
 
 [[package]]
 name = "librespot-audio"
-version = "0.4.2"
+version =
 source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "aes-ctr",
@@ -1672,7 +1672,7 @@ dependencies = [
 
 [[package]]
 name = "librespot-connect"
-version = "0.4.2"
+version =
 source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "form_urlencoded",
@@ -1692,7 +1692,7 @@ dependencies = [
 
 [[package]]
 name = "librespot-core"
-version = "0.4.2"
+version =
 source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "aes",
@@ -1732,7 +1732,7 @@ dependencies = [
 
 [[package]]
 name = "librespot-discovery"
-version = "0.4.2"
+version =
 source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "aes-ctr",
@@ -1753,7 +1753,7 @@ dependencies = [
 
 [[package]]
 name = "librespot-metadata"
-version = "0.4.2"
+version =
 source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "async-trait",
@@ -1766,7 +1766,7 @@ dependencies = [
 
 [[package]]
 name = "librespot-playback"
-version = "0.4.2"
+version =
 source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "byteorder",
@@ -1791,7 +1791,7 @@ dependencies = [
 
 [[package]]
 name = "librespot-protocol"
-version = "0.4.2"
+version =
 source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "glob",
