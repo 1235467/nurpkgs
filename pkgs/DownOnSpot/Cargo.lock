@@ -1632,7 +1632,7 @@ dependencies = [
 [[package]]
 name = "librespot"
 version = "0.4.2"
-source = "git+ssh://git@github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
+source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "base64 0.13.1",
  "env_logger",
@@ -1658,7 +1658,7 @@ dependencies = [
 [[package]]
 name = "librespot-audio"
 version = "0.4.2"
-source = "git+ssh://git@github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
+source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "aes-ctr",
  "byteorder",
@@ -1673,7 +1673,7 @@ dependencies = [
 [[package]]
 name = "librespot-connect"
 version = "0.4.2"
-source = "git+ssh://git@github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
+source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "form_urlencoded",
  "futures-util",
@@ -1693,7 +1693,7 @@ dependencies = [
 [[package]]
 name = "librespot-core"
 version = "0.4.2"
-source = "git+ssh://git@github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
+source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "aes",
  "base64 0.13.1",
@@ -1733,7 +1733,7 @@ dependencies = [
 [[package]]
 name = "librespot-discovery"
 version = "0.4.2"
-source = "git+ssh://git@github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
+source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "aes-ctr",
  "base64 0.13.1",
@@ -1754,7 +1754,7 @@ dependencies = [
 [[package]]
 name = "librespot-metadata"
 version = "0.4.2"
-source = "git+ssh://git@github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
+source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "async-trait",
  "byteorder",
@@ -1767,7 +1767,7 @@ dependencies = [
 [[package]]
 name = "librespot-playback"
 version = "0.4.2"
-source = "git+ssh://git@github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
+source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "byteorder",
  "cpal",
@@ -1792,7 +1792,7 @@ dependencies = [
 [[package]]
 name = "librespot-protocol"
 version = "0.4.2"
-source = "git+ssh://git@github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
+source = "git+https://github.com/librespot-org/librespot.git#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
 dependencies = [
  "glob",
  "protobuf 2.28.0",
