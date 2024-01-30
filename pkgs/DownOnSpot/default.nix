@@ -11,7 +11,7 @@
 let
   pname = "DownOnSpot";
   version = "91499171221d26e598e3eeebb68e5cf50b200cfd";
-  sha256 = "";
+  sha256 = "sha256-ORjzq/6TcQMfdpkpL/X1zaru1ENsDy3isvZus/ochko=";
   cargoHash = "";
 in
 rustPlatform.buildRustPackage {
