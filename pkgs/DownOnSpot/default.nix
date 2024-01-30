@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage {
   cargoLock = {
     lockFile = ./Cargo.lock;
     outputHashes = {
-      "librespot-0.4.2" = "";
+      "librespot-0.4.2" = "sha256-2pJ9yxMI1WRQZmQliXtd10Gk2guJoF50FTpJwmLuWdk=";
       #"librespot-audio" = "";
       #"librespot-connect" = "";
       #"librespot-core" = "";
