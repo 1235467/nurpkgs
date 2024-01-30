@@ -10,8 +10,8 @@
 }:
 let
   pname = "DownOnSpot";
-  version = "28035d9a2edcc21f2098f09a4304a2254ff9bc51";
-  sha256 = "sha256-7Kqo1WKk/A4qvpQ9OrIBLRWdDlBzTBN052lldzaLftA=";
+  version = "91499171221d26e598e3eeebb68e5cf50b200cfd";
+  sha256 = "";
   cargoHash = "";
 in
 rustPlatform.buildRustPackage {
@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage {
   cargoLock = {
     lockFile = ./Cargo.lock;
     outputHashes = {
-      "librespot-0.5.0-dev" = "sha256-2pJ9yxMI1WRQZmQliXtd10Gk2guJoF50FTpJwmLuWdk=";
+      "librespot-0.4.2" = "";
       #"librespot-audio" = "";
       #"librespot-connect" = "";
       #"librespot-core" = "";

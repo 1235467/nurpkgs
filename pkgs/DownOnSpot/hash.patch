@@ -1,76 +1,14 @@
-diff --git a/Cargo.lock b/Cargo.lock
-index 82c524c..b0816b7 100644
---- a/Cargo.lock
-+++ b/Cargo.lock
-@@ -1592,7 +1592,7 @@ dependencies = [
- [[package]]
- name = "librespot"
- version = "0.5.0-dev"
--source = "git+https://github.com/librespot-org/librespot.git?rev=4d402e690c67457ca2d462670db39330bbceb4cf#4d402e690c67457ca2d462670db39330bbceb4cf"
-+source = "git+https://github.com/librespot-org/librespot.git?rev=f5a46c61d2a1a96120516cee26cd7e4b95c20f50#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
- dependencies = [
-  "env_logger",
-  "futures-util",
-@@ -1616,7 +1616,7 @@ dependencies = [
- [[package]]
- name = "librespot-audio"
- version = "0.5.0-dev"
--source = "git+https://github.com/librespot-org/librespot.git?rev=4d402e690c67457ca2d462670db39330bbceb4cf#4d402e690c67457ca2d462670db39330bbceb4cf"
-+source = "git+https://github.com/librespot-org/librespot.git?rev=f5a46c61d2a1a96120516cee26cd7e4b95c20f50#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
- dependencies = [
-  "aes",
-  "byteorder",
-@@ -1636,7 +1636,7 @@ dependencies = [
- [[package]]
- name = "librespot-connect"
- version = "0.5.0-dev"
--source = "git+https://github.com/librespot-org/librespot.git?rev=4d402e690c67457ca2d462670db39330bbceb4cf#4d402e690c67457ca2d462670db39330bbceb4cf"
-+source = "git+https://github.com/librespot-org/librespot.git?rev=f5a46c61d2a1a96120516cee26cd7e4b95c20f50#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
- dependencies = [
-  "form_urlencoded",
-  "futures-util",
-@@ -1656,7 +1656,7 @@ dependencies = [
- [[package]]
- name = "librespot-core"
- version = "0.5.0-dev"
--source = "git+https://github.com/librespot-org/librespot.git?rev=4d402e690c67457ca2d462670db39330bbceb4cf#4d402e690c67457ca2d462670db39330bbceb4cf"
-+source = "git+https://github.com/librespot-org/librespot.git?rev=f5a46c61d2a1a96120516cee26cd7e4b95c20f50#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
- dependencies = [
-  "aes",
-  "base64 0.21.2",
-@@ -1707,7 +1707,7 @@ dependencies = [
- [[package]]
- name = "librespot-discovery"
- version = "0.5.0-dev"
--source = "git+https://github.com/librespot-org/librespot.git?rev=4d402e690c67457ca2d462670db39330bbceb4cf#4d402e690c67457ca2d462670db39330bbceb4cf"
-+source = "git+https://github.com/librespot-org/librespot.git?rev=f5a46c61d2a1a96120516cee26cd7e4b95c20f50#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
- dependencies = [
-  "aes",
-  "base64 0.21.2",
-@@ -1731,7 +1731,7 @@ dependencies = [
- [[package]]
- name = "librespot-metadata"
- version = "0.5.0-dev"
--source = "git+https://github.com/librespot-org/librespot.git?rev=4d402e690c67457ca2d462670db39330bbceb4cf#4d402e690c67457ca2d462670db39330bbceb4cf"
-+source = "git+https://github.com/librespot-org/librespot.git?rev=f5a46c61d2a1a96120516cee26cd7e4b95c20f50#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
- dependencies = [
-  "async-trait",
-  "byteorder",
-@@ -1749,7 +1749,7 @@ dependencies = [
- [[package]]
- name = "librespot-playback"
- version = "0.5.0-dev"
--source = "git+https://github.com/librespot-org/librespot.git?rev=4d402e690c67457ca2d462670db39330bbceb4cf#4d402e690c67457ca2d462670db39330bbceb4cf"
-+source = "git+https://github.com/librespot-org/librespot.git?rev=f5a46c61d2a1a96120516cee26cd7e4b95c20f50#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
- dependencies = [
-  "byteorder",
-  "cpal",
-@@ -1772,7 +1772,7 @@ dependencies = [
- [[package]]
- name = "librespot-protocol"
- version = "0.5.0-dev"
--source = "git+https://github.com/librespot-org/librespot.git?rev=4d402e690c67457ca2d462670db39330bbceb4cf#4d402e690c67457ca2d462670db39330bbceb4cf"
-+source = "git+https://github.com/librespot-org/librespot.git?rev=f5a46c61d2a1a96120516cee26cd7e4b95c20f50#f5a46c61d2a1a96120516cee26cd7e4b95c20f50"
- dependencies = [
-  "protobuf",
-  "protobuf-codegen",
+diff --git a/Cargo.toml b/Cargo.toml
+index 40ca2c1..734a3fb 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -29,7 +29,7 @@ reqwest = "0.11"
+ colored = "2"
+ lame = "0.1"
+ aspotify = "0.7.1"
+-librespot = { git = "ssh://git@github.com/oSumAtrIX/free-librespot.git" }
++librespot = "0.4.2"
+ async-std = { version = "1.12", features = ["attributes", "tokio1"] }
+ serde_json = "1.0"
+ async-stream = "0.3"
+
