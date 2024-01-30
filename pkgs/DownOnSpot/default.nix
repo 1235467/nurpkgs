@@ -23,6 +23,7 @@ rustPlatform.buildRustPackage {
     rev = version;
     inherit sha256;
   };
+  patches = [ ./hash.patch ];
 
   cargoLock = {
     lockFile = ./Cargo.lock;
