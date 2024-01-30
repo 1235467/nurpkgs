@@ -4,6 +4,7 @@
 , ffmpeg
 , pkg-config
 , openssl
+, openssh
 , alsa-lib
 , lame
 , ...
@@ -49,6 +50,7 @@ rustPlatform.buildRustPackage {
     openssl
     alsa-lib
     lame
+    openssh
   ];
 
   meta = with lib; {
