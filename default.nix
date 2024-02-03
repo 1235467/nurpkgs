@@ -21,7 +21,7 @@ rec {
   Anime4k-rs = pkgs.callPackage ./pkgs/Anime4k-rs { };
   onedrive-fuse = pkgs.callPackage ./pkgs/onedrive-fuse { };
   jjwxcCrawler = pkgs.callPackage ./pkgs/jjwxcCrawler { };
-  DownOnSpot = pkgs.callPackage ./pkgs/DownOnSpot { };
+  #DownOnSpot = pkgs.callPackage ./pkgs/DownOnSpot { };
   reflac = pkgs.callPackage ./pkgs/reflac { };
   idntag = pkgs.callPackage ./pkgs/idntag { };
   ncmdump-rs = pkgs.callPackage ./pkgs/ncmdump.rs { };
