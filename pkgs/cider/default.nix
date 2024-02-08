@@ -7,12 +7,12 @@
 #in
 appimageTools.wrapType2 rec {
   pname = "cider";
-  version = "2.3.0-RC15";
+  version = "2.3.0-RC20";
   name = "${pname}";
 
   src = fetchurl {
     url = "https://cider.m5y6.c17.e2-5.dev/Cider-${version}.AppImage";
-    sha256 = "sha256-oVyFwyCbESaoY4KBKQ0M3DoBaMA8SY62HGJJ+L276Lc=";
+    sha256 = "";
   };
 
   extraInstallCommands =
