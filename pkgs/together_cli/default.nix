@@ -2,7 +2,7 @@
 with python3Packages;
 buildPythonApplication rec {
   pname = "together-cli";
-  version = "681b36ce4812714449dfbf3d2f5004a2f0615240";
+  version = "55a33ecf15073362ad37060542c229ac4886bb27";
   propagatedBuildInputs = [
   ];
   doCheck = false;
