@@ -6,6 +6,10 @@ buildPythonApplication rec {
   propagatedBuildInputs = [
   typer
   loguru
+  requests
+  rich
+  huggingface-hub
+  pynvml
   ];
   doCheck = false;
 
