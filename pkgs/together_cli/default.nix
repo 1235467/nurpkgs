@@ -11,6 +11,6 @@ buildPythonApplication rec {
     owner = "togethercomputer";
     repo = pname;
     rev = version;
-    sha256 = "";
+    sha256 = "sha256-Iofhk4/U36xy8oddRw24fwFNIC5LrhaBryA9ByUtqno=";
   };
 }
