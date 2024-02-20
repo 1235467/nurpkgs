@@ -11,7 +11,7 @@ buildGoModule rec {
     sha256 = "sha256-lKLaTzaO/PplB+GpNicaqLcHhPVceSdRmvmdWYlLGc4=";
   };
 
-  vendorHash = "";
+  vendorHash = "sha256-3CjYLzLL4q/qCGxkqhSOCjQhe9RqSpmH5d7K3p257Tw=";
   doCheck = false;
   meta = with lib; {
     description = "🐉 Simple WireGuard proxy with minimal overhead for WireGuard traffic";
