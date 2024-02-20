@@ -1,6 +1,6 @@
 {
   description = "My personal NUR repository";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable/a4d4fe8c5002202493e87ec8dbc91335ff55552c";
   inputs.nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
   outputs = { self, nixpkgs, nixpkgs-stable }:
     let
