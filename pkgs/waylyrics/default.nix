@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage rec
   cargoLock.lockFile = ./Cargo.lock;
   cargoLock.outputHashes = {
     "ncmapi-0.1.13" = "sha256-wh9RsyuS1L7rnz1jh2A27s6wUvyH8cNgUywPORIimmg=";
-    "qqmusic-rs-0.1.0" = "sha256-ePUbZShvRRiurzEGm0mAetrFj0NU305t9uh4c0UthrM=";
+    "qqmusic-rs-0.1.0" = "sha256-woLsO0n+m3EBUI+PRLio7iLp0UPQSliWK0djCSZEaZc=";
   };
 
   nativeBuildInputs = [ pkg-config wrapGAppsHook4 ];
