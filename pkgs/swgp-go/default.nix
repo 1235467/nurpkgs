@@ -1,17 +1,17 @@
 { lib, fetchFromGitHub, buildGoModule }:
 
-buildGoModule {
+buildGoModule rec {
   pname = "swgp-go";
   version = "eabed5f55311abea5d57bd01d4be4381d24a4c7c";
 
   src = fetchFromGitHub {
     owner = "database64128";
     repo = "swgp-go";
-    rev = "eabed5f55311abea5d57bd01d4be4381d24a4c7c";
+    rev = version;
     sha256 = "sha256-lKLaTzaO/PplB+GpNicaqLcHhPVceSdRmvmdWYlLGc4=";
   };
 
-  vendorHash = "sha256-3CjYLzLL4q/qCGxkqhSOCjQhe9RqSpmH5d7K3p257Tw=";
+  vendorHash = "";
   doCheck = false;
   meta = with lib; {
     description = "🐉 Simple WireGuard proxy with minimal overhead for WireGuard traffic";
