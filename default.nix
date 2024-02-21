@@ -39,6 +39,10 @@ rec {
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
   pynat = pkgs.callPackage ./pkgs/pynat { };
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
+  together-cli = pkgs.callPackage ./pkgs/together_cli {};
+
+  #stolen expressions
+
   wemeet = pkgs.callPackage ./pkgs/wemeet { };
   feishu = pkgs.callPackage ./pkgs/feishu { };
   #wechat = pkgs.callPackage ./pkgs/wechat {};
