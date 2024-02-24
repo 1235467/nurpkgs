@@ -18,6 +18,9 @@
 , wayland
 , libglvnd
 , glfw
+, libXi
+, opencc
+, pystring
 }:
 let
   wrapQtAppsHook = libsForQt5.qt5.wrapQtAppsHook;
@@ -40,6 +43,7 @@ stdenv.mkDerivation rec {
     wrapQtAppsHook
     python3
     glfw
+    libXi
   ];
 
   buildInputs = [
@@ -56,17 +60,21 @@ stdenv.mkDerivation rec {
     wayland-protocols
     wayland
     libglvnd
+    libXi
+    opencc
+    pystring
   ];
 
   cmakeFlags = [
     "-DPLATFORM_DESKTOP=ON"
-    "-DUSE_SYSTEM_CURL=ON"
-    #"-DWIN32_TERMINAL=OFF"
     "-DINSTALL=ON"
+    "-DCMAKE_BUILD_TYPE=Release"
+    "-USE-SHARED-LIB=ON"
+    "-DUSE_SYSTEM_CURL=ON"
+    "-DUSE_SYSTEM_OPENCC=ON"
+    "-DUSE_SYSTEM_PYSTRING=ON"
     "-DGLFW_BUILD_WAYLAND=ON"
     "-DGLFW_BUILD_X11=ON"
-    "-DCMAKE_BUILD_TYPE=Release"
-    #"-DUSE_SDL2=${if useDsl then "ON" else "OFF"}"
   ];
 
   meta = with lib; {
