@@ -47,7 +47,7 @@ rec {
   feishu = pkgs.callPackage ./pkgs/feishu { };
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
-  #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
+  wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 

@@ -17,20 +17,21 @@
 , wayland-protocols
 , wayland
 , libglvnd
+, glfw
 }:
 let
   wrapQtAppsHook = libsForQt5.qt5.wrapQtAppsHook;
 in
 stdenv.mkDerivation rec {
   pname = "wiliwili";
-  version = "1.2.2";
+  version = "1.3.0";
 
   src = fetchFromGitHub {
     owner = "xfangfang";
     repo = "wiliwili";
     rev = "v${version}";
     fetchSubmodules = true;
-    hash = "sha256-85UJ1d7z4jRzKDRDao1ENjJjPxIi/I3P7zP2SDXNpzI=";
+    hash = "sha256-erORsg8RZbSQ43W60R+e1PrL3EPQSx1qe7RSNZ9kKbU=";
   };
 
   nativeBuildInputs = [
@@ -38,6 +39,7 @@ stdenv.mkDerivation rec {
     pkg-config
     wrapQtAppsHook
     python3
+    glfw
   ];
 
   buildInputs = [
