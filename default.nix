@@ -41,6 +41,7 @@ rec {
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
   together-cli = pkgs.callPackage ./pkgs/together_cli {};
   yuzu-early-access = pkgs.qt6Packages.callPackage ./pkgs/yuzu {};
+  qcm = pkgs.callPackage ./pkgs/qcm {};
 
   #stolen expressions
 
