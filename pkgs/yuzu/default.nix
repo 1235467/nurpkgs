@@ -42,7 +42,38 @@ let
   simpleini = pkgs.fetchzip {
     url = "https://github.com/brofield/simpleini/archive/refs/tags/v4.22.tar.gz";
     #sha256 = "sha256-93kuyp8/ew7okW/6ThJMtLMZsR1YSeFcXu9Y65ELBFE==";
-    sha256 = "sha256-2nEgbrLlvpO4V73IDne8aU6SbTOwIgAUttVFmsm0cUQ=";
+    sha256 = "sha256-H4J4+v/3A8ZTOp4iMeiZ0OClu68oP4vUZ8YOFZbllcM=";
+  };
+  vma = pkgs.fetchFromGitHub {
+    owner = "GPUOpen-LibrariesAndSDKs";
+    repo = "VulkanMemoryAllocator";
+    # Needs to be a revision with 3d23bb07e375ecabad0ad2e53599861be77310e3
+    rev = "2f382df218d7e8516dee3b3caccb819a62b571a2";
+    hash = "sha256-Tw7C2xRYs2Ok02zAXSygs5un7JAPeYPZse6u+bck+pg=";
+  };
+  xbyak = pkgs.fetchFromGitHub {
+    owner = "herumi";
+    repo = "xbyak";
+    rev = "a1ac3750f9a639b5a6c6d6c7da4259b8d6790989";
+    hash = "sha256-lRFiYlEW8wCot4Ks0xATJAfqrkhJPKG7OKUqI/SYg3Y=";
+  };
+  dynarmic = pkgs.fetchFromGitHub {
+    owner = "yuzu-mirror";
+    repo = "dynarmic";
+    rev = "8a1179036305a8899de29b7097dcdd35d6ccc248";
+    hash = "sha256-svRejE1LHwHw/A+tD06Cs0K8MTcWuoZQFbUGtltYq7k=";
+  };
+  sirit = pkgs.fetchFromGitHub {
+    owner = "yuzu-mirror";
+    repo = "sirit";
+    rev = "4ab79a8c023aa63caaa93848b09b9fe8b183b1a9";
+    hash = "sha256-7qs3TtB51L54NkiYnULrUwt4QLct0RJlZXqygbmqVn0=";
+  };
+  SPIRV-Headers = pkgs.fetchFromGitHub {
+    owner = "KhronosGroup";
+    repo = "SPIRV-Headers";
+    rev = "8b246ff75c6615ba4532fe4fde20f1be090c3764";
+    hash = "sha256-kyOAwe4R0FmeA9IIJF2eoZR+7g9LiGKaZ7FuIfkrXJ4=";
   };
 in
 stdenv.mkDerivation rec {
@@ -160,8 +191,18 @@ stdenv.mkDerivation rec {
     # provide pre-downloaded tz data
     mkdir -p build/externals/nx_tzdb
     ln -s ${nx_tzdb} build/externals/nx_tzdb/nx_tzdb
-    mkdir externals/simpleini
     ln -s ${simpleini} externals/simpleini
+    ln -s ${vma} externals/VulkanMemoryAllocator
+    ln -s ${pkgs.vulkan-utility-libraries.src} externals/Vulkan-Utility-Libraries
+    rm -rf externals/dynarmic
+    rm -rf externals/sirit
+    rm -rf externals/xbyak
+    ln -s ${dynarmic} externals/dynarmic
+    cp -r ${sirit} externals/sirit
+    chmod -R 777 externals
+    rm -rf externals/sirit/externals/SPIRV-Headers
+    cp -r ${SPIRV-Headers} externals/sirit/externals/SPIRV-Headers
+    ln -s ${xbyak} externals/xbyak
   '';
 
   # This must be done after cmake finishes as it overwrites the file
