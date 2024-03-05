@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     owner = "pineappleEA";
     repo = "pineapple-src";
     rev = "55bf3dbf5ddaa3f7c1c3efade5553b07499fe289";
-    hash = "";
+    hash = "sha256-1J9xC4xi8oU9M1we7uTJv0HHkxWU5HSTEmaUfMEeoDE=";
     fetchSubmodules = true;
   };
 
