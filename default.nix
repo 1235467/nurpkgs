@@ -8,6 +8,7 @@
 
 { pkgs ? import <nixpkgs> { }
 , pkgs-stable ? import <nixpkgs> { }
+, pkgs-freeze ? import <nixpkgs> { }
 }:
 
 rec {
@@ -47,12 +48,14 @@ rec {
   feishu = pkgs.callPackage ./pkgs/feishu { };
   #wechat = pkgs.callPackage ./pkgs/wechat {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
-  #wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
+  wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 
   #garnix built pkgs from nixpkgs
   mongodb = pkgs-stable.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
+  yuzu = pkgs-freeze.yuzu;
+  yuzu-early-access = pkgs-freeze.yuzu-early-access;
   #quartus-prime-lite = pkgs.quartus-prime-lite;
 }
