@@ -8,7 +8,6 @@
 
 { pkgs ? import <nixpkgs> { }
 , pkgs-stable ? import <nixpkgs> { }
-, pkgs-freeze ? import <nixpkgs> { }
 }:
 
 rec {
@@ -41,6 +40,7 @@ rec {
   pynat = pkgs.callPackage ./pkgs/pynat { };
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
   together-cli = pkgs.callPackage ./pkgs/together_cli {};
+  yuzu-early-access = pkgs.qt6Packages.callPackage ./pkgs/yuzu {};
 
   #stolen expressions
 
@@ -55,7 +55,5 @@ rec {
   #garnix built pkgs from nixpkgs
   mongodb = pkgs-stable.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
-  yuzu = pkgs-freeze.yuzu;
-  yuzu-early-access = pkgs-freeze.yuzu-early-access;
   #quartus-prime-lite = pkgs.quartus-prime-lite;
 }

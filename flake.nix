@@ -3,7 +3,6 @@
   #inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/b8697e57f10292a6165a20f03d2f42920dfaf973";
   inputs.nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
-  inputs.nixpkgs-freeze.url = "github:NixOS/nixpkgs/9099616b93301d5cf84274b184a3a5ec69e94e08";
   outputs = { self, nixpkgs, nixpkgs-stable, ... }:
     let
       systems = [
