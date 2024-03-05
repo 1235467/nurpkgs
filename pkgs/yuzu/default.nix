@@ -39,6 +39,11 @@
 let
   nx_tzdb = pkgs.callPackage ../dependency/yuzu/nx_tzdb.nix { };
   compat-list = pkgs.callPackage ../dependency/yuzu/compat-list.nix { };
+  simpleini = pkgs.fetchzip {
+    url = "https://github.com/brofield/simpleini/archive/refs/tags/v4.22.tar.gz";
+    #sha256 = "sha256-93kuyp8/ew7okW/6ThJMtLMZsR1YSeFcXu9Y65ELBFE==";
+    sha256 = "sha256-2nEgbrLlvpO4V73IDne8aU6SbTOwIgAUttVFmsm0cUQ=";
+  };
 in
 stdenv.mkDerivation rec {
   pname = "yuzu-early-access";
@@ -155,6 +160,8 @@ stdenv.mkDerivation rec {
     # provide pre-downloaded tz data
     mkdir -p build/externals/nx_tzdb
     ln -s ${nx_tzdb} build/externals/nx_tzdb/nx_tzdb
+    mkdir externals/simpleini
+    ln -s ${simpleini} externals/simpleini
   '';
 
   # This must be done after cmake finishes as it overwrites the file
