@@ -40,7 +40,7 @@ rec {
   pynat = pkgs.callPackage ./pkgs/pynat { };
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
   together-cli = pkgs.callPackage ./pkgs/together_cli {};
-  #yuzu-early-access = pkgs.callPackage ./pkgs/yuzu {};
+  yuzu-early-access = pkgs.qt6.callPackage ./pkgs/yuzu {};
   qcm = pkgs.callPackage ./pkgs/qcm {};
 
   #stolen expressions

@@ -1,117 +1,169 @@
-{ final, gitOverride, prev, ... }:
-
-# yuzu doesn't seem to recognize our mbedtls_2
+{ lib
+, stdenv
+, fetchFromGitHub
+, nix-update-script
+, wrapQtAppsHook
+, autoconf
+, boost
+, catch2_3
+, cmake
+#, compat-list
+, cpp-jwt
+, cubeb
+, discord-rpc
+, enet
+, fmt
+, glslang
+, libopus
+, libusb1
+, libva
+, lz4
+, nlohmann_json
+, nv-codec-headers-12
+#, nx_tzdb
+, pkg-config
+, qtbase
+, qtmultimedia
+, qttools
+, qtwayland
+, qtwebengine
+, SDL2
+, vulkan-headers
+, vulkan-loader
+, yasm
+, zlib
+, zstd
+, pkgs
+, ...
+}:
 let
-  dynarmic = final.fetchFromGitHub {
-    owner = "merryhime";
-    repo = "dynarmic";
-    rev = "ca0e264f4f962e29baa23a3282ce484625866b98";
-    hash = "sha256-C5qby4uU1aaJNi1H4tgRjwSEDjMDQlVlRx//G+tgnto=";
-  };
-  simpleini = final.fetchFromGitHub {
-    owner = "brofield";
-    repo = "simpleini";
-    rev = "v4.22";
-    hash = "sha256-H4J4+v/3A8ZTOp4iMeiZ0OClu68oP4vUZ8YOFZbllcM=";
-  };
-  sirit = final.fetchFromGitHub {
-    owner = "yuzu-emu";
-    repo = "sirit";
-    rev = "ab75463999f4f3291976b079d42d52ee91eebf3f";
-    hash = "sha256-XzuxuLDYUQFD8SZT6c8CWHNE3mX16OrlvLnhvQ301Hw=";
-  };
-  xbyak = final.fetchFromGitHub {
-    owner = "herumi";
-    repo = "xbyak";
-    rev = "a1ac3750f9a639b5a6c6d6c7da4259b8d6790989";
-    hash = "sha256-lRFiYlEW8wCot4Ks0xATJAfqrkhJPKG7OKUqI/SYg3Y=";
-  };
-  tzdataVer = "221202";
-  tzdata = final.fetchzip {
-    url = "https://github.com/lat9nq/tzdb_to_nx/releases/download/${tzdataVer}/${tzdataVer}.zip";
-    hash = "sha256-YOIElcKTiclem05trZsA3YJReozu/ex7jJAKD6nAMwc=";
-    stripRoot = false;
-  };
-  vma = final.fetchFromGitHub {
-    owner = "GPUOpen-LibrariesAndSDKs";
-    repo = "VulkanMemoryAllocator";
-    # Needs to be a revision with 3d23bb07e375ecabad0ad2e53599861be77310e3
-    rev = "2f382df218d7e8516dee3b3caccb819a62b571a2";
-    hash = "sha256-Tw7C2xRYs2Ok02zAXSygs5un7JAPeYPZse6u+bck+pg=";
-  };
-  ffmpeg = final.fetchFromGitHub {
-    owner = "FFmpeg";
-    repo = "FFmpeg";
-    rev = "9c1294eaddb88cb0e044c675ccae059a85fc9c6c";
-    hash = "sha256-ryCPhFxuMKfZlPDwZWYaRBxwMSTvwsEVQG9eeq2dRTI=";
-  };
-  inherit (final.vulkanPackages_latest) glslang vulkan-headers vulkan-loader vulkan-utility-libraries spirv-headers;
+  nx_tzdb = pkgs.callPackage ../dependency/yuzu/nx_tzdb.nix { };
+  compat-list = pkgs.callPackage ../dependency/yuzu/compat-list.nix { };
 in
+stdenv.mkDerivation rec {
+  pname = "yuzu-early-access";
+  version = "4174";
 
-gitOverride (current: {
-  newInputs.mainline = final.yuzuPackages.mainline.override { inherit glslang vulkan-headers vulkan-loader; };
-
-  nyxKey = "yuzu-early-access_git";
-  prev = prev.yuzuPackages.early-access;
-
-  versionNyxPath = "pkgs/yuzu-ea-git/version.json";
-  fetcher = "fetchFromGitHub";
-  fetcherData = {
-    owner = "pineappleEA";
-    repo = "pineapple-src";
+  #src = pkgs.yuzu-early-access.src;
+  src = fetchFromGitHub {
+    owner = "yuzu-mirror";
+    repo = "yuzu";
+    rev = "34d8dd557b51677d64f9ce17b56b4d5b4c1affa1";
+    sha256 = "sha256-XTPqj1ux6xLMUodbIUjuyvFtXW+Qzwe0mfTyfN5gqaY=";
+    fetchSubmodules = true;
   };
-  withLastModified = true;
 
-  postOverride = prevAttrs: {
-    # We need to have these headers ahead, otherwise they cause an ordering issue in CMAKE_INCLUDE_PATH,
-    # where qtbase propagated input appears first.
-    nativeBuildInputs = [ vulkan-headers glslang spirv-headers final.perl ] ++ prevAttrs.nativeBuildInputs;
+  nativeBuildInputs = [
+    cmake
+    glslang
+    pkg-config
+    qttools
+    wrapQtAppsHook
+  ];
 
-    cmakeFlags = prevAttrs.cmakeFlags ++ [
-      "-DSIRIT_USE_SYSTEM_SPIRV_HEADERS=ON"
-    ];
+  buildInputs = [
+    # vulkan-headers must come first, so the older propagated versions
+    # don't get picked up by accident
+    vulkan-headers
 
-    postPatch = (prevAttrs.postPatch or "") + ''
-      rm -r externals/{cpp-httplib,dynarmic,mbedtls,sirit,xbyak,ffmpeg/ffmpeg}
-      cp --no-preserve=mode -r ${final.mbedtls_2.src} externals/mbedtls
-      ln -s ${final.httplib.src} externals/cpp-httplib
-      ln -s ${dynarmic} externals/dynarmic
-      ln -s ${sirit} externals/sirit
-      ln -s ${xbyak} externals/xbyak
-      ln -s ${vma} externals/VulkanMemoryAllocator
-      ln -s ${vulkan-utility-libraries.src} externals/Vulkan-Utility-Libraries
-      ln -s ${simpleini} externals/simpleini
-      ln -s ${ffmpeg} externals/ffmpeg/ffmpeg
-    '';
+    boost
+    catch2_3
+    cpp-jwt
+    cubeb
+    discord-rpc
+    # intentionally omitted: dynarmic - prefer vendored version for compatibility
+    enet
 
-    preConfigure = ''
-      pushd externals/mbedtls
-      perl scripts/config.pl set MBEDTLS_THREADING_C
-      perl scripts/config.pl set MBEDTLS_THREADING_PTHREAD
-      perl scripts/config.pl set MBEDTLS_CMAC_C
-      popd
+    # vendored ffmpeg deps
+    autoconf
+    yasm
+    libva  # for accelerated video decode on non-nvidia
+    nv-codec-headers-12  # for accelerated video decode on nvidia
+    # end vendored ffmpeg deps
 
-      _ver=$(grep -Po '(?<=for early-access )([^.]*)' "${prevAttrs.src}/README.md")
+    fmt
+    # intentionally omitted: gamemode - loaded dynamically at runtime
+    # intentionally omitted: httplib - upstream requires an older version than what we have
+    libopus
+    libusb1
+    # intentionally omitted: LLVM - heavy, only used for stack traces in the debugger
+    lz4
+    nlohmann_json
+    qtbase
+    qtmultimedia
+    qtwayland
+    qtwebengine
+    # intentionally omitted: renderdoc - heavy, developer only
+    SDL2
+    # not packaged in nixpkgs: simpleini
+    # intentionally omitted: stb - header only libraries, vendor uses git snapshot
+    # not packaged in nixpkgs: vulkan-memory-allocator
+    # intentionally omitted: xbyak - prefer vendored version for compatibility
+    zlib
+    zstd
+  ];
 
-      # See https://github.com/NixOS/nixpkgs/issues/114044, setting this through cmakeFlags does not work.
-      # These will fix version "formatting"
-      cmakeFlagsArray+=(
-        "-DTITLE_BAR_FORMAT_IDLE=yuzu Early Access EA-$_ver"
-        "-DTITLE_BAR_FORMAT_RUNNING=yuzu Early Access EA-$_ver | {3}"
-      )
+  # This changes `ir/opt` to `ir/var/empty` in `externals/dynarmic/src/dynarmic/CMakeLists.txt`
+  # making the build fail, as that path does not exist
+  dontFixCmake = true;
 
-      cmakeBuildDir=''${cmakeBuildDir:=build}
-   
-      mkdir -p "$cmakeBuildDir/externals/nx_tzdb"
-      ln -s ${tzdata} "$cmakeBuildDir/externals/nx_tzdb/nx_tzdb"
-    '';
+  cmakeFlags = [
+    # actually has a noticeable performance impact
+    "-DYUZU_ENABLE_LTO=ON"
 
-    env = prevAttrs.env // {
-      # Shows released date in version
-      SOURCE_DATE_EPOCH = current.lastModified;
-    };
+    # build with qt6
+    "-DENABLE_QT6=ON"
+    "-DENABLE_QT_TRANSLATION=ON"
 
-    # Right now crypto tests don't pass
-    doCheck = false;
-  };
-})
+    # use system libraries
+    # NB: "external" here means "from the externals/ directory in the source",
+    # so "off" means "use system"
+    "-DYUZU_USE_EXTERNAL_SDL2=OFF"
+    "-DYUZU_USE_EXTERNAL_VULKAN_HEADERS=OFF"
+
+    # don't use system ffmpeg, yuzu uses internal APIs
+    "-DYUZU_USE_BUNDLED_FFMPEG=ON"
+
+    # don't check for missing submodules
+    "-DYUZU_CHECK_SUBMODULES=OFF"
+
+    # enable some optional features
+    "-DYUZU_USE_QT_WEB_ENGINE=ON"
+    "-DYUZU_USE_QT_MULTIMEDIA=ON"
+    "-DUSE_DISCORD_PRESENCE=ON"
+
+    # We dont want to bother upstream with potentially outdated compat reports
+    "-DYUZU_ENABLE_COMPATIBILITY_REPORTING=OFF"
+    "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF" # We provide this deterministically
+  ];
+
+  # Does some handrolled SIMD
+  env.NIX_CFLAGS_COMPILE = lib.optionalString stdenv.hostPlatform.isx86_64 "-msse4.1";
+
+  # Fixes vulkan detection.
+  # FIXME: patchelf --add-rpath corrupts the binary for some reason, investigate
+  qtWrapperArgs = [
+    "--prefix LD_LIBRARY_PATH : ${vulkan-loader}/lib"
+  ];
+
+  preConfigure = ''
+    # see https://github.com/NixOS/nixpkgs/issues/114044, setting this through cmakeFlags does not work.
+    cmakeFlagsArray+=(
+      "-DTITLE_BAR_FORMAT_IDLE=${pname} | ${version} (nixpkgs) {}"
+      "-DTITLE_BAR_FORMAT_RUNNING=${pname} | ${version} (nixpkgs) | {}"
+    )
+
+    # provide pre-downloaded tz data
+    mkdir -p build/externals/nx_tzdb
+    ln -s ${nx_tzdb} build/externals/nx_tzdb/nx_tzdb
+  '';
+
+  # This must be done after cmake finishes as it overwrites the file
+  postConfigure = ''
+    ln -sf ${compat-list} ./dist/compatibility_list/compatibility_list.json
+  '';
+
+  postInstall = ''
+    install -Dm444 $src/dist/72-yuzu-input.rules $out/lib/udev/rules.d/72-yuzu-input.rules
+  '';
+}
