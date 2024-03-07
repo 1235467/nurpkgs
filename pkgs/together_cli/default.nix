@@ -3,10 +3,10 @@ let
   poetry2nix-src = pkgs.fetchFromGitHub {
     owner = "nix-community";
     repo = "poetry2nix";
-    rev = "e0b44e9e2d3aa855d1dd77b06f067cd0e0c3860d";
+    rev = "3c92540611f42d3fb2d0d084a6c694cd6544b609";
     # To get sha256, run
     # nix-prefetch-url --unpack https://github.com/nix-community/poetry2nix/archive/<rev>.tar.gz
-    sha256 = "0zz3qzp2b5i9gw4yfxfrq07iadcdadackph12h02w19bb3535rm6";
+    sha256 = "1jfrangw0xb5b8sdkimc550p3m98zhpb1fayahnr7crg74as4qyq";
   };
   poetry2nix = pkgs.callPackage poetry2nix-src { };
 in
@@ -18,6 +18,23 @@ poetry2nix.mkPoetryApplication rec{
   #       inherit pname version;
   #       sha256 = "sha256-kGrmJrDsSffqkNVmD7TChmSh9VcZ+ZjoaNA19BcxbiQ=";
   #     };
+  buildInputs = [
+  pkgs.poetry
+  pkgs.python3Packages.dulwich
+  pkgs.python3Packages.crashtest
+  pkgs.python3Packages.pkginfo
+  pkgs.python3Packages.keyring
+  pkgs.python3Packages.shellingham
+  pkgs.python3Packages.fastjsonschema
+  pkgs.python3Packages.pexpect
+  pkgs.python3Packages.tomlkit
+  pkgs.python3Packages.trove-classifiers
+  pkgs.python3Packages.cleo
+  pkgs.python3Packages.virtualenv
+  pkgs.python3Packages.cachecontrol
+  pkgs.python3Packages.requests-toolbelt
+  pkgs.poetryPlugins.poetry-plugin-export
+  ];
   python = pkgs.python311;
   poetrylock = ././poetry.lock;
   projectDir = pkgs.fetchzip rec{
