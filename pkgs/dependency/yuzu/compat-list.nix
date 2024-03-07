@@ -14,5 +14,5 @@ stdenv.mkDerivation {
     cp $src/compatibility_list.json $out
   '';
 
-  passthru.updateScript = unstableGitUpdater {};
+  passthru.updateScript = unstableGitUpdater { };
 }

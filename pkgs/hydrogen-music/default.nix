@@ -14,8 +14,8 @@ appimageTools.wrapType2 rec {
       contents = appimageTools.extract { inherit name src; };
     in
     ''
-    cp -r ${contents}/usr/share/icons $out/share
-  '';
+      cp -r ${contents}/usr/share/icons $out/share
+    '';
 
   meta = with lib; {
     description = "Hydrogen Music";

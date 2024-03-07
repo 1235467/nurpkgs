@@ -7,7 +7,7 @@
   # Hash of the nuget package to install, will be given on first build
 , nugetSha256 ? ""
   # Additional nuget deps needed by the tool package
-, nugetDeps ? (_: [])
+, nugetDeps ? (_: [ ])
   # Executables to wrap into `$out/bin`, same as in `buildDotnetModule`, but with
   # a default of `pname` instead of null, to avoid auto-wrapping everything
 , executables ? pname

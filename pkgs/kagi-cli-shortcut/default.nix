@@ -16,11 +16,11 @@ stdenv.mkDerivation rec {
   src = ./.;
   #  owner = "timdesrochers";
   #  repo = pname;
-    # 对应的 commit 或者 tag，注意 fetchFromGitHub 不能跟随 branch！
- #   rev = version;
-    # 下载 git submodules，绝大部分软件包没有这个
+  # 对应的 commit 或者 tag，注意 fetchFromGitHub 不能跟随 branch！
+  #   rev = version;
+  # 下载 git submodules，绝大部分软件包没有这个
   #  fetchSubmodules = true;
-    # 这里的 SHA256 校验码不会算怎么办？先注释掉，然后构建这个软件包，Nix 会报错，并提示你正确的校验码
+  # 这里的 SHA256 校验码不会算怎么办？先注释掉，然后构建这个软件包，Nix 会报错，并提示你正确的校验码
   #  sha256 = "sha256-EupSMWFkrKyMb/vP9tIr1vSK3AmcK7HHVE3Y6zfAICE=";
   #});
   #preConfigure = ''
@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
   nativeBuildInputs = [ gcc curl ];
-  BuildInputs = [  ];
+  BuildInputs = [ ];
 
 
   # stdenv.mkDerivation 自动帮你完成其余的步骤

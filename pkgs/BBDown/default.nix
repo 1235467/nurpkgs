@@ -1,5 +1,5 @@
 { lib
-#, buildDotnetGlobalTool
+  #, buildDotnetGlobalTool
 , dotnetCorePackages
 , callPackage
 , ffmpeg
@@ -9,10 +9,10 @@ let
   pname = "BBDown";
   version = "1.6.1";
   nugetSha256 = "sha256-FujKRBiuvbndxPo/SF7dOQbRqLr85mYl9Kay0W+CvkU=";
-  buildDotnetGlobalTool = callPackage ../dependency/buildDotnetGlobalTool {};
+  buildDotnetGlobalTool = callPackage ../dependency/buildDotnetGlobalTool { };
 
 in
-  buildDotnetGlobalTool rec {
+buildDotnetGlobalTool rec {
   inherit pname version nugetSha256;
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
   dotnet-runtime = dotnetCorePackages.sdk_8_0;

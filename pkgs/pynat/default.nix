@@ -1,4 +1,4 @@
-{ lib, python3Packages, fetchFromGitHub  }:
+{ lib, python3Packages, fetchFromGitHub }:
 with python3Packages;
 buildPythonApplication rec {
   pname = "pynat";
@@ -14,9 +14,9 @@ buildPythonApplication rec {
     rev = version;
     sha256 = "sha256-2ig0mvePKglxz3IpBdiWsTfNJ9koODn34gHVRqbdwPk=";
   };
-#   meta = with lib; {
-#     description = "晋江文学城小说爬虫(Android API)";
-#     homepage = "https://github.com/lyc8503/jjwxcCrawler";
-#     maintainers = [ ];
-#   };
+  #   meta = with lib; {
+  #     description = "晋江文学城小说爬虫(Android API)";
+  #     homepage = "https://github.com/lyc8503/jjwxcCrawler";
+  #     maintainers = [ ];
+  #   };
 }

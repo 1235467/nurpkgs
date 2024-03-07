@@ -7,7 +7,7 @@
 , boost
 , catch2_3
 , cmake
-#, compat-list
+  #, compat-list
 , cpp-jwt
 , cubeb
 , discord-rpc
@@ -20,7 +20,7 @@
 , lz4
 , nlohmann_json
 , nv-codec-headers-12
-#, nx_tzdb
+  #, nx_tzdb
 , pkg-config
 , qtbase
 , qtmultimedia
@@ -77,8 +77,8 @@ stdenv.mkDerivation rec {
     # vendored ffmpeg deps
     autoconf
     yasm
-    libva  # for accelerated video decode on non-nvidia
-    nv-codec-headers-12  # for accelerated video decode on nvidia
+    libva # for accelerated video decode on non-nvidia
+    nv-codec-headers-12 # for accelerated video decode on nvidia
     # end vendored ffmpeg deps
 
     fmt

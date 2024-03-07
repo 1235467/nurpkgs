@@ -39,22 +39,28 @@ rec {
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
   pynat = pkgs.callPackage ./pkgs/pynat { };
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
-  together-cli = pkgs.callPackage ./pkgs/together_cli {};
-  yuzu-early-access = pkgs.qt6.callPackage ./pkgs/yuzu {};
-  qcm = pkgs.callPackage ./pkgs/qcm {};
+  together-cli = pkgs.callPackage ./pkgs/together_cli { };
+  yuzu-early-access = pkgs.qt6.callPackage ./pkgs/yuzu { };
+
+  #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
+
+  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
+  # ...s
 
   #stolen expressions
-
   wemeet = pkgs.callPackage ./pkgs/wemeet { };
   feishu = pkgs.callPackage ./pkgs/feishu { };
   #wechat = pkgs.callPackage ./pkgs/wechat {};
-  #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
-  wiliwili = pkgs.callPackage ./pkgs/wiliwili {};
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...
+
+  #override
+  qcm = pkgs.qcm.overrideAttrs (finalAttrs: previousAttrs: rec {
+    version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
+    rev = version;
+    hash = "sha256-uJwreBXSSH6uXd14e3Ln2rHvk+rrOvmUtkeRIU3sOSw=";
+  });
+
 
   #garnix built pkgs from nixpkgs
   mongodb = pkgs-stable.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
-  #quartus-prime-lite = pkgs.quartus-prime-lite;
 }
