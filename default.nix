@@ -39,7 +39,7 @@ rec {
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
   pynat = pkgs.callPackage ./pkgs/pynat { };
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
-  together-cli = pkgs.callPackage ./pkgs/together_cli { };
+  #together-cli = pkgs.callPackage ./pkgs/together_cli { };
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs/yuzu { };
 
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
