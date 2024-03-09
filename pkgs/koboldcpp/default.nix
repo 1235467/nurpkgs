@@ -26,11 +26,11 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-KEzxxRWUnEwK5ObNEFKEzEa6go1BRfFWP81v4BD0ssg=";
     fetchSubmodules = true;
   };
-  bin = writeShellApplication {
-  name = "koboldcpp";
+  koboldcpp-7B = writeShellApplication {
+  name = "koboldcpp-7B";
   runtimeInputs = [ openblas clblast ocl-icd python3 ];
   text = ''
-    python koboldcpp.py --useclblast 0 0
+    koboldcpp --useclblast 0 0 --gpulayers 33
   '';
   };
   preConfigure = ''
@@ -45,8 +45,8 @@ stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/bin/
     cp -r *.so $out/bin/
-    cp $src/koboldcpp.py $out/bin/
-    cp $bin/bin/koboldcpp $out/bin/
+    cp $src/koboldcpp.py $out/bin/koboldcpp
+    cp $koboldcpp-7B/bin/koboldcpp-7B $out/bin/
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
   nativeBuildInputs = [ pkg-config openblas clblast ocl-icd ];
