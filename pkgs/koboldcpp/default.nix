@@ -9,6 +9,7 @@
 , clblast
 , ocl-icd
 , writeShellApplication
+, wrapProgram
 , ...
 } @ args:
 
