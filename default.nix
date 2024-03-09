@@ -46,6 +46,7 @@ rec {
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...s
+  qcm = pkgs.qt6.callPackage ./pkgs/qcm {};
 
   #stolen expressions
   wemeet = pkgs.callPackage ./pkgs/wemeet { };
@@ -53,16 +54,16 @@ rec {
   #wechat = pkgs.callPackage ./pkgs/wechat {};
 
   #override
-  qcm = pkgs.qcm.overrideAttrs (finalAttrs: previousAttrs: rec {
-    version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
-    src = pkgs.fetchFromGitHub {
-      rev = version;
-      owner = "hypengw";
-      repo = "Qcm";
-      fetchSubmodules = true;
-      hash = "sha256-uJwreBXSSH6uXd14e3Ln2rHvk+rrOvmUtkeRIU3sOSw=";
-    };
-  });
+#   qcm = pkgs.qcm.overrideAttrs (finalAttrs: previousAttrs: rec {
+#     version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
+#     src = pkgs.fetchFromGitHub {
+#       rev = version;
+#       owner = "hypengw";
+#       repo = "Qcm";
+#       fetchSubmodules = true;
+#       hash = "sha256-uJwreBXSSH6uXd14e3Ln2rHvk+rrOvmUtkeRIU3sOSw=";
+#     };
+#   });
 
 
   #garnix built pkgs from nixpkgs
