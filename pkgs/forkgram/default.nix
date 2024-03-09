@@ -15,7 +15,7 @@ in
         repo = "tdesktop";
         rev = "v${version}";
         fetchSubmodules = true;
-        hash = "";
+        hash = "sha256-sXcdCt5Xo8EbfZOJJxoZXk2zx49atY5flPcpO+AflSg=";
       };
       postInstall = ''
         # taken from https://aur.archlinux.org/packages/forkgram
