@@ -8,8 +8,10 @@
 , openblas
 , clblast
 , ocl-icd
+, writeShellApplication
 , ...
 } @ args:
+
 
 stdenv.mkDerivation rec {
   # 指定包名和版本
@@ -24,9 +26,16 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-KEzxxRWUnEwK5ObNEFKEzEa6go1BRfFWP81v4BD0ssg=";
     fetchSubmodules = true;
   };
+  bin = writeShellApplication {
+  name = "koboldcpp";
+  runtimeInputs = [ openblas clblast ocl-icd python3 ];
+  text = ''
+    python $out/bin/koboldcpp.py --useclblast 0 0
+  '';
+  };
   preConfigure = ''
   '';
-  enableParallelBuilding = false;
+  #enableParallelBuilding = false;
   # 如果基于 CMake 的软件包在打包时出现了奇怪的错误，可以尝试启用此选项
   # 此选项禁用了对 CMake 软件包的一些自动修正
   dontFixCmake = true;
@@ -35,10 +44,11 @@ stdenv.mkDerivation rec {
   '';
   installPhase = ''
     mkdir -p $out/bin/
-    cp -r * $out/bin/
+    cp -r *.so $out/bin/
     cp $src/koboldcpp.py $out/bin/
+    cp $bin/koboldcpp $out/bin/
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
-  nativeBuildInputs = [ pkg-config openblas clblast ocl-icd];
-  BuildInputs = [ python3 cmake  ];
+  nativeBuildInputs = [ pkg-config openblas clblast ocl-icd ];
+  BuildInputs = [ python3 cmake];
 }
