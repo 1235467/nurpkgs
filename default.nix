@@ -41,7 +41,7 @@ rec {
   pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
   together-cli = pkgs.callPackage ./pkgs/together_cli { };
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs/yuzu { };
-
+  koboldcpp = pkgs.callPackage ./pkgs/koboldcpp {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...s
