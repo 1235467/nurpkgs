@@ -191,7 +191,7 @@ stdenv.mkDerivation rec {
     "-DDESKTOP_APP_DISABLE_AUTOUPDATE=ON"
     "-DCMAKE_VERBOSE_MAKEFILE=ON"
     "-DTDESKTOP_API_TEST=ON"
-    ];
+  ];
 
   preBuild = ''
     # for cppgir to locate gir files

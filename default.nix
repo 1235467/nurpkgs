@@ -54,17 +54,6 @@ rec {
   #wechat = pkgs.callPackage ./pkgs/wechat {};
 
   #override
-#   qcm = pkgs.qcm.overrideAttrs (finalAttrs: previousAttrs: rec {
-#     version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
-#     src = pkgs.fetchFromGitHub {
-#       rev = version;
-#       owner = "hypengw";
-#       repo = "Qcm";
-#       fetchSubmodules = true;
-#       hash = "sha256-uJwreBXSSH6uXd14e3Ln2rHvk+rrOvmUtkeRIU3sOSw=";
-#     };
-#   });
-
 
   #garnix built pkgs from nixpkgs
   mongodb = pkgs-stable.mongodb;
