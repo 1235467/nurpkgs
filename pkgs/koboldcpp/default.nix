@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     cp $src/koboldcpp.py $out/bin/
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
-  nativeBuildInputs = [ pkg-config openblas];
-  BuildInputs = [ python3 openblas cmake clblast ocl-icd ];
+  nativeBuildInputs = [ pkg-config openblas clblast ocl-icd];
+  BuildInputs = [ python3 cmake  ];
 }
