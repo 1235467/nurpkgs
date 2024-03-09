@@ -9,7 +9,7 @@
 , clblast
 , ocl-icd
 , writeShellApplication
-, wrapProgram
+, makeWrapper
 , ...
 } @ args:
 
@@ -27,13 +27,13 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-KEzxxRWUnEwK5ObNEFKEzEa6go1BRfFWP81v4BD0ssg=";
     fetchSubmodules = true;
   };
-  koboldcpp7B = writeShellApplication {
-    name = "koboldcpp-7B";
-    runtimeInputs = [ openblas clblast ocl-icd python3 ];
-    text = ''
-      koboldcpp --useclblast 0 0 --gpulayers 33
-    '';
-  };
+#   koboldcpp7B = writeShellApplication {
+#     name = "koboldcpp-7B";
+#     runtimeInputs = [ openblas clblast ocl-icd python3 ];
+#     text = ''
+#       koboldcpp --useclblast 0 0 --gpulayers 33
+#     '';
+#   };
   preConfigure = ''
   '';
   #enableParallelBuilding = false;
@@ -48,13 +48,9 @@ stdenv.mkDerivation rec {
     cp -r *.so $out/bin/
     cp $src/koboldcpp.py $out/bin/koboldcpp
     chmod +x $out/bin/koboldcpp
-    cp $koboldcpp7B/bin/koboldcpp-7B $out/bin/
-  '';
-  postFixup = ''
-    wrapProgram "$out/bin/koboldcpp" \
-      --prefix PYTHONPATH : "$PYTHONPATH"
+    wrapProgram $out/bin/koboldcpp --prefix PATH : ${lib.makeBinPath [python3 openblas clblast ocl-icd]}
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
-  nativeBuildInputs = [ pkg-config openblas clblast ocl-icd ];
-  BuildInputs = [ python3 cmake ];
+  nativeBuildInputs = [ pkg-config openblas clblast ocl-icd makeWrapper];
+  BuildInputs = [ python3 cmake];
 }
