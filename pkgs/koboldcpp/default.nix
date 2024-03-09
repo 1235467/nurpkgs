@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-KEzxxRWUnEwK5ObNEFKEzEa6go1BRfFWP81v4BD0ssg=";
     fetchSubmodules = true;
   };
-  koboldcpp-7B = writeShellApplication {
+  koboldcpp7B = writeShellApplication {
   name = "koboldcpp-7B";
   runtimeInputs = [ openblas clblast ocl-icd python3 ];
   text = ''
@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     mkdir -p $out/bin/
     cp -r *.so $out/bin/
     cp $src/koboldcpp.py $out/bin/koboldcpp
-    cp $koboldcpp-7B/bin/koboldcpp-7B $out/bin/
+    cp $koboldcpp7B/bin/koboldcpp-7B $out/bin/
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
   nativeBuildInputs = [ pkg-config openblas clblast ocl-icd ];
