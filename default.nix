@@ -42,6 +42,7 @@ rec {
   together-cli = pkgs.callPackage ./pkgs/together_cli { };
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs/yuzu { };
   koboldcpp = pkgs.callPackage ./pkgs/koboldcpp {};
+  forkgram = pkgs.qt6.callPackage ./pkgs/forkgram {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...s
