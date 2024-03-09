@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
   name = "koboldcpp";
   runtimeInputs = [ openblas clblast ocl-icd python3 ];
   text = ''
-    python $out/bin/koboldcpp.py --useclblast 0 0
+    python koboldcpp.py --useclblast 0 0
   '';
   };
   preConfigure = ''
