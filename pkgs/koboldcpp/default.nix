@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
   # 此选项禁用了对 CMake 软件包的一些自动修正
   dontFixCmake = true;
   buildPhase = ''
-    make LLAMA_OPENBLAS=1 LLAMA_CLBLAST=1
+    make LLAMA_OPENBLAS=1 LLAMA_CLBLAST=1 LLAMA_VULKAN=1
   '';
   installPhase = ''
     mkdir -p $out/bin/
