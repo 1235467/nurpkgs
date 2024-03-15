@@ -27,7 +27,6 @@ buildDotnetGlobalTool rec {
     ln -s /home/hakutaku/.config/BBDown/BBDown.data $out/lib/BBDown/
     wrapProgram $out/bin/BBDown --prefix PATH : ${lib.makeBinPath [ffmpeg]}
   '';
-  '';
 
   meta = with lib; {
     description = "Bilibili Downloader";
