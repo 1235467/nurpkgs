@@ -47,6 +47,7 @@ rec {
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...s
   qcm = pkgs.qt6.callPackage ./pkgs/qcm {};
+  #yumekey = pkgs.callPackage ./pkgs/yumekey {};
 
   #stolen expressions
   wemeet = pkgs.callPackage ./pkgs/wemeet { };

@@ -3,6 +3,7 @@
 , dotnetCorePackages
 , callPackage
 , ffmpeg
+, makeWrapper
 , ...
 }:
 let
@@ -16,7 +17,7 @@ buildDotnetGlobalTool rec {
   inherit pname version nugetSha256;
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
   dotnet-runtime = dotnetCorePackages.sdk_8_0;
-  nativeBuildInputs = [
+  nativeBuildInputs = [ makeWrapper
   ];
   buildInputs = [
     ffmpeg
@@ -24,6 +25,8 @@ buildDotnetGlobalTool rec {
   postInstall = ''
     mkdir -p $out/lib/BBDown/
     ln -s /home/hakutaku/.config/BBDown/BBDown.data $out/lib/BBDown/
+    wrapProgram $out/bin/BBDown --prefix PATH : ${lib.makeBinPath [ffmpeg]}
+  '';
   '';
 
   meta = with lib; {
