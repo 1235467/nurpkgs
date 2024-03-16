@@ -10,6 +10,9 @@
 , ocl-icd
 , writeShellApplication
 , makeWrapper
+, vulkan-headers
+, vulkan-utility-libraries
+, vulkan-loader
 , ...
 } @ args:
 
@@ -41,16 +44,16 @@ stdenv.mkDerivation rec {
   # 此选项禁用了对 CMake 软件包的一些自动修正
   dontFixCmake = true;
   buildPhase = ''
-    make LLAMA_OPENBLAS=1 LLAMA_CLBLAST=1 LLAMA_VULKAN=1
+    make -j 4 LLAMA_OPENBLAS=1 LLAMA_CLBLAST=1 LLAMA_VULKAN=1
   '';
   installPhase = ''
     mkdir -p $out/bin/
     cp -r *.so $out/bin/
     cp $src/koboldcpp.py $out/bin/koboldcpp
     chmod +x $out/bin/koboldcpp
-    wrapProgram $out/bin/koboldcpp --prefix PATH : ${lib.makeBinPath [python3 openblas clblast ocl-icd]}
+    wrapProgram $out/bin/koboldcpp --prefix PATH : ${lib.makeBinPath [python3 openblas vulkan-loader clblast ocl-icd]}
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
-  nativeBuildInputs = [ pkg-config openblas clblast ocl-icd makeWrapper ];
-  BuildInputs = [ python3 cmake ];
+  nativeBuildInputs = [ pkg-config openblas clblast ocl-icd makeWrapper vulkan-headers vulkan-utility-libraries vulkan-loader];
+  BuildInputs = [ python3 cmake vulkan-headers vulkan-utility-libraries vulkan-loader];
 }
