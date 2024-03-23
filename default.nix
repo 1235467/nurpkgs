@@ -56,7 +56,7 @@ rec {
   #wechat = pkgs.callPackage ./pkgs/wechat {};
 
   #override
-
+  JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ];};
   #garnix built pkgs from nixpkgs
   mongodb = pkgs-stable.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
