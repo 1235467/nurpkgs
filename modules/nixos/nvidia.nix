@@ -17,7 +17,10 @@ in
         '';
       };
   };
-  config.boot.kernelParams = if cfg.enable then ["nouveau.config=NvGspRm=1" "acpi_backlight=vendor" "nouveau.debug=info,VBIOS=info,gsp=debug"] else [];
+  config.boot.kernelParams = if cfg.enable then [
+"nouveau.config=NvGspRm=1" 
+#"nouveau.debug=info,VBIOS=info,gsp=debug"
+] else [];
   config.services.xserver.videoDrivers = if cfg.enable then ["nouveau"] else ["nvidia"];
   config.chaotic.mesa-git.enable = if cfg.enable then lib.mkForce true else lib.mkForce false;
 }
