@@ -44,6 +44,7 @@ rec {
   #suyu = pkgs.qt6.callPackage ./pkgs/suyu {};
   koboldcpp = pkgs.callPackage ./pkgs/koboldcpp {};
   forkgram = pkgs.qt6.callPackage ./pkgs/forkgram {};
+  basilisk = pkgs.callPackage ./pkgs/basilisk {withGTK3=true;};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...s
