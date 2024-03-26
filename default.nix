@@ -33,7 +33,7 @@ rec {
   waylyrics = pkgs.callPackage ./pkgs/waylyrics { };
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch { };
   sakaya = pkgs.callPackage ./pkgs/sakaya { };
-  mpv = pkgs.callPackage ./pkgs/mpv { };
+  mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) {};
   BBDown = pkgs.callPackage ./pkgs/BBDown { };
   kagi-cli-shortcut = pkgs.callPackage ./pkgs/kagi-cli-shortcut { };
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
