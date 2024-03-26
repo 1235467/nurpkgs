@@ -19,10 +19,10 @@ in
   };
   config.boot.kernelParams = if cfg.enable then [
 "nouveau.config=NvGspRm=1" 
-#"nouveau.debug=info,VBIOS=info,gsp=debug"
+"nouveau.debug=info,VBIOS=info,gsp=debug"
 ] else [];
   config.services.xserver.videoDrivers = if cfg.enable then ["nouveau"] else ["nvidia"];
   config.chaotic.mesa-git.enable = if cfg.enable then lib.mkForce true else lib.mkForce false;
-  config.specialisation.stable-mesa.configuration.chaotic.mesa-git.enable = false;
+  config.chaotic.mesa-git.fallbackSpecialisation = false;
 }
 
