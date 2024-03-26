@@ -23,5 +23,6 @@ in
 ] else [];
   config.services.xserver.videoDrivers = if cfg.enable then ["nouveau"] else ["nvidia"];
   config.chaotic.mesa-git.enable = if cfg.enable then lib.mkForce true else lib.mkForce false;
+  config.specialisation.stable-mesa.configuration.chaotic.mesa-git.enable = if config.chaotic.mesa-git.enable then lib.mkForce true else lib.mkForce false;
 }
 
