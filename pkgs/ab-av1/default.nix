@@ -7,23 +7,17 @@
 , git
 , nasm
 , pkg-config
+, pkgs
 , ...
 }:
 let
   pname = "ab-av1";
-  version = "v0.7.9";
-  sha256 = "sha256-B1Sp4eQ2kUEX85DIXjffnG0esrcJnPcjdzdQ2oEbYH0=";
-  cargoHash = "sha256-/auG4lYK9CE8tl7H5VdfCgGsIfpfY2AtE10pKXrDFNo=";
+  cargoHash = "sha256-vDKVGjkwiRK+VstvFzvrHlUeHKDsmRZx+vA2fAuydAg=";
+  sources = pkgs.callPackage ../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage {
-  inherit pname version cargoHash;
-
-  src = fetchFromGitHub {
-    owner = "alexheretic";
-    repo = pname;
-    rev = version;
-    inherit sha256;
-  };
+  inherit pname cargoHash;
+  inherit (sources.ab-av1) version src;
 
   nativeBuildInputs = [
     pkg-config

@@ -1,17 +1,12 @@
-{ lib, fetchFromGitHub, buildGoModule, sources }:
-
+{ lib, fetchFromGitHub, buildGoModule, pkgs, ... }:
+let
+  sources = pkgs.callPackage ../../_sources/generated.nix { };
+in
 buildGoModule rec {
   pname = "swgp-go";
-  version = "eabed5f55311abea5d57bd01d4be4381d24a4c7c";
+  inherit (sources.swgp-go) version src;
 
-  src = fetchFromGitHub {
-    owner = "database64128";
-    repo = "swgp-go";
-    rev = version;
-    sha256 = "sha256-lKLaTzaO/PplB+GpNicaqLcHhPVceSdRmvmdWYlLGc4=";
-  };
-
-  vendorHash = "sha256-3CjYLzLL4q/qCGxkqhSOCjQhe9RqSpmH5d7K3p257Tw=";
+  vendorHash = "sha256-+3Ot06XXRJM1ebr/jgijA5bjsyWeN7M7uhx0MFuCZjY=";
   doCheck = false;
   meta = with lib; {
     description = "🐉 Simple WireGuard proxy with minimal overhead for WireGuard traffic";
