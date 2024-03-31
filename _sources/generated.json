@@ -59,6 +59,25 @@
         },
         "version": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6"
     },
+    "suyu": {
+        "cargoLocks": null,
+        "date": "2024-03-31",
+        "extract": null,
+        "name": "suyu",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "c25bcb608394b276ee3a1e590196c20f9d768f2d",
+            "sha256": "sha256-6dn8IkkBqd7uzVHD7HVuXmPfIwDC9q+6yLnUR02Eu+A=",
+            "type": "git",
+            "url": "https://git.suyu.dev/suyu/suyu"
+        },
+        "version": "c25bcb608394b276ee3a1e590196c20f9d768f2d"
+    },
     "swgp-go": {
         "cargoLocks": null,
         "date": "2024-03-12",

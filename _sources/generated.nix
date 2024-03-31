@@ -37,6 +37,19 @@
     };
     date = "2024-02-25";
   };
+  suyu = {
+    pname = "suyu";
+    version = "c25bcb608394b276ee3a1e590196c20f9d768f2d";
+    src = fetchgit {
+      url = "https://git.suyu.dev/suyu/suyu";
+      rev = "c25bcb608394b276ee3a1e590196c20f9d768f2d";
+      fetchSubmodules = true;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-6dn8IkkBqd7uzVHD7HVuXmPfIwDC9q+6yLnUR02Eu+A=";
+    };
+    date = "2024-03-31";
+  };
   swgp-go = {
     pname = "swgp-go";
     version = "ff0d7b3552d6b6c1651791f5fab2de5075746e36";
