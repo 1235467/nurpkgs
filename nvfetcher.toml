@@ -10,6 +10,7 @@ fetch.github = "alexheretic/ab-av1"
 [qcm]
 src.git = "https://github.com/hypengw/Qcm"
 fetch.github = "hypengw/Qcm"
+git.fetchSubmodules = true
 
 [candy]
 src.git = "https://github.com/lanthora/candy"
