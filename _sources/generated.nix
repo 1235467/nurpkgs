@@ -37,6 +37,18 @@
     };
     date = "2024-03-25";
   };
+  koboldcpp = {
+    pname = "koboldcpp";
+    version = "f3b7651102c3ce3e4f331b93137dc32d752eada0";
+    src = fetchFromGitHub {
+      owner = "LostRuins";
+      repo = "koboldcpp";
+      rev = "f3b7651102c3ce3e4f331b93137dc32d752eada0";
+      fetchSubmodules = true;
+      sha256 = "sha256-l6XWbstBAl5BQrwrQxLuPX5uKp02hED6vGQQVhZAO9U=";
+    };
+    date = "2024-03-14";
+  };
   qcm = {
     pname = "qcm";
     version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";

@@ -59,6 +59,26 @@
         },
         "version": "22f987aa46659faf4d45ccf8a9e894bcbbcc66f9"
     },
+    "koboldcpp": {
+        "cargoLocks": null,
+        "date": "2024-03-14",
+        "extract": null,
+        "name": "koboldcpp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "LostRuins",
+            "repo": "koboldcpp",
+            "rev": "f3b7651102c3ce3e4f331b93137dc32d752eada0",
+            "sha256": "sha256-l6XWbstBAl5BQrwrQxLuPX5uKp02hED6vGQQVhZAO9U=",
+            "type": "github"
+        },
+        "version": "f3b7651102c3ce3e4f331b93137dc32d752eada0"
+    },
     "qcm": {
         "cargoLocks": null,
         "date": "2024-02-25",
