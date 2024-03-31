@@ -1,4 +1,4 @@
-{ lib, fetchFromGitHub, buildGoModule }:
+{ lib, fetchFromGitHub, buildGoModule, sources }:
 
 buildGoModule rec {
   pname = "swgp-go";

@@ -1,0 +1,22 @@
+{
+    "swgp-go": {
+        "cargoLocks": null,
+        "date": "2024-03-12",
+        "extract": null,
+        "name": "swgp-go",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "database64128",
+            "repo": "swgp-go",
+            "rev": "ff0d7b3552d6b6c1651791f5fab2de5075746e36",
+            "sha256": "sha256-oSkIBOC71jgWJEMpv7q0Rd11KRIGxbpYOG2gK8OMLRk=",
+            "type": "github"
+        },
+        "version": "ff0d7b3552d6b6c1651791f5fab2de5075746e36"
+    }
+}

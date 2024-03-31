@@ -1,0 +1,6 @@
+[swgp-go]
+# src.git = "https://github.com/google/ngx_brotli.git"
+# fetch.github = "google/ngx_brotli"
+src.git = "https://github.com/database64128/swgp-go"
+src.branch = "main"
+fetch.github = "database64128/swgp-go"
