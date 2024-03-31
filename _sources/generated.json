@@ -21,7 +21,7 @@
     },
     "candy": {
         "cargoLocks": null,
-        "date": "2024-03-30",
+        "date": "2024-04-01",
         "extract": null,
         "name": "candy",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "lanthora",
             "repo": "candy",
-            "rev": "b41cb667ff346ac73109d45140b15743c33501b6",
-            "sha256": "sha256-XqlOxGv7ukL7y46Qvr5QieNUSvzNAY6DDYh5nCFrktE=",
+            "rev": "4b9e79aaceb53868ea09988d756a1bd82a652612",
+            "sha256": "sha256-4X/X2VmjH8OIMt82uW7TcW8Ojta9C57By1pkeF9ysIY=",
             "type": "github"
         },
-        "version": "b41cb667ff346ac73109d45140b15743c33501b6"
+        "version": "4b9e79aaceb53868ea09988d756a1bd82a652612"
     },
     "qcm": {
         "cargoLocks": null,
@@ -48,13 +48,13 @@
         "pinned": false,
         "src": {
             "deepClone": false,
-            "fetchSubmodules": false,
+            "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
             "owner": "hypengw",
             "repo": "Qcm",
             "rev": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6",
-            "sha256": "sha256-OE2qdxzuUgfxl0UC7ABNjZOGdOZ/ktEWJqPp1qAZUSo=",
+            "sha256": "sha256-uJwreBXSSH6uXd14e3Ln2rHvk+rrOvmUtkeRIU3sOSw=",
             "type": "github"
         },
         "version": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6"
