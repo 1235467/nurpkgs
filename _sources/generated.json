@@ -39,6 +39,26 @@
         },
         "version": "4b9e79aaceb53868ea09988d756a1bd82a652612"
     },
+    "forkgram": {
+        "cargoLocks": null,
+        "date": "2024-03-25",
+        "extract": null,
+        "name": "forkgram",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "forkgram",
+            "repo": "tdesktop",
+            "rev": "22f987aa46659faf4d45ccf8a9e894bcbbcc66f9",
+            "sha256": "sha256-5Y/7cFwbX56/bOpC/0Q1FCioiE8HhiMpZDPHcNYHWJY=",
+            "type": "github"
+        },
+        "version": "22f987aa46659faf4d45ccf8a9e894bcbbcc66f9"
+    },
     "qcm": {
         "cargoLocks": null,
         "date": "2024-02-25",

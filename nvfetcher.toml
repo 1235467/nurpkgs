@@ -20,3 +20,8 @@ fetch.github = "lanthora/candy"
 src.git = "https://git.suyu.dev/suyu/suyu"
 fetch.git = "https://git.suyu.dev/suyu/suyu"
 git.fetchSubmodules = true
+
+[forkgram]
+src.git = "https://github.com/forkgram/tdesktop"
+fetch.github = "forkgram/tdesktop"
+git.fetchSubmodules = true

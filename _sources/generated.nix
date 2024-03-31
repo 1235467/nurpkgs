@@ -25,6 +25,18 @@
     };
     date = "2024-04-01";
   };
+  forkgram = {
+    pname = "forkgram";
+    version = "22f987aa46659faf4d45ccf8a9e894bcbbcc66f9";
+    src = fetchFromGitHub {
+      owner = "forkgram";
+      repo = "tdesktop";
+      rev = "22f987aa46659faf4d45ccf8a9e894bcbbcc66f9";
+      fetchSubmodules = true;
+      sha256 = "sha256-5Y/7cFwbX56/bOpC/0Q1FCioiE8HhiMpZDPHcNYHWJY=";
+    };
+    date = "2024-03-25";
+  };
   qcm = {
     pname = "qcm";
     version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
