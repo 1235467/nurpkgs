@@ -44,16 +44,6 @@ in
 stdenv.mkDerivation rec {
   pname = "suyu";
   inherit (sources.suyu) version src;
-  #version = "ad12c0cb9453d8e316a9dd58945d38c490432f29";
-
-  #src = pkgs.yuzu-early-access.src;
-#   src = fetchFromGitLab {
-#     owner = "suyu-emu";
-#     repo = "suyu";
-#     rev = "ad12c0cb9453d8e316a9dd58945d38c490432f29";
-#     sha256 = "sha256-kRlejRVo0Gv9cNFCaVGGgSzB82p6qbHKZaLGCoabk/4=";
-#     fetchSubmodules = true;
-#   };
 
   nativeBuildInputs = [
     cmake
@@ -163,6 +153,6 @@ stdenv.mkDerivation rec {
   '';
 
   postInstall = ''
-    install -Dm444 $src/dist/72-yuzu-input.rules $out/lib/udev/rules.d/72-yuzu-input.rules
+    install -Dm444 $src/dist/72-suyu-input.rules $out/lib/udev/rules.d/72-suyu-input.rules
   '';
 }
