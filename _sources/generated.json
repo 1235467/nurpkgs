@@ -19,6 +19,46 @@
         },
         "version": "e65965f74725a1f6d081c583af91af81f68a2268"
     },
+    "candy": {
+        "cargoLocks": null,
+        "date": "2024-03-30",
+        "extract": null,
+        "name": "candy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "lanthora",
+            "repo": "candy",
+            "rev": "b41cb667ff346ac73109d45140b15743c33501b6",
+            "sha256": "sha256-XqlOxGv7ukL7y46Qvr5QieNUSvzNAY6DDYh5nCFrktE=",
+            "type": "github"
+        },
+        "version": "b41cb667ff346ac73109d45140b15743c33501b6"
+    },
+    "qcm": {
+        "cargoLocks": null,
+        "date": "2024-02-25",
+        "extract": null,
+        "name": "qcm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "hypengw",
+            "repo": "Qcm",
+            "rev": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6",
+            "sha256": "sha256-OE2qdxzuUgfxl0UC7ABNjZOGdOZ/ktEWJqPp1qAZUSo=",
+            "type": "github"
+        },
+        "version": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6"
+    },
     "swgp-go": {
         "cargoLocks": null,
         "date": "2024-03-12",

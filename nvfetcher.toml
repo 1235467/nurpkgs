@@ -6,3 +6,11 @@ fetch.github = "database64128/swgp-go"
 [ab-av1]
 src.git = "https://github.com/alexheretic/ab-av1"
 fetch.github = "alexheretic/ab-av1"
+
+[qcm]
+src.git = "https://github.com/hypengw/Qcm"
+fetch.github = "hypengw/Qcm"
+
+[candy]
+src.git = "https://github.com/lanthora/candy"
+fetch.github = "lanthora/candy"

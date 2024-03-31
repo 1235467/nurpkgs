@@ -13,6 +13,30 @@
     };
     date = "2024-03-09";
   };
+  candy = {
+    pname = "candy";
+    version = "b41cb667ff346ac73109d45140b15743c33501b6";
+    src = fetchFromGitHub {
+      owner = "lanthora";
+      repo = "candy";
+      rev = "b41cb667ff346ac73109d45140b15743c33501b6";
+      fetchSubmodules = false;
+      sha256 = "sha256-XqlOxGv7ukL7y46Qvr5QieNUSvzNAY6DDYh5nCFrktE=";
+    };
+    date = "2024-03-30";
+  };
+  qcm = {
+    pname = "qcm";
+    version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
+    src = fetchFromGitHub {
+      owner = "hypengw";
+      repo = "Qcm";
+      rev = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
+      fetchSubmodules = false;
+      sha256 = "sha256-OE2qdxzuUgfxl0UC7ABNjZOGdOZ/ktEWJqPp1qAZUSo=";
+    };
+    date = "2024-02-25";
+  };
   swgp-go = {
     pname = "swgp-go";
     version = "ff0d7b3552d6b6c1651791f5fab2de5075746e36";
