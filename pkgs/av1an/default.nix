@@ -11,26 +11,18 @@
 , python3
 , python3Packages
 , makeWrapper
+, pkgs
 ,
 }:
 let
   pname = "av1an";
-  version = "0.4.1";
+  sources = pkgs.callPackage ../../_sources/generated.nix { };
 
-  sha256 = "0sqq0wwmxyrs6dy5i16qzf3fhsgwnbyq4kl81hvsjr2h6r8811ix";
-
-  cargoHash = "sha256-mfI6pMQaWkXCjcjtgUhm6K0UeGSAZ5QJXsrmmFEhoFM=";
+  cargoHash = "sha256-LRgzJkWUXTw1ybVmN95TBnt+GbQmyIpFPTImK/jc+O4=";
 in
 rustPlatform.buildRustPackage {
-  inherit pname version cargoHash;
-
-  src = fetchFromGitHub {
-    owner = "master-of-zen";
-    repo = pname;
-    rev = version;
-    inherit sha256;
-  };
-
+  inherit pname cargoHash;
+  inherit (sources.av1an) version src;
   nativeBuildInputs = [
     pkg-config
     nasm

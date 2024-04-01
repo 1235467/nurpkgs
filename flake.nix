@@ -4,7 +4,7 @@
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/d8fe5e6c92d0d190646fb9f1056741a229980089";
   inputs.nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
 
-  outputs = { self, nixpkgs, nixpkgs-stable, ... }:
+  outputs = { self, nixpkgs, nixpkgs-stable, ... }@inputs:
     let
       systems = [
         "x86_64-linux"

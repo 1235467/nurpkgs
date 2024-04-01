@@ -16,6 +16,8 @@ rec {
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  sources = pkgs.callPackage ./_sources/generated.nix { };
+
   ab-av1 = pkgs.callPackage ./pkgs/ab-av1 { };
   av1an = pkgs.callPackage ./pkgs/av1an { };
   Anime4k-rs = pkgs.callPackage ./pkgs/Anime4k-rs { };
@@ -53,7 +55,7 @@ rec {
   #yumekey = pkgs.callPackage ./pkgs/yumekey {};
 
   #stolen expressions
-  wemeet = pkgs.callPackage ./pkgs/wemeet { };
+  #wemeet = pkgs.callPackage ./pkgs/wemeet { };
   feishu = pkgs.callPackage ./pkgs/feishu { };
   #wechat = pkgs.callPackage ./pkgs/wechat {};
 

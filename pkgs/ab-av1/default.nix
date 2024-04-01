@@ -13,7 +13,7 @@
 let
   pname = "ab-av1";
   cargoHash = "sha256-vDKVGjkwiRK+VstvFzvrHlUeHKDsmRZx+vA2fAuydAg=";
-  sources = pkgs.callPackage ../../_sources/generated.nix { };
+   sources = pkgs.callPackage ../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage {
   inherit pname cargoHash;

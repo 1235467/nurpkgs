@@ -5,24 +5,15 @@
 , electron_19
 , lib
 , scrot
+, pkgs
 , ...
 } @ args:
 
 let
-  #license = stdenv.mkDerivation rec {
-  #  pname = "wechat-uos-license";
-  #  version = "0.0.1";
-  #  src = ./license.tar.gz;
-
-  #  installPhase = ''
-  #    mkdir -p $out
-  #    cp -r etc var $out/
-  #  '';
-  #};
-  src = fetchurl {
-    url = "https://home-store-packages.uniontech.com/appstore/pool/appstore/c/com.tencent.weixin/com.tencent.weixin_2.1.5_amd64.deb";
-    sha256 = "sha256-vVN7w+oPXNTMJ/g1Rpw/AVLIytMXI+gLieNuddyyIYE=";
-  };
+   src = fetchurl {
+     url = "https://home-store-packages.uniontech.com/appstore/pool/appstore/c/com.tencent.weixin/com.tencent.weixin_2.1.5_amd64.deb";
+     sha256 = "sha256-vVN7w+oPXNTMJ/g1Rpw/AVLIytMXI+gLieNuddyyIYE=";
+   };
   resource = stdenv.mkDerivation rec {
     unpackPhase = ''
       ar x ${src}
@@ -67,6 +58,7 @@ in
 stdenv.mkDerivation {
   pname = "wechat-uos";
   version = "2.1.5";
+  #inherit src;
   phases = [ "installPhase" ];
   installPhase = ''
     mkdir -p $out/bin $out/share/applications

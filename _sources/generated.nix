@@ -13,6 +13,18 @@
     };
     date = "2024-03-09";
   };
+  av1an = {
+    pname = "av1an";
+    version = "6632b470640cccc0ade641b87a456d6e127bb4ca";
+    src = fetchFromGitHub {
+      owner = "master-of-zen";
+      repo = "av1an";
+      rev = "6632b470640cccc0ade641b87a456d6e127bb4ca";
+      fetchSubmodules = false;
+      sha256 = "sha256-fZWgN3HOZXsRLCFcLkeRcHNj3fOiTosiC91jAK5xm30=";
+    };
+    date = "2024-03-27";
+  };
   candy = {
     pname = "candy";
     version = "4b9e79aaceb53868ea09988d756a1bd82a652612";
@@ -63,16 +75,16 @@
   };
   suyu = {
     pname = "suyu";
-    version = "c25bcb608394b276ee3a1e590196c20f9d768f2d";
+    version = "d3f67d1e9c7562026909a07cb53ea0f20c12a500";
     src = fetchgit {
       url = "https://git.suyu.dev/suyu/suyu";
-      rev = "c25bcb608394b276ee3a1e590196c20f9d768f2d";
+      rev = "d3f67d1e9c7562026909a07cb53ea0f20c12a500";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-6dn8IkkBqd7uzVHD7HVuXmPfIwDC9q+6yLnUR02Eu+A=";
+      sha256 = "sha256-UUy5At7hH7ZXytsdN8/4JcevTrnTrvoPkU++9ZSKqYw=";
     };
-    date = "2024-03-31";
+    date = "2024-04-01";
   };
   swgp-go = {
     pname = "swgp-go";
