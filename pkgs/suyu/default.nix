@@ -37,8 +37,8 @@
 , ...
 }:
 let
-  nx_tzdb = pkgs.callPackage ../dependency/yuzu/nx_tzdb.nix { };
-  compat-list = pkgs.callPackage ../dependency/yuzu/compat-list.nix { };
+  nx_tzdb = pkgs.callPackage ../_deps/yuzu/nx_tzdb.nix { };
+  compat-list = pkgs.callPackage ../_deps/yuzu/compat-list.nix { };
   sources = pkgs.callPackage ../../_sources/generated.nix {};
 in
 stdenv.mkDerivation rec {

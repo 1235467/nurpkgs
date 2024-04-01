@@ -1,7 +1,7 @@
 { lib, writeShellApplication,pkgs,  stdenv,... }:
 
 let
-  app = writeShellApplication rec {
+  nvfetcher = writeShellApplication rec {
   name = "nvfetcher";
   text = ''
   ${pkgs.nvfetcher}/bin/nvfetcher -c nvfetcher.toml -o _sources
@@ -11,11 +11,11 @@ let
 in
 stdenv.mkDerivation rec {
   src = ./.;
-  pname = "nurpkgs-nvfetcher";
-  inherit (app) name;
+  pname = "buildtools";
+  inherit (nvfetcher) name;
   installPhase = ''
     mkdir -p $out/bin
-    cp ${app}/bin/nvfetcher $out/bin/nurpkgs-nvfetcher
+    cp ${nvfetcher}/bin/nvfetcher $out/bin/nurpkgs-nvfetcher
   '';
 }
 

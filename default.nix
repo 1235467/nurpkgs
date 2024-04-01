@@ -48,7 +48,7 @@ rec {
   forkgram = pkgs.qt6.callPackage ./pkgs/forkgram {};
   basilisk = pkgs.callPackage ./pkgs/basilisk {withGTK3=true;};
   candy = pkgs.callPackage ./pkgs/candy {};
-  nvfetcher = pkgs.callPackage ./pkgs/nvfetcher {};
+  buildtools = pkgs.callPackage ./buildtools {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...s
