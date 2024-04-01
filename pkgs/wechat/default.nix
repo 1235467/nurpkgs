@@ -2,7 +2,7 @@
 , fetchurl
 , buildFHSUserEnvBubblewrap
 , writeShellScript
-, electron_19
+, electron
 , lib
 , scrot
 , pkgs
@@ -18,6 +18,7 @@ let
     unpackPhase = ''
       ar x ${src}
     '';
+    inherit (fhs) name;
 
     installPhase = ''
       mkdir -p $out
@@ -39,10 +40,9 @@ let
         kill -9 $wechat_pid
     fi
 
-    ${electron_19}/bin/electron \
+    ${electron}/bin/electron \
       ${resource}/lib/wechat-uos
   '';
-  name = "wechat-uos";
   fhs = buildFHSUserEnvBubblewrap {
     name = "wechat-uos";
     targetPkgs = pkgs:
@@ -58,12 +58,10 @@ in
 stdenv.mkDerivation {
   pname = "wechat-uos";
   version = "2.1.5";
-  #inherit src;
   phases = [ "installPhase" ];
   installPhase = ''
     mkdir -p $out/bin $out/share/applications
     ln -s ${fhs}/bin/wechat-uos $out/bin/wechat-uos
-    ln -s ${./wechat-uos.desktop} $out/share/applications/wechat-uos.desktop
     ln -s ${resource}/share/icons $out/share/icons
   '';
 

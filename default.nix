@@ -58,7 +58,7 @@ rec {
   #stolen expressions
   #wemeet = pkgs.callPackage ./pkgs/wemeet { };
   feishu = pkgs.callPackage ./pkgs/feishu { };
-  #wechat = pkgs.callPackage ./pkgs/wechat {};
+  wechat = pkgs.callPackage ./pkgs/wechat {};
 
   #override
   JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ];};
