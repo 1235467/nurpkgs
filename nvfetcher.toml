@@ -38,3 +38,8 @@ fetch.github = "master-of-zen/av1an"
 [waylyrics]
 src.git = "https://github.com/waylyrics/waylyrics"
 fetch.github = "waylyrics/waylyrics"
+
+[rescrobbled]
+src.git = "https://github.com/InputUsername/rescrobbled"
+fetch.github = "InputUsername/rescrobbled"
+

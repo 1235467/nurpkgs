@@ -119,6 +119,26 @@
         },
         "version": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6"
     },
+    "rescrobbled": {
+        "cargoLocks": null,
+        "date": "2023-11-30",
+        "extract": null,
+        "name": "rescrobbled",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "InputUsername",
+            "repo": "rescrobbled",
+            "rev": "d9837ad4ddbe4f77a06c4f8a697d7d6df858e414",
+            "sha256": "sha256-VOioE6BScwW2kWOViFZ84NuQ5eTI9+mBqAErGW9VWII=",
+            "type": "github"
+        },
+        "version": "d9837ad4ddbe4f77a06c4f8a697d7d6df858e414"
+    },
     "suyu": {
         "cargoLocks": null,
         "date": "2024-04-01",

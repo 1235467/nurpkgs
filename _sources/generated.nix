@@ -73,6 +73,18 @@
     };
     date = "2024-02-25";
   };
+  rescrobbled = {
+    pname = "rescrobbled";
+    version = "d9837ad4ddbe4f77a06c4f8a697d7d6df858e414";
+    src = fetchFromGitHub {
+      owner = "InputUsername";
+      repo = "rescrobbled";
+      rev = "d9837ad4ddbe4f77a06c4f8a697d7d6df858e414";
+      fetchSubmodules = false;
+      sha256 = "sha256-VOioE6BScwW2kWOViFZ84NuQ5eTI9+mBqAErGW9VWII=";
+    };
+    date = "2023-11-30";
+  };
   suyu = {
     pname = "suyu";
     version = "a3c8b296071ad22b37ef14af6f769ede528bc0f6";

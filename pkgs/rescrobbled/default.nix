@@ -7,23 +7,17 @@
 , pkg-config
 , openssl
 , dbus
+, pkgs
 , ...
 }:
 let
+  sources = pkgs.callPackage ../../_sources/generated.nix { };
   pname = "rescrobbled";
-  version = "v0.7.1";
-  sha256 = "sha256-1E+SeKjHCah+IFn2QLAyyv7jgEcZ1gtkh8iHgiVBuz4=";
-  cargoHash = "sha256-zM9PJERZhPlgrMT4nLB8XyAFO94S3yxdLQI5Zhpcyds=";
 in
 rustPlatform.buildRustPackage {
-  inherit pname version cargoHash;
-
-  src = fetchFromGitHub {
-    owner = "InputUsername";
-    repo = pname;
-    rev = version;
-    inherit sha256;
-  };
+  inherit pname;
+  inherit (sources.rescrobbled) version src;
+  cargoLock.lockFile = "${sources.rescrobbled.src}/Cargo.lock";
 
   nativeBuildInputs = [
     pkg-config
