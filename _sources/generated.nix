@@ -195,16 +195,16 @@
   };
   suyu = {
     pname = "suyu";
-    version = "a3c8b296071ad22b37ef14af6f769ede528bc0f6";
+    version = "b911ac8516850b8e86e4479367b33bf81665bcac";
     src = fetchgit {
       url = "https://git.suyu.dev/suyu/suyu";
-      rev = "a3c8b296071ad22b37ef14af6f769ede528bc0f6";
+      rev = "b911ac8516850b8e86e4479367b33bf81665bcac";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-otofzAUQ9PgvX94f0TrjoKaxA6WyEpmDjHz0Vpqpw6U=";
+      sha256 = "sha256-9NRavg7EXOUjCvf/Ly7JykJhNiogmtxRoPxyOJ8YYgw=";
     };
-    date = "2024-04-01";
+    date = "2024-04-02";
   };
   swgp-go = {
     pname = "swgp-go";
@@ -220,13 +220,13 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "680c6d18dc0c65d73728af89128bd9499324ea0b";
+    version = "949e5fe93c38fdec7098cacff5fb6cd137bd4e07";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "680c6d18dc0c65d73728af89128bd9499324ea0b";
+      rev = "949e5fe93c38fdec7098cacff5fb6cd137bd4e07";
       fetchSubmodules = false;
-      sha256 = "sha256-K3JNP9sNLwuNb4JjpXe3c9/CNtdlZdfPg2t/3U8rWRs=";
+      sha256 = "sha256-3ommIk1XGLECQ/bTBG93QHJK1FHI3rjvzZ1HdOIa6Kc=";
     };
     date = "2024-04-02";
   };

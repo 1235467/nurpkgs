@@ -321,7 +321,7 @@
     },
     "suyu": {
         "cargoLocks": null,
-        "date": "2024-04-01",
+        "date": "2024-04-02",
         "extract": null,
         "name": "suyu",
         "passthru": null,
@@ -331,12 +331,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a3c8b296071ad22b37ef14af6f769ede528bc0f6",
-            "sha256": "sha256-otofzAUQ9PgvX94f0TrjoKaxA6WyEpmDjHz0Vpqpw6U=",
+            "rev": "b911ac8516850b8e86e4479367b33bf81665bcac",
+            "sha256": "sha256-9NRavg7EXOUjCvf/Ly7JykJhNiogmtxRoPxyOJ8YYgw=",
             "type": "git",
             "url": "https://git.suyu.dev/suyu/suyu"
         },
-        "version": "a3c8b296071ad22b37ef14af6f769ede528bc0f6"
+        "version": "b911ac8516850b8e86e4479367b33bf81665bcac"
     },
     "swgp-go": {
         "cargoLocks": null,
@@ -372,10 +372,10 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "680c6d18dc0c65d73728af89128bd9499324ea0b",
-            "sha256": "sha256-K3JNP9sNLwuNb4JjpXe3c9/CNtdlZdfPg2t/3U8rWRs=",
+            "rev": "949e5fe93c38fdec7098cacff5fb6cd137bd4e07",
+            "sha256": "sha256-3ommIk1XGLECQ/bTBG93QHJK1FHI3rjvzZ1HdOIa6Kc=",
             "type": "github"
         },
-        "version": "680c6d18dc0c65d73728af89128bd9499324ea0b"
+        "version": "949e5fe93c38fdec7098cacff5fb6cd137bd4e07"
     }
 }
