@@ -12,13 +12,12 @@
 }:
 let
   pname = "ab-av1";
-  cargoHash = "sha256-vDKVGjkwiRK+VstvFzvrHlUeHKDsmRZx+vA2fAuydAg=";
-   sources = pkgs.callPackage ../../_sources/generated.nix { };
+  sources = pkgs.callPackage ../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage {
-  inherit pname cargoHash;
+  inherit pname;
   inherit (sources.ab-av1) version src;
-
+  cargoLock.lockFile = "${sources.ab-av1.src}/Cargo.lock";
   nativeBuildInputs = [
     pkg-config
   ];

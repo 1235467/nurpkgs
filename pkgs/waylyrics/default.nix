@@ -7,7 +7,7 @@ rustPlatform.buildRustPackage rec
   pname = "waylyrics";
   inherit (sources.waylyrics) version src;
 
-  cargoLock.lockFile = "${src}/Cargo.lock";
+  cargoLock.lockFile = "${sources.waylyrics.src}/Cargo.lock";
   cargoLock.outputHashes = {
     "ncmapi-0.1.13" = "sha256-qu89qf4IPM14V+oE4QQr/SsXSTx3vQbyfzD+Pihcd3E=";
     "qqmusic-rs-0.1.0" = "sha256-woLsO0n+m3EBUI+PRLio7iLp0UPQSliWK0djCSZEaZc=";
