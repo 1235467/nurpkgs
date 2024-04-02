@@ -12,33 +12,22 @@
   python3
 , python3Packages
 , makeWrapper
+, callPackage
 ,
 }:
 let
   pname = "idntag";
-  version = "v1.11";
-
-  sha256 = "sha256-vm6EyJwLmvZrpz6EvvHzsXAyi+MpYCOGtSLII8PfO+k=";
-
+  sources = pkgs.callPackage ../../../_sources/generated.nix { };
 in
 stdenv.mkDerivation rec {
-  inherit pname version;
-
-  src = fetchFromGitHub {
-    owner = "d99kris";
-    repo = pname;
-    rev = version;
-    inherit sha256;
-  };
+  inherit pname;
+  inherit (sources.idntag) version src;
 
   nativeBuildInputs = [
-    #pkg-config
     cmake
   ];
 
   nativeCheckInputs = [
-    #libaom
-    #rav1e
   ];
 
   buildInputs = [
@@ -46,7 +35,6 @@ stdenv.mkDerivation rec {
     mp3info
     taglib
     chromaprint
-    #libchromaprint-tools
     ffmpeg
     python3
     python3Packages.pyacoustid
@@ -54,10 +42,6 @@ stdenv.mkDerivation rec {
     makeWrapper
   ];
   cmakeFlags = [
-    # "-DBUILD_SHARED_LIBS=ON"
-    # "-DOQS_BUILD_ONLY_LIB=1"
-    # "-DOQS_USE_OPENSSL=OFF"
-    # "-DOQS_DIST_BUILD=ON"
   ];
 
   postInstall = ''

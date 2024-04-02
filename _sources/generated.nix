@@ -61,6 +61,18 @@
     };
     date = "2024-04-02";
   };
+  idntag = {
+    pname = "idntag";
+    version = "0d2fcb286bfa5b7e9ec02d6d9c1d55dd2cf5da5f";
+    src = fetchFromGitHub {
+      owner = "d99kris";
+      repo = "idntag";
+      rev = "0d2fcb286bfa5b7e9ec02d6d9c1d55dd2cf5da5f";
+      fetchSubmodules = false;
+      sha256 = "sha256-u/WgEvGrGGfXfx/4iXLxy8mGKFsrA/nsD8CGv3MdS80=";
+    };
+    date = "2023-01-15";
+  };
   koboldcpp = {
     pname = "koboldcpp";
     version = "f3b7651102c3ce3e4f331b93137dc32d752eada0";
