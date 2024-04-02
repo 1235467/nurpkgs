@@ -9,7 +9,7 @@ let
   pname = "BBDown";
   version = "1.6.1";
   nugetSha256 = "sha256-FujKRBiuvbndxPo/SF7dOQbRqLr85mYl9Kay0W+CvkU=";
-  buildDotnetGlobalTool = callPackage ../_deps/buildDotnetGlobalTool { };
+  buildDotnetGlobalTool = callPackage ../../../buildtools/buildDotnetGlobalTool { };
 
 in
 buildDotnetGlobalTool rec {

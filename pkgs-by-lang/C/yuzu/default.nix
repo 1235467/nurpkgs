@@ -37,8 +37,8 @@
 , ...
 }:
 let
-  nx_tzdb = pkgs.callPackage ../../../pkgs/_deps/yuzu/nx_tzdb.nix { };
-  compat-list = pkgs.callPackage ../../../pkgs/_deps/yuzu/compat-list.nix { };
+  nx_tzdb = pkgs.callPackage ../../../_deps/yuzu/nx_tzdb.nix { };
+  compat-list = pkgs.callPackage ../../../_deps/yuzu/compat-list.nix { };
 in
 stdenv.mkDerivation rec {
   pname = "yuzu-early-access";

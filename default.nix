@@ -16,8 +16,12 @@ rec {
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  # Eval helper
+
+  # Eval Helper
   sources = pkgs.callPackage ./_sources/generated.nix { };
+
+  # Build Helper
+  buildtools = pkgs.callPackage ./buildtools/shell {};
 
   # Rust
   ab-av1 = pkgs.callPackage ./pkgs-by-lang/Rust/ab-av1 { };
@@ -29,6 +33,9 @@ rec {
   rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
   sakaya = pkgs.callPackage ./pkgs-by-lang/Rust/sakaya { };
   waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
+
+  # Dotnet
+  BBDown = pkgs.callPackage ./pkgs-by-lang/Dotnet/BBDown { };
 
   # Go
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
@@ -55,43 +62,26 @@ rec {
   # Shell
   reflac = pkgs.callPackage ./pkgs-by-lang/Shell/reflac { };
 
+  # AppImage
+  cider = pkgs.callPackage ./pkgs/AppImage/cider { };
+  hydrogen-music = pkgs.callPackage ./pkgs/AppImage/hydrogen-music { };
 
+  # Bin
+  basilisk = pkgs.callPackage ./pkgs/Bin/basilisk {withGTK3=true;};
+  feishu = pkgs.callPackage ./pkgs/Bin/feishu { };
+  wechat = pkgs.callPackage ./pkgs/Bin/wechat {};
+  #wemeet = pkgs.callPackage ./pkgs/Bin/wemeet { };
 
-  cider = pkgs.callPackage ./pkgs/cider { };
-  hydrogen-music = pkgs.callPackage ./pkgs/hydrogen-music { };
-
-
-
-
-
+  # Overrides
+  forkgram = pkgs.qt6.callPackage ./pkgs/Overrides/forkgram {};
+  #openmw = pkgs.libsForQt5.callPackage ./pkgs/Overrides/openmw {};
+  qcm = pkgs.qt6.callPackage ./pkgs/Overrides/qcm {};
   mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) {};
-  BBDown = pkgs.callPackage ./pkgs/BBDown { };
 
-
-
-
-
-
-
-  forkgram = pkgs.qt6.callPackage ./pkgs/forkgram {};
-  basilisk = pkgs.callPackage ./pkgs/basilisk {withGTK3=true;};
-
-  buildtools = pkgs.callPackage ./buildtools {};
-  #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...s
-  qcm = pkgs.qt6.callPackage ./pkgs/qcm {};
-
-
-  #stolen expressions
-  #wemeet = pkgs.callPackage ./pkgs/wemeet { };
-  feishu = pkgs.callPackage ./pkgs/feishu { };
-  wechat = pkgs.callPackage ./pkgs/wechat {};
-
-  #override
+  # System Fonts override
   JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ];};
 
-  # Force Garnix to build
+  # Garnix generate cache
   mongodb = pkgs-stable.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
 }
