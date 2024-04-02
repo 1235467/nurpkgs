@@ -17,12 +17,11 @@
 let
   pname = "av1an";
   sources = pkgs.callPackage ../../_sources/generated.nix { };
-
-  cargoHash = "sha256-LRgzJkWUXTw1ybVmN95TBnt+GbQmyIpFPTImK/jc+O4=";
 in
 rustPlatform.buildRustPackage {
-  inherit pname cargoHash;
+  inherit pname;
   inherit (sources.av1an) version src;
+  cargoLock.lockFile = "${sources.av1an.src}/Cargo.lock";
   nativeBuildInputs = [
     pkg-config
     nasm

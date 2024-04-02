@@ -10,10 +10,9 @@ let
   pname = "Anime4K-rs";
   version = "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29";
   sha256 = "sha256-7CvYbc4U9kIwV2ELkd4lqKC1ynCwqizpXBXJamSGDig=";
-  cargoHash = "";
 in
 rustPlatform.buildRustPackage {
-  inherit pname version cargoHash;
+  inherit pname version;
 
   src = fetchFromGitHub {
     owner = "andraantariksa";
