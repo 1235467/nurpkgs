@@ -109,6 +109,30 @@
     };
     date = "2024-02-12";
   };
+  pynat = {
+    pname = "pynat";
+    version = "22a8f2a467bfb95003d35b139dad9fd5a1ca4e9d";
+    src = fetchFromGitHub {
+      owner = "aarant";
+      repo = "pynat";
+      rev = "22a8f2a467bfb95003d35b139dad9fd5a1ca4e9d";
+      fetchSubmodules = false;
+      sha256 = "sha256-2ig0mvePKglxz3IpBdiWsTfNJ9koODn34gHVRqbdwPk=";
+    };
+    date = "2022-08-20";
+  };
+  pystun3 = {
+    pname = "pystun3";
+    version = "681b36ce4812714449dfbf3d2f5004a2f0615240";
+    src = fetchFromGitHub {
+      owner = "talkiq";
+      repo = "pystun3";
+      rev = "681b36ce4812714449dfbf3d2f5004a2f0615240";
+      fetchSubmodules = false;
+      sha256 = "sha256-+SrYpAUaAXE+c34U9QGoVsk5erp/57YV79iaQx4p32Q=";
+    };
+    date = "2022-05-05";
+  };
   qcm = {
     pname = "qcm";
     version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
