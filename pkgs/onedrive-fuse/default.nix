@@ -14,7 +14,7 @@ in
 rustPlatform.buildRustPackage {
   inherit pname;
   inherit (sources.onedrive-fuse) version src;
-  cargoLock.lockFile = "${sources.overdrive-fuse.src}/Cargo.lock";
+  cargoLock.lockFile = "${sources.onedrive-fuse.src}/Cargo.lock";
 
   nativeBuildInputs = [
     pkg-config
