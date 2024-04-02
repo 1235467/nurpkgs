@@ -4,27 +4,21 @@
 , ffmpeg
 , pkg-config
 , git
+, callPackage
 , ...
 }:
 let
   pname = "Anime4K-rs";
-  version = "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29";
-  sha256 = "sha256-7CvYbc4U9kIwV2ELkd4lqKC1ynCwqizpXBXJamSGDig=";
+  sources = callPackage ../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage {
-  inherit pname version;
+  inherit pname;
+  inherit (sources.Anime4K-rs) version src;
 
-  src = fetchFromGitHub {
-    owner = "andraantariksa";
-    repo = pname;
-    rev = version;
-    inherit sha256;
-  };
   cargoLock = {
-    lockFile = ./Cargo.lock;
+    lockFile = "${sources.Anime4K-rs.src}/Cargo.lock";
     outputHashes = {
       "raster-0.2.1" = "sha256-V1QDXECg64zamrL+hEE74FBAIjwjeVDvWhgdezM0MIo=";
-
     };
   };
 

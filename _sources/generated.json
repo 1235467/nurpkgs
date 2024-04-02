@@ -1,4 +1,24 @@
 {
+    "Anime4K-rs": {
+        "cargoLocks": null,
+        "date": "2020-08-09",
+        "extract": null,
+        "name": "Anime4K-rs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "andraantariksa",
+            "repo": "Anime4K-rs",
+            "rev": "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29",
+            "sha256": "sha256-7CvYbc4U9kIwV2ELkd4lqKC1ynCwqizpXBXJamSGDig=",
+            "type": "github"
+        },
+        "version": "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29"
+    },
     "ab-av1": {
         "cargoLocks": null,
         "date": "2024-03-09",

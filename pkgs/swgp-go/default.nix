@@ -6,7 +6,8 @@ buildGoModule rec {
   pname = "swgp-go";
   inherit (sources.swgp-go) version src;
 
-  vendorHash = "sha256-+3Ot06XXRJM1ebr/jgijA5bjsyWeN7M7uhx0MFuCZjY=";
+  #vendorHash = "sha256-+3Ot06XXRJM1ebr/jgijA5bjsyWeN7M7uhx0MFuCZjY=";
+  vendorHash = null;
   doCheck = false;
   meta = with lib; {
     description = "🐉 Simple WireGuard proxy with minimal overhead for WireGuard traffic";

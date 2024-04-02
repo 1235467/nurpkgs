@@ -50,3 +50,7 @@ fetch.github = "oxalica/onedrive-fuse"
 [sakaya]
 src.git = "https://github.com/donovanglover/sakaya"
 fetch.github = "donovanglover/sakaya"
+
+[Anime4K-rs]
+src.git = "https://github.com/andraantariksa/Anime4K-rs"
+fetch.github = "andraantariksa/Anime4K-rs"
