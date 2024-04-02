@@ -43,3 +43,10 @@ fetch.github = "waylyrics/waylyrics"
 src.git = "https://github.com/InputUsername/rescrobbled"
 fetch.github = "InputUsername/rescrobbled"
 
+[onedrive-fuse]
+src.git = "https://github.com/oxalica/onedrive-fuse"
+fetch.github = "oxalica/onedrive-fuse"
+
+[sakaya]
+src.git = "https://github.com/donovanglover/sakaya"
+fetch.github = "donovanglover/sakaya"

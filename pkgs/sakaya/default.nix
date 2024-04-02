@@ -2,25 +2,17 @@
 , fetchFromGitHub
 , rustPlatform
 , installShellFiles
+, pkgs
 , ...
 }:
 let
   pname = "sakaya";
-  version = "76c1e69a5ff58657172f0e262b186df635b1181c";
-  sha256 = "sha256-NIN+hBfiy+ihIfwHLIJRFQrSqJU1728N2jvZt+80I9I=";
+  sources = pkgs.callPackage ../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage {
-  inherit pname version;
-
-  src = fetchFromGitHub {
-    owner = "donovanglover";
-    repo = pname;
-    rev = version;
-    inherit sha256;
-  };
-  cargoLock = {
-    lockFile = ./Cargo.lock;
-  };
+  inherit pname;
+  inherit (sources.sakaya) version src;
+  cargoLock.lockFile = "${sources.sakaya.src}/Cargo.lock";
 
 
   nativeBuildInputs = [

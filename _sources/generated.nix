@@ -61,6 +61,18 @@
     };
     date = "2024-03-14";
   };
+  onedrive-fuse = {
+    pname = "onedrive-fuse";
+    version = "88111955b43684942407b736f34943b86ba36101";
+    src = fetchFromGitHub {
+      owner = "oxalica";
+      repo = "onedrive-fuse";
+      rev = "88111955b43684942407b736f34943b86ba36101";
+      fetchSubmodules = false;
+      sha256 = "sha256-JIW3/wmhaGgNXiFxj5kXJD1a1j0AeOik15t7DIeN0LU=";
+    };
+    date = "2024-02-12";
+  };
   qcm = {
     pname = "qcm";
     version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
@@ -84,6 +96,18 @@
       sha256 = "sha256-VOioE6BScwW2kWOViFZ84NuQ5eTI9+mBqAErGW9VWII=";
     };
     date = "2023-11-30";
+  };
+  sakaya = {
+    pname = "sakaya";
+    version = "14e585b2a3fc969ee118e09b476dd4a1b10d19c2";
+    src = fetchFromGitHub {
+      owner = "donovanglover";
+      repo = "sakaya";
+      rev = "14e585b2a3fc969ee118e09b476dd4a1b10d19c2";
+      fetchSubmodules = false;
+      sha256 = "sha256-xssBjmGgci4+6hz7Wwt1suxW1ZzKgYV3bDH31GDEghI=";
+    };
+    date = "2023-12-15";
   };
   suyu = {
     pname = "suyu";
@@ -112,14 +136,14 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "ea1dbcfbeba4c26d920d39b3202b4fae1a583495";
+    version = "680c6d18dc0c65d73728af89128bd9499324ea0b";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "ea1dbcfbeba4c26d920d39b3202b4fae1a583495";
+      rev = "680c6d18dc0c65d73728af89128bd9499324ea0b";
       fetchSubmodules = false;
-      sha256 = "sha256-gzXY/wbFrftY0cgUWOxD4Wl6JyGb4KCAfhN6SLGXsBc=";
+      sha256 = "sha256-K3JNP9sNLwuNb4JjpXe3c9/CNtdlZdfPg2t/3U8rWRs=";
     };
-    date = "2024-04-01";
+    date = "2024-04-02";
   };
 }
