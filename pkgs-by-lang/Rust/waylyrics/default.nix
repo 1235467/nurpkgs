@@ -1,6 +1,6 @@
 { lib, fetchFromGitHub, rustPlatform, gtk4, pkg-config, openssl, dbus, wrapGAppsHook4, glib, makeDesktopItem, pkgs, ... }:
 let
-  sources = pkgs.callPackage ../../_sources/generated.nix { };
+  sources = pkgs.callPackage ../../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage rec
 {

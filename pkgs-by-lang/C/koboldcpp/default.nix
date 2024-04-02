@@ -17,7 +17,7 @@
 , ...
 } @ args:
 let
-  sources = pkgs.callPackage ../../_sources/generated.nix { };
+  sources = pkgs.callPackage ../../../_sources/generated.nix { };
 in
 
 stdenv.mkDerivation rec {

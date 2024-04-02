@@ -26,39 +26,55 @@ rec {
   onedrive-fuse = pkgs.callPackage ./pkgs-by-lang/Rust/onedrive-fuse { };
   rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
   sakaya = pkgs.callPackage ./pkgs-by-lang/Rust/sakaya { };
+  waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
 
-  jjwxcCrawler = pkgs.callPackage ./pkgs/jjwxcCrawler { };
+  # Python
+  idntag = pkgs.callPackage ./pkgs-by-lang/Python/idntag { };
+  jjwxcCrawler = pkgs.callPackage ./pkgs-by-lang/Python/jjwxcCrawler { };
+  pynat = pkgs.callPackage ./pkgs-by-lang/Python/pynat { };
+  pystun3 = pkgs.callPackage ./pkgs-by-lang/Python/pystun3 { };
+  together-cli = pkgs.callPackage ./pkgs-by-lang/Python/together_cli { };
+
+  # C
+  candy = pkgs.callPackage ./pkgs-by-lang/C/candy {};
+  HDiffPatch = pkgs.callPackage ./pkgs-by-lang/C/HDiffPatch { };
+  kagi-cli-shortcut = pkgs.callPackage ./pkgs-by-lang/C/kagi-cli-shortcut { };
+  koboldcpp = pkgs.callPackage ./pkgs-by-lang/C/koboldcpp {};
+  Penguin-Subtitle-Player = pkgs.libsForQt5.callPackage ./pkgs-by-lang/C/Penguin-Subtitle-Player { };
+  suyu = pkgs.qt6.callPackage ./pkgs-by-lang/C/suyu {};
+  #vkbasalt = pkgs.callPackage ./pkgs-by-lang/C/vkbasalt {};
+  #yumekey = pkgs.callPackage ./pkgs-by-lang/C/yumekey {};
+  yuzu-early-access = pkgs.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
+
 
   reflac = pkgs.callPackage ./pkgs/reflac { };
-  idntag = pkgs.callPackage ./pkgs/idntag { };
+
 
   cider = pkgs.callPackage ./pkgs/cider { };
   hydrogen-music = pkgs.callPackage ./pkgs/hydrogen-music { };
 
   swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
-  Penguin-Subtitle-Player = pkgs.libsForQt5.callPackage ./pkgs/Penguin-Subtitle-Player { };
-  waylyrics = pkgs.callPackage ./pkgs/waylyrics { };
-  HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch { };
+
+
 
   mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) {};
   BBDown = pkgs.callPackage ./pkgs/BBDown { };
-  kagi-cli-shortcut = pkgs.callPackage ./pkgs/kagi-cli-shortcut { };
+
   open-snell = pkgs.callPackage ./pkgs/open-snell { };
-  pynat = pkgs.callPackage ./pkgs/pynat { };
-  pystun3 = pkgs.callPackage ./pkgs/pystun3 { };
-  together-cli = pkgs.callPackage ./pkgs/together_cli { };
-  yuzu-early-access = pkgs.qt6.callPackage ./pkgs/yuzu { };
-  suyu = pkgs.qt6.callPackage ./pkgs/suyu {};
-  koboldcpp = pkgs.callPackage ./pkgs/koboldcpp {};
+
+
+
+
+
   forkgram = pkgs.qt6.callPackage ./pkgs/forkgram {};
   basilisk = pkgs.callPackage ./pkgs/basilisk {withGTK3=true;};
-  candy = pkgs.callPackage ./pkgs/candy {};
+
   buildtools = pkgs.callPackage ./buildtools {};
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/openmw {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...s
   qcm = pkgs.qt6.callPackage ./pkgs/qcm {};
-  #yumekey = pkgs.callPackage ./pkgs/yumekey {};
+
 
   #stolen expressions
   #wemeet = pkgs.callPackage ./pkgs/wemeet { };

@@ -1,6 +1,6 @@
 { lib
 , stdenv
-, fetchFromGitLab
+, fetchFromGitHub
 , nix-update-script
 , wrapQtAppsHook
 , autoconf
@@ -37,13 +37,21 @@
 , ...
 }:
 let
-  nx_tzdb = pkgs.callPackage ../_deps/yuzu/nx_tzdb.nix { };
-  compat-list = pkgs.callPackage ../_deps/yuzu/compat-list.nix { };
-  sources = pkgs.callPackage ../../_sources/generated.nix {};
+  nx_tzdb = pkgs.callPackage ../../../pkgs/_deps/yuzu/nx_tzdb.nix { };
+  compat-list = pkgs.callPackage ../../../pkgs/_deps/yuzu/compat-list.nix { };
 in
 stdenv.mkDerivation rec {
-  pname = "suyu";
-  inherit (sources.suyu) version src;
+  pname = "yuzu-early-access";
+  version = "4174";
+
+  #src = pkgs.yuzu-early-access.src;
+  src = fetchFromGitHub {
+    owner = "yuzu-mirror";
+    repo = "yuzu";
+    rev = "34d8dd557b51677d64f9ce17b56b4d5b4c1affa1";
+    sha256 = "sha256-XTPqj1ux6xLMUodbIUjuyvFtXW+Qzwe0mfTyfN5gqaY=";
+    fetchSubmodules = true;
+  };
 
   nativeBuildInputs = [
     cmake
@@ -100,29 +108,32 @@ stdenv.mkDerivation rec {
   dontFixCmake = true;
 
   cmakeFlags = [
-     # actually has a noticeable performance impact
-    "-DSUYU_ENABLE_LTO=ON"
+    # actually has a noticeable performance impact
+    "-DYUZU_ENABLE_LTO=ON"
 
     # build with qt6
     "-DENABLE_QT6=ON"
     "-DENABLE_QT_TRANSLATION=ON"
 
     # use system libraries
-    "-DSUYU_USE_EXTERNAL_SDL2=OFF"
-    "-DSUYU_USE_EXTERNAL_VULKAN_HEADERS=OFF"
+    # NB: "external" here means "from the externals/ directory in the source",
+    # so "off" means "use system"
+    "-DYUZU_USE_EXTERNAL_SDL2=OFF"
+    "-DYUZU_USE_EXTERNAL_VULKAN_HEADERS=OFF"
 
-    "-DSUYU_USE_BUNDLED_FFMPEG=OFF"
+    # don't use system ffmpeg, yuzu uses internal APIs
+    "-DYUZU_USE_BUNDLED_FFMPEG=ON"
 
     # don't check for missing submodules
-    "-DSUYU_CHECK_SUBMODULES=OFF"
+    "-DYUZU_CHECK_SUBMODULES=OFF"
 
     # enable some optional features
-    "-DSUYU_USE_QT_WEB_ENGINE=ON"
-    "-DSUYU_USE_QT_MULTIMEDIA=ON"
+    "-DYUZU_USE_QT_WEB_ENGINE=ON"
+    "-DYUZU_USE_QT_MULTIMEDIA=ON"
     "-DUSE_DISCORD_PRESENCE=ON"
 
     # We dont want to bother upstream with potentially outdated compat reports
-    "-DSUYU_ENABLE_COMPATIBILITY_REPORTING=OFF"
+    "-DYUZU_ENABLE_COMPATIBILITY_REPORTING=OFF"
     "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF" # We provide this deterministically
   ];
 
@@ -153,6 +164,6 @@ stdenv.mkDerivation rec {
   '';
 
   postInstall = ''
-    install -Dm444 $src/dist/72-suyu-input.rules $out/lib/udev/rules.d/72-suyu-input.rules
+    install -Dm444 $src/dist/72-yuzu-input.rules $out/lib/udev/rules.d/72-yuzu-input.rules
   '';
 }
