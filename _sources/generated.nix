@@ -39,15 +39,15 @@
   };
   forkgram = {
     pname = "forkgram";
-    version = "22f987aa46659faf4d45ccf8a9e894bcbbcc66f9";
+    version = "c79cad697116618c45814b645a30e78833a4f2f6";
     src = fetchFromGitHub {
       owner = "forkgram";
       repo = "tdesktop";
-      rev = "22f987aa46659faf4d45ccf8a9e894bcbbcc66f9";
+      rev = "c79cad697116618c45814b645a30e78833a4f2f6";
       fetchSubmodules = true;
-      sha256 = "sha256-5Y/7cFwbX56/bOpC/0Q1FCioiE8HhiMpZDPHcNYHWJY=";
+      sha256 = "sha256-dsj7JYesDHpxpO3YLO5extSCpjaqYvMP2LGa66qIp/Y=";
     };
-    date = "2024-03-25";
+    date = "2024-04-02";
   };
   koboldcpp = {
     pname = "koboldcpp";
@@ -75,14 +75,14 @@
   };
   suyu = {
     pname = "suyu";
-    version = "d3f67d1e9c7562026909a07cb53ea0f20c12a500";
+    version = "a3c8b296071ad22b37ef14af6f769ede528bc0f6";
     src = fetchgit {
       url = "https://git.suyu.dev/suyu/suyu";
-      rev = "d3f67d1e9c7562026909a07cb53ea0f20c12a500";
+      rev = "a3c8b296071ad22b37ef14af6f769ede528bc0f6";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-UUy5At7hH7ZXytsdN8/4JcevTrnTrvoPkU++9ZSKqYw=";
+      sha256 = "sha256-otofzAUQ9PgvX94f0TrjoKaxA6WyEpmDjHz0Vpqpw6U=";
     };
     date = "2024-04-01";
   };
