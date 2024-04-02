@@ -17,7 +17,7 @@
 }:
 let
   pname = "idntag";
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  sources = callPackage ../../../_sources/generated.nix { };
 in
 stdenv.mkDerivation rec {
   inherit pname;
