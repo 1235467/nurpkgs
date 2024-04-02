@@ -73,6 +73,18 @@
     };
     date = "2024-03-14";
   };
+  ncmdump_rs = {
+    pname = "ncmdump_rs";
+    version = "97e6c36596773d2a34f562aed9b4d5d48499a5c6";
+    src = fetchFromGitHub {
+      owner = "iqiziqi";
+      repo = "ncmdump.rs";
+      rev = "97e6c36596773d2a34f562aed9b4d5d48499a5c6";
+      fetchSubmodules = false;
+      sha256 = "sha256-hvziKZlGMLndWd7+Ntheb/7Ru6hpM+QOx1iUmj4cLz4=";
+    };
+    date = "2023-11-10";
+  };
   onedrive-fuse = {
     pname = "onedrive-fuse";
     version = "88111955b43684942407b736f34943b86ba36101";

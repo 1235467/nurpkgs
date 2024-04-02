@@ -119,6 +119,26 @@
         },
         "version": "f3b7651102c3ce3e4f331b93137dc32d752eada0"
     },
+    "ncmdump_rs": {
+        "cargoLocks": null,
+        "date": "2023-11-10",
+        "extract": null,
+        "name": "ncmdump_rs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "iqiziqi",
+            "repo": "ncmdump.rs",
+            "rev": "97e6c36596773d2a34f562aed9b4d5d48499a5c6",
+            "sha256": "sha256-hvziKZlGMLndWd7+Ntheb/7Ru6hpM+QOx1iUmj4cLz4=",
+            "type": "github"
+        },
+        "version": "97e6c36596773d2a34f562aed9b4d5d48499a5c6"
+    },
     "onedrive-fuse": {
         "cargoLocks": null,
         "date": "2024-02-12",

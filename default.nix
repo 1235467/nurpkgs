@@ -17,24 +17,29 @@ rec {
   overlays = import ./overlays; # nixpkgs overlays
 
   sources = pkgs.callPackage ./_sources/generated.nix { };
+  # Rust
+  ab-av1 = pkgs.callPackage ./pkgs-by-lang/Rust/ab-av1 { };
+  Anime4k-rs = pkgs.callPackage ./pkgs-by-lang/Rust/Anime4k-rs { };
+  av1an = pkgs.callPackage ./pkgs-by-lang/Rust/av1an { };
+  #DownOnSpot = pkgs.callPackage ./pkgs-by-lang/Rust/DownOnSpot { };
+  ncmdump-rs = pkgs.callPackage ./pkgs-by-lang/Rust/ncmdump.rs { };
+  onedrive-fuse = pkgs.callPackage ./pkgs-by-lang/Rust/onedrive-fuse { };
+  rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
+  sakaya = pkgs.callPackage ./pkgs-by-lang/Rust/sakaya { };
 
-  ab-av1 = pkgs.callPackage ./pkgs/ab-av1 { };
-  av1an = pkgs.callPackage ./pkgs/av1an { };
-  Anime4k-rs = pkgs.callPackage ./pkgs/Anime4k-rs { };
-  onedrive-fuse = pkgs.callPackage ./pkgs/onedrive-fuse { };
   jjwxcCrawler = pkgs.callPackage ./pkgs/jjwxcCrawler { };
-  #DownOnSpot = pkgs.callPackage ./pkgs/DownOnSpot { };
+
   reflac = pkgs.callPackage ./pkgs/reflac { };
   idntag = pkgs.callPackage ./pkgs/idntag { };
-  ncmdump-rs = pkgs.callPackage ./pkgs/ncmdump.rs { };
+
   cider = pkgs.callPackage ./pkgs/cider { };
   hydrogen-music = pkgs.callPackage ./pkgs/hydrogen-music { };
-  rescrobbled = pkgs.callPackage ./pkgs/rescrobbled { };
+
   swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
   Penguin-Subtitle-Player = pkgs.libsForQt5.callPackage ./pkgs/Penguin-Subtitle-Player { };
   waylyrics = pkgs.callPackage ./pkgs/waylyrics { };
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch { };
-  sakaya = pkgs.callPackage ./pkgs/sakaya { };
+
   mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) {};
   BBDown = pkgs.callPackage ./pkgs/BBDown { };
   kagi-cli-shortcut = pkgs.callPackage ./pkgs/kagi-cli-shortcut { };

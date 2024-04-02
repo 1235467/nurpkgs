@@ -54,3 +54,7 @@ fetch.github = "donovanglover/sakaya"
 [Anime4K-rs]
 src.git = "https://github.com/andraantariksa/Anime4K-rs"
 fetch.github = "andraantariksa/Anime4K-rs"
+
+[ncmdump_rs]
+src.git = "https://github.com/iqiziqi/ncmdump.rs"
+fetch.github = "iqiziqi/ncmdump.rs"

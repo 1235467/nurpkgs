@@ -9,7 +9,7 @@
 }:
 let
   pname = "Anime4K-rs";
-  sources = callPackage ../../_sources/generated.nix { };
+  sources = callPackage ../../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage {
   inherit pname;

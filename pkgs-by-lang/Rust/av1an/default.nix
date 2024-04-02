@@ -16,7 +16,7 @@
 }:
 let
   pname = "av1an";
-  sources = pkgs.callPackage ../../_sources/generated.nix { };
+  sources = pkgs.callPackage ../../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage {
   inherit pname;

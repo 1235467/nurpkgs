@@ -7,7 +7,7 @@
 }:
 let
   pname = "sakaya";
-  sources = pkgs.callPackage ../../_sources/generated.nix { };
+  sources = pkgs.callPackage ../../../_sources/generated.nix { };
 in
 rustPlatform.buildRustPackage {
   inherit pname;
