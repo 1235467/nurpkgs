@@ -179,6 +179,26 @@
         },
         "version": "88111955b43684942407b736f34943b86ba36101"
     },
+    "open-snell": {
+        "cargoLocks": null,
+        "date": "2022-04-19",
+        "extract": null,
+        "name": "open-snell",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "icpz",
+            "repo": "open-snell",
+            "rev": "8d2645b8394b20dba744a860655e3092fc8ae052",
+            "sha256": "sha256-/gILrDXOXDYQ3cTUMbjHAzITdtC2O+4XO0pp1ulRAM4=",
+            "type": "github"
+        },
+        "version": "8d2645b8394b20dba744a860655e3092fc8ae052"
+    },
     "pynat": {
         "cargoLocks": null,
         "date": "2022-08-20",
@@ -238,6 +258,26 @@
             "type": "github"
         },
         "version": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6"
+    },
+    "reflac": {
+        "cargoLocks": null,
+        "date": "2021-08-16",
+        "extract": null,
+        "name": "reflac",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "chungy",
+            "repo": "reflac",
+            "rev": "a2dcaa2f5d3d23cf121934d5ff0e4d169a8f7a64",
+            "sha256": "sha256-vrHDzDTrLPaDHXwgWJplCOQT6YdcWaEu28Rx1yXlgNk=",
+            "type": "github"
+        },
+        "version": "a2dcaa2f5d3d23cf121934d5ff0e4d169a8f7a64"
     },
     "rescrobbled": {
         "cargoLocks": null,

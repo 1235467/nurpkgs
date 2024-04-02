@@ -1,6 +1,6 @@
 { lib, fetchFromGitHub, buildGoModule, pkgs, ... }:
 let
-  sources = pkgs.callPackage ../../_sources/generated.nix { };
+  sources = pkgs.callPackage ../../../_sources/generated.nix { };
 in
 buildGoModule rec {
   pname = "swgp-go";

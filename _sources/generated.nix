@@ -109,6 +109,18 @@
     };
     date = "2024-02-12";
   };
+  open-snell = {
+    pname = "open-snell";
+    version = "8d2645b8394b20dba744a860655e3092fc8ae052";
+    src = fetchFromGitHub {
+      owner = "icpz";
+      repo = "open-snell";
+      rev = "8d2645b8394b20dba744a860655e3092fc8ae052";
+      fetchSubmodules = false;
+      sha256 = "sha256-/gILrDXOXDYQ3cTUMbjHAzITdtC2O+4XO0pp1ulRAM4=";
+    };
+    date = "2022-04-19";
+  };
   pynat = {
     pname = "pynat";
     version = "22a8f2a467bfb95003d35b139dad9fd5a1ca4e9d";
@@ -144,6 +156,18 @@
       sha256 = "sha256-uJwreBXSSH6uXd14e3Ln2rHvk+rrOvmUtkeRIU3sOSw=";
     };
     date = "2024-02-25";
+  };
+  reflac = {
+    pname = "reflac";
+    version = "a2dcaa2f5d3d23cf121934d5ff0e4d169a8f7a64";
+    src = fetchFromGitHub {
+      owner = "chungy";
+      repo = "reflac";
+      rev = "a2dcaa2f5d3d23cf121934d5ff0e4d169a8f7a64";
+      fetchSubmodules = false;
+      sha256 = "sha256-vrHDzDTrLPaDHXwgWJplCOQT6YdcWaEu28Rx1yXlgNk=";
+    };
+    date = "2021-08-16";
   };
   rescrobbled = {
     pname = "rescrobbled";

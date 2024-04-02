@@ -16,7 +16,9 @@ rec {
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  # Eval helper
   sources = pkgs.callPackage ./_sources/generated.nix { };
+
   # Rust
   ab-av1 = pkgs.callPackage ./pkgs-by-lang/Rust/ab-av1 { };
   Anime4k-rs = pkgs.callPackage ./pkgs-by-lang/Rust/Anime4k-rs { };
@@ -27,6 +29,10 @@ rec {
   rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
   sakaya = pkgs.callPackage ./pkgs-by-lang/Rust/sakaya { };
   waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
+
+  # Go
+  open-snell = pkgs.callPackage ./pkgs/open-snell { };
+  swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
 
   # Python
   idntag = pkgs.callPackage ./pkgs-by-lang/Python/idntag { };
@@ -46,21 +52,22 @@ rec {
   #yumekey = pkgs.callPackage ./pkgs-by-lang/C/yumekey {};
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
 
+  # Shell
+  reflac = pkgs.callPackage ./pkgs-by-lang/Shell/reflac { };
 
-  reflac = pkgs.callPackage ./pkgs/reflac { };
 
 
   cider = pkgs.callPackage ./pkgs/cider { };
   hydrogen-music = pkgs.callPackage ./pkgs/hydrogen-music { };
 
-  swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
+
 
 
 
   mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) {};
   BBDown = pkgs.callPackage ./pkgs/BBDown { };
 
-  open-snell = pkgs.callPackage ./pkgs/open-snell { };
+
 
 
 
@@ -83,7 +90,8 @@ rec {
 
   #override
   JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ];};
-  #garnix built pkgs from nixpkgs
+
+  # Force Garnix to build
   mongodb = pkgs-stable.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
 }
