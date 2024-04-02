@@ -38,8 +38,8 @@ rec {
   BBDown = pkgs.callPackage ./pkgs-by-lang/Dotnet/BBDown { };
 
   # Go
-  open-snell = pkgs.callPackage ./pkgs/open-snell { };
-  swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
+  open-snell = pkgs.callPackage ./pkgs-by-lang/Go/open-snell { };
+  swgp-go = pkgs.callPackage ./pkgs-by-lang/Go/swgp-go { };
 
   # Python
   idntag = pkgs.callPackage ./pkgs-by-lang/Python/idntag { };
