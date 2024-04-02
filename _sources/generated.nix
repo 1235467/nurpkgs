@@ -98,4 +98,16 @@
     };
     date = "2024-03-12";
   };
+  waylyrics = {
+    pname = "waylyrics";
+    version = "ea1dbcfbeba4c26d920d39b3202b4fae1a583495";
+    src = fetchFromGitHub {
+      owner = "waylyrics";
+      repo = "waylyrics";
+      rev = "ea1dbcfbeba4c26d920d39b3202b4fae1a583495";
+      fetchSubmodules = false;
+      sha256 = "sha256-gzXY/wbFrftY0cgUWOxD4Wl6JyGb4KCAfhN6SLGXsBc=";
+    };
+    date = "2024-04-01";
+  };
 }

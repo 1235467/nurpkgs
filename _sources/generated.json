@@ -157,5 +157,25 @@
             "type": "github"
         },
         "version": "ff0d7b3552d6b6c1651791f5fab2de5075746e36"
+    },
+    "waylyrics": {
+        "cargoLocks": null,
+        "date": "2024-04-01",
+        "extract": null,
+        "name": "waylyrics",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "waylyrics",
+            "repo": "waylyrics",
+            "rev": "ea1dbcfbeba4c26d920d39b3202b4fae1a583495",
+            "sha256": "sha256-gzXY/wbFrftY0cgUWOxD4Wl6JyGb4KCAfhN6SLGXsBc=",
+            "type": "github"
+        },
+        "version": "ea1dbcfbeba4c26d920d39b3202b4fae1a583495"
     }
 }

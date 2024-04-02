@@ -1,16 +1,11 @@
-{ lib, fetchFromGitHub, rustPlatform, gtk4, pkg-config, openssl, dbus, wrapGAppsHook4, glib, makeDesktopItem, ... }:
-
+{ lib, fetchFromGitHub, rustPlatform, gtk4, pkg-config, openssl, dbus, wrapGAppsHook4, glib, makeDesktopItem, pkgs, ... }:
+let
+  sources = pkgs.callPackage ../../_sources/generated.nix { };
+in
 rustPlatform.buildRustPackage rec
 {
   pname = "waylyrics";
-  version = "0.2.13";
-
-  src = fetchFromGitHub {
-    owner = "poly000";
-    repo = pname;
-    rev = "v${version}";
-    hash = "sha256-522NdpGj0oh2SbWa4GFCFpqNFRhqQxfZ1ZRuS9jUj7Y=";
-  };
+  inherit (sources.waylyrics) version src;
 
   cargoLock.lockFile = "${src}/Cargo.lock";
   cargoLock.outputHashes = {
