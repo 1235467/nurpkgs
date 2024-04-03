@@ -360,7 +360,7 @@
     },
     "waylyrics": {
         "cargoLocks": null,
-        "date": "2024-04-02",
+        "date": "2024-04-03",
         "extract": null,
         "name": "waylyrics",
         "passthru": null,
@@ -372,10 +372,10 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "949e5fe93c38fdec7098cacff5fb6cd137bd4e07",
-            "sha256": "sha256-3ommIk1XGLECQ/bTBG93QHJK1FHI3rjvzZ1HdOIa6Kc=",
+            "rev": "c558a8f61e054adea334ad669f2ad058da0df0fd",
+            "sha256": "sha256-jFsLRTUQC7XieNiD7WwxmQXrlbJEDKzQetq+nmJN6LM=",
             "type": "github"
         },
-        "version": "949e5fe93c38fdec7098cacff5fb6cd137bd4e07"
+        "version": "c558a8f61e054adea334ad669f2ad058da0df0fd"
     }
 }

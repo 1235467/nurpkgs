@@ -220,14 +220,14 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "949e5fe93c38fdec7098cacff5fb6cd137bd4e07";
+    version = "c558a8f61e054adea334ad669f2ad058da0df0fd";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "949e5fe93c38fdec7098cacff5fb6cd137bd4e07";
+      rev = "c558a8f61e054adea334ad669f2ad058da0df0fd";
       fetchSubmodules = false;
-      sha256 = "sha256-3ommIk1XGLECQ/bTBG93QHJK1FHI3rjvzZ1HdOIa6Kc=";
+      sha256 = "sha256-jFsLRTUQC7XieNiD7WwxmQXrlbJEDKzQetq+nmJN6LM=";
     };
-    date = "2024-04-02";
+    date = "2024-04-03";
   };
 }
