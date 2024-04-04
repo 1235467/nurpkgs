@@ -61,7 +61,7 @@
     },
     "candy": {
         "cargoLocks": null,
-        "date": "2024-04-01",
+        "date": "2024-04-03",
         "extract": null,
         "name": "candy",
         "passthru": null,
@@ -73,11 +73,11 @@
             "name": null,
             "owner": "lanthora",
             "repo": "candy",
-            "rev": "4b9e79aaceb53868ea09988d756a1bd82a652612",
-            "sha256": "sha256-4X/X2VmjH8OIMt82uW7TcW8Ojta9C57By1pkeF9ysIY=",
+            "rev": "cf62b506a44756d44e348d4579b5dcd0a33c8c1f",
+            "sha256": "sha256-CxNyOnCpkuFwxGyb7FU6KZ4zZODwWERdQ5zIfCI89k4=",
             "type": "github"
         },
-        "version": "4b9e79aaceb53868ea09988d756a1bd82a652612"
+        "version": "cf62b506a44756d44e348d4579b5dcd0a33c8c1f"
     },
     "forkgram": {
         "cargoLocks": null,
@@ -340,7 +340,7 @@
     },
     "swgp-go": {
         "cargoLocks": null,
-        "date": "2024-03-12",
+        "date": "2024-04-03",
         "extract": null,
         "name": "swgp-go",
         "passthru": null,
@@ -352,11 +352,11 @@
             "name": null,
             "owner": "database64128",
             "repo": "swgp-go",
-            "rev": "ff0d7b3552d6b6c1651791f5fab2de5075746e36",
-            "sha256": "sha256-oSkIBOC71jgWJEMpv7q0Rd11KRIGxbpYOG2gK8OMLRk=",
+            "rev": "f5a967b1652e6b0cfb1884684cd3893d1e68d1c7",
+            "sha256": "sha256-57SR/KJ3v2EVUWwRvEaXNWqHFOQb83vk5piI+s0++WQ=",
             "type": "github"
         },
-        "version": "ff0d7b3552d6b6c1651791f5fab2de5075746e36"
+        "version": "f5a967b1652e6b0cfb1884684cd3893d1e68d1c7"
     },
     "waylyrics": {
         "cargoLocks": null,
@@ -372,10 +372,10 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "c558a8f61e054adea334ad669f2ad058da0df0fd",
-            "sha256": "sha256-jFsLRTUQC7XieNiD7WwxmQXrlbJEDKzQetq+nmJN6LM=",
+            "rev": "239a3a10aaaf3a7f0d906aaa7a5da0304d7cd6a4",
+            "sha256": "sha256-itwvkho4SqWcTq7BG3On61hIgSzYsoAVC0pM2sR0BsE=",
             "type": "github"
         },
-        "version": "c558a8f61e054adea334ad669f2ad058da0df0fd"
+        "version": "239a3a10aaaf3a7f0d906aaa7a5da0304d7cd6a4"
     }
 }
