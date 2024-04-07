@@ -183,28 +183,28 @@
   };
   sakaya = {
     pname = "sakaya";
-    version = "14e585b2a3fc969ee118e09b476dd4a1b10d19c2";
+    version = "002e313b223421e0a530dac4a201481c135db6bc";
     src = fetchFromGitHub {
       owner = "donovanglover";
       repo = "sakaya";
-      rev = "14e585b2a3fc969ee118e09b476dd4a1b10d19c2";
+      rev = "002e313b223421e0a530dac4a201481c135db6bc";
       fetchSubmodules = false;
-      sha256 = "sha256-xssBjmGgci4+6hz7Wwt1suxW1ZzKgYV3bDH31GDEghI=";
+      sha256 = "sha256-jLDWW5JRwO4xp0SjL6XWiLiivyRLOak9WeLtN8MsYUw=";
     };
-    date = "2023-12-15";
+    date = "2024-04-07";
   };
   suyu = {
     pname = "suyu";
-    version = "77205848afa64fe346e8357397104d266a553033";
+    version = "4a15db8f08edc9627741449e6e6863fc3268bc83";
     src = fetchgit {
       url = "https://git.suyu.dev/suyu/suyu";
-      rev = "77205848afa64fe346e8357397104d266a553033";
+      rev = "4a15db8f08edc9627741449e6e6863fc3268bc83";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-p4BRq0H+qc+qV8D9kT9y5uPw1Xr/kR3G4VZSwNvuTQA=";
+      sha256 = "sha256-tdE0roijnVOlxvu7gzQ2AM4DaNL/uOxMGZ0+Qn3Zrls=";
     };
-    date = "2024-04-06";
+    date = "2024-04-07";
   };
   swgp-go = {
     pname = "swgp-go";
