@@ -15,51 +15,51 @@
   };
   ab-av1 = {
     pname = "ab-av1";
-    version = "e65965f74725a1f6d081c583af91af81f68a2268";
+    version = "6d926b25de3a222cc006d108e5d5fd21bbceb74b";
     src = fetchFromGitHub {
       owner = "alexheretic";
       repo = "ab-av1";
-      rev = "e65965f74725a1f6d081c583af91af81f68a2268";
+      rev = "6d926b25de3a222cc006d108e5d5fd21bbceb74b";
       fetchSubmodules = false;
-      sha256 = "sha256-fUVeeRgfDEggSx1Zpqlneu3W+afR8+6fAnD0F2QQ5uI=";
+      sha256 = "sha256-sNQoIe/OPaYBvzUkihV/STHbB9VxytTgAWUuAfj+N2I=";
     };
-    date = "2024-03-09";
+    date = "2024-04-04";
   };
   av1an = {
     pname = "av1an";
-    version = "6632b470640cccc0ade641b87a456d6e127bb4ca";
+    version = "f34fad88581ab3f30883bf0e35beb674ed50a33e";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "6632b470640cccc0ade641b87a456d6e127bb4ca";
+      rev = "f34fad88581ab3f30883bf0e35beb674ed50a33e";
       fetchSubmodules = false;
-      sha256 = "sha256-fZWgN3HOZXsRLCFcLkeRcHNj3fOiTosiC91jAK5xm30=";
+      sha256 = "sha256-21WK2GOzUO6JBvXzo4CYA+717lF6fpEEagIFK80GQJ8=";
     };
-    date = "2024-03-27";
+    date = "2024-04-06";
   };
   candy = {
     pname = "candy";
-    version = "cf62b506a44756d44e348d4579b5dcd0a33c8c1f";
+    version = "cf9a9b24863876b25521e981dda43d461334075f";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "cf62b506a44756d44e348d4579b5dcd0a33c8c1f";
+      rev = "cf9a9b24863876b25521e981dda43d461334075f";
       fetchSubmodules = false;
-      sha256 = "sha256-CxNyOnCpkuFwxGyb7FU6KZ4zZODwWERdQ5zIfCI89k4=";
+      sha256 = "sha256-JijpRxFVVEztf2x1YXEzCwJw4t0SQdvLOtIJJJUT2+M=";
     };
-    date = "2024-04-03";
+    date = "2024-04-04";
   };
   forkgram = {
     pname = "forkgram";
-    version = "c79cad697116618c45814b645a30e78833a4f2f6";
+    version = "84eed62a6cf8be4c8483ef705e1dfa42a970c5f2";
     src = fetchFromGitHub {
       owner = "forkgram";
       repo = "tdesktop";
-      rev = "c79cad697116618c45814b645a30e78833a4f2f6";
+      rev = "84eed62a6cf8be4c8483ef705e1dfa42a970c5f2";
       fetchSubmodules = true;
-      sha256 = "sha256-dsj7JYesDHpxpO3YLO5extSCpjaqYvMP2LGa66qIp/Y=";
+      sha256 = "sha256-GKStMCumCQUdx5NdT19tjwxQz1Pk7PI2xCqKfhjHjQI=";
     };
-    date = "2024-04-02";
+    date = "2024-04-06";
   };
   idntag = {
     pname = "idntag";
@@ -195,39 +195,39 @@
   };
   suyu = {
     pname = "suyu";
-    version = "b911ac8516850b8e86e4479367b33bf81665bcac";
+    version = "77205848afa64fe346e8357397104d266a553033";
     src = fetchgit {
       url = "https://git.suyu.dev/suyu/suyu";
-      rev = "b911ac8516850b8e86e4479367b33bf81665bcac";
+      rev = "77205848afa64fe346e8357397104d266a553033";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-9NRavg7EXOUjCvf/Ly7JykJhNiogmtxRoPxyOJ8YYgw=";
+      sha256 = "sha256-p4BRq0H+qc+qV8D9kT9y5uPw1Xr/kR3G4VZSwNvuTQA=";
     };
-    date = "2024-04-02";
+    date = "2024-04-06";
   };
   swgp-go = {
     pname = "swgp-go";
-    version = "f5a967b1652e6b0cfb1884684cd3893d1e68d1c7";
+    version = "9031aca6bb3338c2316c9195d5f5fb5c2d706d9c";
     src = fetchFromGitHub {
       owner = "database64128";
       repo = "swgp-go";
-      rev = "f5a967b1652e6b0cfb1884684cd3893d1e68d1c7";
+      rev = "9031aca6bb3338c2316c9195d5f5fb5c2d706d9c";
       fetchSubmodules = false;
-      sha256 = "sha256-57SR/KJ3v2EVUWwRvEaXNWqHFOQb83vk5piI+s0++WQ=";
+      sha256 = "sha256-GiJD2DhRIRTaGSMCf56ktlb46tgjEogINg60S2trxis=";
     };
-    date = "2024-04-03";
+    date = "2024-04-04";
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "239a3a10aaaf3a7f0d906aaa7a5da0304d7cd6a4";
+    version = "29a93c631385d19fa4c6a3a7dbed769fcdf5421f";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "239a3a10aaaf3a7f0d906aaa7a5da0304d7cd6a4";
+      rev = "29a93c631385d19fa4c6a3a7dbed769fcdf5421f";
       fetchSubmodules = false;
-      sha256 = "sha256-itwvkho4SqWcTq7BG3On61hIgSzYsoAVC0pM2sR0BsE=";
+      sha256 = "sha256-kGPWZc2GqGmv7gQ8wKyahGE7qE3bhgNmsAOdic/ZE+A=";
     };
-    date = "2024-04-03";
+    date = "2024-04-05";
   };
 }
