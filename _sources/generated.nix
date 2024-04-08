@@ -85,6 +85,18 @@
     };
     date = "2024-03-14";
   };
+  nbfc-linux = {
+    pname = "nbfc-linux";
+    version = "9499e16a83547306590ef3d618c45a75f9a852d0";
+    src = fetchFromGitHub {
+      owner = "nbfc-linux";
+      repo = "nbfc-linux";
+      rev = "9499e16a83547306590ef3d618c45a75f9a852d0";
+      fetchSubmodules = false;
+      sha256 = "sha256-zaJbaifCf632ZAK+0cVEkAlG6YU/IEwh2Uhn8tbNUFY=";
+    };
+    date = "2024-04-03";
+  };
   ncmdump_rs = {
     pname = "ncmdump_rs";
     version = "97e6c36596773d2a34f562aed9b4d5d48499a5c6";

@@ -58,6 +58,7 @@ rec {
   #vkbasalt = pkgs.callPackage ./pkgs-by-lang/C/vkbasalt {};
   #yumekey = pkgs.callPackage ./pkgs-by-lang/C/yumekey {};
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
+  nbfc-linux = pkgs.callPackage ./pkgs-by-lang/C/nbfc-linux {};
 
   # Shell
   reflac = pkgs.callPackage ./pkgs-by-lang/Shell/reflac { };

@@ -13,9 +13,11 @@ src.git = "https://git.suyu.dev/suyu/suyu"
 fetch.git = "https://git.suyu.dev/suyu/suyu"
 git.fetchSubmodules = true
 
+[nbfc-linux]
+src.git = "https://github.com/nbfc-linux/nbfc-linux"
+fetch.github = "nbfc-linux/nbfc-linux"
+
 # Dotnet
-src.git = "https://github.com/hirschmann/nbfc"
-fetch.github = "hirschmann/nbfc"
 
 # Go
 [open-snell]

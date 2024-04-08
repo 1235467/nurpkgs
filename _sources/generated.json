@@ -139,6 +139,26 @@
         },
         "version": "f3b7651102c3ce3e4f331b93137dc32d752eada0"
     },
+    "nbfc-linux": {
+        "cargoLocks": null,
+        "date": "2024-04-03",
+        "extract": null,
+        "name": "nbfc-linux",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "nbfc-linux",
+            "repo": "nbfc-linux",
+            "rev": "9499e16a83547306590ef3d618c45a75f9a852d0",
+            "sha256": "sha256-zaJbaifCf632ZAK+0cVEkAlG6YU/IEwh2Uhn8tbNUFY=",
+            "type": "github"
+        },
+        "version": "9499e16a83547306590ef3d618c45a75f9a852d0"
+    },
     "ncmdump_rs": {
         "cargoLocks": null,
         "date": "2023-11-10",
