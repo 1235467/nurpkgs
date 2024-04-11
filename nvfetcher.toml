@@ -93,4 +93,7 @@ src.git = "https://github.com/forkgram/tdesktop"
 fetch.github = "forkgram/tdesktop"
 git.fetchSubmodules = true
 
-
+[sway-im]
+src.git = "https://aur.archlinux.org/sway-im"
+fetch.git = "https://aur.archlinux.org/sway-im"
+git.fetchSubmodules = true

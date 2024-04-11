@@ -78,6 +78,7 @@ rec {
   #openmw = pkgs.libsForQt5.callPackage ./pkgs/Overrides/openmw {};
   qcm = pkgs.qt6.callPackage ./pkgs/Overrides/qcm {};
   mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) {};
+  sway-im = pkgs.callPackage ./pkgs/Overrides/sway-im {};
 
   # System Fonts override
   JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ];};

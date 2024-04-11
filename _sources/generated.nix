@@ -75,15 +75,15 @@
   };
   koboldcpp = {
     pname = "koboldcpp";
-    version = "bf320dca90e088f9da43b2dbed4aed117f343a43";
+    version = "41fa4310b9f08a2bce463b697ca436b3ada7ebde";
     src = fetchFromGitHub {
       owner = "LostRuins";
       repo = "koboldcpp";
-      rev = "bf320dca90e088f9da43b2dbed4aed117f343a43";
+      rev = "41fa4310b9f08a2bce463b697ca436b3ada7ebde";
       fetchSubmodules = true;
-      sha256 = "sha256-P9B0TFXhYLuSDwvvWnL3TBySw3dYH0eHQjbsJsswvLk=";
+      sha256 = "sha256-+sJMZdAUb3Gj4jkKu8aDP34KC6xQXtOYZSS2knzny+A=";
     };
-    date = "2024-04-10";
+    date = "2024-04-11";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -217,6 +217,19 @@
       sha256 = "sha256-wLUPNRDR22m34OcUSB1xHd+pT7/wx0pHYAZj6LnEN4g=";
     };
     date = "2024-04-11";
+  };
+  sway-im = {
+    pname = "sway-im";
+    version = "b8434b3ad9e8c6946dbf7b14b0f7ef5679452b94";
+    src = fetchgit {
+      url = "https://aur.archlinux.org/sway-im";
+      rev = "b8434b3ad9e8c6946dbf7b14b0f7ef5679452b94";
+      fetchSubmodules = true;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-/676rgCEATaaLn504c0SsShAAD6muWUuoYkc0WPGd3U=";
+    };
+    date = "2024-02-25";
   };
   swgp-go = {
     pname = "swgp-go";

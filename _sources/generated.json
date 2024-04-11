@@ -121,7 +121,7 @@
     },
     "koboldcpp": {
         "cargoLocks": null,
-        "date": "2024-04-10",
+        "date": "2024-04-11",
         "extract": null,
         "name": "koboldcpp",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "LostRuins",
             "repo": "koboldcpp",
-            "rev": "bf320dca90e088f9da43b2dbed4aed117f343a43",
-            "sha256": "sha256-P9B0TFXhYLuSDwvvWnL3TBySw3dYH0eHQjbsJsswvLk=",
+            "rev": "41fa4310b9f08a2bce463b697ca436b3ada7ebde",
+            "sha256": "sha256-+sJMZdAUb3Gj4jkKu8aDP34KC6xQXtOYZSS2knzny+A=",
             "type": "github"
         },
-        "version": "bf320dca90e088f9da43b2dbed4aed117f343a43"
+        "version": "41fa4310b9f08a2bce463b697ca436b3ada7ebde"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -357,6 +357,25 @@
             "url": "https://git.suyu.dev/suyu/suyu"
         },
         "version": "2b16baf506886ab7df9c4df0b48ae43e047aa593"
+    },
+    "sway-im": {
+        "cargoLocks": null,
+        "date": "2024-02-25",
+        "extract": null,
+        "name": "sway-im",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "b8434b3ad9e8c6946dbf7b14b0f7ef5679452b94",
+            "sha256": "sha256-/676rgCEATaaLn504c0SsShAAD6muWUuoYkc0WPGd3U=",
+            "type": "git",
+            "url": "https://aur.archlinux.org/sway-im"
+        },
+        "version": "b8434b3ad9e8c6946dbf7b14b0f7ef5679452b94"
     },
     "swgp-go": {
         "cargoLocks": null,
