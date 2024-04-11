@@ -75,15 +75,15 @@
   };
   koboldcpp = {
     pname = "koboldcpp";
-    version = "41fa4310b9f08a2bce463b697ca436b3ada7ebde";
+    version = "2f3597c29abea8b6da28f21e714b6b24a5aca79b";
     src = fetchFromGitHub {
       owner = "LostRuins";
       repo = "koboldcpp";
-      rev = "41fa4310b9f08a2bce463b697ca436b3ada7ebde";
+      rev = "2f3597c29abea8b6da28f21e714b6b24a5aca79b";
       fetchSubmodules = true;
-      sha256 = "sha256-+sJMZdAUb3Gj4jkKu8aDP34KC6xQXtOYZSS2knzny+A=";
+      sha256 = "sha256-m5bBVy740WgHLXHW7woXtzW6LS/MTrNYgYKHMwAYaZM=";
     };
-    date = "2024-04-11";
+    date = "2024-04-12";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
