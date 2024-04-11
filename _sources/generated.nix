@@ -39,27 +39,27 @@
   };
   candy = {
     pname = "candy";
-    version = "cf9a9b24863876b25521e981dda43d461334075f";
+    version = "d1a3119e927a70d0d00ad137bcf9a5dcd99d271e";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "cf9a9b24863876b25521e981dda43d461334075f";
+      rev = "d1a3119e927a70d0d00ad137bcf9a5dcd99d271e";
       fetchSubmodules = false;
-      sha256 = "sha256-JijpRxFVVEztf2x1YXEzCwJw4t0SQdvLOtIJJJUT2+M=";
+      sha256 = "sha256-M3tADrm9r1mWJAlSnICk+xz/8pPc/McIVV1nd9f6gkM=";
     };
-    date = "2024-04-04";
+    date = "2024-04-11";
   };
   forkgram = {
     pname = "forkgram";
-    version = "84eed62a6cf8be4c8483ef705e1dfa42a970c5f2";
+    version = "1e07e7037a5edd554bae5cf43d1f99d6cf02f695";
     src = fetchFromGitHub {
       owner = "forkgram";
       repo = "tdesktop";
-      rev = "84eed62a6cf8be4c8483ef705e1dfa42a970c5f2";
+      rev = "1e07e7037a5edd554bae5cf43d1f99d6cf02f695";
       fetchSubmodules = true;
-      sha256 = "sha256-GKStMCumCQUdx5NdT19tjwxQz1Pk7PI2xCqKfhjHjQI=";
+      sha256 = "sha256-kPfMK2b9p/FdFvA6doOd48YT0lEz7AIfZCKLxjyhsIo=";
     };
-    date = "2024-04-06";
+    date = "2024-04-09";
   };
   idntag = {
     pname = "idntag";
@@ -75,15 +75,15 @@
   };
   koboldcpp = {
     pname = "koboldcpp";
-    version = "f3b7651102c3ce3e4f331b93137dc32d752eada0";
+    version = "bf320dca90e088f9da43b2dbed4aed117f343a43";
     src = fetchFromGitHub {
       owner = "LostRuins";
       repo = "koboldcpp";
-      rev = "f3b7651102c3ce3e4f331b93137dc32d752eada0";
+      rev = "bf320dca90e088f9da43b2dbed4aed117f343a43";
       fetchSubmodules = true;
-      sha256 = "sha256-l6XWbstBAl5BQrwrQxLuPX5uKp02hED6vGQQVhZAO9U=";
+      sha256 = "sha256-P9B0TFXhYLuSDwvvWnL3TBySw3dYH0eHQjbsJsswvLk=";
     };
-    date = "2024-03-14";
+    date = "2024-04-10";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -195,28 +195,28 @@
   };
   sakaya = {
     pname = "sakaya";
-    version = "002e313b223421e0a530dac4a201481c135db6bc";
+    version = "fd3781686d01f002b802e0642c2f0eb4ef18624b";
     src = fetchFromGitHub {
       owner = "donovanglover";
       repo = "sakaya";
-      rev = "002e313b223421e0a530dac4a201481c135db6bc";
+      rev = "fd3781686d01f002b802e0642c2f0eb4ef18624b";
       fetchSubmodules = false;
-      sha256 = "sha256-jLDWW5JRwO4xp0SjL6XWiLiivyRLOak9WeLtN8MsYUw=";
+      sha256 = "sha256-QI/Hp0UuZRg/X06wH5c0w+pN0aTFnpNhgKO0gKvxrAw=";
     };
-    date = "2024-04-07";
+    date = "2024-04-08";
   };
   suyu = {
     pname = "suyu";
-    version = "4a15db8f08edc9627741449e6e6863fc3268bc83";
+    version = "2b16baf506886ab7df9c4df0b48ae43e047aa593";
     src = fetchgit {
       url = "https://git.suyu.dev/suyu/suyu";
-      rev = "4a15db8f08edc9627741449e6e6863fc3268bc83";
+      rev = "2b16baf506886ab7df9c4df0b48ae43e047aa593";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-tdE0roijnVOlxvu7gzQ2AM4DaNL/uOxMGZ0+Qn3Zrls=";
+      sha256 = "sha256-wLUPNRDR22m34OcUSB1xHd+pT7/wx0pHYAZj6LnEN4g=";
     };
-    date = "2024-04-07";
+    date = "2024-04-11";
   };
   swgp-go = {
     pname = "swgp-go";
@@ -232,14 +232,14 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "29a93c631385d19fa4c6a3a7dbed769fcdf5421f";
+    version = "f739237d78b15378214305d93fdb58168275f1e6";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "29a93c631385d19fa4c6a3a7dbed769fcdf5421f";
+      rev = "f739237d78b15378214305d93fdb58168275f1e6";
       fetchSubmodules = false;
-      sha256 = "sha256-kGPWZc2GqGmv7gQ8wKyahGE7qE3bhgNmsAOdic/ZE+A=";
+      sha256 = "sha256-RcVtOpdZYSQy/atGW2IQ6bnIXM/IM3fGamNv6kZ1ZFY=";
     };
-    date = "2024-04-05";
+    date = "2024-04-09";
   };
 }

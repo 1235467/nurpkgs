@@ -61,7 +61,7 @@
     },
     "candy": {
         "cargoLocks": null,
-        "date": "2024-04-04",
+        "date": "2024-04-11",
         "extract": null,
         "name": "candy",
         "passthru": null,
@@ -73,15 +73,15 @@
             "name": null,
             "owner": "lanthora",
             "repo": "candy",
-            "rev": "cf9a9b24863876b25521e981dda43d461334075f",
-            "sha256": "sha256-JijpRxFVVEztf2x1YXEzCwJw4t0SQdvLOtIJJJUT2+M=",
+            "rev": "d1a3119e927a70d0d00ad137bcf9a5dcd99d271e",
+            "sha256": "sha256-M3tADrm9r1mWJAlSnICk+xz/8pPc/McIVV1nd9f6gkM=",
             "type": "github"
         },
-        "version": "cf9a9b24863876b25521e981dda43d461334075f"
+        "version": "d1a3119e927a70d0d00ad137bcf9a5dcd99d271e"
     },
     "forkgram": {
         "cargoLocks": null,
-        "date": "2024-04-06",
+        "date": "2024-04-09",
         "extract": null,
         "name": "forkgram",
         "passthru": null,
@@ -93,11 +93,11 @@
             "name": null,
             "owner": "forkgram",
             "repo": "tdesktop",
-            "rev": "84eed62a6cf8be4c8483ef705e1dfa42a970c5f2",
-            "sha256": "sha256-GKStMCumCQUdx5NdT19tjwxQz1Pk7PI2xCqKfhjHjQI=",
+            "rev": "1e07e7037a5edd554bae5cf43d1f99d6cf02f695",
+            "sha256": "sha256-kPfMK2b9p/FdFvA6doOd48YT0lEz7AIfZCKLxjyhsIo=",
             "type": "github"
         },
-        "version": "84eed62a6cf8be4c8483ef705e1dfa42a970c5f2"
+        "version": "1e07e7037a5edd554bae5cf43d1f99d6cf02f695"
     },
     "idntag": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "koboldcpp": {
         "cargoLocks": null,
-        "date": "2024-03-14",
+        "date": "2024-04-10",
         "extract": null,
         "name": "koboldcpp",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "LostRuins",
             "repo": "koboldcpp",
-            "rev": "f3b7651102c3ce3e4f331b93137dc32d752eada0",
-            "sha256": "sha256-l6XWbstBAl5BQrwrQxLuPX5uKp02hED6vGQQVhZAO9U=",
+            "rev": "bf320dca90e088f9da43b2dbed4aed117f343a43",
+            "sha256": "sha256-P9B0TFXhYLuSDwvvWnL3TBySw3dYH0eHQjbsJsswvLk=",
             "type": "github"
         },
-        "version": "f3b7651102c3ce3e4f331b93137dc32d752eada0"
+        "version": "bf320dca90e088f9da43b2dbed4aed117f343a43"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -321,7 +321,7 @@
     },
     "sakaya": {
         "cargoLocks": null,
-        "date": "2024-04-07",
+        "date": "2024-04-08",
         "extract": null,
         "name": "sakaya",
         "passthru": null,
@@ -333,15 +333,15 @@
             "name": null,
             "owner": "donovanglover",
             "repo": "sakaya",
-            "rev": "002e313b223421e0a530dac4a201481c135db6bc",
-            "sha256": "sha256-jLDWW5JRwO4xp0SjL6XWiLiivyRLOak9WeLtN8MsYUw=",
+            "rev": "fd3781686d01f002b802e0642c2f0eb4ef18624b",
+            "sha256": "sha256-QI/Hp0UuZRg/X06wH5c0w+pN0aTFnpNhgKO0gKvxrAw=",
             "type": "github"
         },
-        "version": "002e313b223421e0a530dac4a201481c135db6bc"
+        "version": "fd3781686d01f002b802e0642c2f0eb4ef18624b"
     },
     "suyu": {
         "cargoLocks": null,
-        "date": "2024-04-07",
+        "date": "2024-04-11",
         "extract": null,
         "name": "suyu",
         "passthru": null,
@@ -351,12 +351,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "4a15db8f08edc9627741449e6e6863fc3268bc83",
-            "sha256": "sha256-tdE0roijnVOlxvu7gzQ2AM4DaNL/uOxMGZ0+Qn3Zrls=",
+            "rev": "2b16baf506886ab7df9c4df0b48ae43e047aa593",
+            "sha256": "sha256-wLUPNRDR22m34OcUSB1xHd+pT7/wx0pHYAZj6LnEN4g=",
             "type": "git",
             "url": "https://git.suyu.dev/suyu/suyu"
         },
-        "version": "4a15db8f08edc9627741449e6e6863fc3268bc83"
+        "version": "2b16baf506886ab7df9c4df0b48ae43e047aa593"
     },
     "swgp-go": {
         "cargoLocks": null,
@@ -380,7 +380,7 @@
     },
     "waylyrics": {
         "cargoLocks": null,
-        "date": "2024-04-05",
+        "date": "2024-04-09",
         "extract": null,
         "name": "waylyrics",
         "passthru": null,
@@ -392,10 +392,10 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "29a93c631385d19fa4c6a3a7dbed769fcdf5421f",
-            "sha256": "sha256-kGPWZc2GqGmv7gQ8wKyahGE7qE3bhgNmsAOdic/ZE+A=",
+            "rev": "f739237d78b15378214305d93fdb58168275f1e6",
+            "sha256": "sha256-RcVtOpdZYSQy/atGW2IQ6bnIXM/IM3fGamNv6kZ1ZFY=",
             "type": "github"
         },
-        "version": "29a93c631385d19fa4c6a3a7dbed769fcdf5421f"
+        "version": "f739237d78b15378214305d93fdb58168275f1e6"
     }
 }
