@@ -33,6 +33,7 @@
 , yasm
 , zlib
 , zstd
+, libtool
 , pkgs
 , ...
 }:
@@ -93,7 +94,7 @@ stdenv.mkDerivation rec {
     # intentionally omitted: xbyak - prefer vendored version for compatibility
     zlib
     zstd
-  ];
+  ] ++ [libtool];
 
   # This changes `ir/opt` to `ir/var/empty` in `externals/dynarmic/src/dynarmic/CMakeLists.txt`
   # making the build fail, as that path does not exist
