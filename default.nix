@@ -60,6 +60,7 @@ rec {
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
   nbfc-linux = pkgs.callPackage ./pkgs-by-lang/C/nbfc-linux {};
   llamafile = pkgs.callPackage ./pkgs-by-lang/C/llamafile {};
+  sudachi = pkgs.qt6.callPackage ./pkgs-by-lang/C/sudachi {};
 
   # Shell
   reflac = pkgs.callPackage ./pkgs-by-lang/Shell/reflac { };

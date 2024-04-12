@@ -21,6 +21,11 @@ fetch.github = "nbfc-linux/nbfc-linux"
 src.git = "https://github.com/Mozilla-Ocho/llamafile"
 fetch.github = "Mozilla-Ocho/llamafile"
 
+[sudachi]
+src.git = "https://github.com/sudachi-emu/sudachi"
+fetch.github = "sudachi-emu/sudachi"
+git.fetchSubmodules = true
+
 # Dotnet
 
 # Go

@@ -359,6 +359,26 @@
         },
         "version": "fd3781686d01f002b802e0642c2f0eb4ef18624b"
     },
+    "sudachi": {
+        "cargoLocks": null,
+        "date": "2024-04-12",
+        "extract": null,
+        "name": "sudachi",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "sudachi-emu",
+            "repo": "sudachi",
+            "rev": "edd789601813a16ef938d5a58eaec90ed6cbbd82",
+            "sha256": "sha256-hM2+uqJFpSmAO+E+4E0FeC8IasCYvax1UD45jVtkt3A=",
+            "type": "github"
+        },
+        "version": "edd789601813a16ef938d5a58eaec90ed6cbbd82"
+    },
     "suyu": {
         "cargoLocks": null,
         "date": "2024-04-11",

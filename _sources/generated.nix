@@ -217,6 +217,18 @@
     };
     date = "2024-04-08";
   };
+  sudachi = {
+    pname = "sudachi";
+    version = "edd789601813a16ef938d5a58eaec90ed6cbbd82";
+    src = fetchFromGitHub {
+      owner = "sudachi-emu";
+      repo = "sudachi";
+      rev = "edd789601813a16ef938d5a58eaec90ed6cbbd82";
+      fetchSubmodules = true;
+      sha256 = "sha256-hM2+uqJFpSmAO+E+4E0FeC8IasCYvax1UD45jVtkt3A=";
+    };
+    date = "2024-04-12";
+  };
   suyu = {
     pname = "suyu";
     version = "2b16baf506886ab7df9c4df0b48ae43e047aa593";
