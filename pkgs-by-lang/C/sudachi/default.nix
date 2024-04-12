@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
       "-DSUDACHI_USE_EXTERNAL_SDL2=OFF"
       "-DSUDACHI_USE_EXTERNAL_VULKAN_HEADERS=OFF"
 
-      "-DSUDACHI_USE_BUNDLED_FFMPEG=ON"
+      "-DSUDACHI_USE_BUNDLED_FFMPEG=OFF"
 
       # don't check for missing submodules
       "-DSUDACHI_CHECK_SUBMODULES=OFF"

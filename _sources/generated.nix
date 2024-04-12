@@ -61,6 +61,18 @@
     };
     date = "2024-04-09";
   };
+  hyprland = {
+    pname = "hyprland";
+    version = "b1a94302897ae559c877471f7d365651bcd24ad4";
+    src = fetchFromGitHub {
+      owner = "hyprwm";
+      repo = "Hyprland";
+      rev = "b1a94302897ae559c877471f7d365651bcd24ad4";
+      fetchSubmodules = true;
+      sha256 = "sha256-au9jliZ+1g16LbLHxM49WtLwNZUtzzFaM6CBpiyG0EU=";
+    };
+    date = "2024-04-12";
+  };
   idntag = {
     pname = "idntag";
     version = "0d2fcb286bfa5b7e9ec02d6d9c1d55dd2cf5da5f";
@@ -219,13 +231,13 @@
   };
   sudachi = {
     pname = "sudachi";
-    version = "edd789601813a16ef938d5a58eaec90ed6cbbd82";
+    version = "0f2a1f3f04c2ca309030cffe70e9108f2f01a502";
     src = fetchFromGitHub {
       owner = "sudachi-emu";
       repo = "sudachi";
-      rev = "edd789601813a16ef938d5a58eaec90ed6cbbd82";
+      rev = "0f2a1f3f04c2ca309030cffe70e9108f2f01a502";
       fetchSubmodules = true;
-      sha256 = "sha256-hM2+uqJFpSmAO+E+4E0FeC8IasCYvax1UD45jVtkt3A=";
+      sha256 = "sha256-ssg9wystUafrV83Odd2dVmizSwoCHl4AinOSDNftjbA=";
     };
     date = "2024-04-12";
   };

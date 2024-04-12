@@ -99,6 +99,26 @@
         },
         "version": "1e07e7037a5edd554bae5cf43d1f99d6cf02f695"
     },
+    "hyprland": {
+        "cargoLocks": null,
+        "date": "2024-04-12",
+        "extract": null,
+        "name": "hyprland",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "hyprwm",
+            "repo": "Hyprland",
+            "rev": "b1a94302897ae559c877471f7d365651bcd24ad4",
+            "sha256": "sha256-au9jliZ+1g16LbLHxM49WtLwNZUtzzFaM6CBpiyG0EU=",
+            "type": "github"
+        },
+        "version": "b1a94302897ae559c877471f7d365651bcd24ad4"
+    },
     "idntag": {
         "cargoLocks": null,
         "date": "2023-01-15",
@@ -373,11 +393,11 @@
             "name": null,
             "owner": "sudachi-emu",
             "repo": "sudachi",
-            "rev": "edd789601813a16ef938d5a58eaec90ed6cbbd82",
-            "sha256": "sha256-hM2+uqJFpSmAO+E+4E0FeC8IasCYvax1UD45jVtkt3A=",
+            "rev": "0f2a1f3f04c2ca309030cffe70e9108f2f01a502",
+            "sha256": "sha256-ssg9wystUafrV83Odd2dVmizSwoCHl4AinOSDNftjbA=",
             "type": "github"
         },
-        "version": "edd789601813a16ef938d5a58eaec90ed6cbbd82"
+        "version": "0f2a1f3f04c2ca309030cffe70e9108f2f01a502"
     },
     "suyu": {
         "cargoLocks": null,
