@@ -55,6 +55,7 @@ stdenv.mkDerivation rec {
       # intentionally omitted: xbyak - prefer vendored version for compatibility
       zlib
       zstd
+      libva
     ];
 
 
