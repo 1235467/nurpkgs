@@ -120,7 +120,7 @@ stdenv.mkDerivation rec {
     # enable some optional features
     "-DSUDACHI_USE_QT_WEB_ENGINE=ON"
     "-DSUDACHI_USE_QT_MULTIMEDIA=ON"
-    "-DUSE_DISCORD_PRESENCE=ON"
+    "-DUSE_DISCORD_PRESENCE=OFF"
 
     # We dont want to bother upstream with potentially outdated compat reports
     "-DSUDACHI_ENABLE_COMPATIBILITY_REPORTING=OFF"
