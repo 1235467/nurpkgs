@@ -139,6 +139,26 @@
         },
         "version": "2f3597c29abea8b6da28f21e714b6b24a5aca79b"
     },
+    "llamafile": {
+        "cargoLocks": null,
+        "date": "2024-04-11",
+        "extract": null,
+        "name": "llamafile",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Mozilla-Ocho",
+            "repo": "llamafile",
+            "rev": "5625b4bfaac1295ce639e90b5bc88299b1f399af",
+            "sha256": "sha256-TX5nvaDCXY2wS+911XNY8bfY8sFZBhA9GjRc/hA/z5w=",
+            "type": "github"
+        },
+        "version": "5625b4bfaac1295ce639e90b5bc88299b1f399af"
+    },
     "nbfc-linux": {
         "cargoLocks": null,
         "date": "2024-04-03",

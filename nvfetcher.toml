@@ -17,6 +17,10 @@ git.fetchSubmodules = true
 src.git = "https://github.com/nbfc-linux/nbfc-linux"
 fetch.github = "nbfc-linux/nbfc-linux"
 
+[llamafile]
+src.git = "https://github.com/Mozilla-Ocho/llamafile"
+fetch.github = "Mozilla-Ocho/llamafile"
+
 # Dotnet
 
 # Go
