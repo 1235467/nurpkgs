@@ -35,6 +35,7 @@ stdenv.mkDerivation rec {
       autoconf
       ffmpeg
       fmt
+      yasm
       # intentionally omitted: gamemode - loaded dynamically at runtime
       # intentionally omitted: httplib - upstream requires an older version than what we have
       libopus
