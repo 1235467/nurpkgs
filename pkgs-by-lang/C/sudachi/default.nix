@@ -35,7 +35,6 @@
 , zstd
 , libtool
 , pkgs
-, autoreconfHook
 , ...
 }:
 let
@@ -53,7 +52,6 @@ stdenv.mkDerivation rec {
     pkg-config
     qttools
     wrapQtAppsHook
-    autoreconfHook
   ];
 
   buildInputs = [
@@ -96,7 +94,7 @@ stdenv.mkDerivation rec {
     # intentionally omitted: xbyak - prefer vendored version for compatibility
     zlib
     zstd
-  ] ++ [libtool];
+  ] ++ [libtool pkgs.automake];
 
   # This changes `ir/opt` to `ir/var/empty` in `externals/dynarmic/src/dynarmic/CMakeLists.txt`
   # making the build fail, as that path does not exist
