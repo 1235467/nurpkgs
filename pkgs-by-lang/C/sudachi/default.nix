@@ -1,39 +1,5 @@
 { lib
 , stdenv
-, fetchFromGitLab
-, nix-update-script
-, wrapQtAppsHook
-, autoconf
-, boost
-, catch2_3
-, cmake
-  #, compat-list
-, cpp-jwt
-, cubeb
-, discord-rpc
-, enet
-, fmt
-, glslang
-, libopus
-, libusb1
-, libva
-, lz4
-, nlohmann_json
-, nv-codec-headers-12
-  #, nx_tzdb
-, pkg-config
-, qtbase
-, qtmultimedia
-, qttools
-, qtwayland
-, qtwebengine
-, SDL2
-, vulkan-headers
-, vulkan-loader
-, yasm
-, zlib
-, zstd
-, libtool
 , pkgs
 , ...
 }:
@@ -46,86 +12,83 @@ stdenv.mkDerivation rec {
   pname = "sudachi";
   inherit (sources.sudachi) version src;
 
-  nativeBuildInputs = [
-    cmake
-    glslang
-    pkg-config
-    qttools
-    wrapQtAppsHook
+  nativeBuildInputs = with pkgs; [
+     cmake
+     pkg-config
+     glslang
+     wrapQtAppsHook
+     qttools
   ];
 
-  buildInputs = [
-    # vulkan-headers must come first, so the older propagated versions
-    # don't get picked up by accident
-    vulkan-headers
+  buildInputs = with pkgs; [
+      # vulkan-headers must come first, so the older propagated versions
+      # don't get picked up by accident
+      vulkan-headers
+      boost
+      catch2_3
+      cpp-jwt
+      cubeb
+      discord-rpc
+      # intentionally omitted: dynarmic - prefer vendored version for compatibility
+      enet
+      # vendored ffmpeg deps
+      autoconf
+      ffmpeg
+      fmt
+      # intentionally omitted: gamemode - loaded dynamically at runtime
+      # intentionally omitted: httplib - upstream requires an older version than what we have
+      libopus
+      libusb1
+      # intentionally omitted: LLVM - heavy, only used for stack traces in the debugger
+      lz4
+      nlohmann_json
+      qtbase
+      qtmultimedia
+      qtwayland
+      qtwebengine
+      # intentionally omitted: renderdoc - heavy, developer only
+      SDL2
+      # not packaged in nixpkgs: simpleini
+      # intentionally omitted: stb - header only libraries, vendor uses git snapshot
+      # not packaged in nixpkgs: vulkan-memory-allocator
+      # intentionally omitted: xbyak - prefer vendored version for compatibility
+      zlib
+      zstd
+    ];
 
-    boost
-    catch2_3
-    cpp-jwt
-    cubeb
-    discord-rpc
-    # intentionally omitted: dynarmic - prefer vendored version for compatibility
-    enet
-
-    # vendored ffmpeg deps
-    autoconf
-    yasm
-    libva # for accelerated video decode on non-nvidia
-    nv-codec-headers-12 # for accelerated video decode on nvidia
-    # end vendored ffmpeg deps
-
-    fmt
-    # intentionally omitted: gamemode - loaded dynamically at runtime
-    # intentionally omitted: httplib - upstream requires an older version than what we have
-    libopus
-    libusb1
-    # intentionally omitted: LLVM - heavy, only used for stack traces in the debugger
-    lz4
-    nlohmann_json
-    qtbase
-    qtmultimedia
-    qtwayland
-    qtwebengine
-    # intentionally omitted: renderdoc - heavy, developer only
-    SDL2
-    # not packaged in nixpkgs: simpleini
-    # intentionally omitted: stb - header only libraries, vendor uses git snapshot
-    # not packaged in nixpkgs: vulkan-memory-allocator
-    # intentionally omitted: xbyak - prefer vendored version for compatibility
-    zlib
-    zstd
-  ] ++ [libtool pkgs.automake];
 
   # This changes `ir/opt` to `ir/var/empty` in `externals/dynarmic/src/dynarmic/CMakeLists.txt`
   # making the build fail, as that path does not exist
   dontFixCmake = true;
 
   cmakeFlags = [
-     # actually has a noticeable performance impact
-    "-DSUDACHI_ENABLE_LTO=ON"
+      # actually has a noticeable performance impact
+      "-DSUDACHI_ENABLE_LTO=ON"
 
-    # build with qt6
-    "-DENABLE_QT6=ON"
-    "-DENABLE_QT_TRANSLATION=ON"
 
-    # use system libraries
-    "-DSUDACHI_USE_EXTERNAL_SDL2=OFF"
-    "-DSUDACHI_USE_EXTERNAL_VULKAN_HEADERS=OFF"
+      # build with qt6
+      "-DENABLE_QT6=ON"
+      "-DENABLE_LIBUSB=OFF"
+      "-DENABLE_QT_TRANSLATION=ON"
 
-    "-DSUDACHI_USE_BUNDLED_FFMPEG=OFF"
+      # use system libraries
+      "-DSUDACHI_USE_EXTERNAL_SDL2=OFF"
+      "-DSUDACHI_USE_EXTERNAL_VULKAN_HEADERS=OFF"
 
-    # don't check for missing submodules
-    "-DSUDACHI_CHECK_SUBMODULES=OFF"
+      "-DSUDACHI_USE_BUNDLED_FFMPEG=OFF"
 
-    # enable some optional features
-    "-DSUDACHI_USE_QT_WEB_ENGINE=ON"
-    "-DSUDACHI_USE_QT_MULTIMEDIA=ON"
-    "-DUSE_DISCORD_PRESENCE=OFF"
+      # don't check for missing submodules
+      "-DSUDACHI_CHECK_SUBMODULES=OFF"
 
-    # We dont want to bother upstream with potentially outdated compat reports
-    "-DSUDACHI_ENABLE_COMPATIBILITY_REPORTING=OFF"
-    "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF" # We provide this deterministically
-  ];
+      # enable some optional features
+      "-DSUDACHI_USE_QT_WEB_ENGINE=ON"
+      "-DSUDACHI_USE_QT_MULTIMEDIA=ON"
+      "-DUSE_DISCORD_PRESENCE=OFF"
+
+      # We dont want to bother upstream with potentially outdated compat reports
+      "-DSUDACHI_ENABLE_COMPATIBILITY_REPORTING=OFF"
+      "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF" # We provide this deterministically
+      ];
 
   # Does some handrolled SIMD
   env.NIX_CFLAGS_COMPILE = lib.optionalString stdenv.hostPlatform.isx86_64 "-msse4.1";
@@ -133,7 +96,7 @@ stdenv.mkDerivation rec {
   # Fixes vulkan detection.
   # FIXME: patchelf --add-rpath corrupts the binary for some reason, investigate
   qtWrapperArgs = [
-    "--prefix LD_LIBRARY_PATH : ${vulkan-loader}/lib"
+    "--prefix LD_LIBRARY_PATH : ${pkgs.vulkan-loader}/lib"
   ];
 
   preConfigure = ''
