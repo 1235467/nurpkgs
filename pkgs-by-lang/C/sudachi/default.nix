@@ -16,8 +16,8 @@ stdenv.mkDerivation rec {
      cmake
      pkg-config
      glslang
-     wrapQtAppsHook
-     qttools
+     qt6.wrapQtAppsHook
+     qt6.qttools
   ];
 
   buildInputs = with pkgs; [
@@ -42,10 +42,10 @@ stdenv.mkDerivation rec {
       # intentionally omitted: LLVM - heavy, only used for stack traces in the debugger
       lz4
       nlohmann_json
-      qtbase
-      qtmultimedia
-      qtwayland
-      qtwebengine
+      qt6.qtbase
+      qt6.qtmultimedia
+      qt6.qtwayland
+      qt6.qtwebengine
       # intentionally omitted: renderdoc - heavy, developer only
       SDL2
       # not packaged in nixpkgs: simpleini
