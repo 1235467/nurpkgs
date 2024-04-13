@@ -63,15 +63,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "b1a94302897ae559c877471f7d365651bcd24ad4";
+    version = "582d6233c802327fea45a14d146e7cbab5fe4b1e";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "b1a94302897ae559c877471f7d365651bcd24ad4";
+      rev = "582d6233c802327fea45a14d146e7cbab5fe4b1e";
       fetchSubmodules = true;
-      sha256 = "sha256-au9jliZ+1g16LbLHxM49WtLwNZUtzzFaM6CBpiyG0EU=";
+      sha256 = "sha256-GL6kQ05kyC49JZrivQc7Z3iw+E17DWJDya6pjp5v5wA=";
     };
-    date = "2024-04-12";
+    date = "2024-04-13";
   };
   idntag = {
     pname = "idntag";
@@ -156,6 +156,18 @@
       sha256 = "sha256-/gILrDXOXDYQ3cTUMbjHAzITdtC2O+4XO0pp1ulRAM4=";
     };
     date = "2022-04-19";
+  };
+  pot-desktop = {
+    pname = "pot-desktop";
+    version = "8195fdbdbcd8cf06aa55cec2327d34bfb96c8e00";
+    src = fetchFromGitHub {
+      owner = "pot-app";
+      repo = "pot-desktop";
+      rev = "8195fdbdbcd8cf06aa55cec2327d34bfb96c8e00";
+      fetchSubmodules = true;
+      sha256 = "sha256-Ue0caz0dF7GtPBgVEafv3AIeu8ksuBZN4UAkB/dht10=";
+    };
+    date = "2024-04-10";
   };
   pynat = {
     pname = "pynat";
@@ -243,16 +255,16 @@
   };
   suyu = {
     pname = "suyu";
-    version = "2b16baf506886ab7df9c4df0b48ae43e047aa593";
+    version = "526e1d7a76b572b694d2e451620ede4a70bff86c";
     src = fetchgit {
       url = "https://git.suyu.dev/suyu/suyu";
-      rev = "2b16baf506886ab7df9c4df0b48ae43e047aa593";
+      rev = "526e1d7a76b572b694d2e451620ede4a70bff86c";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-wLUPNRDR22m34OcUSB1xHd+pT7/wx0pHYAZj6LnEN4g=";
+      sha256 = "sha256-FjxueUTEPKHcqdcFYTcxjeQaae2D5oVVQM5i+8szsCI=";
     };
-    date = "2024-04-11";
+    date = "2024-04-12";
   };
   sway-im = {
     pname = "sway-im";
