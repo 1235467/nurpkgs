@@ -9,13 +9,6 @@ in
 pkgs.pot.overrideAttrs (
   prev: rec {
     inherit (sources.pot-desktop) version src;
-#     version = "2.7.9";
-#     src = pkgs.fetchFromGitHub {
-#     owner = "pot-app";
-#     repo = "pot-desktop";
-#     rev = "2.7.9";
-#     hash = "sha256-Y2gFLvRNBjOGxdpIeoY1CXEip0Ht73aymWIP5wuc9kU=";
-#     };
     cargoDeps = pkgs.rustPlatform.importCargoLock {
       lockFile = "${src}/src-tauri/Cargo.lock";
       outputHashes = {
