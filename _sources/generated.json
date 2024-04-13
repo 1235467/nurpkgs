@@ -259,6 +259,26 @@
         },
         "version": "8d2645b8394b20dba744a860655e3092fc8ae052"
     },
+    "openmw": {
+        "cargoLocks": null,
+        "date": "2024-04-12",
+        "extract": null,
+        "name": "openmw",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "OpenMW",
+            "repo": "openmw",
+            "rev": "55c5f2112bca305a1c784195d86623a7b7e01ec7",
+            "sha256": "sha256-ZMoNIFCHJDlyz81xq49hAgRzF5o+ewgNL8bm6t/nER4=",
+            "type": "github"
+        },
+        "version": "55c5f2112bca305a1c784195d86623a7b7e01ec7"
+    },
     "pot-desktop": {
         "cargoLocks": null,
         "date": "2024-04-10",

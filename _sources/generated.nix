@@ -157,6 +157,18 @@
     };
     date = "2022-04-19";
   };
+  openmw = {
+    pname = "openmw";
+    version = "55c5f2112bca305a1c784195d86623a7b7e01ec7";
+    src = fetchFromGitHub {
+      owner = "OpenMW";
+      repo = "openmw";
+      rev = "55c5f2112bca305a1c784195d86623a7b7e01ec7";
+      fetchSubmodules = true;
+      sha256 = "sha256-ZMoNIFCHJDlyz81xq49hAgRzF5o+ewgNL8bm6t/nER4=";
+    };
+    date = "2024-04-12";
+  };
   pot-desktop = {
     pname = "pot-desktop";
     version = "8195fdbdbcd8cf06aa55cec2327d34bfb96c8e00";

@@ -112,6 +112,11 @@ src.git = "https://github.com/hyprwm/Hyprland"
 fetch.github = "hyprwm/Hyprland"
 git.fetchSubmodules = true
 
+[openmw]
+src.git = "https://github.com/OpenMW/openmw"
+fetch.github = "OpenMW/openmw"
+git.fetchSubmodules = true
+
 [pot-desktop]
 src.git = "https://github.com/pot-app/pot-desktop"
 fetch.github = "pot-app/pot-desktop"
