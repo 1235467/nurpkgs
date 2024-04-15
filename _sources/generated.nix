@@ -267,16 +267,15 @@
   };
   suyu = {
     pname = "suyu";
-    version = "88ac3ad34418b75c2163785328d04944f2e0d014";
-    src = fetchgit {
-      url = "https://git.suyu.dev/suyu/suyu";
-      rev = "88ac3ad34418b75c2163785328d04944f2e0d014";
+    version = "c0c28c2e7e39b0bb792814a5bffa50bfd43cd1e4";
+    src = fetchFromGitHub {
+      owner = "suyu-emu";
+      repo = "suyu";
+      rev = "c0c28c2e7e39b0bb792814a5bffa50bfd43cd1e4";
       fetchSubmodules = true;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-uEskLB+zKQ0SsOyzC1pB8QVjcIFiGuPJ1XBLAFTQgKY=";
+      sha256 = "sha256-oli7kjzMjqUvCFqfoyiodOo1q0FeXmC6y8knopmy6No=";
     };
-    date = "2024-04-15";
+    date = "2024-04-14";
   };
   sway-im = {
     pname = "sway-im";
