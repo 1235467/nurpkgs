@@ -61,7 +61,7 @@
     },
     "candy": {
         "cargoLocks": null,
-        "date": "2024-04-11",
+        "date": "2024-04-14",
         "extract": null,
         "name": "candy",
         "passthru": null,
@@ -73,11 +73,11 @@
             "name": null,
             "owner": "lanthora",
             "repo": "candy",
-            "rev": "d1a3119e927a70d0d00ad137bcf9a5dcd99d271e",
-            "sha256": "sha256-M3tADrm9r1mWJAlSnICk+xz/8pPc/McIVV1nd9f6gkM=",
+            "rev": "21aaf7bb011bd2ad03229fe35ad12bafca35bbf7",
+            "sha256": "sha256-niEwzAYak9btU7W1+cE6BZCuU/VMsWgfwssXFXY2a1M=",
             "type": "github"
         },
-        "version": "d1a3119e927a70d0d00ad137bcf9a5dcd99d271e"
+        "version": "21aaf7bb011bd2ad03229fe35ad12bafca35bbf7"
     },
     "forkgram": {
         "cargoLocks": null,
@@ -101,7 +101,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2024-04-13",
+        "date": "2024-04-15",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -113,11 +113,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "582d6233c802327fea45a14d146e7cbab5fe4b1e",
-            "sha256": "sha256-GL6kQ05kyC49JZrivQc7Z3iw+E17DWJDya6pjp5v5wA=",
+            "rev": "1719905e7fdb42516566fb95c07c6572d5fe6ce5",
+            "sha256": "sha256-MO2QvfYc2wOQnjhrTTnWpLKeEJhpoto6FMyiJTTK88M=",
             "type": "github"
         },
-        "version": "582d6233c802327fea45a14d146e7cbab5fe4b1e"
+        "version": "1719905e7fdb42516566fb95c07c6572d5fe6ce5"
     },
     "idntag": {
         "cargoLocks": null,
@@ -161,7 +161,7 @@
     },
     "llamafile": {
         "cargoLocks": null,
-        "date": "2024-04-11",
+        "date": "2024-04-12",
         "extract": null,
         "name": "llamafile",
         "passthru": null,
@@ -173,11 +173,11 @@
             "name": null,
             "owner": "Mozilla-Ocho",
             "repo": "llamafile",
-            "rev": "5625b4bfaac1295ce639e90b5bc88299b1f399af",
-            "sha256": "sha256-TX5nvaDCXY2wS+911XNY8bfY8sFZBhA9GjRc/hA/z5w=",
+            "rev": "a8124633ea9b5860712a954a7cb6d9dc4bd6b365",
+            "sha256": "sha256-G/TDypt5BB+3juleVsSLPMmoOQvNvfEKKONCCs8oTeI=",
             "type": "github"
         },
-        "version": "5625b4bfaac1295ce639e90b5bc88299b1f399af"
+        "version": "a8124633ea9b5860712a954a7cb6d9dc4bd6b365"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -261,7 +261,7 @@
     },
     "openmw": {
         "cargoLocks": null,
-        "date": "2024-04-12",
+        "date": "2024-04-14",
         "extract": null,
         "name": "openmw",
         "passthru": null,
@@ -273,15 +273,15 @@
             "name": null,
             "owner": "OpenMW",
             "repo": "openmw",
-            "rev": "55c5f2112bca305a1c784195d86623a7b7e01ec7",
-            "sha256": "sha256-ZMoNIFCHJDlyz81xq49hAgRzF5o+ewgNL8bm6t/nER4=",
+            "rev": "0fa4b0137a0202c6426b00b2bbcbd8abf8d16420",
+            "sha256": "sha256-0uyB8+bKka9csXUc7duOU3f/1RBL+MT2KTpnMPcfQF8=",
             "type": "github"
         },
-        "version": "55c5f2112bca305a1c784195d86623a7b7e01ec7"
+        "version": "0fa4b0137a0202c6426b00b2bbcbd8abf8d16420"
     },
     "pot-desktop": {
         "cargoLocks": null,
-        "date": "2024-04-10",
+        "date": "2024-04-14",
         "extract": null,
         "name": "pot-desktop",
         "passthru": null,
@@ -293,11 +293,11 @@
             "name": null,
             "owner": "pot-app",
             "repo": "pot-desktop",
-            "rev": "8195fdbdbcd8cf06aa55cec2327d34bfb96c8e00",
-            "sha256": "sha256-Ue0caz0dF7GtPBgVEafv3AIeu8ksuBZN4UAkB/dht10=",
+            "rev": "63e2012503af7254c1b2e662155ef4c56013b66d",
+            "sha256": "sha256-xfcy6CtzrKMbdiFyjFuaXTkU/aqJkwQzCWzKhr04Dl4=",
             "type": "github"
         },
-        "version": "8195fdbdbcd8cf06aa55cec2327d34bfb96c8e00"
+        "version": "63e2012503af7254c1b2e662155ef4c56013b66d"
     },
     "pynat": {
         "cargoLocks": null,
@@ -421,7 +421,7 @@
     },
     "sudachi": {
         "cargoLocks": null,
-        "date": "2024-04-12",
+        "date": "2024-04-13",
         "extract": null,
         "name": "sudachi",
         "passthru": null,
@@ -433,15 +433,15 @@
             "name": null,
             "owner": "sudachi-emu",
             "repo": "sudachi",
-            "rev": "0f2a1f3f04c2ca309030cffe70e9108f2f01a502",
-            "sha256": "sha256-ssg9wystUafrV83Odd2dVmizSwoCHl4AinOSDNftjbA=",
+            "rev": "4ce69bc41f33e3816b9a73ecc6268bd808e44367",
+            "sha256": "sha256-QH4eP/9w00TefqxnXkzU4nLaa0buU3Y7XUt4qWql8Ic=",
             "type": "github"
         },
-        "version": "0f2a1f3f04c2ca309030cffe70e9108f2f01a502"
+        "version": "4ce69bc41f33e3816b9a73ecc6268bd808e44367"
     },
     "suyu": {
         "cargoLocks": null,
-        "date": "2024-04-12",
+        "date": "2024-04-15",
         "extract": null,
         "name": "suyu",
         "passthru": null,
@@ -451,12 +451,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "526e1d7a76b572b694d2e451620ede4a70bff86c",
-            "sha256": "sha256-FjxueUTEPKHcqdcFYTcxjeQaae2D5oVVQM5i+8szsCI=",
+            "rev": "88ac3ad34418b75c2163785328d04944f2e0d014",
+            "sha256": "sha256-uEskLB+zKQ0SsOyzC1pB8QVjcIFiGuPJ1XBLAFTQgKY=",
             "type": "git",
             "url": "https://git.suyu.dev/suyu/suyu"
         },
-        "version": "526e1d7a76b572b694d2e451620ede4a70bff86c"
+        "version": "88ac3ad34418b75c2163785328d04944f2e0d014"
     },
     "sway-im": {
         "cargoLocks": null,
@@ -499,7 +499,7 @@
     },
     "waylyrics": {
         "cargoLocks": null,
-        "date": "2024-04-09",
+        "date": "2024-04-15",
         "extract": null,
         "name": "waylyrics",
         "passthru": null,
@@ -511,10 +511,10 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "f739237d78b15378214305d93fdb58168275f1e6",
-            "sha256": "sha256-RcVtOpdZYSQy/atGW2IQ6bnIXM/IM3fGamNv6kZ1ZFY=",
+            "rev": "4d02f5fc606a903d1309e6d4c3495b14d3be9584",
+            "sha256": "sha256-bO2OeLVlmyEtBU19d/E8hxPeY8C5xWZzKXwQK3l9axg=",
             "type": "github"
         },
-        "version": "f739237d78b15378214305d93fdb58168275f1e6"
+        "version": "4d02f5fc606a903d1309e6d4c3495b14d3be9584"
     }
 }
