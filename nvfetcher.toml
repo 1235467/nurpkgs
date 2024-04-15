@@ -9,10 +9,8 @@ fetch.github = "LostRuins/koboldcpp"
 git.fetchSubmodules = true
 
 [suyu]
-#src.git = "https://git.suyu.dev/suyu/suyu"
-#fetch.git = "https://git.suyu.dev/suyu/suyu"
-src.git = "https://github.com/suyu-emu/suyu"
-fetch.github = "suyu-emu/suyu"
+src.git = "https://git.suyu.dev/suyu/suyu"
+fetch.git = "https://git.suyu.dev/suyu/suyu"
 git.fetchSubmodules = true
 
 [nbfc-linux]
