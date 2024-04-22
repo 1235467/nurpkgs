@@ -23,7 +23,7 @@ jobs:
         nix_path: nixpkgs=channel:nixos-unstable
     - name: Run nvfetcher
       run: |
-        nix develop .#buildtools --command nurpkgs-nvfetcher
+        nix shell .#buildtools --command nurpkgs-nvfetcher
 
     - name: Run flake check
       run: nix flake check
