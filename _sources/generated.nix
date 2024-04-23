@@ -39,15 +39,15 @@
   };
   candy = {
     pname = "candy";
-    version = "975c10213b83c3940ee4ac0690b984cc7ac0d563";
+    version = "319ad0fc1bf651b6b99adb043e8a365a6c7af948";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "975c10213b83c3940ee4ac0690b984cc7ac0d563";
+      rev = "319ad0fc1bf651b6b99adb043e8a365a6c7af948";
       fetchSubmodules = false;
-      sha256 = "sha256-FWvVJ95IljFL1011tjXi9KZ4lNdU3nKXcAaM8tnb418=";
+      sha256 = "sha256-o2dXFyk3hYJlgrdALAthhzW3lMGGgqxjuzqKsBWucTE=";
     };
-    date = "2024-04-21";
+    date = "2024-04-23";
   };
   forkgram = {
     pname = "forkgram";
@@ -317,13 +317,13 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "f2f2f3cacc10a286d0ba197f69ff4da162aa6d0f";
+    version = "4c8bf4730d438532a694cb941ad322d7417a26df";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "f2f2f3cacc10a286d0ba197f69ff4da162aa6d0f";
+      rev = "4c8bf4730d438532a694cb941ad322d7417a26df";
       fetchSubmodules = false;
-      sha256 = "sha256-iXA6M2VJgreAom308w8NTfLEKD1SXqi9msuJHUsCuAg=";
+      sha256 = "sha256-xhh9/KLT046WS9jE3QQiPfKWCAXpW1PHKiutTUjkyJY=";
     };
     date = "2024-04-23";
   };
