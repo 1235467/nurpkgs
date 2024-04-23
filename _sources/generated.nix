@@ -39,13 +39,13 @@
   };
   candy = {
     pname = "candy";
-    version = "319ad0fc1bf651b6b99adb043e8a365a6c7af948";
+    version = "4ea90f7fd99e8696e4643615abbe33c5824275c7";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "319ad0fc1bf651b6b99adb043e8a365a6c7af948";
+      rev = "4ea90f7fd99e8696e4643615abbe33c5824275c7";
       fetchSubmodules = false;
-      sha256 = "sha256-o2dXFyk3hYJlgrdALAthhzW3lMGGgqxjuzqKsBWucTE=";
+      sha256 = "sha256-EHuXMNFbRZWLVuesbdeV+3DBe4Zz4r98shKPCvPqSF4=";
     };
     date = "2024-04-23";
   };
@@ -63,13 +63,13 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "5fdd0bceac9b8b60e68635226de57c3d18d0a034";
+    version = "cf3596a96d5c1012c363d8243baca6431ecf835b";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "5fdd0bceac9b8b60e68635226de57c3d18d0a034";
+      rev = "cf3596a96d5c1012c363d8243baca6431ecf835b";
       fetchSubmodules = true;
-      sha256 = "sha256-v2V4gXJ5uKNH7/X/ah2xwv/cKYNk/Y4VBsRLzczW0qw=";
+      sha256 = "sha256-4YsloqrSLCEwQUVzPWW7NM8PQCKbeJW+T4mBnBNNoBg=";
     };
     date = "2024-04-23";
   };
@@ -171,15 +171,15 @@
   };
   openmw = {
     pname = "openmw";
-    version = "023c0f7a4672fc9d880c0232c1c57a2f1b8be615";
+    version = "6d0df9f6868ff0189d671577a97a0a3076703cf4";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "023c0f7a4672fc9d880c0232c1c57a2f1b8be615";
+      rev = "6d0df9f6868ff0189d671577a97a0a3076703cf4";
       fetchSubmodules = true;
-      sha256 = "sha256-ATMdTLEBN1QVPvAzahFSQ4IAF2VOP/tv97sngcgpeAY=";
+      sha256 = "sha256-Lx3djbYhhPKSdTSIJg0Cghvd+OCDd3ue9zNty5pIAIY=";
     };
-    date = "2024-04-22";
+    date = "2024-04-23";
   };
   pot-desktop = {
     pname = "pot-desktop";
@@ -317,13 +317,13 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "4c8bf4730d438532a694cb941ad322d7417a26df";
+    version = "7d3059da0d6ab22ad88839030e53781d6bad1c30";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "4c8bf4730d438532a694cb941ad322d7417a26df";
+      rev = "7d3059da0d6ab22ad88839030e53781d6bad1c30";
       fetchSubmodules = false;
-      sha256 = "sha256-xhh9/KLT046WS9jE3QQiPfKWCAXpW1PHKiutTUjkyJY=";
+      sha256 = "sha256-tBGid1/kHM140Dw2HqUd3FEv7qPxdCvEdCHseJtaHIg=";
     };
     date = "2024-04-23";
   };
