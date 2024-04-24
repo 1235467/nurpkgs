@@ -6,7 +6,10 @@ with python3Packages;
 buildPythonApplication rec {
   pname = "bypy";
   inherit (sources.bypy) version src;
-  propagatedBuildInputs = [
+  propagatedBuildInputs = with pkgs.python3Packages; [
+  requests
+  requests-toolbelt
+  multiprocess
   ];
   doCheck = false;
 }

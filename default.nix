@@ -47,6 +47,7 @@ rec {
   pynat = pkgs.callPackage ./pkgs-by-lang/Python/pynat { };
   pystun3 = pkgs.callPackage ./pkgs-by-lang/Python/pystun3 { };
   together-cli = pkgs.callPackage ./pkgs-by-lang/Python/together_cli { };
+  bypy = pkgs.callPackage ./pkgs-by-lang/Python/bypy {};
 
   # C
   candy = pkgs.callPackage ./pkgs-by-lang/C/candy {};
