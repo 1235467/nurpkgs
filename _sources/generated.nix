@@ -51,13 +51,13 @@
   };
   candy = {
     pname = "candy";
-    version = "2b33ab88f4eb95d2d9bb307a105d3059f1ecfc6b";
+    version = "6db6f40e59e47a67e38d8b5a7d9ceed0edc6e0c5";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "2b33ab88f4eb95d2d9bb307a105d3059f1ecfc6b";
+      rev = "6db6f40e59e47a67e38d8b5a7d9ceed0edc6e0c5";
       fetchSubmodules = false;
-      sha256 = "sha256-5JRQxs3sDs5fqyaUl8+3qGsWX6J5oaU+YzwucqfRq38=";
+      sha256 = "sha256-0M2BaJiResOq97pfDeVdqcpnkKs0Y4bn12/GoKgQ3ZU=";
     };
     date = "2024-04-24";
   };
@@ -123,15 +123,15 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "a49e33de0b3ab317879942ac9f90705032b5c816";
+    version = "010c3e233b76402b9d325beb3e7540054c820ae1";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "a49e33de0b3ab317879942ac9f90705032b5c816";
+      rev = "010c3e233b76402b9d325beb3e7540054c820ae1";
       fetchSubmodules = false;
-      sha256 = "sha256-mqtavVWC9ViWCUnmRLVcfH4BfG2ldc/EXJqC0rEtijg=";
+      sha256 = "sha256-WpcYntgwI4E6X7IhBjp/KiWq6tTWxr1b/bBb82F/1r0=";
     };
-    date = "2024-04-21";
+    date = "2024-04-23";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -329,14 +329,14 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "7d3059da0d6ab22ad88839030e53781d6bad1c30";
+    version = "c5cda88890d092472a4a8f3d7e20aa33703663bc";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "7d3059da0d6ab22ad88839030e53781d6bad1c30";
+      rev = "c5cda88890d092472a4a8f3d7e20aa33703663bc";
       fetchSubmodules = false;
-      sha256 = "sha256-tBGid1/kHM140Dw2HqUd3FEv7qPxdCvEdCHseJtaHIg=";
+      sha256 = "sha256-UvCHOC2DIoA1mCv+6TP/joglq95BK30ENgdhVnowtMM=";
     };
-    date = "2024-04-23";
+    date = "2024-04-24";
   };
 }
