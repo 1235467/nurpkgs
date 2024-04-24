@@ -183,15 +183,15 @@
   };
   openmw = {
     pname = "openmw";
-    version = "6d0df9f6868ff0189d671577a97a0a3076703cf4";
+    version = "a628c658a9c8917d9a72b1a35f3203eb42bada80";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "6d0df9f6868ff0189d671577a97a0a3076703cf4";
+      rev = "a628c658a9c8917d9a72b1a35f3203eb42bada80";
       fetchSubmodules = true;
-      sha256 = "sha256-Lx3djbYhhPKSdTSIJg0Cghvd+OCDd3ue9zNty5pIAIY=";
+      sha256 = "sha256-3aKBlv9GD4r/avhKS5vqkG+T+Ypi7J2nTZ3tM3N0Boo=";
     };
-    date = "2024-04-23";
+    date = "2024-04-24";
   };
   pot-desktop = {
     pname = "pot-desktop";
@@ -329,13 +329,13 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "c5cda88890d092472a4a8f3d7e20aa33703663bc";
+    version = "effed9de2e61d0d3dae7d971ecd399d2f566901c";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "c5cda88890d092472a4a8f3d7e20aa33703663bc";
+      rev = "effed9de2e61d0d3dae7d971ecd399d2f566901c";
       fetchSubmodules = false;
-      sha256 = "sha256-UvCHOC2DIoA1mCv+6TP/joglq95BK30ENgdhVnowtMM=";
+      sha256 = "sha256-f8CTtAbP7gBiA6O8795RJWVL4KdAaeA8H7wjsabclGw=";
     };
     date = "2024-04-24";
   };
