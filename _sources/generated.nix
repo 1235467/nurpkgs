@@ -37,17 +37,29 @@
     };
     date = "2024-04-23";
   };
+  bypy = {
+    pname = "bypy";
+    version = "1f72ccca44b696e9a5b66c6ec0afd58040961f0f";
+    src = fetchFromGitHub {
+      owner = "houtianze";
+      repo = "bypy";
+      rev = "1f72ccca44b696e9a5b66c6ec0afd58040961f0f";
+      fetchSubmodules = false;
+      sha256 = "sha256-WTvhA1jI3twxbw3WxsoRddmRvfozx9372mIjEQql07Q=";
+    };
+    date = "2024-03-31";
+  };
   candy = {
     pname = "candy";
-    version = "4ea90f7fd99e8696e4643615abbe33c5824275c7";
+    version = "2b33ab88f4eb95d2d9bb307a105d3059f1ecfc6b";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "4ea90f7fd99e8696e4643615abbe33c5824275c7";
+      rev = "2b33ab88f4eb95d2d9bb307a105d3059f1ecfc6b";
       fetchSubmodules = false;
-      sha256 = "sha256-EHuXMNFbRZWLVuesbdeV+3DBe4Zz4r98shKPCvPqSF4=";
+      sha256 = "sha256-5JRQxs3sDs5fqyaUl8+3qGsWX6J5oaU+YzwucqfRq38=";
     };
-    date = "2024-04-23";
+    date = "2024-04-24";
   };
   forkgram = {
     pname = "forkgram";
