@@ -81,7 +81,7 @@ rec {
   qcm = pkgs.qt6.callPackage ./pkgs/Overrides/qcm {};
   mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) {scripts = [ pkgs.mpvScripts.mpris ];};
   sway-im = pkgs.callPackage ./pkgs/Overrides/sway-im {};
-  hyprland = pkgs.callPackage ./pkgs/Overrides/hyprland {};
+  #hyprland = pkgs.callPackage ./pkgs/Overrides/hyprland {};
   pot = pkgs.callPackage ./pkgs/Overrides/pot {};
 
   # System Fonts override
