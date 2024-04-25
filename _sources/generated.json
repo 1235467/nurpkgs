@@ -213,11 +213,11 @@
             "name": null,
             "owner": "Mozilla-Ocho",
             "repo": "llamafile",
-            "rev": "bebae6ec458507783220dd621f9bd7a469a31836",
-            "sha256": "sha256-bj5Q894dM5fdaOh6UyDEarpVId00KgSWq3lnecUqZiw=",
+            "rev": "cff55124ed53784dab46dbf3aac3235eb55fbd2f",
+            "sha256": "sha256-KJXU+F1VUcKpD2VU4Z0Dryid1HAANZOwIBbHvrX8zVs=",
             "type": "github"
         },
-        "version": "bebae6ec458507783220dd621f9bd7a469a31836"
+        "version": "cff55124ed53784dab46dbf3aac3235eb55fbd2f"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -301,7 +301,7 @@
     },
     "openmw": {
         "cargoLocks": null,
-        "date": "2024-04-24",
+        "date": "2024-04-25",
         "extract": null,
         "name": "openmw",
         "passthru": null,
@@ -313,11 +313,11 @@
             "name": null,
             "owner": "OpenMW",
             "repo": "openmw",
-            "rev": "5f926bd129bf537d8d042f1fe5850ff58acafb4a",
-            "sha256": "sha256-jMaoHMuVvDZpHEwBem7q0ML4qpI+/mJTMDVz/Z6GM9E=",
+            "rev": "ec8675ba6fdd3acf58d2760443d6e2c70eb658d4",
+            "sha256": "sha256-pnY2OAE828QG2+Az7bDil8Hatphlvb8nwkJa6kPOy/U=",
             "type": "github"
         },
-        "version": "5f926bd129bf537d8d042f1fe5850ff58acafb4a"
+        "version": "ec8675ba6fdd3acf58d2760443d6e2c70eb658d4"
     },
     "pot-desktop": {
         "cargoLocks": null,
@@ -551,10 +551,10 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "56269af11e8ae05288bded65798ae616812eb920",
-            "sha256": "sha256-C23UGWedqDcyjBM7hAE+BX9SlRpYJymFh6FA76g42qI=",
+            "rev": "e1c4e12b5ca8ab017214ffc219a2740c600052ca",
+            "sha256": "sha256-ktHn2tsA+1yMpnraCVednrPPuWvldbKo9tFtPRaw86U=",
             "type": "github"
         },
-        "version": "56269af11e8ae05288bded65798ae616812eb920"
+        "version": "e1c4e12b5ca8ab017214ffc219a2740c600052ca"
     }
 }
