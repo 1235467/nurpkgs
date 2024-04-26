@@ -75,13 +75,13 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "ecf282d331a8aa19c0fe10c739cd31d3b3ab64a2";
+    version = "1d40af64d352bd5a87c7d53a52707fc5cfc6940e";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "ecf282d331a8aa19c0fe10c739cd31d3b3ab64a2";
+      rev = "1d40af64d352bd5a87c7d53a52707fc5cfc6940e";
       fetchSubmodules = true;
-      sha256 = "sha256-7s+984vwYFvjv2EEi6/Ed+XZCDyYbdZBFDn5m6d2uRk=";
+      sha256 = "sha256-gruFFXMRL+++JLfXP7duRXPPe+O/3yN5ucKB0QQ6qUc=";
     };
     date = "2024-04-25";
   };
@@ -231,15 +231,15 @@
   };
   qcm = {
     pname = "qcm";
-    version = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
+    version = "679eebdd1a5c168bb67080a9952fda1023645b09";
     src = fetchFromGitHub {
       owner = "hypengw";
       repo = "Qcm";
-      rev = "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6";
+      rev = "679eebdd1a5c168bb67080a9952fda1023645b09";
       fetchSubmodules = true;
-      sha256 = "sha256-uJwreBXSSH6uXd14e3Ln2rHvk+rrOvmUtkeRIU3sOSw=";
+      sha256 = "sha256-7AQWNQerjYKpuFn11GJQVkzESvUjs+kM35ssbv9zqDE=";
     };
-    date = "2024-02-25";
+    date = "2024-04-26";
   };
   reflac = {
     pname = "reflac";
@@ -329,13 +329,13 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "e1c4e12b5ca8ab017214ffc219a2740c600052ca";
+    version = "4552b89b73c8b5f4da3b4298ea98945061ba9d6a";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "e1c4e12b5ca8ab017214ffc219a2740c600052ca";
+      rev = "4552b89b73c8b5f4da3b4298ea98945061ba9d6a";
       fetchSubmodules = false;
-      sha256 = "sha256-ktHn2tsA+1yMpnraCVednrPPuWvldbKo9tFtPRaw86U=";
+      sha256 = "sha256-VC5C26d22YLjnNCYopo6dHRWBFzalBhv0ZEoi30z7vU=";
     };
     date = "2024-04-25";
   };

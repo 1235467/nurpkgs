@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "ecf282d331a8aa19c0fe10c739cd31d3b3ab64a2",
-            "sha256": "sha256-7s+984vwYFvjv2EEi6/Ed+XZCDyYbdZBFDn5m6d2uRk=",
+            "rev": "1d40af64d352bd5a87c7d53a52707fc5cfc6940e",
+            "sha256": "sha256-gruFFXMRL+++JLfXP7duRXPPe+O/3yN5ucKB0QQ6qUc=",
             "type": "github"
         },
-        "version": "ecf282d331a8aa19c0fe10c739cd31d3b3ab64a2"
+        "version": "1d40af64d352bd5a87c7d53a52707fc5cfc6940e"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -381,7 +381,7 @@
     },
     "qcm": {
         "cargoLocks": null,
-        "date": "2024-02-25",
+        "date": "2024-04-26",
         "extract": null,
         "name": "qcm",
         "passthru": null,
@@ -393,11 +393,11 @@
             "name": null,
             "owner": "hypengw",
             "repo": "Qcm",
-            "rev": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6",
-            "sha256": "sha256-uJwreBXSSH6uXd14e3Ln2rHvk+rrOvmUtkeRIU3sOSw=",
+            "rev": "679eebdd1a5c168bb67080a9952fda1023645b09",
+            "sha256": "sha256-7AQWNQerjYKpuFn11GJQVkzESvUjs+kM35ssbv9zqDE=",
             "type": "github"
         },
-        "version": "ab29b2cd7a4bc554be2d8dc8401e5dfd7df2c6c6"
+        "version": "679eebdd1a5c168bb67080a9952fda1023645b09"
     },
     "reflac": {
         "cargoLocks": null,
@@ -551,10 +551,10 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "e1c4e12b5ca8ab017214ffc219a2740c600052ca",
-            "sha256": "sha256-ktHn2tsA+1yMpnraCVednrPPuWvldbKo9tFtPRaw86U=",
+            "rev": "4552b89b73c8b5f4da3b4298ea98945061ba9d6a",
+            "sha256": "sha256-VC5C26d22YLjnNCYopo6dHRWBFzalBhv0ZEoi30z7vU=",
             "type": "github"
         },
-        "version": "e1c4e12b5ca8ab017214ffc219a2740c600052ca"
+        "version": "4552b89b73c8b5f4da3b4298ea98945061ba9d6a"
     }
 }
