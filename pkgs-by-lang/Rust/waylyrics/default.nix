@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec
     cp -vr themes $out/share/waylyrics/
     # Install schema
     mkdir -p $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas
-    cp io.poly000.waylyrics.gschema.xml $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas/
+    cp metainfo/io.poly000.waylyrics.gschema.xml $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas/
     glib-compile-schemas $out/share/gsettings-schemas/waylyrics/glib-2.0/schemas/
     # Install icons
     cp -vr res/icons $out/share/
