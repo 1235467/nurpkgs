@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec
   postInstall = ''
     mkdir -p $out/share/waylyrics
     mkdir -p $out/share/glib-2.0/schemas
-    cp  io.poly000.waylyrics.gschema.xml $out/share/glib-2.0/schemas/
+    cp  metainfo/io.poly000.waylyrics.gschema.xml $out/share/glib-2.0/schemas/
     glib-compile-schemas $out/share/glib-2.0/schemas/
     mkdir -p $out/share/waylyrics/themes
     cp -arv themes/* "$out/share/waylyrics/themes/"
