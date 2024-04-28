@@ -51,15 +51,15 @@
   };
   candy = {
     pname = "candy";
-    version = "f84e04bbc4d2979c50df0c5f281c13e23a813dd0";
+    version = "c6624aa93f95b4611ec9ed2397ce4d0fd98d2deb";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "f84e04bbc4d2979c50df0c5f281c13e23a813dd0";
+      rev = "c6624aa93f95b4611ec9ed2397ce4d0fd98d2deb";
       fetchSubmodules = false;
-      sha256 = "sha256-BoPBUYEmQJ1YgyGDYDzGFaQ95QGXXVOdBYLNh5tVBjQ=";
+      sha256 = "sha256-K1zXQefp+3Xk6Ru59e9YiV+fESK3WDVvTqd7ZHGSUbs=";
     };
-    date = "2024-04-26";
+    date = "2024-04-28";
   };
   forkgram = {
     pname = "forkgram";
@@ -183,13 +183,13 @@
   };
   openmw = {
     pname = "openmw";
-    version = "3e63b507d4a5910ab1b4999c291546e9972819ac";
+    version = "e4fd852df6b93333bc755c024c8530f55c66e173";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "3e63b507d4a5910ab1b4999c291546e9972819ac";
+      rev = "e4fd852df6b93333bc755c024c8530f55c66e173";
       fetchSubmodules = true;
-      sha256 = "sha256-TUAgw5fcL/MTVK/wU3ssmwP8CIfAvXG2iwgxCnxH5SE=";
+      sha256 = "sha256-v/OWMEiDvVPU/QFVFFhQcKdbuVhCTVCw60JjHs7Mqho=";
     };
     date = "2024-04-28";
   };
