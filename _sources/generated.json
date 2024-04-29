@@ -213,11 +213,11 @@
             "name": null,
             "owner": "Mozilla-Ocho",
             "repo": "llamafile",
-            "rev": "6162004caef51d234947d413c37d122043dbf4b8",
-            "sha256": "sha256-/ywD4rQeDB4l2yH6RTI67j9qslBRMuCygLSudnTYjTg=",
+            "rev": "bd8c0def0978f2c5127fea46bf0b7d04f187e2c7",
+            "sha256": "sha256-kwH0UDN5ZQOX6dAjP2iUojrjgvF5FuWEJzZQMbMW0hM=",
             "type": "github"
         },
-        "version": "6162004caef51d234947d413c37d122043dbf4b8"
+        "version": "bd8c0def0978f2c5127fea46bf0b7d04f187e2c7"
     },
     "nbfc-linux": {
         "cargoLocks": null,
