@@ -51,15 +51,15 @@
   };
   candy = {
     pname = "candy";
-    version = "7f04d64761a9d7611c5648617a2562ebfa7a0f91";
+    version = "e757fcba1e38087a6619aed6d8531da0a80a81ad";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "7f04d64761a9d7611c5648617a2562ebfa7a0f91";
+      rev = "e757fcba1e38087a6619aed6d8531da0a80a81ad";
       fetchSubmodules = false;
-      sha256 = "sha256-JBt2LTdRDQ9AexyOquOD+5qv7CG4h5MwB6rHLW3zq1g=";
+      sha256 = "sha256-H0UxprNKtf6jFYxjJbtG+tiLgCYgRVOQ+gJD3v256SU=";
     };
-    date = "2024-04-28";
+    date = "2024-04-29";
   };
   forkgram = {
     pname = "forkgram";
