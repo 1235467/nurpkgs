@@ -63,27 +63,27 @@
   };
   forkgram = {
     pname = "forkgram";
-    version = "104166bcc86cd7dd21dfc37fd11e8c08ac25cf64";
+    version = "62e8aac70b39e88b6267529f7a9297c97bf82eb2";
     src = fetchFromGitHub {
       owner = "forkgram";
       repo = "tdesktop";
-      rev = "104166bcc86cd7dd21dfc37fd11e8c08ac25cf64";
+      rev = "62e8aac70b39e88b6267529f7a9297c97bf82eb2";
       fetchSubmodules = true;
-      sha256 = "sha256-apJUrBXzoAFEfoT5OmXc7NPs3BnlMady3BtfTPLYnps=";
+      sha256 = "sha256-gjm0FWCaRffpapSNDPKIvcNqAm0yWqrQI3udiXR6FM4=";
     };
-    date = "2024-04-26";
+    date = "2024-05-02";
   };
   hyprland = {
     pname = "hyprland";
-    version = "02bfb2857ee0562bc95cd1f604570967250aa129";
+    version = "41cf94faaa86b5b79def1ff1473796cc7e09a572";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "02bfb2857ee0562bc95cd1f604570967250aa129";
+      rev = "41cf94faaa86b5b79def1ff1473796cc7e09a572";
       fetchSubmodules = true;
-      sha256 = "sha256-bfRYIOr7T4MISItdtI3dxtdvFk18RilpxRMRCAZkJxQ=";
+      sha256 = "sha256-cgpBbzKVmwOcjPOGOol/OiOJc4EyFx4FUh/7/bCYk84=";
     };
-    date = "2024-05-01";
+    date = "2024-05-03";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -111,27 +111,27 @@
   };
   koboldcpp = {
     pname = "koboldcpp";
-    version = "3c2bd8aad3e269ec35f1037adc835eea729c0bdb";
+    version = "e7a962c70a6c86e77f1f2b64b5bebcfb9f74fa81";
     src = fetchFromGitHub {
       owner = "LostRuins";
       repo = "koboldcpp";
-      rev = "3c2bd8aad3e269ec35f1037adc835eea729c0bdb";
+      rev = "e7a962c70a6c86e77f1f2b64b5bebcfb9f74fa81";
       fetchSubmodules = true;
-      sha256 = "sha256-teY6CUC/MprseWdWiHD0Ty3a1VBq4tPtEYB3HX5hk1k=";
+      sha256 = "sha256-L/UqIsJkGKsBYtPJHjeFZnQJzPqGF9vrskdZqVMHLHo=";
     };
-    date = "2024-05-01";
+    date = "2024-05-02";
   };
   llamafile = {
     pname = "llamafile";
-    version = "0bdea60a92b18461ff71433af888fe831bc5c3ed";
+    version = "2b4da9804d6ace8554a2060d316fa3fc50a07df1";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "0bdea60a92b18461ff71433af888fe831bc5c3ed";
+      rev = "2b4da9804d6ace8554a2060d316fa3fc50a07df1";
       fetchSubmodules = false;
-      sha256 = "sha256-oEpEJvrWlYROiTd+Wg3QVizFT6ACAgSnqH3vEm5LIok=";
+      sha256 = "sha256-iBINwTGTPXUeyKNqZrfZqnCJqiReXJURm9+lT0+Gns4=";
     };
-    date = "2024-04-30";
+    date = "2024-05-02";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
