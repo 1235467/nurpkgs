@@ -116,6 +116,11 @@ src.git = "https://aur.archlinux.org/sway-im"
 fetch.git = "https://aur.archlinux.org/sway-im"
 git.fetchSubmodules = true
 
+[sway]
+src.git = "https://github.com/swaywm/sway"
+fetch.github = "swaywm/sway"
+git.fetchSubmodules = true
+
 [hyprland]
 src.git = "https://github.com/hyprwm/Hyprland"
 fetch.github = "hyprwm/Hyprland"

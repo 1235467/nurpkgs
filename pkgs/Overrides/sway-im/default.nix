@@ -9,6 +9,7 @@ let
 in
 pkgs.sway.override (previous: {
     sway-unwrapped = previous.sway-unwrapped.overrideAttrs (previousAttrs: rec {
+      inherit (sources.sway) version src;
       patches = previousAttrs.patches ++
     [
     ./unsupported-gpu.patch
