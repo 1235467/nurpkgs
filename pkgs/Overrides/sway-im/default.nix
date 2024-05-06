@@ -12,7 +12,7 @@ pkgs.sway.override (previous: {
       inherit (sources.sway) version src;
       patches = previousAttrs.patches ++
     [
-    ./unsupported-gpu.patch
+    #./unsupported-gpu.patch
     "${sources.sway-im.src}/0001-text_input-Implement-input-method-popups.patch"
     "${sources.sway-im.src}/0002-chore-fractal-scale-handle.patch"
     "${sources.sway-im.src}/0003-chore-left_pt-on-method-popup.patch"
