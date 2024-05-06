@@ -537,6 +537,25 @@
         },
         "version": "b8434b3ad9e8c6946dbf7b14b0f7ef5679452b94"
     },
+    "sway-im-git": {
+        "cargoLocks": null,
+        "date": "2024-02-20",
+        "extract": null,
+        "name": "sway-im-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "98296b9bc6f5ff1fb9c127d3b50ffbca96698f02",
+            "sha256": "sha256-BsUeeo6mYpoTiE9zjqElbkKl2tuCb6PCVm1L6WGbz/Y=",
+            "type": "git",
+            "url": "https://aur.archlinux.org/sway-im-git"
+        },
+        "version": "98296b9bc6f5ff1fb9c127d3b50ffbca96698f02"
+    },
     "swgp-go": {
         "cargoLocks": null,
         "date": "2024-05-04",

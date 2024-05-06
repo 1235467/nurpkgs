@@ -327,6 +327,19 @@
     };
     date = "2024-02-25";
   };
+  sway-im-git = {
+    pname = "sway-im-git";
+    version = "98296b9bc6f5ff1fb9c127d3b50ffbca96698f02";
+    src = fetchgit {
+      url = "https://aur.archlinux.org/sway-im-git";
+      rev = "98296b9bc6f5ff1fb9c127d3b50ffbca96698f02";
+      fetchSubmodules = true;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-BsUeeo6mYpoTiE9zjqElbkKl2tuCb6PCVm1L6WGbz/Y=";
+    };
+    date = "2024-02-20";
+  };
   swgp-go = {
     pname = "swgp-go";
     version = "2919e82841235cfb022d70dde2e31a24a6d5cd3c";
