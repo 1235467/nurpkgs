@@ -75,13 +75,13 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "62eadad20fe10ffaf13d9c65ee68608996d93df0";
+    version = "cddeec47a1fc0e70d8598fd10c29cd0e9489999f";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "62eadad20fe10ffaf13d9c65ee68608996d93df0";
+      rev = "cddeec47a1fc0e70d8598fd10c29cd0e9489999f";
       fetchSubmodules = true;
-      sha256 = "sha256-anJl9Eqj85WEJXrf5DqsT1pecleOl9ltY/rHGrsGZ6I=";
+      sha256 = "sha256-gziEBZF1wmBBw3v0Ang3nN3QwoQWtFmBIORODJt38TE=";
     };
     date = "2024-05-05";
   };
@@ -183,27 +183,27 @@
   };
   openmw = {
     pname = "openmw";
-    version = "739ff70a8236b09dc08e49b24726fee106cb477a";
+    version = "2e971ec2e3580124136782c339db5a2c0696fb00";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "739ff70a8236b09dc08e49b24726fee106cb477a";
+      rev = "2e971ec2e3580124136782c339db5a2c0696fb00";
       fetchSubmodules = true;
-      sha256 = "sha256-Aet6Jc2EURRi+ztTHdZhY3aNu4RUV/M/MGKdj3ajMHc=";
+      sha256 = "sha256-MVUoiYAxNxI6n49sEJb0iN+huUjPD9ZJwH5V1nHM+M0=";
     };
-    date = "2024-05-03";
+    date = "2024-05-05";
   };
   pot-desktop = {
     pname = "pot-desktop";
-    version = "9ce1e6422fc855c8c5d34a02e01d81aaf0511fb3";
+    version = "2d19b06fd43bc6f8c3548d6b0d63c9c7d64fadd9";
     src = fetchFromGitHub {
       owner = "pot-app";
       repo = "pot-desktop";
-      rev = "9ce1e6422fc855c8c5d34a02e01d81aaf0511fb3";
+      rev = "2d19b06fd43bc6f8c3548d6b0d63c9c7d64fadd9";
       fetchSubmodules = true;
-      sha256 = "sha256-Q64aZxJ+a9cmqj9xPNw2iI/hgXpUI12YA0nwfBcF4Js=";
+      sha256 = "sha256-iVb3j+Gy4fFnaLgbltZnYom7OMyHKnzNW6kYKB6FDSA=";
     };
-    date = "2024-04-27";
+    date = "2024-05-05";
   };
   pynat = {
     pname = "pynat";
@@ -231,15 +231,15 @@
   };
   qcm = {
     pname = "qcm";
-    version = "07d4528e727bdfc7454526f95f5eb5f863ff010b";
+    version = "3c0e6e2307f885edd9bef852dcf1b51f88537873";
     src = fetchFromGitHub {
       owner = "hypengw";
       repo = "Qcm";
-      rev = "07d4528e727bdfc7454526f95f5eb5f863ff010b";
+      rev = "3c0e6e2307f885edd9bef852dcf1b51f88537873";
       fetchSubmodules = true;
-      sha256 = "sha256-o6XbRiuzyzfKUUCVW8QXShJDi9o2vMKqclNGWZQuvrg=";
+      sha256 = "sha256-ahT3JitUQlfeMhKU4FPLyK+YBU6LoIkvVVwtoetgRoY=";
     };
-    date = "2024-05-05";
+    date = "2024-05-06";
   };
   reflac = {
     pname = "reflac";
