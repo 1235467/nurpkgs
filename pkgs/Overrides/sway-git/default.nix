@@ -34,7 +34,7 @@ pkgs.sway.override (previous: {
       wayland-git
       wayland-protocols-git
       libdrm-git
-      (wlroots-git.override { enableXWayland = true;})
+      wlroots-git
       ];
       nativeBuildInputs = previousAttrs.nativeBuildInputs ++ [
       wayland-scanner-git
