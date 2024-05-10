@@ -41,7 +41,7 @@
     },
     "av1an": {
         "cargoLocks": null,
-        "date": "2024-04-23",
+        "date": "2024-05-07",
         "extract": null,
         "name": "av1an",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "master-of-zen",
             "repo": "av1an",
-            "rev": "e69826f7c110165976ef9421290eab3759dc39b9",
-            "sha256": "sha256-uvabQmV1EhYDmZm1UP0rENMTfrIs4jrYlq6AsvDfkHg=",
+            "rev": "086f89d3dc2be46ae3daca6269d0c35b36d80fd0",
+            "sha256": "sha256-FdQBnPlzr+SSstEwk1lry5eWzKJ+f+UOHkX+e4m2LbY=",
             "type": "github"
         },
-        "version": "e69826f7c110165976ef9421290eab3759dc39b9"
+        "version": "086f89d3dc2be46ae3daca6269d0c35b36d80fd0"
     },
     "bypy": {
         "cargoLocks": null,
@@ -81,7 +81,7 @@
     },
     "candy": {
         "cargoLocks": null,
-        "date": "2024-05-06",
+        "date": "2024-05-09",
         "extract": null,
         "name": "candy",
         "passthru": null,
@@ -93,11 +93,11 @@
             "name": null,
             "owner": "lanthora",
             "repo": "candy",
-            "rev": "921c8739e856dcaac194a78ba89de92db56450a9",
-            "sha256": "sha256-yzY/ATb4hHWU4wauKq4Q9mJp2TsF4nV51MuixzGppYc=",
+            "rev": "9f065ef9a20a9c4c57c4de8a210334a46ef9fad5",
+            "sha256": "sha256-m210qPfXJYvQKqTuZ+Q6BXNyCfc5RVThaOyOqGlAb7k=",
             "type": "github"
         },
-        "version": "921c8739e856dcaac194a78ba89de92db56450a9"
+        "version": "9f065ef9a20a9c4c57c4de8a210334a46ef9fad5"
     },
     "forkgram": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2024-05-06",
+        "date": "2024-05-09",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,15 +133,15 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "0c446ec5f4c39599ea97cb703dd3ac7718fb9169",
-            "sha256": "sha256-9wO+A4oOWpf0WtJ/iIzxy1mwXXfWuKHPW+E3wmsCI0k=",
+            "rev": "1753059b07be52cf78fa2676c4c71d2edb560199",
+            "sha256": "sha256-jwVycCsEcGmBeKh6C4g9XIW/6M8ffAtiXJLhD+nYETU=",
             "type": "github"
         },
-        "version": "0c446ec5f4c39599ea97cb703dd3ac7718fb9169"
+        "version": "1753059b07be52cf78fa2676c4c71d2edb560199"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
-        "date": "2024-05-03",
+        "date": "2024-05-09",
         "extract": null,
         "name": "hyprwayland-scanner",
         "passthru": null,
@@ -153,11 +153,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "hyprwayland-scanner",
-            "rev": "1270ebaa539e56d61b708c24b072b09cbbd3a828",
-            "sha256": "sha256-D0pg+ZRwrt4lavZ97Ca8clsgbPA3duLj8iEM7riaIFY=",
+            "rev": "e2fc1c0eb8b392110588f478cce644348ead7271",
+            "sha256": "sha256-B7AJIjOyWgVMKhu7DlOnWa0VprdhywUVHuB/j+EwSxM=",
             "type": "github"
         },
-        "version": "1270ebaa539e56d61b708c24b072b09cbbd3a828"
+        "version": "e2fc1c0eb8b392110588f478cce644348ead7271"
     },
     "idntag": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "llamafile": {
         "cargoLocks": null,
-        "date": "2024-05-06",
+        "date": "2024-05-09",
         "extract": null,
         "name": "llamafile",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "Mozilla-Ocho",
             "repo": "llamafile",
-            "rev": "911d58f7c754b1f7d224919313804dc76d20f6ae",
-            "sha256": "sha256-jOSjab41HKp+e+DWMeb75BDwl3smhcbrlvnZg4XvL6s=",
+            "rev": "4ee1e398273d63d5a6a9554d89eeabb784568f36",
+            "sha256": "sha256-wDIpP4GsXpURStaniYN1DUmn5xRlsmhcqNGW1VXeDI4=",
             "type": "github"
         },
-        "version": "911d58f7c754b1f7d224919313804dc76d20f6ae"
+        "version": "4ee1e398273d63d5a6a9554d89eeabb784568f36"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -320,7 +320,7 @@
     },
     "openmw": {
         "cargoLocks": null,
-        "date": "2024-05-05",
+        "date": "2024-05-09",
         "extract": null,
         "name": "openmw",
         "passthru": null,
@@ -332,15 +332,15 @@
             "name": null,
             "owner": "OpenMW",
             "repo": "openmw",
-            "rev": "2e971ec2e3580124136782c339db5a2c0696fb00",
-            "sha256": "sha256-MVUoiYAxNxI6n49sEJb0iN+huUjPD9ZJwH5V1nHM+M0=",
+            "rev": "0e1678b3b8dda6da2348a730d9484d81bd1cd9d3",
+            "sha256": "sha256-gMtkQ0ZGMYf6DZUYWI6tytKY5BKfvpO7QmpjCFz91r0=",
             "type": "github"
         },
-        "version": "2e971ec2e3580124136782c339db5a2c0696fb00"
+        "version": "0e1678b3b8dda6da2348a730d9484d81bd1cd9d3"
     },
     "pot-desktop": {
         "cargoLocks": null,
-        "date": "2024-05-05",
+        "date": "2024-05-07",
         "extract": null,
         "name": "pot-desktop",
         "passthru": null,
@@ -352,11 +352,11 @@
             "name": null,
             "owner": "pot-app",
             "repo": "pot-desktop",
-            "rev": "2d19b06fd43bc6f8c3548d6b0d63c9c7d64fadd9",
-            "sha256": "sha256-iVb3j+Gy4fFnaLgbltZnYom7OMyHKnzNW6kYKB6FDSA=",
+            "rev": "8a376535dea6464709b5f48e3743014c5905f9ea",
+            "sha256": "sha256-IoiQs9MJY8moCyk/RPXuMJDm5HSnKaZ6MWDlX22Z6lk=",
             "type": "github"
         },
-        "version": "2d19b06fd43bc6f8c3548d6b0d63c9c7d64fadd9"
+        "version": "8a376535dea6464709b5f48e3743014c5905f9ea"
     },
     "pynat": {
         "cargoLocks": null,
@@ -400,7 +400,7 @@
     },
     "qcm": {
         "cargoLocks": null,
-        "date": "2024-05-06",
+        "date": "2024-05-09",
         "extract": null,
         "name": "qcm",
         "passthru": null,
@@ -412,11 +412,11 @@
             "name": null,
             "owner": "hypengw",
             "repo": "Qcm",
-            "rev": "3c0e6e2307f885edd9bef852dcf1b51f88537873",
-            "sha256": "sha256-ahT3JitUQlfeMhKU4FPLyK+YBU6LoIkvVVwtoetgRoY=",
+            "rev": "9c1c5ef81007fcdb06c05f5389af410709269c14",
+            "sha256": "sha256-wdyxbjh7feoB5MJ0hwngThheH3qAKEnPBW4v8KsaDFo=",
             "type": "github"
         },
-        "version": "3c0e6e2307f885edd9bef852dcf1b51f88537873"
+        "version": "9c1c5ef81007fcdb06c05f5389af410709269c14"
     },
     "reflac": {
         "cargoLocks": null,
@@ -519,7 +519,7 @@
     },
     "sway": {
         "cargoLocks": null,
-        "date": "2024-05-02",
+        "date": "2024-05-07",
         "extract": null,
         "name": "sway",
         "passthru": null,
@@ -531,11 +531,11 @@
             "name": null,
             "owner": "swaywm",
             "repo": "sway",
-            "rev": "2686afb95c5dd76b22abdd76ffbb4b30688f8fd3",
-            "sha256": "sha256-kZ0YDqs/qKjKoYn3mu8wd0imIvm1got7UjWe2c1/qm0=",
+            "rev": "dcdb72757a5ec591c692df5e96c57c51758dbd8f",
+            "sha256": "sha256-jONpgR398OZvzV1iYSoh63R2ob7dI1ZP0Tj+HCFclX4=",
             "type": "github"
         },
-        "version": "2686afb95c5dd76b22abdd76ffbb4b30688f8fd3"
+        "version": "dcdb72757a5ec591c692df5e96c57c51758dbd8f"
     },
     "sway-im": {
         "cargoLocks": null,
@@ -597,7 +597,7 @@
     },
     "wayland": {
         "cargoLocks": null,
-        "date": "2024-04-25",
+        "date": "2024-05-09",
         "extract": null,
         "name": "wayland",
         "passthru": null,
@@ -607,16 +607,16 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "69633202180acce9d0d5ab4037d80291c71b2307",
-            "sha256": "sha256-bN4SqBwnUpk/LvSArl8BrF5VGKWGwHzP+/iWQ8RotEs=",
+            "rev": "f870320958dab7f577b16700e3cca57ea3283397",
+            "sha256": "sha256-78SlxhbBKA0J1CsG5dAfl8vFFHCVpy8BibNIqCsP/dM=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland"
         },
-        "version": "69633202180acce9d0d5ab4037d80291c71b2307"
+        "version": "f870320958dab7f577b16700e3cca57ea3283397"
     },
     "wayland-protocols": {
         "cargoLocks": null,
-        "date": "2024-05-06",
+        "date": "2024-05-09",
         "extract": null,
         "name": "wayland-protocols",
         "passthru": null,
@@ -626,12 +626,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "c5b47dc928107bcb6966f0f7a47813bfc0a59bfb",
-            "sha256": "sha256-VMZwLPx0KKNL8g4cCXnGFoyDwxPg1EVpbmb9FpVmiHM=",
+            "rev": "f573fa11cf97f425ddb021e16baf910b8403e76a",
+            "sha256": "sha256-jZdM/UJwKg61uMYejhCWZ+cz8xetgrJAmdK2Mrg2ZzI=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols"
         },
-        "version": "c5b47dc928107bcb6966f0f7a47813bfc0a59bfb"
+        "version": "f573fa11cf97f425ddb021e16baf910b8403e76a"
     },
     "waylyrics": {
         "cargoLocks": null,
@@ -655,7 +655,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2024-05-06",
+        "date": "2024-05-09",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -665,11 +665,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "293b0aa502d2e64d68290b1b615e9bd6d203d818",
-            "sha256": "sha256-zbxnxF97Pg0XwJe4BIHjzx9uG0rVWZkjoCNqtP9yMwk=",
+            "rev": "073c3e8837ffaef985304f58c5308c53c95d9bd9",
+            "sha256": "sha256-MvrN8qJXmXj+x6hWFfn7hv5Kwf/XfFKltqB7PS63d6M=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "293b0aa502d2e64d68290b1b615e9bd6d203d818"
+        "version": "073c3e8837ffaef985304f58c5308c53c95d9bd9"
     }
 }
