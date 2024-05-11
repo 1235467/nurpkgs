@@ -111,15 +111,15 @@
   };
   koboldcpp = {
     pname = "koboldcpp";
-    version = "a3718c6354dd0459154fa5297f1f29587845bc76";
+    version = "702be65ed1f7691960eb52cbc8d2d1f8827a809a";
     src = fetchFromGitHub {
       owner = "LostRuins";
       repo = "koboldcpp";
-      rev = "a3718c6354dd0459154fa5297f1f29587845bc76";
+      rev = "702be65ed1f7691960eb52cbc8d2d1f8827a809a";
       fetchSubmodules = true;
-      sha256 = "sha256-gDTHSadBqXcWgD6STP5a458LbYo0Gc8I9tBffjeUdCo=";
+      sha256 = "sha256-GYvU+0bhskCgSXAoeSy/2wWIF5FrilLVdXitFvuUAdQ=";
     };
-    date = "2024-05-04";
+    date = "2024-05-11";
   };
   libdrm = {
     pname = "libdrm";
@@ -208,15 +208,14 @@
   };
   portkey = {
     pname = "portkey";
-    version = "8207f61b23fa9d0353ec66b2571c50344666637b";
+    version = "v1.3.0";
     src = fetchFromGitHub {
       owner = "Portkey-AI";
       repo = "gateway";
-      rev = "8207f61b23fa9d0353ec66b2571c50344666637b";
+      rev = "v1.3.0";
       fetchSubmodules = false;
       sha256 = "sha256-bK1hQ+mCS7ydSJWrVOIwE2IcqB3JO8avKd6wu0V8GYs=";
     };
-    date = "2024-05-10";
   };
   pot-desktop = {
     pname = "pot-desktop";
