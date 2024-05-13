@@ -220,7 +220,7 @@
     },
     "llamafile": {
         "cargoLocks": null,
-        "date": "2024-05-11",
+        "date": "2024-05-12",
         "extract": null,
         "name": "llamafile",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "Mozilla-Ocho",
             "repo": "llamafile",
-            "rev": "d4099feff737f3be9a4bed017f1315a4d2cb773a",
-            "sha256": "sha256-7N4V0mcjgR2OOAgX1SQh2VRY031Gv1KslP98k06nB3g=",
+            "rev": "a86e7ce6bf19a976957429945389add858ce60eb",
+            "sha256": "sha256-GzqVOLpC5FYCaeZOoJtkgopYh44lLD/vXjCLc9MhlKk=",
             "type": "github"
         },
-        "version": "d4099feff737f3be9a4bed017f1315a4d2cb773a"
+        "version": "a86e7ce6bf19a976957429945389add858ce60eb"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -480,7 +480,7 @@
     },
     "sakaya": {
         "cargoLocks": null,
-        "date": "2024-04-08",
+        "date": "2024-05-12",
         "extract": null,
         "name": "sakaya",
         "passthru": null,
@@ -492,11 +492,11 @@
             "name": null,
             "owner": "donovanglover",
             "repo": "sakaya",
-            "rev": "fd3781686d01f002b802e0642c2f0eb4ef18624b",
-            "sha256": "sha256-QI/Hp0UuZRg/X06wH5c0w+pN0aTFnpNhgKO0gKvxrAw=",
+            "rev": "848c0485300b5c62f0fd360701b26c3219e4f339",
+            "sha256": "sha256-2W5oYJLusTxBztQ9FyyxvM7HM/XxjRs0qe4mhNeBfR8=",
             "type": "github"
         },
-        "version": "fd3781686d01f002b802e0642c2f0eb4ef18624b"
+        "version": "848c0485300b5c62f0fd360701b26c3219e4f339"
     },
     "sudachi": {
         "cargoLocks": null,

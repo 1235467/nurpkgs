@@ -136,15 +136,15 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "d4099feff737f3be9a4bed017f1315a4d2cb773a";
+    version = "a86e7ce6bf19a976957429945389add858ce60eb";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "d4099feff737f3be9a4bed017f1315a4d2cb773a";
+      rev = "a86e7ce6bf19a976957429945389add858ce60eb";
       fetchSubmodules = false;
-      sha256 = "sha256-7N4V0mcjgR2OOAgX1SQh2VRY031Gv1KslP98k06nB3g=";
+      sha256 = "sha256-GzqVOLpC5FYCaeZOoJtkgopYh44lLD/vXjCLc9MhlKk=";
     };
-    date = "2024-05-11";
+    date = "2024-05-12";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -291,15 +291,15 @@
   };
   sakaya = {
     pname = "sakaya";
-    version = "fd3781686d01f002b802e0642c2f0eb4ef18624b";
+    version = "848c0485300b5c62f0fd360701b26c3219e4f339";
     src = fetchFromGitHub {
       owner = "donovanglover";
       repo = "sakaya";
-      rev = "fd3781686d01f002b802e0642c2f0eb4ef18624b";
+      rev = "848c0485300b5c62f0fd360701b26c3219e4f339";
       fetchSubmodules = false;
-      sha256 = "sha256-QI/Hp0UuZRg/X06wH5c0w+pN0aTFnpNhgKO0gKvxrAw=";
+      sha256 = "sha256-2W5oYJLusTxBztQ9FyyxvM7HM/XxjRs0qe4mhNeBfR8=";
     };
-    date = "2024-04-08";
+    date = "2024-05-12";
   };
   sudachi = {
     pname = "sudachi";
