@@ -136,15 +136,15 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "a86e7ce6bf19a976957429945389add858ce60eb";
+    version = "966dd23477f934ad41f2e7840eb1f3e0d7fa7caa";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "a86e7ce6bf19a976957429945389add858ce60eb";
+      rev = "966dd23477f934ad41f2e7840eb1f3e0d7fa7caa";
       fetchSubmodules = false;
-      sha256 = "sha256-GzqVOLpC5FYCaeZOoJtkgopYh44lLD/vXjCLc9MhlKk=";
+      sha256 = "sha256-y0jJWrATI63hmK14zrZKYiGw+P5qmmNx8bDCdlMnpcs=";
     };
-    date = "2024-05-12";
+    date = "2024-05-13";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
