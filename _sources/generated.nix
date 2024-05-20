@@ -51,15 +51,15 @@
   };
   candy = {
     pname = "candy";
-    version = "ce7f7c4a252a50937ff7b7db35df673b83371dcb";
+    version = "2c2949208ae2d4747041c02fa9187c78587895a7";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "ce7f7c4a252a50937ff7b7db35df673b83371dcb";
+      rev = "2c2949208ae2d4747041c02fa9187c78587895a7";
       fetchSubmodules = false;
-      sha256 = "sha256-DKgyHNyNcAtPyNfAkSWoJ9rRIbWzJZq03iBLNxTFJAg=";
+      sha256 = "sha256-FxZKXVwWwT4ISZya1p79g0DRDfch5HUORCHh5Uvkfr0=";
     };
-    date = "2024-05-17";
+    date = "2024-05-19";
   };
   forkgram = {
     pname = "forkgram";
@@ -196,15 +196,15 @@
   };
   openmw = {
     pname = "openmw";
-    version = "c3d02c0b418299cd241485747f6406f74e6143ed";
+    version = "a3bfd3a3378f10d40480c8725bd6db2d4dd158ed";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "c3d02c0b418299cd241485747f6406f74e6143ed";
+      rev = "a3bfd3a3378f10d40480c8725bd6db2d4dd158ed";
       fetchSubmodules = true;
-      sha256 = "sha256-be/BGw33Gyk2lQuhR6wcc1k74GCYDBF11bvNewsDyJY=";
+      sha256 = "sha256-L1mApNUBVkLtPXnlBPvrsnLaqnnCHLoNAQfaAm9uLcU=";
     };
-    date = "2024-05-17";
+    date = "2024-05-19";
   };
   portkey = {
     pname = "portkey";
@@ -315,16 +315,16 @@
   };
   suyu = {
     pname = "suyu";
-    version = "dfb9f06e5c46f251e4208adf1d4861e85b1d5eea";
+    version = "2bacc259969bf740ca9499294dceabfa35cdff11";
     src = fetchgit {
       url = "https://git.suyu.dev/suyu/suyu";
-      rev = "dfb9f06e5c46f251e4208adf1d4861e85b1d5eea";
+      rev = "2bacc259969bf740ca9499294dceabfa35cdff11";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-Jycpnfnx71alnxu+KgnOvaO26diEspx3O1dhA9OGflI=";
+      sha256 = "sha256-Lqu9XrtQrx16qKA8DjFjxA2rvLFmdThm0GVXYcB8Z/s=";
     };
-    date = "2024-04-19";
+    date = "2024-05-19";
   };
   sway = {
     pname = "sway";

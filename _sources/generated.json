@@ -81,7 +81,7 @@
     },
     "candy": {
         "cargoLocks": null,
-        "date": "2024-05-17",
+        "date": "2024-05-19",
         "extract": null,
         "name": "candy",
         "passthru": null,
@@ -93,11 +93,11 @@
             "name": null,
             "owner": "lanthora",
             "repo": "candy",
-            "rev": "ce7f7c4a252a50937ff7b7db35df673b83371dcb",
-            "sha256": "sha256-DKgyHNyNcAtPyNfAkSWoJ9rRIbWzJZq03iBLNxTFJAg=",
+            "rev": "2c2949208ae2d4747041c02fa9187c78587895a7",
+            "sha256": "sha256-FxZKXVwWwT4ISZya1p79g0DRDfch5HUORCHh5Uvkfr0=",
             "type": "github"
         },
-        "version": "ce7f7c4a252a50937ff7b7db35df673b83371dcb"
+        "version": "2c2949208ae2d4747041c02fa9187c78587895a7"
     },
     "forkgram": {
         "cargoLocks": null,
@@ -320,7 +320,7 @@
     },
     "openmw": {
         "cargoLocks": null,
-        "date": "2024-05-17",
+        "date": "2024-05-19",
         "extract": null,
         "name": "openmw",
         "passthru": null,
@@ -332,11 +332,11 @@
             "name": null,
             "owner": "OpenMW",
             "repo": "openmw",
-            "rev": "c3d02c0b418299cd241485747f6406f74e6143ed",
-            "sha256": "sha256-be/BGw33Gyk2lQuhR6wcc1k74GCYDBF11bvNewsDyJY=",
+            "rev": "a3bfd3a3378f10d40480c8725bd6db2d4dd158ed",
+            "sha256": "sha256-L1mApNUBVkLtPXnlBPvrsnLaqnnCHLoNAQfaAm9uLcU=",
             "type": "github"
         },
-        "version": "c3d02c0b418299cd241485747f6406f74e6143ed"
+        "version": "a3bfd3a3378f10d40480c8725bd6db2d4dd158ed"
     },
     "portkey": {
         "cargoLocks": null,
@@ -520,7 +520,7 @@
     },
     "suyu": {
         "cargoLocks": null,
-        "date": "2024-04-19",
+        "date": "2024-05-19",
         "extract": null,
         "name": "suyu",
         "passthru": null,
@@ -530,12 +530,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "dfb9f06e5c46f251e4208adf1d4861e85b1d5eea",
-            "sha256": "sha256-Jycpnfnx71alnxu+KgnOvaO26diEspx3O1dhA9OGflI=",
+            "rev": "2bacc259969bf740ca9499294dceabfa35cdff11",
+            "sha256": "sha256-Lqu9XrtQrx16qKA8DjFjxA2rvLFmdThm0GVXYcB8Z/s=",
             "type": "git",
             "url": "https://git.suyu.dev/suyu/suyu"
         },
-        "version": "dfb9f06e5c46f251e4208adf1d4861e85b1d5eea"
+        "version": "2bacc259969bf740ca9499294dceabfa35cdff11"
     },
     "sway": {
         "cargoLocks": null,
