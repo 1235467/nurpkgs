@@ -90,6 +90,7 @@ rec {
   pot = pkgs.callPackage ./pkgs/Overrides/pot { };
   sway-stable = pkgs-stable.sway;
 
+
   # System Fonts override
   JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
 
