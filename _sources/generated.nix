@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "9994b73ad0af5c9ba5fc4058234cea77d0a1ddb1";
+    version = "1423707dbefc0329e80895451903a77ab684f7ea";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "9994b73ad0af5c9ba5fc4058234cea77d0a1ddb1";
+      rev = "1423707dbefc0329e80895451903a77ab684f7ea";
       fetchSubmodules = true;
-      sha256 = "sha256-+ltqQfQljE9L0x743LkYtkjHjJqPQmumEGeA8GZ4DoQ=";
+      sha256 = "sha256-kFnaAmte/N1mrbHEQyrwDu9+laZzVAi4N2nQodCNfgg=";
     };
-    date = "2024-06-08";
+    date = "2024-06-10";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -111,15 +111,15 @@
   };
   koboldcpp = {
     pname = "koboldcpp";
-    version = "5789417802503b0d3f73b1a53e49bad4d46d4832";
+    version = "1487a4bc812d66654a6c0049bd72e227ba6e4627";
     src = fetchFromGitHub {
       owner = "LostRuins";
       repo = "koboldcpp";
-      rev = "5789417802503b0d3f73b1a53e49bad4d46d4832";
+      rev = "1487a4bc812d66654a6c0049bd72e227ba6e4627";
       fetchSubmodules = true;
-      sha256 = "sha256-FqByklvPPwTGPM1r10Ktv3uMnyyiqZ8z/h0m28wVv68=";
+      sha256 = "sha256-Bu5kHP8jRDFc1bAgMKagc4H8YC/6asN1ydZD5qaJk3c=";
     };
-    date = "2024-06-04";
+    date = "2024-06-09";
   };
   libdrm = {
     pname = "libdrm";
@@ -196,15 +196,15 @@
   };
   openmw = {
     pname = "openmw";
-    version = "9087de1596b67f710b4b6de0f7e7e184166d2b78";
+    version = "f0019cafaa20f543f1c7953b60016ac144dc9dc3";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "9087de1596b67f710b4b6de0f7e7e184166d2b78";
+      rev = "f0019cafaa20f543f1c7953b60016ac144dc9dc3";
       fetchSubmodules = true;
-      sha256 = "sha256-5FBA5XYsjECR88MEfalNHcHC31Qqp8Nc7ozJ10eEQCM=";
+      sha256 = "sha256-EbkmptzSR2dOJK5XGeLXIqJXKVEjBJNCNGNGQj6s73M=";
     };
-    date = "2024-06-08";
+    date = "2024-06-09";
   };
   portkey = {
     pname = "portkey";
@@ -219,15 +219,15 @@
   };
   pot-desktop = {
     pname = "pot-desktop";
-    version = "8a376535dea6464709b5f48e3743014c5905f9ea";
+    version = "c1868d56e5d9e0c6627a199ca4632ff7f92ba846";
     src = fetchFromGitHub {
       owner = "pot-app";
       repo = "pot-desktop";
-      rev = "8a376535dea6464709b5f48e3743014c5905f9ea";
+      rev = "c1868d56e5d9e0c6627a199ca4632ff7f92ba846";
       fetchSubmodules = true;
-      sha256 = "sha256-IoiQs9MJY8moCyk/RPXuMJDm5HSnKaZ6MWDlX22Z6lk=";
+      sha256 = "sha256-VDv4lxmyK3r6Mt0/crvdqrRFwbkvcyL28HbDu3B+SKA=";
     };
-    date = "2024-05-07";
+    date = "2024-06-09";
   };
   pynat = {
     pname = "pynat";
