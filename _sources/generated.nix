@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "5184c0504e7d7af9a2a564558d9bf0c9bfd0474d";
+    version = "6a3e352e5db0f547ac7e8a16c5908abdd96a7893";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "5184c0504e7d7af9a2a564558d9bf0c9bfd0474d";
+      rev = "6a3e352e5db0f547ac7e8a16c5908abdd96a7893";
       fetchSubmodules = false;
-      sha256 = "sha256-HYVF50mjDDtAGX71qgPPGT2Jwg6kfG45eJC2WWfZ2ek=";
+      sha256 = "sha256-8biH+uEZV2xdzG26f1+K7AXn+yJY2wXPbcFIZJo58h0=";
     };
-    date = "2024-05-27";
+    date = "2024-06-10";
   };
   bypy = {
     pname = "bypy";
@@ -51,15 +51,15 @@
   };
   candy = {
     pname = "candy";
-    version = "437806b309d78284cbd08b55ef6eea155a72154c";
+    version = "84ff9c6fdb38decfa86e41597fbbca90055ed769";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "437806b309d78284cbd08b55ef6eea155a72154c";
+      rev = "84ff9c6fdb38decfa86e41597fbbca90055ed769";
       fetchSubmodules = false;
-      sha256 = "sha256-jwDH7ot7xWCWsj/r8jV6G8J45NMcOA6J+S5ZopWRx0I=";
+      sha256 = "sha256-toq6+v4DQdr+YEBlT2z6T+QG+njnm9G111pLa4SLwYg=";
     };
-    date = "2024-06-08";
+    date = "2024-06-11";
   };
   forkgram = {
     pname = "forkgram";
@@ -75,13 +75,13 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "1423707dbefc0329e80895451903a77ab684f7ea";
+    version = "811429bfd4a46f33c7788580f72038b0c3c1c2b1";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "1423707dbefc0329e80895451903a77ab684f7ea";
+      rev = "811429bfd4a46f33c7788580f72038b0c3c1c2b1";
       fetchSubmodules = true;
-      sha256 = "sha256-kFnaAmte/N1mrbHEQyrwDu9+laZzVAi4N2nQodCNfgg=";
+      sha256 = "sha256-ZB7Ov9pbyOUl6Up8o3Kvb/4bghhcbBk0JILLS/L7LUM=";
     };
     date = "2024-06-10";
   };
@@ -196,15 +196,15 @@
   };
   openmw = {
     pname = "openmw";
-    version = "f0019cafaa20f543f1c7953b60016ac144dc9dc3";
+    version = "cbf0471d8a54e4f8fd1093e698c839f11997693a";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "f0019cafaa20f543f1c7953b60016ac144dc9dc3";
+      rev = "cbf0471d8a54e4f8fd1093e698c839f11997693a";
       fetchSubmodules = true;
-      sha256 = "sha256-EbkmptzSR2dOJK5XGeLXIqJXKVEjBJNCNGNGQj6s73M=";
+      sha256 = "sha256-EVn61FFLHNPfzMgrr1Cykoco2Kmdd1OI2pysY+2iClA=";
     };
-    date = "2024-06-09";
+    date = "2024-06-10";
   };
   portkey = {
     pname = "portkey";
@@ -328,15 +328,15 @@
   };
   sway = {
     pname = "sway";
-    version = "40ca4150b27a5b94938b6c3d744f74bb26d347f7";
+    version = "cc342107690631cf1ff003fed0b1cdb072491c63";
     src = fetchFromGitHub {
       owner = "swaywm";
       repo = "sway";
-      rev = "40ca4150b27a5b94938b6c3d744f74bb26d347f7";
+      rev = "cc342107690631cf1ff003fed0b1cdb072491c63";
       fetchSubmodules = true;
-      sha256 = "sha256-cPG9JCFoccxPJ+gHIUxV8rXXWAlc2d87aG2/jhMimYc=";
+      sha256 = "sha256-RzPlJSWeMIKV6mZAcQMooERJmjYCogfGT/NPYlJM7yM=";
     };
-    date = "2024-06-07";
+    date = "2024-06-10";
   };
   sway-im = {
     pname = "sway-im";
