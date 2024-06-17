@@ -101,7 +101,7 @@
     },
     "forkgram": {
         "cargoLocks": null,
-        "date": "2024-06-14",
+        "date": "2024-06-16",
         "extract": null,
         "name": "forkgram",
         "passthru": null,
@@ -113,15 +113,15 @@
             "name": null,
             "owner": "forkgram",
             "repo": "tdesktop",
-            "rev": "efa6a0a80d2cc6589ce9a0d4b97e6196a817caf6",
-            "sha256": "sha256-a2mmKDQC5IkiissSLlloN238Zaj/r/Srym+VXiaICfo=",
+            "rev": "4ad9cabffe4a13ca362b450cc08da13d2b8311c0",
+            "sha256": "sha256-ZLzJak6Rn5/Ys9qTQLdqX0FqwXe3OmjgLSvZPSRloZ8=",
             "type": "github"
         },
-        "version": "efa6a0a80d2cc6589ce9a0d4b97e6196a817caf6"
+        "version": "4ad9cabffe4a13ca362b450cc08da13d2b8311c0"
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2024-06-15",
+        "date": "2024-06-16",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "1f5fd7e64a1c0e8d1815bdd6d168193bf9c28d6d",
-            "sha256": "sha256-BMLFzvIn5Qdrfc1zyIXWTMA5FHx+R9JNDJ7dkwbvdzk=",
+            "rev": "b15be9c77de593581007de53b2bbca97d121900a",
+            "sha256": "sha256-FtgnoGecYVBnGelxdcgavpogPVn+zi/5p4JFJM+9VJk=",
             "type": "github"
         },
-        "version": "1f5fd7e64a1c0e8d1815bdd6d168193bf9c28d6d"
+        "version": "b15be9c77de593581007de53b2bbca97d121900a"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -240,7 +240,7 @@
     },
     "nbfc-linux": {
         "cargoLocks": null,
-        "date": "2024-06-14",
+        "date": "2024-06-16",
         "extract": null,
         "name": "nbfc-linux",
         "passthru": null,
@@ -252,11 +252,11 @@
             "name": null,
             "owner": "nbfc-linux",
             "repo": "nbfc-linux",
-            "rev": "22d9ebac321e7f3bd574f38fd6472dc3b83f83c6",
-            "sha256": "sha256-idwPzLcQM1LxVcleiMRX50qI3nanuexY66dBC+qIfeU=",
+            "rev": "49eae821f354a443e9692a0ed0fd24ecc6a7aaf9",
+            "sha256": "sha256-Kvgs2QfYLRdcggFG5qWAzan4VxGcCCugX5aTiYHqDqA=",
             "type": "github"
         },
-        "version": "22d9ebac321e7f3bd574f38fd6472dc3b83f83c6"
+        "version": "49eae821f354a443e9692a0ed0fd24ecc6a7aaf9"
     },
     "ncmdump_rs": {
         "cargoLocks": null,
@@ -360,7 +360,7 @@
     },
     "pot-desktop": {
         "cargoLocks": null,
-        "date": "2024-06-12",
+        "date": "2024-06-16",
         "extract": null,
         "name": "pot-desktop",
         "passthru": null,
@@ -372,11 +372,11 @@
             "name": null,
             "owner": "pot-app",
             "repo": "pot-desktop",
-            "rev": "56b182b63c7d438563f64be608d0731a558d5345",
-            "sha256": "sha256-A2lIF3IsgiJ3O5siWBEZZQ4B9FRYFU+TVP5A1OY7AiI=",
+            "rev": "553c057066b9aca8657fed9ee80b2c2022ec9fa8",
+            "sha256": "sha256-2lnKsRHtCYFw4ypG5Wah4pgd5abkccsuTBZYMDIkE/k=",
             "type": "github"
         },
-        "version": "56b182b63c7d438563f64be608d0731a558d5345"
+        "version": "553c057066b9aca8657fed9ee80b2c2022ec9fa8"
     },
     "pynat": {
         "cargoLocks": null,
@@ -500,7 +500,7 @@
     },
     "sudachi": {
         "cargoLocks": null,
-        "date": "2024-06-01",
+        "date": "2024-06-16",
         "extract": null,
         "name": "sudachi",
         "passthru": null,
@@ -512,11 +512,11 @@
             "name": null,
             "owner": "sudachi-emu",
             "repo": "sudachi",
-            "rev": "50ad68316dd1fdd7a4d00be3022241eebfd8d4b9",
-            "sha256": "sha256-ZjOvUesthXFssaqnNBC0TBN/lHd9qkalOCGYg7dpEhU=",
+            "rev": "d065cb052121e96ef98722b0cce068bcd75ff2f6",
+            "sha256": "sha256-2g26+zibAiCOqlavZnbVmnh7R7r7P2zaANlUOlvRxMc=",
             "type": "github"
         },
-        "version": "50ad68316dd1fdd7a4d00be3022241eebfd8d4b9"
+        "version": "d065cb052121e96ef98722b0cce068bcd75ff2f6"
     },
     "suyu": {
         "cargoLocks": null,
