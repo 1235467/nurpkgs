@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2024-06-18",
+        "date": "2024-06-20",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,15 +133,15 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "e0e3c4c6ae15af88ac5fd5ab959adfe45a2e1dca",
-            "sha256": "sha256-nRKxZfzSiG8EUmUmgsvPbEDR1GAPpVHZFbF7RJMzJTM=",
+            "rev": "fabc30df52ab5d2c369fc8acd4ff909a6ba3b8ac",
+            "sha256": "sha256-U5eKTPAXppfSIqKqMIgbyuTBy1gr2seSOUl8sUSR8FE=",
             "type": "github"
         },
-        "version": "e0e3c4c6ae15af88ac5fd5ab959adfe45a2e1dca"
+        "version": "fabc30df52ab5d2c369fc8acd4ff909a6ba3b8ac"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
-        "date": "2024-06-11",
+        "date": "2024-06-20",
         "extract": null,
         "name": "hyprwayland-scanner",
         "passthru": null,
@@ -153,11 +153,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "hyprwayland-scanner",
-            "rev": "1419520d5f7f38d35e05504da5c1b38212a38525",
-            "sha256": "sha256-nqDYXATNkyGXVmNMkT19fT4sjtSPBDS1LLOxa3Fueo4=",
+            "rev": "f2d1d948f177f8d1382a28661918cd8b04b3e9cc",
+            "sha256": "sha256-2S4Djcd7/gbquEQCcxpFvaVtBZ/tnDBsP9ICoH6p5XE=",
             "type": "github"
         },
-        "version": "1419520d5f7f38d35e05504da5c1b38212a38525"
+        "version": "f2d1d948f177f8d1382a28661918cd8b04b3e9cc"
     },
     "idntag": {
         "cargoLocks": null,
@@ -181,7 +181,7 @@
     },
     "koboldcpp": {
         "cargoLocks": null,
-        "date": "2024-06-09",
+        "date": "2024-06-19",
         "extract": null,
         "name": "koboldcpp",
         "passthru": null,
@@ -193,11 +193,11 @@
             "name": null,
             "owner": "LostRuins",
             "repo": "koboldcpp",
-            "rev": "1487a4bc812d66654a6c0049bd72e227ba6e4627",
-            "sha256": "sha256-Bu5kHP8jRDFc1bAgMKagc4H8YC/6asN1ydZD5qaJk3c=",
+            "rev": "c9c050f323a061480e6791eac98fc6636f53ef05",
+            "sha256": "sha256-zqRlQ8HgT4fmGHD6uxxa2duZrx9Vhxd+gm1XQ7w9ay0=",
             "type": "github"
         },
-        "version": "1487a4bc812d66654a6c0049bd72e227ba6e4627"
+        "version": "c9c050f323a061480e6791eac98fc6636f53ef05"
     },
     "libdrm": {
         "cargoLocks": null,
@@ -636,7 +636,7 @@
     },
     "wayland-protocols": {
         "cargoLocks": null,
-        "date": "2024-06-17",
+        "date": "2024-06-19",
         "extract": null,
         "name": "wayland-protocols",
         "passthru": null,
@@ -646,12 +646,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "903f85708e1be2b4d4be83d3f0e27ebc5b6b81e9",
-            "sha256": "sha256-mqn762kYXG1++u2WkxnFJBb5/zqYPBjdIRIpOijeyeE=",
+            "rev": "7d5a3a8b494ae44cd9651f9505e88a250082765e",
+            "sha256": "sha256-o/adWEXYSqWib6KoK7XMCWbojapcS4O/CEPxv7iFCw8=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols"
         },
-        "version": "903f85708e1be2b4d4be83d3f0e27ebc5b6b81e9"
+        "version": "7d5a3a8b494ae44cd9651f9505e88a250082765e"
     },
     "waylyrics": {
         "cargoLocks": null,
