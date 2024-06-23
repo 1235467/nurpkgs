@@ -75,27 +75,27 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "4778afe2e6b4a6f8c7d218ccd8fe7e0bd4d2ee9c";
+    version = "7f09646ab8b5b6d9f835681d0af5d7a0dc29d8f1";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "4778afe2e6b4a6f8c7d218ccd8fe7e0bd4d2ee9c";
+      rev = "7f09646ab8b5b6d9f835681d0af5d7a0dc29d8f1";
       fetchSubmodules = true;
-      sha256 = "sha256-kvGqeJdHpqmDu5qJYCbylipbcPaSr1pFlO1m1xPtPeQ=";
+      sha256 = "sha256-gPUIGmUvWKNxFjCxH/EZL9idVEgaEiPFmXCwW5+TwTE=";
     };
     date = "2024-06-22";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
-    version = "1413398dcaf702e78a678090c92c26a5fd604ce6";
+    version = "914f083741e694092ee60a39d31f693d0a6dc734";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "hyprwayland-scanner";
-      rev = "1413398dcaf702e78a678090c92c26a5fd604ce6";
+      rev = "914f083741e694092ee60a39d31f693d0a6dc734";
       fetchSubmodules = true;
-      sha256 = "sha256-klEhWxfOizaKjTaGe0PL7AMtQKDXuCgVm8Yg+8TgGfM=";
+      sha256 = "sha256-mAnZG/eQy72Fp1ImGtqCgUrDumnR1rMZv2E/zgP4U74=";
     };
-    date = "2024-06-20";
+    date = "2024-06-22";
   };
   idntag = {
     pname = "idntag";
@@ -136,27 +136,27 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "a28250b82ea37c8db52e82827f512c051295f7ae";
+    version = "60404a831edd135565f8a152ef180baac41ba4d4";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "a28250b82ea37c8db52e82827f512c051295f7ae";
+      rev = "60404a831edd135565f8a152ef180baac41ba4d4";
       fetchSubmodules = false;
-      sha256 = "sha256-h/QJjrmcBs0M3Srvs8LiNg7YzF55B/xk5F43z4McVm0=";
+      sha256 = "sha256-QADEs5zeQxOPaezGpU0W4Lvqq2bB+EpRa+Xoqxf4UsU=";
     };
-    date = "2024-06-20";
+    date = "2024-06-22";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "006b318a4d12c106d63347523df19f7cb1b0f8b0";
+    version = "14a31cf982732521b5e92a135c835bf3bb335ef2";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "006b318a4d12c106d63347523df19f7cb1b0f8b0";
+      rev = "14a31cf982732521b5e92a135c835bf3bb335ef2";
       fetchSubmodules = false;
-      sha256 = "sha256-Mtm1LRrXAsXM1F4CmutakoClz3fUrv336+3lo/gEbko=";
+      sha256 = "sha256-kokdRTP8lyu8HFGUTcVrBVwi7XfnS4uXaZ+sNuZKWrA=";
     };
-    date = "2024-06-20";
+    date = "2024-06-22";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";
@@ -219,15 +219,15 @@
   };
   pot-desktop = {
     pname = "pot-desktop";
-    version = "6153af19cdd5b142740ec0f3bf4b21e4991b603a";
+    version = "dfad857ed6bf919327238f68255a69101a4c9e01";
     src = fetchFromGitHub {
       owner = "pot-app";
       repo = "pot-desktop";
-      rev = "6153af19cdd5b142740ec0f3bf4b21e4991b603a";
+      rev = "dfad857ed6bf919327238f68255a69101a4c9e01";
       fetchSubmodules = true;
-      sha256 = "sha256-t8MjyroXZrc4JreQ/7gg5VCMWf7XQO89D/0qiivvTTs=";
+      sha256 = "sha256-mew7sQHvLrjKueezABQDd6nmh4vftg4eW0g6w62PJUg=";
     };
-    date = "2024-06-21";
+    date = "2024-06-23";
   };
   pynat = {
     pname = "pynat";
@@ -404,27 +404,27 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "0b404cf135e96f3fc1a7c91b65ec79ad650227a1";
+    version = "ca140f5c86c7b4e84c386c950e397c65c3638dea";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "0b404cf135e96f3fc1a7c91b65ec79ad650227a1";
+      rev = "ca140f5c86c7b4e84c386c950e397c65c3638dea";
       fetchSubmodules = false;
-      sha256 = "sha256-ni8T7gMPtqwc3tP47r9+VRBLSmLubsE67k6E4A4Ktdg=";
+      sha256 = "sha256-WkBRyhsOB6C70BQKgJwdTAhRfzWQwlTKKEIRDxPVH8U=";
     };
-    date = "2024-06-20";
+    date = "2024-06-22";
   };
   wlroots = {
     pname = "wlroots";
-    version = "bedc890935945162e4892b4c0f66888388f781e6";
+    version = "09603cdb0b299707229a230078efd349f0ccf13a";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "bedc890935945162e4892b4c0f66888388f781e6";
+      rev = "09603cdb0b299707229a230078efd349f0ccf13a";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-viFg7gtBsDgjzlLB6qMBRtwVnr4XG5jq6vJEtuaRB1g=";
+      sha256 = "sha256-ve44sVqRZ0mwrdOnXFczC3Mv/RsBSHpuPa1ARBIbh5k=";
     };
-    date = "2024-06-21";
+    date = "2024-06-22";
   };
 }
