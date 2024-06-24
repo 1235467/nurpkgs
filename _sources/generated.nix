@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "7f09646ab8b5b6d9f835681d0af5d7a0dc29d8f1";
+    version = "8a68199a0ceb2894a5d9cc300961c38123ac0312";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "7f09646ab8b5b6d9f835681d0af5d7a0dc29d8f1";
+      rev = "8a68199a0ceb2894a5d9cc300961c38123ac0312";
       fetchSubmodules = true;
-      sha256 = "sha256-gPUIGmUvWKNxFjCxH/EZL9idVEgaEiPFmXCwW5+TwTE=";
+      sha256 = "sha256-FABhTnL6CBNrvsHVrEXWYoH+zrNfA4yPmgorQupUSZo=";
     };
-    date = "2024-06-22";
+    date = "2024-06-23";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -196,15 +196,15 @@
   };
   openmw = {
     pname = "openmw";
-    version = "cbf0471d8a54e4f8fd1093e698c839f11997693a";
+    version = "5cf809f39beb5196c771af19610aaead04f07ed9";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "cbf0471d8a54e4f8fd1093e698c839f11997693a";
+      rev = "5cf809f39beb5196c771af19610aaead04f07ed9";
       fetchSubmodules = true;
-      sha256 = "sha256-EVn61FFLHNPfzMgrr1Cykoco2Kmdd1OI2pysY+2iClA=";
+      sha256 = "sha256-eXcE3sjL76TNYZLA8M58Z47rHhWhRVtmhB/g+nSt2kI=";
     };
-    date = "2024-06-10";
+    date = "2024-06-23";
   };
   portkey = {
     pname = "portkey";
@@ -219,15 +219,15 @@
   };
   pot-desktop = {
     pname = "pot-desktop";
-    version = "dfad857ed6bf919327238f68255a69101a4c9e01";
+    version = "c57a14d6c77d4e6edf48037e6126635fe0c794d1";
     src = fetchFromGitHub {
       owner = "pot-app";
       repo = "pot-desktop";
-      rev = "dfad857ed6bf919327238f68255a69101a4c9e01";
+      rev = "c57a14d6c77d4e6edf48037e6126635fe0c794d1";
       fetchSubmodules = true;
-      sha256 = "sha256-mew7sQHvLrjKueezABQDd6nmh4vftg4eW0g6w62PJUg=";
+      sha256 = "sha256-ggP60qntEJha/wjTqExEPJsvu0rsTbg81Rdz2W3iqEU=";
     };
-    date = "2024-06-23";
+    date = "2024-06-24";
   };
   pynat = {
     pname = "pynat";
