@@ -81,7 +81,7 @@
     },
     "candy": {
         "cargoLocks": null,
-        "date": "2024-06-17",
+        "date": "2024-06-25",
         "extract": null,
         "name": "candy",
         "passthru": null,
@@ -93,11 +93,11 @@
             "name": null,
             "owner": "lanthora",
             "repo": "candy",
-            "rev": "501a38667a883b4fecd723eb995c92e290b6dea9",
-            "sha256": "sha256-jiT1f/3Wj2OeCwJsQgz/oTN7aOUjIiL/dod1C3xYsEU=",
+            "rev": "a0bba7628bc01961855e041a6bd86c6eef60cd7e",
+            "sha256": "sha256-VCdniaiXB1B9jUIvboVZa6ebp6rdvSiqOLtSFOsZkWU=",
             "type": "github"
         },
-        "version": "501a38667a883b4fecd723eb995c92e290b6dea9"
+        "version": "a0bba7628bc01961855e041a6bd86c6eef60cd7e"
     },
     "forkgram": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2024-06-23",
+        "date": "2024-06-24",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "8a68199a0ceb2894a5d9cc300961c38123ac0312",
-            "sha256": "sha256-FABhTnL6CBNrvsHVrEXWYoH+zrNfA4yPmgorQupUSZo=",
+            "rev": "4dd2b5902e770eeaf84820eccfebb5451aedb6a5",
+            "sha256": "sha256-YR0sRb4MpwoI1f/NOO1iLensdroExHVs1U4C8ake9jY=",
             "type": "github"
         },
-        "version": "8a68199a0ceb2894a5d9cc300961c38123ac0312"
+        "version": "4dd2b5902e770eeaf84820eccfebb5451aedb6a5"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -201,7 +201,7 @@
     },
     "libdrm": {
         "cargoLocks": null,
-        "date": "2024-06-02",
+        "date": "2024-06-24",
         "extract": null,
         "name": "libdrm",
         "passthru": null,
@@ -211,16 +211,16 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "7f20912b1be52ec65bc917dcd27515e905f9f567",
-            "sha256": "sha256-YkVGieKY+apaXLZ8wSCnCfeGk+PBzuHq3Z2M1KoxFlE=",
+            "rev": "b7338fc842f1284522200bd768de963dd92fb149",
+            "sha256": "sha256-hpKiX6Xt5m3ARIVJ41pDUOWn5gjtWa+FA6xMrYhIQ5Q=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/mesa/drm"
         },
-        "version": "7f20912b1be52ec65bc917dcd27515e905f9f567"
+        "version": "b7338fc842f1284522200bd768de963dd92fb149"
     },
     "llamafile": {
         "cargoLocks": null,
-        "date": "2024-06-22",
+        "date": "2024-06-24",
         "extract": null,
         "name": "llamafile",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "Mozilla-Ocho",
             "repo": "llamafile",
-            "rev": "60404a831edd135565f8a152ef180baac41ba4d4",
-            "sha256": "sha256-QADEs5zeQxOPaezGpU0W4Lvqq2bB+EpRa+Xoqxf4UsU=",
+            "rev": "b2f587cedf8e9eef6fba09f4510cca5687ee8c8f",
+            "sha256": "sha256-/uzZvIDvXm+r2gW+IQ51VG1NLLji1ojtKyiPaIRdr2k=",
             "type": "github"
         },
-        "version": "60404a831edd135565f8a152ef180baac41ba4d4"
+        "version": "b2f587cedf8e9eef6fba09f4510cca5687ee8c8f"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -260,7 +260,7 @@
     },
     "ncmdump_rs": {
         "cargoLocks": null,
-        "date": "2024-06-13",
+        "date": "2024-06-24",
         "extract": null,
         "name": "ncmdump_rs",
         "passthru": null,
@@ -272,11 +272,11 @@
             "name": null,
             "owner": "iqiziqi",
             "repo": "ncmdump.rs",
-            "rev": "6d43b758383c610d2b9ef9442d8b484dab48a0f9",
-            "sha256": "sha256-lOrmMN6nOaEiMigDTlS70woWyCOiZ7Mo04RuPHvX+fg=",
+            "rev": "30627474ba0c2de52653f336cb2155bba551e72a",
+            "sha256": "sha256-JKv/qSkH9u4GcXFYkXsFvH2FadvdUe5wN71ti0/GLVg=",
             "type": "github"
         },
-        "version": "6d43b758383c610d2b9ef9442d8b484dab48a0f9"
+        "version": "30627474ba0c2de52653f336cb2155bba551e72a"
     },
     "onedrive-fuse": {
         "cargoLocks": null,
@@ -320,7 +320,7 @@
     },
     "openmw": {
         "cargoLocks": null,
-        "date": "2024-06-23",
+        "date": "2024-06-24",
         "extract": null,
         "name": "openmw",
         "passthru": null,
@@ -332,11 +332,11 @@
             "name": null,
             "owner": "OpenMW",
             "repo": "openmw",
-            "rev": "5cf809f39beb5196c771af19610aaead04f07ed9",
-            "sha256": "sha256-eXcE3sjL76TNYZLA8M58Z47rHhWhRVtmhB/g+nSt2kI=",
+            "rev": "64dd6e36d1a15e3c033e792c352a3dde71a9f6a3",
+            "sha256": "sha256-KIHYTI/C36/Qz+1TQTtYnT5AY6G85AycN+S/NlBgOHs=",
             "type": "github"
         },
-        "version": "5cf809f39beb5196c771af19610aaead04f07ed9"
+        "version": "64dd6e36d1a15e3c033e792c352a3dde71a9f6a3"
     },
     "portkey": {
         "cargoLocks": null,
@@ -372,11 +372,11 @@
             "name": null,
             "owner": "pot-app",
             "repo": "pot-desktop",
-            "rev": "c57a14d6c77d4e6edf48037e6126635fe0c794d1",
-            "sha256": "sha256-ggP60qntEJha/wjTqExEPJsvu0rsTbg81Rdz2W3iqEU=",
+            "rev": "b3e28692789d18d281ea35f0c5d8c27efdc0c404",
+            "sha256": "sha256-lJmY6PqzG/Kv/CpwaHkqqm35dwjBQJZ24eb3HWpNP0o=",
             "type": "github"
         },
-        "version": "c57a14d6c77d4e6edf48037e6126635fe0c794d1"
+        "version": "b3e28692789d18d281ea35f0c5d8c27efdc0c404"
     },
     "pynat": {
         "cargoLocks": null,
@@ -675,7 +675,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2024-06-22",
+        "date": "2024-06-24",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -685,11 +685,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "09603cdb0b299707229a230078efd349f0ccf13a",
-            "sha256": "sha256-ve44sVqRZ0mwrdOnXFczC3Mv/RsBSHpuPa1ARBIbh5k=",
+            "rev": "47c578945cb8a112d3b5599514f0d5a52993a2ba",
+            "sha256": "sha256-pGq9aZvBj0NxX3RoezonD9Kov8kdNEoYtASQiHOxXio=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "09603cdb0b299707229a230078efd349f0ccf13a"
+        "version": "47c578945cb8a112d3b5599514f0d5a52993a2ba"
     }
 }
