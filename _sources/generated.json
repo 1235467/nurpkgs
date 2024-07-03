@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2024-07-01",
+        "date": "2024-07-02",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "d7ea1b7785f31e9fd6477490309721a19a835592",
-            "sha256": "sha256-fpVk3CajFQ4hcTuoU9njw/btPrAV92f8+WawVy8XvcE=",
+            "rev": "8bb75a223db3ea9471d05d74fbed3328334a9f78",
+            "sha256": "sha256-HDZpI+/LR4fh6TCqByoZrP5/cN3iSiDO0JqG/yKWDWQ=",
             "type": "github"
         },
-        "version": "d7ea1b7785f31e9fd6477490309721a19a835592"
+        "version": "8bb75a223db3ea9471d05d74fbed3328334a9f78"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -181,7 +181,7 @@
     },
     "koboldcpp": {
         "cargoLocks": null,
-        "date": "2024-06-30",
+        "date": "2024-07-02",
         "extract": null,
         "name": "koboldcpp",
         "passthru": null,
@@ -193,11 +193,11 @@
             "name": null,
             "owner": "LostRuins",
             "repo": "koboldcpp",
-            "rev": "7499a6bd4b714aa1bb43284ed87ccf072faa3825",
-            "sha256": "sha256-shsi/cpJ5ysgJtAJkoyeb3GwmgB16I+SlNVNXkflQxk=",
+            "rev": "0fc18d2d82633d107a85c5ba725f665c8228e1c7",
+            "sha256": "sha256-808HyqrB9/cFJU7nq7Cm5Fm4OFPML4oQtnv0hystwAg=",
             "type": "github"
         },
-        "version": "7499a6bd4b714aa1bb43284ed87ccf072faa3825"
+        "version": "0fc18d2d82633d107a85c5ba725f665c8228e1c7"
     },
     "libdrm": {
         "cargoLocks": null,
@@ -320,7 +320,7 @@
     },
     "openmw": {
         "cargoLocks": null,
-        "date": "2024-07-01",
+        "date": "2024-07-02",
         "extract": null,
         "name": "openmw",
         "passthru": null,
@@ -332,11 +332,11 @@
             "name": null,
             "owner": "OpenMW",
             "repo": "openmw",
-            "rev": "3ebeaaa3bbcb503e700e5618c187cff5695efe14",
-            "sha256": "sha256-nUPEBrR5lll2RhACg0ztTgKNjftAtA8j42tu+BxR9L8=",
+            "rev": "7d884747fa0da94eed29c14c51c4aad4a9f1d437",
+            "sha256": "sha256-0YLxd5gvPTl7gZMmZHXhlwVRjCcAcQtBg1zPX4BqqhE=",
             "type": "github"
         },
-        "version": "3ebeaaa3bbcb503e700e5618c187cff5695efe14"
+        "version": "7d884747fa0da94eed29c14c51c4aad4a9f1d437"
     },
     "portkey": {
         "cargoLocks": null,
@@ -539,7 +539,7 @@
     },
     "sway": {
         "cargoLocks": null,
-        "date": "2024-07-01",
+        "date": "2024-07-02",
         "extract": null,
         "name": "sway",
         "passthru": null,
@@ -551,11 +551,11 @@
             "name": null,
             "owner": "swaywm",
             "repo": "sway",
-            "rev": "1e0031781fc9283db7096aba34deca5503c2ab91",
-            "sha256": "sha256-05W8c6fxbIn++Q1WKmrNAlFA8L51ZMiOsnBpJueS5QI=",
+            "rev": "dfbcd1fbaa5148e537a1c29dc3cbe8ea21ee5eac",
+            "sha256": "sha256-DiyCNWK7tObT6SGo2JtsDzNvZuQwGi8M3tRMQgidoU8=",
             "type": "github"
         },
-        "version": "1e0031781fc9283db7096aba34deca5503c2ab91"
+        "version": "dfbcd1fbaa5148e537a1c29dc3cbe8ea21ee5eac"
     },
     "sway-im": {
         "cargoLocks": null,
