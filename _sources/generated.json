@@ -41,7 +41,7 @@
     },
     "av1an": {
         "cargoLocks": null,
-        "date": "2024-06-21",
+        "date": "2024-07-06",
         "extract": null,
         "name": "av1an",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "master-of-zen",
             "repo": "av1an",
-            "rev": "e9d953d2ffe0a9025cf7245cefd49c52da2d0b3b",
-            "sha256": "sha256-oCjF9dbyOzeKmgT8gfF+PJvImAx0szaUB0HWUJkOxmM=",
+            "rev": "01c578123c548f6b90d0269089c1b965ec1c42f8",
+            "sha256": "sha256-jQjqu52k9/HanjDOL8mZmhjT+AV0so9/Vpr+HdykZWs=",
             "type": "github"
         },
-        "version": "e9d953d2ffe0a9025cf7245cefd49c52da2d0b3b"
+        "version": "01c578123c548f6b90d0269089c1b965ec1c42f8"
     },
     "bypy": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "llamafile": {
         "cargoLocks": null,
-        "date": "2024-07-05",
+        "date": "2024-07-06",
         "extract": null,
         "name": "llamafile",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "Mozilla-Ocho",
             "repo": "llamafile",
-            "rev": "d7c8e33da0ccdd9a9361a33b8362860375374d9d",
-            "sha256": "sha256-IkRpti0uZBGhhZpkldkTFIEwKLdKRQGfM48qDuUDLiA=",
+            "rev": "b3930aa6472f3337d89d0b4399ee6e7afd9b17ad",
+            "sha256": "sha256-UiqNJ+zGCvvzc5oAq+NaLuJ4v+dfSfShvEDfNLenPL4=",
             "type": "github"
         },
-        "version": "d7c8e33da0ccdd9a9361a33b8362860375374d9d"
+        "version": "b3930aa6472f3337d89d0b4399ee6e7afd9b17ad"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -320,7 +320,7 @@
     },
     "openmw": {
         "cargoLocks": null,
-        "date": "2024-07-05",
+        "date": "2024-07-06",
         "extract": null,
         "name": "openmw",
         "passthru": null,
@@ -332,11 +332,11 @@
             "name": null,
             "owner": "OpenMW",
             "repo": "openmw",
-            "rev": "ef0bb02def4560fed59988d886c67a6d757a2543",
-            "sha256": "sha256-j4v3xOb6NGpdUWZ+YJIlDnUi8tCbzMbjIwk8pHC3FIg=",
+            "rev": "061f10bef7200965e6cfed4882dafa83bd1f6366",
+            "sha256": "sha256-w7+7Hhg/N46RFPJUw4mQdpdjYfOpJj7Rs5RjKl9ORMQ=",
             "type": "github"
         },
-        "version": "ef0bb02def4560fed59988d886c67a6d757a2543"
+        "version": "061f10bef7200965e6cfed4882dafa83bd1f6366"
     },
     "portkey": {
         "cargoLocks": null,
@@ -539,7 +539,7 @@
     },
     "sway": {
         "cargoLocks": null,
-        "date": "2024-07-04",
+        "date": "2024-07-06",
         "extract": null,
         "name": "sway",
         "passthru": null,
@@ -551,11 +551,11 @@
             "name": null,
             "owner": "swaywm",
             "repo": "sway",
-            "rev": "3d0055203583d576ec1dec5a22f25ddf9a53b8ec",
-            "sha256": "sha256-8s++Mykxb+MUUUKTWrF5VguBAAZwYaGc5PAMjWLgzaI=",
+            "rev": "28fd73589df0e73e1d15e165acd90651a5f805d6",
+            "sha256": "sha256-hdVdBJiPyIJLH71iFf1cNInu94YSOc24ZCKedMEy3NM=",
             "type": "github"
         },
-        "version": "3d0055203583d576ec1dec5a22f25ddf9a53b8ec"
+        "version": "28fd73589df0e73e1d15e165acd90651a5f805d6"
     },
     "sway-im": {
         "cargoLocks": null,

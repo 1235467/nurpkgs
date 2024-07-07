@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "e9d953d2ffe0a9025cf7245cefd49c52da2d0b3b";
+    version = "01c578123c548f6b90d0269089c1b965ec1c42f8";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "e9d953d2ffe0a9025cf7245cefd49c52da2d0b3b";
+      rev = "01c578123c548f6b90d0269089c1b965ec1c42f8";
       fetchSubmodules = false;
-      sha256 = "sha256-oCjF9dbyOzeKmgT8gfF+PJvImAx0szaUB0HWUJkOxmM=";
+      sha256 = "sha256-jQjqu52k9/HanjDOL8mZmhjT+AV0so9/Vpr+HdykZWs=";
     };
-    date = "2024-06-21";
+    date = "2024-07-06";
   };
   bypy = {
     pname = "bypy";
@@ -136,15 +136,15 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "d7c8e33da0ccdd9a9361a33b8362860375374d9d";
+    version = "b3930aa6472f3337d89d0b4399ee6e7afd9b17ad";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "d7c8e33da0ccdd9a9361a33b8362860375374d9d";
+      rev = "b3930aa6472f3337d89d0b4399ee6e7afd9b17ad";
       fetchSubmodules = false;
-      sha256 = "sha256-IkRpti0uZBGhhZpkldkTFIEwKLdKRQGfM48qDuUDLiA=";
+      sha256 = "sha256-UiqNJ+zGCvvzc5oAq+NaLuJ4v+dfSfShvEDfNLenPL4=";
     };
-    date = "2024-07-05";
+    date = "2024-07-06";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -196,15 +196,15 @@
   };
   openmw = {
     pname = "openmw";
-    version = "ef0bb02def4560fed59988d886c67a6d757a2543";
+    version = "061f10bef7200965e6cfed4882dafa83bd1f6366";
     src = fetchFromGitHub {
       owner = "OpenMW";
       repo = "openmw";
-      rev = "ef0bb02def4560fed59988d886c67a6d757a2543";
+      rev = "061f10bef7200965e6cfed4882dafa83bd1f6366";
       fetchSubmodules = true;
-      sha256 = "sha256-j4v3xOb6NGpdUWZ+YJIlDnUi8tCbzMbjIwk8pHC3FIg=";
+      sha256 = "sha256-w7+7Hhg/N46RFPJUw4mQdpdjYfOpJj7Rs5RjKl9ORMQ=";
     };
-    date = "2024-07-05";
+    date = "2024-07-06";
   };
   portkey = {
     pname = "portkey";
@@ -328,15 +328,15 @@
   };
   sway = {
     pname = "sway";
-    version = "3d0055203583d576ec1dec5a22f25ddf9a53b8ec";
+    version = "28fd73589df0e73e1d15e165acd90651a5f805d6";
     src = fetchFromGitHub {
       owner = "swaywm";
       repo = "sway";
-      rev = "3d0055203583d576ec1dec5a22f25ddf9a53b8ec";
+      rev = "28fd73589df0e73e1d15e165acd90651a5f805d6";
       fetchSubmodules = true;
-      sha256 = "sha256-8s++Mykxb+MUUUKTWrF5VguBAAZwYaGc5PAMjWLgzaI=";
+      sha256 = "sha256-hdVdBJiPyIJLH71iFf1cNInu94YSOc24ZCKedMEy3NM=";
     };
-    date = "2024-07-04";
+    date = "2024-07-06";
   };
   sway-im = {
     pname = "sway-im";
