@@ -57,6 +57,7 @@ rec {
   suyu = pkgs.qt6.callPackage ./pkgs-by-lang/C/suyu { };
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
   nbfc-linux = pkgs.callPackage ./pkgs-by-lang/C/nbfc-linux { };
+  torzu = pkgs.qt6.callPackage ./pkgs-by-lang/C/torzu { };
 
   # Nodejs
   gateway = pkgs.callPackage ./pkgs-by-lang/Node/gateway {};
