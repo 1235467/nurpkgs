@@ -21,11 +21,6 @@ fetch.github = "nbfc-linux/nbfc-linux"
 src.git = "https://github.com/Mozilla-Ocho/llamafile"
 fetch.github = "Mozilla-Ocho/llamafile"
 
-[torzu]
-src.git = "https://codeberg.org/litucks/torzu"
-fetch.gitlab = "https://codeberg.org/litucks/torzu"
-git.fetchSubmodules = true
-
 [hyprwayland-scanner]
 src.git = "https://github.com/hyprwm/hyprwayland-scanner"
 fetch.github = "hyprwm/hyprwayland-scanner"
