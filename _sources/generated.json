@@ -19,26 +19,6 @@
         },
         "version": "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29"
     },
-    "ab-av1": {
-        "cargoLocks": null,
-        "date": "2024-07-28",
-        "extract": null,
-        "name": "ab-av1",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "alexheretic",
-            "repo": "ab-av1",
-            "rev": "13568b156b40654bf394942d26edc0d3dbec26d2",
-            "sha256": "sha256-QPelXqJT3zbVP+lNiczrCR+JD4icimSyCravlIwTAyw=",
-            "type": "github"
-        },
-        "version": "13568b156b40654bf394942d26edc0d3dbec26d2"
-    },
     "av1an": {
         "cargoLocks": null,
         "date": "2024-08-16",
@@ -98,26 +78,6 @@
             "type": "github"
         },
         "version": "636968f217ba77d8e92bf1bb4309d6d4ba3e9ded"
-    },
-    "forkgram": {
-        "cargoLocks": null,
-        "date": "2024-08-15",
-        "extract": null,
-        "name": "forkgram",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "forkgram",
-            "repo": "tdesktop",
-            "rev": "53ab31c74708e1f98eafe53a967aea30808dcae7",
-            "sha256": "sha256-7viTLrQovdd8+5/QtoamD0+mgYaOFMroyXsJ9fb3+oY=",
-            "type": "github"
-        },
-        "version": "53ab31c74708e1f98eafe53a967aea30808dcae7"
     },
     "hyprland": {
         "cargoLocks": null,
@@ -318,26 +278,6 @@
         },
         "version": "8d2645b8394b20dba744a860655e3092fc8ae052"
     },
-    "openmw": {
-        "cargoLocks": null,
-        "date": "2024-08-17",
-        "extract": null,
-        "name": "openmw",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "OpenMW",
-            "repo": "openmw",
-            "rev": "3489609987cac9595d696bcac4bfc6e60f7cbc10",
-            "sha256": "sha256-HjcbV7/PUBNY6na7N0ljglBALZk3k2eqAsNhUCSXemk=",
-            "type": "github"
-        },
-        "version": "3489609987cac9595d696bcac4bfc6e60f7cbc10"
-    },
     "portkey": {
         "cargoLocks": null,
         "date": null,
@@ -357,26 +297,6 @@
             "type": "github"
         },
         "version": "v1.3.0"
-    },
-    "pot-desktop": {
-        "cargoLocks": null,
-        "date": "2024-08-11",
-        "extract": null,
-        "name": "pot-desktop",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "pot-app",
-            "repo": "pot-desktop",
-            "rev": "a195d18707d62c4e6941cfd952800a2ea0f440d9",
-            "sha256": "sha256-sJFVCohHfsLi/dckybA+wxkaq9PzdS66dodeYnc8GM4=",
-            "type": "github"
-        },
-        "version": "a195d18707d62c4e6941cfd952800a2ea0f440d9"
     },
     "pynat": {
         "cargoLocks": null,
@@ -536,44 +456,6 @@
             "type": "github"
         },
         "version": "c30c4519079e804c35e71810875c10f48097d230"
-    },
-    "sway-im": {
-        "cargoLocks": null,
-        "date": "2024-07-15",
-        "extract": null,
-        "name": "sway-im",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "427060a5b0654c6b25cdd3bc4d6bec5d11631b3f",
-            "sha256": "sha256-cwO0Sg9qLmtZclWXPxTVGgIvroGuNPscwzMczMU2tiY=",
-            "type": "git",
-            "url": "https://aur.archlinux.org/sway-im"
-        },
-        "version": "427060a5b0654c6b25cdd3bc4d6bec5d11631b3f"
-    },
-    "sway-im-git": {
-        "cargoLocks": null,
-        "date": "2024-02-20",
-        "extract": null,
-        "name": "sway-im-git",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "98296b9bc6f5ff1fb9c127d3b50ffbca96698f02",
-            "sha256": "sha256-BsUeeo6mYpoTiE9zjqElbkKl2tuCb6PCVm1L6WGbz/Y=",
-            "type": "git",
-            "url": "https://aur.archlinux.org/sway-im-git"
-        },
-        "version": "98296b9bc6f5ff1fb9c127d3b50ffbca96698f02"
     },
     "swgp-go": {
         "cargoLocks": null,

@@ -13,18 +13,6 @@
     };
     date = "2020-08-09";
   };
-  ab-av1 = {
-    pname = "ab-av1";
-    version = "13568b156b40654bf394942d26edc0d3dbec26d2";
-    src = fetchFromGitHub {
-      owner = "alexheretic";
-      repo = "ab-av1";
-      rev = "13568b156b40654bf394942d26edc0d3dbec26d2";
-      fetchSubmodules = false;
-      sha256 = "sha256-QPelXqJT3zbVP+lNiczrCR+JD4icimSyCravlIwTAyw=";
-    };
-    date = "2024-07-28";
-  };
   av1an = {
     pname = "av1an";
     version = "6d2325d99cb38f53bb3f1c60dc5e1106d49735da";
@@ -60,18 +48,6 @@
       sha256 = "sha256-qsGQ17h23eukV/ZT/3DzMnftgWZu3Mxij5Oj0Tl92wQ=";
     };
     date = "2024-08-16";
-  };
-  forkgram = {
-    pname = "forkgram";
-    version = "53ab31c74708e1f98eafe53a967aea30808dcae7";
-    src = fetchFromGitHub {
-      owner = "forkgram";
-      repo = "tdesktop";
-      rev = "53ab31c74708e1f98eafe53a967aea30808dcae7";
-      fetchSubmodules = true;
-      sha256 = "sha256-7viTLrQovdd8+5/QtoamD0+mgYaOFMroyXsJ9fb3+oY=";
-    };
-    date = "2024-08-15";
   };
   hyprland = {
     pname = "hyprland";
@@ -194,18 +170,6 @@
     };
     date = "2022-04-19";
   };
-  openmw = {
-    pname = "openmw";
-    version = "3489609987cac9595d696bcac4bfc6e60f7cbc10";
-    src = fetchFromGitHub {
-      owner = "OpenMW";
-      repo = "openmw";
-      rev = "3489609987cac9595d696bcac4bfc6e60f7cbc10";
-      fetchSubmodules = true;
-      sha256 = "sha256-HjcbV7/PUBNY6na7N0ljglBALZk3k2eqAsNhUCSXemk=";
-    };
-    date = "2024-08-17";
-  };
   portkey = {
     pname = "portkey";
     version = "v1.3.0";
@@ -216,18 +180,6 @@
       fetchSubmodules = false;
       sha256 = "sha256-bK1hQ+mCS7ydSJWrVOIwE2IcqB3JO8avKd6wu0V8GYs=";
     };
-  };
-  pot-desktop = {
-    pname = "pot-desktop";
-    version = "a195d18707d62c4e6941cfd952800a2ea0f440d9";
-    src = fetchFromGitHub {
-      owner = "pot-app";
-      repo = "pot-desktop";
-      rev = "a195d18707d62c4e6941cfd952800a2ea0f440d9";
-      fetchSubmodules = true;
-      sha256 = "sha256-sJFVCohHfsLi/dckybA+wxkaq9PzdS66dodeYnc8GM4=";
-    };
-    date = "2024-08-11";
   };
   pynat = {
     pname = "pynat";
@@ -325,32 +277,6 @@
       sha256 = "sha256-/M5oq8bHnXm0eKacxyVMJuK+JPsnhUGw2qrXkzrB2D4=";
     };
     date = "2024-08-14";
-  };
-  sway-im = {
-    pname = "sway-im";
-    version = "427060a5b0654c6b25cdd3bc4d6bec5d11631b3f";
-    src = fetchgit {
-      url = "https://aur.archlinux.org/sway-im";
-      rev = "427060a5b0654c6b25cdd3bc4d6bec5d11631b3f";
-      fetchSubmodules = true;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-cwO0Sg9qLmtZclWXPxTVGgIvroGuNPscwzMczMU2tiY=";
-    };
-    date = "2024-07-15";
-  };
-  sway-im-git = {
-    pname = "sway-im-git";
-    version = "98296b9bc6f5ff1fb9c127d3b50ffbca96698f02";
-    src = fetchgit {
-      url = "https://aur.archlinux.org/sway-im-git";
-      rev = "98296b9bc6f5ff1fb9c127d3b50ffbca96698f02";
-      fetchSubmodules = true;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-BsUeeo6mYpoTiE9zjqElbkKl2tuCb6PCVm1L6WGbz/Y=";
-    };
-    date = "2024-02-20";
   };
   swgp-go = {
     pname = "swgp-go";
