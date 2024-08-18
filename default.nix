@@ -26,9 +26,9 @@ rec {
   # Rust
   ab-av1 = pkgs.callPackage ./pkgs-by-lang/Rust/ab-av1 { };
   Anime4k-rs = pkgs.callPackage ./pkgs-by-lang/Rust/Anime4k-rs { };
-  av1an = pkgs.callPackage ./pkgs-by-lang/Rust/av1an { };
+  #av1an = pkgs.callPackage ./pkgs-by-lang/Rust/av1an { };
   ncmdump-rs = pkgs.callPackage ./pkgs-by-lang/Rust/ncmdump.rs { };
-  onedrive-fuse = pkgs.callPackage ./pkgs-by-lang/Rust/onedrive-fuse { };
+  #onedrive-fuse = pkgs.callPackage ./pkgs-by-lang/Rust/onedrive-fuse { };
   rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
   sakaya = pkgs.callPackage ./pkgs-by-lang/Rust/sakaya { };
   waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
@@ -56,10 +56,10 @@ rec {
   Penguin-Subtitle-Player = pkgs.libsForQt5.callPackage ./pkgs-by-lang/C/Penguin-Subtitle-Player { };
   suyu = pkgs.qt6.callPackage ./pkgs-by-lang/C/suyu { };
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
-  nbfc-linux = pkgs.callPackage ./pkgs-by-lang/C/nbfc-linux { };
+  #nbfc-linux = pkgs.callPackage ./pkgs-by-lang/C/nbfc-linux { };
   
   # Nodejs
-  gateway = pkgs.callPackage ./pkgs-by-lang/Node/gateway {};
+  #gateway = pkgs.callPackage ./pkgs-by-lang/Node/gateway {};
 
   # Shell
   reflac = pkgs.callPackage ./pkgs-by-lang/Shell/reflac { };
@@ -69,15 +69,15 @@ rec {
   hydrogen-music = pkgs.callPackage ./pkgs/AppImage/hydrogen-music { };
 
   # Bin
-  basilisk = pkgs.callPackage ./pkgs/Bin/basilisk { withGTK3 = true; };
+  #basilisk = pkgs.callPackage ./pkgs/Bin/basilisk { withGTK3 = true; };
   feishu = pkgs.callPackage ./pkgs/Bin/feishu { };
   wechat = pkgs.callPackage ./pkgs/Bin/wechat { };
   #wemeet = pkgs.callPackage ./pkgs/Bin/wemeet { };
 
   # Overrides
-  qcm = pkgs.qt6.callPackage ./pkgs/Overrides/qcm { };
+  #qcm = pkgs.qt6.callPackage ./pkgs/Overrides/qcm { };
   mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) { scripts = [ pkgs.mpvScripts.mpris ]; };
-  sway-im = pkgs.callPackage ./pkgs/Overrides/sway-im { };
+  #sway-im = pkgs.callPackage ./pkgs/Overrides/sway-im { };
 
 
   # System Fonts override
