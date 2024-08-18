@@ -57,8 +57,7 @@ rec {
   suyu = pkgs.qt6.callPackage ./pkgs-by-lang/C/suyu { };
   yuzu-early-access = pkgs.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
   nbfc-linux = pkgs.callPackage ./pkgs-by-lang/C/nbfc-linux { };
-  torzu = pkgs.qt6.callPackage ./pkgs-by-lang/C/torzu { };
-
+  
   # Nodejs
   gateway = pkgs.callPackage ./pkgs-by-lang/Node/gateway {};
 
@@ -76,7 +75,6 @@ rec {
   #wemeet = pkgs.callPackage ./pkgs/Bin/wemeet { };
 
   # Overrides
-  forkgram = pkgs.qt6.callPackage ./pkgs/Overrides/forkgram { };
   qcm = pkgs.qt6.callPackage ./pkgs/Overrides/qcm { };
   mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) { scripts = [ pkgs.mpvScripts.mpris ]; };
   sway-im = pkgs.callPackage ./pkgs/Overrides/sway-im { };
@@ -90,11 +88,13 @@ rec {
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
 
   # Broken
-  #sudachi = pkgs.qt6.callPackage ./pkgs-by-lang/C/sudachi {};
+  #sudachi = pkgs.qt6.callPackage ./pkgs-by-lang/C/sudachi { };
   #llamafile = pkgs.callPackage ./pkgs-by-lang/C/llamafile { };
-  #yumekey = pkgs.callPackage ./pkgs-by-lang/C/yumekey {};
+  #yumekey = pkgs.callPackage ./pkgs-by-lang/C/yumekey { };
   #pot = pkgs.callPackage ./pkgs/Overrides/pot { };
-  #openmw = pkgs.libsForQt5.callPackage ./pkgs/Overrides/openmw {};
+  #openmw = pkgs.libsForQt5.callPackage ./pkgs/Overrides/openmw { };
   #swgp-go = pkgs.callPackage ./pkgs-by-lang/Go/swgp-go { };
   #DownOnSpot = pkgs.callPackage ./pkgs-by-lang/Rust/DownOnSpot { };
+  #forkgram = pkgs.qt6.callPackage ./pkgs/Overrides/forkgram { };
+  #torzu = pkgs.qt6.callPackage ./pkgs-by-lang/C/torzu { };
 }
