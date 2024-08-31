@@ -21,7 +21,7 @@
     },
     "av1an": {
         "cargoLocks": null,
-        "date": "2024-08-27",
+        "date": "2024-08-30",
         "extract": null,
         "name": "av1an",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "master-of-zen",
             "repo": "av1an",
-            "rev": "ec81d47b36ed8f284af2280de08c6730c3ee8b39",
-            "sha256": "sha256-YnmgNTvYvKnIoe5LFUs7BSHLSdgGT+HwdGk8rnBVG9w=",
+            "rev": "90fcd3b4eb4a9f2b9d025a73cbcf055f11707b19",
+            "sha256": "sha256-CkSfUH9NFS95Bmu/jF51Zme4JA6L6dVCGU93eui+/y4=",
             "type": "github"
         },
-        "version": "ec81d47b36ed8f284af2280de08c6730c3ee8b39"
+        "version": "90fcd3b4eb4a9f2b9d025a73cbcf055f11707b19"
     },
     "bypy": {
         "cargoLocks": null,
@@ -81,7 +81,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2024-08-29",
+        "date": "2024-08-30",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -93,11 +93,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "604eb21a7e55d85ec7f6cb8cba39fc4c20a07a9d",
-            "sha256": "sha256-Zn5Eq6Elq0SRInPrEYGGoo972JzVxd5zExF7FSuTKlo=",
+            "rev": "c5fd5771814958ad274ea9abb961fff621a35b9c",
+            "sha256": "sha256-A0AiFlPoqDK/IwUiV7SGIi8uW2zOqmmiZY6j8i367LU=",
             "type": "github"
         },
-        "version": "604eb21a7e55d85ec7f6cb8cba39fc4c20a07a9d"
+        "version": "c5fd5771814958ad274ea9abb961fff621a35b9c"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -498,7 +498,7 @@
     },
     "wayland-protocols": {
         "cargoLocks": null,
-        "date": "2024-08-22",
+        "date": "2024-08-30",
         "extract": null,
         "name": "wayland-protocols",
         "passthru": null,
@@ -508,12 +508,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "d1d185c61f68c9528a7559ff88d97368ce4cc077",
-            "sha256": "sha256-kdfKQHxr1VOGMLmZD7BVPaoIM3KCrACLti0W1Gqpm08=",
+            "rev": "c4df317ea6aae7b7171ee1cb5e2695c19ad59b35",
+            "sha256": "sha256-EVFT7gcJ/L6V8Tn+QmE3d65LG6gisE93CmGiyexv63o=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols"
         },
-        "version": "d1d185c61f68c9528a7559ff88d97368ce4cc077"
+        "version": "c4df317ea6aae7b7171ee1cb5e2695c19ad59b35"
     },
     "waylyrics": {
         "cargoLocks": null,
