@@ -51,15 +51,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "c5fd5771814958ad274ea9abb961fff621a35b9c";
+    version = "76b82fdde7d3f38cb70db0bec3318a7fb6c27a0c";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "c5fd5771814958ad274ea9abb961fff621a35b9c";
+      rev = "76b82fdde7d3f38cb70db0bec3318a7fb6c27a0c";
       fetchSubmodules = true;
-      sha256 = "sha256-A0AiFlPoqDK/IwUiV7SGIi8uW2zOqmmiZY6j8i367LU=";
+      sha256 = "sha256-l47r0PEA4/8UKzyVTeel7OEM/UT25YZ4xA+Pue0TR4g=";
     };
-    date = "2024-08-30";
+    date = "2024-08-31";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -87,15 +87,15 @@
   };
   koboldcpp = {
     pname = "koboldcpp";
-    version = "1a7ecd55e6cf6f25aedbad5c1d471f4e9cccc3de";
+    version = "b6f9aaa9ab4f951b21c90de7fb324fd4f7f00168";
     src = fetchFromGitHub {
       owner = "LostRuins";
       repo = "koboldcpp";
-      rev = "1a7ecd55e6cf6f25aedbad5c1d471f4e9cccc3de";
+      rev = "b6f9aaa9ab4f951b21c90de7fb324fd4f7f00168";
       fetchSubmodules = true;
-      sha256 = "sha256-LRXtmQ5u+/vgcU6YC9IN2CazfDtg5+jZnJV2o9jEAaY=";
+      sha256 = "sha256-tGG1+EGlCUmFpx/axijonOXydurwFxqjuoeDwHxC+pc=";
     };
-    date = "2024-08-21";
+    date = "2024-08-30";
   };
   libdrm = {
     pname = "libdrm";
@@ -112,15 +112,15 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "c7c4d65d8e4a95ed59e1aef000d897a073ea473b";
+    version = "ea39f2654f58036f1eafc7d6985cd8580e89c807";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "c7c4d65d8e4a95ed59e1aef000d897a073ea473b";
+      rev = "ea39f2654f58036f1eafc7d6985cd8580e89c807";
       fetchSubmodules = false;
-      sha256 = "sha256-FGRPPoJ1m9Ep/u1HU8miImASTnQNfn4cqDFZL9XW1aI=";
+      sha256 = "sha256-T3rULeYnWyTfNiVKU2ZtOKpA6v7ewhNNHmKC6cjv4OA=";
     };
-    date = "2024-08-28";
+    date = "2024-08-30";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -305,16 +305,16 @@
   };
   wayland-protocols = {
     pname = "wayland-protocols";
-    version = "c4df317ea6aae7b7171ee1cb5e2695c19ad59b35";
+    version = "4878e025a5fb95d8d14a05088974af60cbafebd0";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland-protocols";
-      rev = "c4df317ea6aae7b7171ee1cb5e2695c19ad59b35";
+      rev = "4878e025a5fb95d8d14a05088974af60cbafebd0";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-EVFT7gcJ/L6V8Tn+QmE3d65LG6gisE93CmGiyexv63o=";
+      sha256 = "sha256-ryyv1RZqpwev1UoXRlV8P1ujJUz4m3sR89iEPaLYSZ4=";
     };
-    date = "2024-08-30";
+    date = "2024-08-31";
   };
   waylyrics = {
     pname = "waylyrics";
