@@ -66,7 +66,10 @@ rec {
   #wemeet = pkgs.callPackage ./pkgs/Bin/wemeet { };
 
   # Overrides
-  mpv = pkgs.wrapMpv (pkgs.mpv.unwrapped.override { cddaSupport = true; }) { scripts = [ pkgs.mpvScripts.mpris ]; };
+  mpv = pkgs.mpv-unwrapped.wrapper {
+  mpv = (pkgs.mpv-unwrapped.override { cddaSupport = true; });
+  scripts = [ pkgs.mpvScripts.mpris ];
+}
 
   # System Fonts override
   JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
