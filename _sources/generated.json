@@ -93,11 +93,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "13f90bb87a697866f1bbbacd1473d04f33ec2aa7",
-            "sha256": "sha256-b9N5qskWGp1OFmBzRlrurGhWnmWWn4mk3sbTiHqJG0o=",
+            "rev": "155d44016d0cb11332c454db73d59030cdbd7b13",
+            "sha256": "sha256-Dv4XEWRcVFZhBDbj11/zuuXyf7TGHFVU1IGH9W/yPX8=",
             "type": "github"
         },
-        "version": "13f90bb87a697866f1bbbacd1473d04f33ec2aa7"
+        "version": "155d44016d0cb11332c454db73d59030cdbd7b13"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
