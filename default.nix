@@ -33,6 +33,7 @@ rec {
 
   # Go
   #open-snell = pkgs.callPackage ./pkgs-by-lang/Go/open-snell { };
+  mieru = pkgs.callPackage ./pkgs-by-lang/Go/mieru { };
 
 
   # Python
