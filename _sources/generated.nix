@@ -122,6 +122,18 @@
     };
     date = "2024-10-14";
   };
+  mieru = {
+    pname = "mieru";
+    version = "04bab7f24a4ae02da419fac1e38221cc625af324";
+    src = fetchFromGitHub {
+      owner = "enfein";
+      repo = "mieru";
+      rev = "04bab7f24a4ae02da419fac1e38221cc625af324";
+      fetchSubmodules = false;
+      sha256 = "sha256-VFQWiihwd0YiLpgTxKUjVd+IkGivsa4jI/jb5ckjFt8=";
+    };
+    date = "2024-10-12";
+  };
   nbfc-linux = {
     pname = "nbfc-linux";
     version = "2046e4cc03fdaf403767333055d88bebc117eb10";
@@ -169,17 +181,6 @@
       sha256 = "sha256-/gILrDXOXDYQ3cTUMbjHAzITdtC2O+4XO0pp1ulRAM4=";
     };
     date = "2022-04-19";
-  };
-  portkey = {
-    pname = "portkey";
-    version = "v1.3.0";
-    src = fetchFromGitHub {
-      owner = "Portkey-AI";
-      repo = "gateway";
-      rev = "v1.3.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-bK1hQ+mCS7ydSJWrVOIwE2IcqB3JO8avKd6wu0V8GYs=";
-    };
   };
   pynat = {
     pname = "pynat";

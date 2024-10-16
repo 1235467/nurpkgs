@@ -198,6 +198,26 @@
         },
         "version": "386313bd8e833c73ab5268730a5628bbede8d3ab"
     },
+    "mieru": {
+        "cargoLocks": null,
+        "date": "2024-10-12",
+        "extract": null,
+        "name": "mieru",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "enfein",
+            "repo": "mieru",
+            "rev": "04bab7f24a4ae02da419fac1e38221cc625af324",
+            "sha256": "sha256-VFQWiihwd0YiLpgTxKUjVd+IkGivsa4jI/jb5ckjFt8=",
+            "type": "github"
+        },
+        "version": "04bab7f24a4ae02da419fac1e38221cc625af324"
+    },
     "nbfc-linux": {
         "cargoLocks": null,
         "date": "2024-10-08",
@@ -277,26 +297,6 @@
             "type": "github"
         },
         "version": "8d2645b8394b20dba744a860655e3092fc8ae052"
-    },
-    "portkey": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "portkey",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "Portkey-AI",
-            "repo": "gateway",
-            "rev": "v1.3.0",
-            "sha256": "sha256-bK1hQ+mCS7ydSJWrVOIwE2IcqB3JO8avKd6wu0V8GYs=",
-            "type": "github"
-        },
-        "version": "v1.3.0"
     },
     "pynat": {
         "cargoLocks": null,
