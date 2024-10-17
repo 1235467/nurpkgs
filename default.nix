@@ -68,7 +68,8 @@ rec {
   mpv = pkgs.mpv-unwrapped.wrapper {
   mpv = (pkgs.mpv-unwrapped.override { cddaSupport = true; });
   scripts = [ pkgs.mpvScripts.mpris ];
-};
+  };
+  linux_6_10_sched-ext = pkgs.callPackage ./pkgs/Overrides/linuxPackages_6_10_sched-ext {};
 
   # System Fonts override
   JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
