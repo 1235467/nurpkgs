@@ -3,15 +3,13 @@
 , lib
 , ...
 }:
-pkgs.linuxPackagesFor (pkgs.linux_6_10.kernel.override {
-          structuredExtraConfig = with lib.kernel; {
-          CONFIG_SCHED_CLASS_EXT=yes;
-          CONFIG_BPF_SYSCALL=yes;
-          CONFIG_BPF_JIT=yes;
-	  CONFIG_DEBUG_INFO_BTF=yes; 
-          CONFIG_BPF_JIT_ALWAYS_ON=yes;
-          CONFIG_PAHOLE_HAS_BTF_TAG=yes;
-	  };
-          ignoreConfigErrors = true;
-  }
+pkgs.linuxPackagesFor (pkgs.linux_6_10.override {
+extraConfig = ''
+          CONFIG_SCHED_CLASS_EXT=y
+          CONFIG_BPF_SYSCALL=y
+          CONFIG_BPF_JIT=y 
+	  CONFIG_DEBUG_INFO_BTF=y
+          CONFIG_BPF_JIT_ALWAYS_ON=y CONFIG_PAHOLE_HAS_BTF_TAG=y 
+        '';
+}
 )
