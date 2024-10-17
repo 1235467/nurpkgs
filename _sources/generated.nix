@@ -112,15 +112,15 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "386313bd8e833c73ab5268730a5628bbede8d3ab";
+    version = "232a9f6b38be88ddd405740893a9b58e535c36bf";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "386313bd8e833c73ab5268730a5628bbede8d3ab";
+      rev = "232a9f6b38be88ddd405740893a9b58e535c36bf";
       fetchSubmodules = false;
-      sha256 = "sha256-SJ1MvCqI4Zs1vM2gc0KULFzBehJZ6qyBau/OFWaUzVk=";
+      sha256 = "sha256-p9GdGWTzM/w+CAT9RBXTiqAR+ksxGkuCcNVsyJ2qtLQ=";
     };
-    date = "2024-10-14";
+    date = "2024-10-16";
   };
   mieru = {
     pname = "mieru";
@@ -208,13 +208,13 @@
   };
   qcm = {
     pname = "qcm";
-    version = "d78db282a8df23f81f1a5dfba51c19b8c1ea5940";
+    version = "f06ace0e7d13102503ffd1e645bd1a072e52195c";
     src = fetchFromGitHub {
       owner = "hypengw";
       repo = "Qcm";
-      rev = "d78db282a8df23f81f1a5dfba51c19b8c1ea5940";
+      rev = "f06ace0e7d13102503ffd1e645bd1a072e52195c";
       fetchSubmodules = true;
-      sha256 = "sha256-/xZpEigjydCsTEEZkni98mKxvsMSy9oXTx9QDCQiUH4=";
+      sha256 = "sha256-41GsG+NKCMw+LuRUf31ilRso/SkKYVV3IrMSviOZdWs=";
     };
     date = "2024-10-17";
   };
