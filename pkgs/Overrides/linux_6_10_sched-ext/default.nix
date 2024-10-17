@@ -3,7 +3,7 @@
 , lib
 , ...
 }:
-pkgs.linuxPackagesFor (pkgs.linux_6_10.override {
+pkgs.linux_6_10.override {
 extraConfig = ''
           CONFIG_SCHED_CLASS_EXT=y
           CONFIG_BPF_SYSCALL=y
@@ -12,4 +12,3 @@ extraConfig = ''
           CONFIG_BPF_JIT_ALWAYS_ON=y CONFIG_PAHOLE_HAS_BTF_TAG=y 
         '';
 }
-)
