@@ -18,18 +18,17 @@ in rec {
   };
 
   name = "aichat";
-  inherit (sources.aichat) version;
+  version = "0.23.0";
 
   # options defined on top-level will be applied to the main derivation (the derivation that is exposed)
   mkDerivation = {
     # define the source root that contains the package we want to build.
-    # src = config.deps.fetchFromGitHub {
-    #   owner = "sigoden";
-    #   repo = "aichat";
-    #   rev = "v0.23.0";
-    #   sha256 = "sha256-75KL1ODA+HyG/YRQIDs3++RgxQHyxKj6zh/2f6zQbdY=";
-    # };
-    inherit (sources.aichat) src;
+    src = config.deps.fetchFromGitHub {
+      owner = "sigoden";
+      repo = "aichat";
+      rev = "v${version}";
+      sha256 = "sha256-75KL1ODA+HyG/YRQIDs3++RgxQHyxKj6zh/2f6zQbdY=";
+    };
     buildInputs = lib.optionals config.deps.stdenv.isDarwin [config.deps.iconv];
   };
 
