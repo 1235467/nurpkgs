@@ -112,13 +112,13 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "d979a1ca11f7fac5df480d22c2291039bc9faa71";
+    version = "d25fa3a3d91e1f7671dab1245718ef4526e6509b";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "d979a1ca11f7fac5df480d22c2291039bc9faa71";
+      rev = "d25fa3a3d91e1f7671dab1245718ef4526e6509b";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9ULDKmAIYwKH/XM1nYqnN69iL+yrJQw5qdP7rqPEk=";
+      sha256 = "sha256-4tz69EGMx2SYM3xaH4mxGp+NeBZhAwLSHDhPBZWlNwk=";
     };
     date = "2024-11-05";
   };
