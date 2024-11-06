@@ -549,11 +549,11 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "9341d986367f04d2a11b1c9846d28fd135eaf9c2",
-            "sha256": "sha256-zmwfGARy2ENq1fd8HiYkDRs1OTJ5B8HoCbhEXaObW6Q=",
+            "rev": "d3ea1a4ce164be52d0936e8a3d8139412002f89c",
+            "sha256": "sha256-uT0xAcUdekZOitGg6Eyb8jL3rLSuxERRPHtam2isCWw=",
             "type": "github"
         },
-        "version": "9341d986367f04d2a11b1c9846d28fd135eaf9c2"
+        "version": "d3ea1a4ce164be52d0936e8a3d8139412002f89c"
     },
     "wlroots": {
         "cargoLocks": null,
