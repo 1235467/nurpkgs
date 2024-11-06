@@ -108,7 +108,7 @@ rec {
     ];
   };
 
-  
+
   # Broken
   #sudachi = pkgs.qt6.callPackage ./pkgs-by-lang/C/sudachi { };
   #llamafile = pkgs.callPackage ./pkgs-by-lang/C/llamafile { };
