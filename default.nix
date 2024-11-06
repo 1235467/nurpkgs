@@ -9,7 +9,16 @@
 {
   pkgs ? import <nixpkgs> { },
   pkgs-stable ? import <nixpkgs> { },
+  dream2nixSource ?
+    builtins.fetchTarball {
+      url = "https://github.com/nix-community/dream2nix/tarball/main";
+      sha256 = "sha256:12l4nnq5vz0adamama4xahz3dpfks0ybzz8rnfvzl1ymdsz2xv6x";
+    },
 }:
+
+let
+  dream2nix = import dream2nixSource {};
+in
 
 rec {
   # The `lib`, `modules`, and `overlay` names are special
@@ -75,6 +84,14 @@ rec {
   mongodb = pkgs-stable.mongodb;
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
 
+  # dream2nix
+  dream2nix-packages = dream2nix.lib.importPackages {
+    projectRoot = ./.;
+    # can be changed to ".git" to get rid of .project-root
+    projectRootFile = ".project-root";
+    packagesDir = ./pkgs-dream2nix;
+    packageSets.nixpkgs = pkgs;
+  };
   # Broken
   #sudachi = pkgs.qt6.callPackage ./pkgs-by-lang/C/sudachi { };
   #llamafile = pkgs.callPackage ./pkgs-by-lang/C/llamafile { };
@@ -94,5 +111,4 @@ rec {
   #sway-im = pkgs.callPackage ./pkgs/Overrides/sway-im { };
   #qcm = pkgs.qt6.callPackage ./pkgs/Overrides/qcm { };
   #basilisk = pkgs.callPackage ./pkgs/Bin/basilisk { withGTK3 = true; };
-
 }
