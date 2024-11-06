@@ -18,7 +18,7 @@ in rec {
   };
 
   name = "aichat";
-  inherit (sources.aichat) version src;
+  inherit (sources.aichat) version;
 
   # options defined on top-level will be applied to the main derivation (the derivation that is exposed)
   mkDerivation = {
@@ -29,6 +29,7 @@ in rec {
     #   rev = "v0.23.0";
     #   sha256 = "sha256-75KL1ODA+HyG/YRQIDs3++RgxQHyxKj6zh/2f6zQbdY=";
     # };
+    inherit (sources.aichat) src;
     buildInputs = lib.optionals config.deps.stdenv.isDarwin [config.deps.iconv];
   };
 
