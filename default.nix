@@ -85,13 +85,30 @@ rec {
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
 
   # dream2nix
-  dream2nix-packages = dream2nix.lib.importPackages {
-    projectRoot = ./.;
-    # can be changed to ".git" to get rid of .project-root
-    projectRootFile = ".project-root";
-    packagesDir = ./pkgs-dream2nix;
+
+  # dream2nix-packages = dream2nix.lib.importPackages {
+  #   projectRoot = ./.;
+  #   projectRootFile = ".project-root";
+  #   packagesDir = ./pkgs-dream2nix;
+  #   packageSets.nixpkgs = pkgs;
+  # };
+  aichat = dream2nix.lib.evalModules {
     packageSets.nixpkgs = pkgs;
+    modules = [
+      # Import our actual package definiton as a dream2nix module from ./default.nix
+      ./pkgs-dream2nix/aichat/default.nix
+      {
+        # Aid dream2nix to find the project root. This setup should also works for mono
+        # repos. If you only have a single project, the defaults should be good enough.
+        paths.projectRoot = ./.;
+        # can be changed to ".git" or "flake.nix" to get rid of .project-root
+        paths.projectRootFile = "flake.nix";
+        paths.package = ./.;
+      }
+    ];
   };
+
+  
   # Broken
   #sudachi = pkgs.qt6.callPackage ./pkgs-by-lang/C/sudachi { };
   #llamafile = pkgs.callPackage ./pkgs-by-lang/C/llamafile { };
