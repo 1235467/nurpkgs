@@ -2,6 +2,7 @@
   lib,
   config,
   dream2nix,
+  pkgs,
   ...
 }: 
 let 
