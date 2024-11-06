@@ -19,6 +19,26 @@
         },
         "version": "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29"
     },
+    "aichat": {
+        "cargoLocks": null,
+        "date": "2024-11-06",
+        "extract": null,
+        "name": "aichat",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "sigoden",
+            "repo": "aichat",
+            "rev": "0fac7fea5090642eb5155b2b24f041476b89c813",
+            "sha256": "sha256-nMKWToYzVIf6u95I2sogqfh3mMk1Bs78vP8Kz6DLGdc=",
+            "type": "github"
+        },
+        "version": "0fac7fea5090642eb5155b2b24f041476b89c813"
+    },
     "av1an": {
         "cargoLocks": null,
         "date": "2024-11-04",
