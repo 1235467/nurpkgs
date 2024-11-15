@@ -9,16 +9,9 @@
 {
   pkgs ? import <nixpkgs> { },
   pkgs-stable ? import <nixpkgs> { },
-  dream2nixSource ?
-    builtins.fetchTarball {
-      url = "https://github.com/nix-community/dream2nix/tarball/main";
-      sha256 = "sha256:09918v6k6mg74rpbnmm7z13h63aangr9hly0y4b1g6xv193rx8lw";
-    },
 }:
 
-let
-  dream2nix = import dream2nixSource {};
-in
+
 
 rec {
   # The `lib`, `modules`, and `overlay` names are special
@@ -36,6 +29,7 @@ rec {
   ncmdump-rs = pkgs.callPackage ./pkgs-by-lang/Rust/ncmdump.rs { };
   rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
   waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
+  aichat = pkgs.callPackage ./pkgs-by-lang/Rust/aichat { };
 
   # Dotnet
   BBDown = pkgs.callPackage ./pkgs-by-lang/Dotnet/BBDown { };
@@ -92,21 +86,21 @@ rec {
   #   packagesDir = ./pkgs-dream2nix;
   #   packageSets.nixpkgs = pkgs;
   # };
-  aichat = dream2nix.lib.evalModules {
-    packageSets.nixpkgs = pkgs;
-    modules = [
-      # Import our actual package definiton as a dream2nix module from ./default.nix
-      ./pkgs-dream2nix/aichat/default.nix
-      {
-        # Aid dream2nix to find the project root. This setup should also works for mono
-        # repos. If you only have a single project, the defaults should be good enough.
-        paths.projectRoot = ./.;
-        # can be changed to ".git" or "flake.nix" to get rid of .project-root
-        paths.projectRootFile = "flake.nix";
-        paths.package = ./.;
-      }
-    ];
-  };
+  # aichat = dream2nix.lib.evalModules {
+  #   packageSets.nixpkgs = pkgs;
+  #   modules = [
+  #     # Import our actual package definiton as a dream2nix module from ./default.nix
+  #     ./pkgs-dream2nix/aichat/default.nix
+  #     {
+  #       # Aid dream2nix to find the project root. This setup should also works for mono
+  #       # repos. If you only have a single project, the defaults should be good enough.
+  #       paths.projectRoot = ./.;
+  #       # can be changed to ".git" or "flake.nix" to get rid of .project-root
+  #       paths.projectRootFile = "flake.nix";
+  #       paths.package = ./.;
+  #     }
+  #   ];
+  # };
 
 
   # Broken
