@@ -12,7 +12,7 @@
   dream2nixSource ?
     builtins.fetchTarball {
       url = "https://github.com/nix-community/dream2nix/tarball/main";
-      sha256 = "sha256:12l4nnq5vz0adamama4xahz3dpfks0ybzz8rnfvzl1ymdsz2xv6x";
+      sha256 = "sha256:09918v6k6mg74rpbnmm7z13h63aangr9hly0y4b1g6xv193rx8lw";
     },
 }:
 
