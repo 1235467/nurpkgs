@@ -18,6 +18,7 @@
       self,
       nixpkgs,
       nixpkgs-stable,
+      nixpkgs-yuzu,
       dream2nix,
       ...
     }@inputs:
@@ -35,6 +36,10 @@
             config.allowUnfree = true;
           };
           pkgs-stable = import nixpkgs-stable {
+            inherit system;
+            config.allowUnfree = true;
+          };
+          pkgs-yuzu = import nixpkgs-yuzu {
             inherit system;
             config.allowUnfree = true;
           };
