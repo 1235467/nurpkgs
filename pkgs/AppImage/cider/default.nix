@@ -2,7 +2,6 @@
 appimageTools.wrapType2 rec {
   pname = "cider";
   version = "2.4.0";
-  name = "${pname}";
 
   src = pkgs.fetchurl {
     url = "https://fly.storage.tigris.dev/cider/Cider-${version}.AppImage";
@@ -11,7 +10,7 @@ appimageTools.wrapType2 rec {
 
   extraInstallCommands =
     let
-      contents = appimageTools.extract { inherit name src; };
+      contents = appimageTools.extract { inherit pname src version; };
     in
     ''
       install -m 444 -D ${contents}/${pname}.desktop -t $out/share/applications
