@@ -13,9 +13,6 @@ appimageTools.wrapType2 rec {
       contents = appimageTools.extract { inherit pname src version; };
     in
     ''
-      install -m 444 -D ${contents}/${pname}.desktop -t $out/share/applications
-      substituteInPlace $out/share/applications/${pname}.desktop \
-        --replace-quiet 'Exec=AppRun' 'Exec=${pname}'
       cp -r ${contents}/usr/share/icons $out/share
     '';
 
