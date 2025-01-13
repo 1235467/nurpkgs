@@ -74,7 +74,7 @@ rec {
   };
 
   # System Fonts override
-  JetBrainsMono-nerdfonts = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
+  JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;
 
   # Garnix generate cache
   mongodb = pkgs-stable.mongodb;
