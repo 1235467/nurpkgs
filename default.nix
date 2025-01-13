@@ -28,7 +28,7 @@ rec {
   # Rust
   ncmdump-rs = pkgs.callPackage ./pkgs-by-lang/Rust/ncmdump.rs { };
   rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
-  waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
+  #waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
   aichat = pkgs.callPackage ./pkgs-by-lang/Rust/aichat { };
   fww-checkin-rs = pkgs.callPackage ./pkgs-by-lang/Rust/fww-checkin-rs { };
 
@@ -37,7 +37,7 @@ rec {
 
   # Go
   #open-snell = pkgs.callPackage ./pkgs-by-lang/Go/open-snell { };
-  mieru = pkgs.callPackage ./pkgs-by-lang/Go/mieru { };
+  #mieru = pkgs.callPackage ./pkgs-by-lang/Go/mieru { };
 
   # Python
   jjwxcCrawler = pkgs.callPackage ./pkgs-by-lang/Python/jjwxcCrawler { };
