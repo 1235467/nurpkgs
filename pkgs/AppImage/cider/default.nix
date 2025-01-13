@@ -5,7 +5,7 @@ appimageTools.wrapType2 rec {
 
   src = pkgs.fetchurl {
     url = "https://fly.storage.tigris.dev/cider/Cider-${version}-x64.AppImage";
-    sha256 = "";
+    sha256 = "sha256-q9ulXYha5PSZbYZ/oxOvGvK5XGn0TlAGMymju5fXwmU=";
   };
 
   extraInstallCommands =
