@@ -1,8 +1,16 @@
 {
   description = "My personal NUR repository";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-  #inputs.nixpkgs.url = "github:NixOS/nixpkgs/57d6973abba7ea108bac64ae7629e7431e0199b6";
-  inputs.nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
+  inputs = {
+    nixpkgs = {
+      url = "github:NixOS/nixpkgs/nixos-unstable";
+    };
+    nixpkgs-stable = {
+      url = "github:NixOS/nixpkgs/nixos-23.11";
+    };
+    nixpkgs-yuzu = {
+      url = "github:NixOS/nixpkgs/71e91c409d1e654808b2621f28a327acfdad8dc2";
+    };
+  };
   inputs.dream2nix.url = "github:nix-community/dream2nix";
   
   outputs =

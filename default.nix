@@ -9,6 +9,7 @@
 {
   pkgs ? import <nixpkgs> { },
   pkgs-stable ? import <nixpkgs> { },
+  pkgs-yuzu ? import <nixpkgs> { },
 }:
 
 
@@ -50,8 +51,8 @@ rec {
   kagi-cli-shortcut = pkgs.callPackage ./pkgs-by-lang/C/kagi-cli-shortcut { };
   koboldcpp = pkgs.callPackage ./pkgs-by-lang/C/koboldcpp { };
   Penguin-Subtitle-Player = pkgs.libsForQt5.callPackage ./pkgs-by-lang/C/Penguin-Subtitle-Player { };
-  suyu = pkgs.qt6.callPackage ./pkgs-by-lang/C/suyu { };
-  yuzu-early-access = pkgs.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
+  suyu = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/suyu { };
+  yuzu-early-access = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
 
   # Nodejs
 
