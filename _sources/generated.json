@@ -41,7 +41,7 @@
     },
     "av1an": {
         "cargoLocks": null,
-        "date": "2025-04-29",
+        "date": "2025-05-05",
         "extract": null,
         "name": "av1an",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "master-of-zen",
             "repo": "av1an",
-            "rev": "0bde8853aa68e87bdb0faa69d795847d4641558d",
-            "sha256": "sha256-Jad2Ity+kLIhvfZX3NnnLQLkX0amOG+pKEem/d6M2Fc=",
+            "rev": "c23392cab47e78fa450d994c97202908f9ddb0f4",
+            "sha256": "sha256-gOXq+GAS5M7GQm5WL9wJ/8yMyI+zE+NvsYx69cqdBQM=",
             "type": "github"
         },
-        "version": "0bde8853aa68e87bdb0faa69d795847d4641558d"
+        "version": "c23392cab47e78fa450d994c97202908f9ddb0f4"
     },
     "bypy": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-05-04",
+        "date": "2025-05-05",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "9cd5b257459a6b4c5d5d4d1026df85f0ecbe5a93",
-            "sha256": "sha256-5tFSoODn/KssTH0DE9dSVATXTst+W4s/gexGpGSFfV0=",
+            "rev": "1f50cdfa8be87502c555d29bcfa327fb6bea551d",
+            "sha256": "sha256-c6KI5zGQeTSddU5r97mGLr5f/CY2GqLFXz460ODH6IM=",
             "type": "github"
         },
-        "version": "9cd5b257459a6b4c5d5d4d1026df85f0ecbe5a93"
+        "version": "1f50cdfa8be87502c555d29bcfa327fb6bea551d"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -178,26 +178,6 @@
             "type": "github"
         },
         "version": "0d2fcb286bfa5b7e9ec02d6d9c1d55dd2cf5da5f"
-    },
-    "koboldcpp": {
-        "cargoLocks": null,
-        "date": "2025-05-02",
-        "extract": null,
-        "name": "koboldcpp",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "LostRuins",
-            "repo": "koboldcpp",
-            "rev": "17cbf9fd49418248210e97136b9b2eaf00d2c8b2",
-            "sha256": "sha256-TLbfyzRTlIm1TuqRHIOuM1AQF9Lic8NI7y6ZnJmDMlg=",
-            "type": "github"
-        },
-        "version": "17cbf9fd49418248210e97136b9b2eaf00d2c8b2"
     },
     "libdrm": {
         "cargoLocks": null,
@@ -260,7 +240,7 @@
     },
     "nbfc-linux": {
         "cargoLocks": null,
-        "date": "2025-05-04",
+        "date": "2025-05-05",
         "extract": null,
         "name": "nbfc-linux",
         "passthru": null,
@@ -272,11 +252,11 @@
             "name": null,
             "owner": "nbfc-linux",
             "repo": "nbfc-linux",
-            "rev": "9662fdd88d53ab3d9423f74b6a27078585302c65",
-            "sha256": "sha256-ryBt5CqkNuPKDIA/gzupK7gIODPGewfe/XsXumdUmA4=",
+            "rev": "d79e346ce1a7e7e4acfca29e472c6d8e37f65822",
+            "sha256": "sha256-lmCUguNwXFGxvI1l2eNuXDF3kPVphuN6NrXF7SeYS7E=",
             "type": "github"
         },
-        "version": "9662fdd88d53ab3d9423f74b6a27078585302c65"
+        "version": "d79e346ce1a7e7e4acfca29e472c6d8e37f65822"
     },
     "ncmdump_rs": {
         "cargoLocks": null,
@@ -380,7 +360,7 @@
     },
     "qcm": {
         "cargoLocks": null,
-        "date": "2025-04-21",
+        "date": "2025-05-05",
         "extract": null,
         "name": "qcm",
         "passthru": null,
@@ -392,11 +372,11 @@
             "name": null,
             "owner": "hypengw",
             "repo": "Qcm",
-            "rev": "2e3e0ea0248b645d28aac73821c2b2e990358602",
-            "sha256": "sha256-G/GrUi71+zF462avsnpaQoEXYvH+vF/sHYwhMrPtYec=",
+            "rev": "2a71c7d001dd70cfb888af633f36dcd52b1a1ee2",
+            "sha256": "sha256-NjzqiS8IhpnKflgaQvFRKat6SxmY4vw3NmqgX/i/IfE=",
             "type": "github"
         },
-        "version": "2e3e0ea0248b645d28aac73821c2b2e990358602"
+        "version": "2a71c7d001dd70cfb888af633f36dcd52b1a1ee2"
     },
     "reflac": {
         "cargoLocks": null,
