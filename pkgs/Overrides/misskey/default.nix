@@ -4,7 +4,7 @@
 , ...
 }:
 pkgs.misskey.overrideAttrs (
-  prev: rec {
+   final: prev: rec {
     version = "2025.4.1";
     src = (prev.src or { }) // { rev = version; hash = ""; };
     patches = [];
