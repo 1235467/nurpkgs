@@ -220,15 +220,15 @@
   };
   qcm = {
     pname = "qcm";
-    version = "c93409a7d30f134a769351adc733426785dfc549";
+    version = "faba7cecfe1ff90520818ed08e406ce678d541b8";
     src = fetchFromGitHub {
       owner = "hypengw";
       repo = "Qcm";
-      rev = "c93409a7d30f134a769351adc733426785dfc549";
+      rev = "faba7cecfe1ff90520818ed08e406ce678d541b8";
       fetchSubmodules = true;
-      sha256 = "sha256-YC8G/zH5rnljHNXMRdOOsiOClp2Gxs7gAEw1RIvABvQ=";
+      sha256 = "sha256-3uy34rtpdWAaYKf1SpTOLDqRGJCqeWXBfzib8fuzkcw=";
     };
-    date = "2025-05-12";
+    date = "2025-05-13";
   };
   reflac = {
     pname = "reflac";

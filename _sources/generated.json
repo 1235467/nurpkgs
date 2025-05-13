@@ -360,7 +360,7 @@
     },
     "qcm": {
         "cargoLocks": null,
-        "date": "2025-05-12",
+        "date": "2025-05-13",
         "extract": null,
         "name": "qcm",
         "passthru": null,
@@ -372,11 +372,11 @@
             "name": null,
             "owner": "hypengw",
             "repo": "Qcm",
-            "rev": "c93409a7d30f134a769351adc733426785dfc549",
-            "sha256": "sha256-YC8G/zH5rnljHNXMRdOOsiOClp2Gxs7gAEw1RIvABvQ=",
+            "rev": "faba7cecfe1ff90520818ed08e406ce678d541b8",
+            "sha256": "sha256-3uy34rtpdWAaYKf1SpTOLDqRGJCqeWXBfzib8fuzkcw=",
             "type": "github"
         },
-        "version": "c93409a7d30f134a769351adc733426785dfc549"
+        "version": "faba7cecfe1ff90520818ed08e406ce678d541b8"
     },
     "reflac": {
         "cargoLocks": null,
