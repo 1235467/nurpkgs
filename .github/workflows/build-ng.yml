@@ -44,5 +44,6 @@ jobs:
         printf "${{ secrets.NIX_CONFIG_SUBSTITUTERS }}\n" > ~/.config/nix/nix.conf
         printf "${{ secrets.NIX_CONFIG_KEYS }}\n" >> ~/.config/nix/nix.conf
         printf ${{ secrets.NETRC }} >> ~/.config/nix/nix.conf
+        printf "${{ secrets.NETRCFILE }}" >> ~/.config/nix/netrc
     - name: Build nix packages
       run: nix shell nixpkgs#jq -c bash scripts/cache-packages.sh
