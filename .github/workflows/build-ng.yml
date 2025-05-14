@@ -42,5 +42,6 @@ jobs:
       run: |
         mkdir -p ~/.config/nix
         printf "$NIX_CONFIG" > ~/.config/nix/nix.conf
+        cat ~/.config/nix/nix.conf
     - name: Build nix packages
       run: nix shell nixpkgs#jq -c bash scripts/cache-packages.sh
