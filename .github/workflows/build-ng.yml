@@ -41,6 +41,6 @@ jobs:
     - name: Setup nix-config
       run: |
         mkdir -p ~/.config/nix
-        cat ${{ secrets.NIX_CONFIG}} > ~/.config/nix/nix.conf
+        printf "$NIX_CONFIG" > ~/.config/nix/nix.conf
     - name: Build nix packages
       run: nix shell nixpkgs#jq -c bash scripts/cache-packages.sh
