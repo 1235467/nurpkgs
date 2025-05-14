@@ -1,7 +1,7 @@
 language: nix
 nix: 2.28.3
 before_install:
-  - echo 'experimental-features = nix-command flakes' > ~/.config/nix/nix.conf
+  - mkdir -p ~/.config/nix/ && echo 'experimental-features = nix-command flakes' > ~/.config/nix/nix.conf
   - nix profile install github:NixOS/nixpkgs/nixpkgs-unstable#attic-client
   - attic login central $ATTIC_ENDPOINT $ATTIC_TOKEN 
   - attic use $ATTIC_CACHE
