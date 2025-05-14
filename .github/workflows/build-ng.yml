@@ -38,7 +38,9 @@ jobs:
         endpoint: ${{ secrets.ATTIC_ENDPOINT }}
         cache: ${{ secrets.ATTIC_CACHE }}
         token: ${{ secrets.ATTIC_TOKEN }}
+    - name: Setup nix-config
+      run: |
+        mkdir -p ~/.config/nix
+        echo ${{ secrets.NIX_CONFIG}} > ~/.config/nix/nix.conf
     - name: Build nix packages
-      run: nix shell nixpkgs#jq -c bash -c "nix flake show --json | jq -r '(.packages.\"x86_64-linux\" // {}) | keys[]' | xargs -I {} nix build .#{}"
-    - name: Push to cache
-      run: attic push nurpkgs /nix/store/
+      run: nix shell nixpkgs#jq -c bash scripts/cache-packages.sh
