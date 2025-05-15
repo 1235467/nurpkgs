@@ -16,7 +16,7 @@ for attr_name in "${PKG_ATTR_NAMES[@]}"; do
             echo "    ERROR: Failed to build ${flake_ref}. Check Nix output above."
         fi
     elif [[ "$attr_name" == "hydrogen-music" ]]; then
-        if DRV_OUTPUT_PATH=$(nix build --no-link --print-out-paths --substituters "https://attic.hakutaku.org" --trusted-public-keys "nurpkgs:gtUQ6um2j/MF+9nEDbsFa8S1dEct5YpaclN5/cHZFFE=" "${flake_ref}"); then
+        if DRV_OUTPUT_PATH=$(nix build --no-link --print-out-paths --substituters "https://attic.hakutaku.org/nurpkgs" --trusted-public-keys "nurpkgs:gtUQ6um2j/MF+9nEDbsFa8S1dEct5YpaclN5/cHZFFE=" "${flake_ref}"); then
             attic push nurpkgs $DRV_OUTPUT_PATH
         else
             echo "    ERROR: Failed to build ${flake_ref}. Check Nix output above."
