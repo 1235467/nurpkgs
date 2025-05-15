@@ -9,9 +9,17 @@ for attr_name in "${PKG_ATTR_NAMES[@]}"; do
     #   --print-out-paths: Prints the actual store path(s) to stdout on success.
     #   If the build fails, nix build exits non-zero and prints errors to stderr.
     #   The 'if' condition checks the exit status of nix build.
-    if DRV_OUTPUT_PATH=$(nix build --no-link --print-out-paths "${flake_ref}"); then
-        attic push nurpkgs $DRV_OUTPUT_PATH
+    if [[ "$attr_name" == "cudatoolkit" || "$attr_name" == "misskey" || "$attr_name" == "misskey-new" || "$attr_name" == "feishu" || "$attr_name" == "wechat" ]]; then
+        if DRV_OUTPUT_PATH=$(nix build --no-link --print-out-paths --substituters "https://cache.nixos.org" "${flake_ref}"); then
+            attic push nurpkgs $DRV_OUTPUT_PATH
+        else
+            echo "    ERROR: Failed to build ${flake_ref}. Check Nix output above."
+        fi
     else
-        echo "    ERROR: Failed to build ${flake_ref}. Check Nix output above."
+        if DRV_OUTPUT_PATH=$(nix build --no-link --print-out-paths "${flake_ref}"); then
+            attic push nurpkgs $DRV_OUTPUT_PATH
+        else
+            echo "    ERROR: Failed to build ${flake_ref}. Check Nix output above."
+        fi
     fi
 done
