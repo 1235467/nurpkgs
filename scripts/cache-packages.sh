@@ -11,10 +11,17 @@ for attr_name in "${PKG_ATTR_NAMES[@]}"; do
     #   The 'if' condition checks the exit status of nix build.
     if [[ "$attr_name" == "cudatoolkit" || "$attr_name" == "misskey" || "$attr_name" == "misskey-new" || "$attr_name" == "feishu" || "$attr_name" == "wechat" || "$attr_name" == "cider" || "$attr_name" == "cider3" || "$attr_name" == "koboldcpp" || "$attr_name" == "suyu" || "$attr_name" == "yuzu-early-access" ]]; then
         if DRV_OUTPUT_PATH=$(nix build --no-link --print-out-paths --substituters "https://cache.nixos.org" "${flake_ref}"); then
-            travis_wait 30 attic push nurpkgs $DRV_OUTPUT_PATH
+            attic push nurpkgs $DRV_OUTPUT_PATH
         else
             echo "    ERROR: Failed to build ${flake_ref}. Check Nix output above."
         fi
+    elif [[ "$attr_name" == "hydrogen-music" ]]; then
+        if DRV_OUTPUT_PATH=$(nix build --no-link --print-out-paths --substituters "https://attic.hakutaku.org" --trusted-public-keys "nurpkgs:gtUQ6um2j/MF+9nEDbsFa8S1dEct5YpaclN5/cHZFFE=" "${flake_ref}"); then
+            attic push nurpkgs $DRV_OUTPUT_PATH
+        else
+            echo "    ERROR: Failed to build ${flake_ref}. Check Nix output above."
+        fi
+
     else
         if DRV_OUTPUT_PATH=$(nix build --no-link --print-out-paths "${flake_ref}"); then
             attic push nurpkgs $DRV_OUTPUT_PATH
