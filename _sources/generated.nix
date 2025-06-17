@@ -15,27 +15,27 @@
   };
   aichat = {
     pname = "aichat";
-    version = "c4df18b4c82e36a7ce0adf0eeff1a3bcaf980425";
+    version = "a22da5609ef2861c8d64f515e88b732100becafc";
     src = fetchFromGitHub {
       owner = "sigoden";
       repo = "aichat";
-      rev = "c4df18b4c82e36a7ce0adf0eeff1a3bcaf980425";
+      rev = "a22da5609ef2861c8d64f515e88b732100becafc";
       fetchSubmodules = false;
-      sha256 = "sha256-swPbgS9KRzTnWVZ0+0QV/RPwqKh8uQ7dtCC5hcxtAnE=";
+      sha256 = "sha256-gNPz389plni2R6OYYnL4IBtY2WFSwGjW/1GV7LyN/ME=";
     };
-    date = "2025-06-09";
+    date = "2025-06-17";
   };
   av1an = {
     pname = "av1an";
-    version = "06eb7a660a7b13787b12bde15a533fa1b7ea1813";
+    version = "402296fec5669c863309f0ecec546c7084ee5c39";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "06eb7a660a7b13787b12bde15a533fa1b7ea1813";
+      rev = "402296fec5669c863309f0ecec546c7084ee5c39";
       fetchSubmodules = false;
-      sha256 = "sha256-uJJ7+WE9cykdUTYWybKfCi7utOOPWlaglNyqNldYfEo=";
+      sha256 = "sha256-3zR+fHgEQeIkif87xBxQitMKxsmdao5452/YzdnaHy0=";
     };
-    date = "2025-06-14";
+    date = "2025-06-16";
   };
   bypy = {
     pname = "bypy";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "bd5703d5c6f09e07321de58b19da438ac715b668";
+    version = "0ece4af36a988ad06b28ed666011d84372d9e4dc";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "bd5703d5c6f09e07321de58b19da438ac715b668";
+      rev = "0ece4af36a988ad06b28ed666011d84372d9e4dc";
       fetchSubmodules = true;
-      sha256 = "sha256-VGH144n/mkDn97qECPyaiVNo2Ga8ARBSyJKR0jbZoIw=";
+      sha256 = "sha256-hJKE++mkJU3Ux5fMo5xi3TACrt7gujHRrQVDNpfrsVQ=";
     };
-    date = "2025-06-15";
+    date = "2025-06-16";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -281,13 +281,13 @@
   };
   sway = {
     pname = "sway";
-    version = "25ea1a0af287018da1dbb34fe92e6c8ea3b8a88d";
+    version = "170c9c9525f54e8c1ba03847d5f9b01fc24b8c89";
     src = fetchFromGitHub {
       owner = "swaywm";
       repo = "sway";
-      rev = "25ea1a0af287018da1dbb34fe92e6c8ea3b8a88d";
+      rev = "170c9c9525f54e8c1ba03847d5f9b01fc24b8c89";
       fetchSubmodules = true;
-      sha256 = "sha256-YKA86sKO26WW4+TBqAl15XB2up+HyqLQ918O4ZbY60I=";
+      sha256 = "sha256-ziKsVin8Ze00ZkI4c6TL9sZgNCkdnow75KXixkuhCpM=";
     };
     date = "2025-06-16";
   };
