@@ -44,7 +44,7 @@ rec {
   jjwxcCrawler = pkgs.callPackage ./pkgs-by-lang/Python/jjwxcCrawler { };
   pynat = pkgs.callPackage ./pkgs-by-lang/Python/pynat { };
   pystun3 = pkgs.callPackage ./pkgs-by-lang/Python/pystun3 { };
-  LinguaGacha = pkgs.callPackage ./pkgs-by-lang/Python/LinguaGacha { };
+  #LinguaGacha = pkgs.callPackage ./pkgs-by-lang/Python/LinguaGacha { };
 
   # C
   candy = pkgs.callPackage ./pkgs-by-lang/C/candy { };
