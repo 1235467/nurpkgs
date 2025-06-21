@@ -557,7 +557,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2025-06-18",
+        "date": "2025-06-21",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -567,11 +567,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "0c272a38423679e980d4cd39affc202fd48c0f6d",
-            "sha256": "sha256-IkE5B4RIj9xJBmoH5ubDEhtc45kCbJeVY96GurTNl8Y=",
+            "rev": "f5e7caf59994cfa08650cade41374e23779a24a4",
+            "sha256": "sha256-h4yl6USEm4jQKknBu5LXTmjkJVfMeC5xz/xI6M8hy08=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "0c272a38423679e980d4cd39affc202fd48c0f6d"
+        "version": "f5e7caf59994cfa08650cade41374e23779a24a4"
     }
 }

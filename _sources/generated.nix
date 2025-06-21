@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "0c272a38423679e980d4cd39affc202fd48c0f6d";
+    version = "f5e7caf59994cfa08650cade41374e23779a24a4";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "0c272a38423679e980d4cd39affc202fd48c0f6d";
+      rev = "f5e7caf59994cfa08650cade41374e23779a24a4";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-IkE5B4RIj9xJBmoH5ubDEhtc45kCbJeVY96GurTNl8Y=";
+      sha256 = "sha256-h4yl6USEm4jQKknBu5LXTmjkJVfMeC5xz/xI6M8hy08=";
     };
-    date = "2025-06-18";
+    date = "2025-06-21";
   };
 }
