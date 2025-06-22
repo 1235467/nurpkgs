@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "8ebff1948ff665ff6a1b49fb715b7de0797fae04";
+    version = "8b1d5560cf1ca2c4c2624914de284d315502a092";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "8ebff1948ff665ff6a1b49fb715b7de0797fae04";
+      rev = "8b1d5560cf1ca2c4c2624914de284d315502a092";
       fetchSubmodules = true;
-      sha256 = "sha256-yH0YpAneBjzkgIVnF0YTa97I4v8+2KfBOLyPfC07Njw=";
+      sha256 = "sha256-TcFDB0Yu5ixny8wFg5edPPwu+00Fvse6vPdrdK0UZy0=";
     };
-    date = "2025-06-19";
+    date = "2025-06-21";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -148,15 +148,15 @@
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "3c8487328609565f676883bb1b944229a94d9324";
+    version = "dcfd10191856f8e1ef27e37d3c703534dbe27d94";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "3c8487328609565f676883bb1b944229a94d9324";
+      rev = "dcfd10191856f8e1ef27e37d3c703534dbe27d94";
       fetchSubmodules = false;
-      sha256 = "sha256-XCXHgiisxyRsFk5SYbi5IYdCwVu/C1TC7V/YZrGcec4=";
+      sha256 = "sha256-SgHIlLoonG4f2doUCGc8srULy6AA5Q+s9oNLoqpiBDg=";
     };
-    date = "2025-06-18";
+    date = "2025-06-22";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";
@@ -305,16 +305,16 @@
   };
   wayland = {
     pname = "wayland";
-    version = "ba9f9a446f7462a7b41b34e585c7beca020d12f7";
+    version = "eecf3f7635586c41d985e0f443fd4f8930751487";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland";
-      rev = "ba9f9a446f7462a7b41b34e585c7beca020d12f7";
+      rev = "eecf3f7635586c41d985e0f443fd4f8930751487";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-MeugHHKLoZ8MCmwsFPhbSLHLOROPZ+SwOmN+Z3BEtAM=";
+      sha256 = "sha256-2LKvnAHDvjWXFOTkrK95jCs2518EmuKClF9CTg50a4s=";
     };
-    date = "2025-06-12";
+    date = "2025-06-21";
   };
   wayland-protocols = {
     pname = "wayland-protocols";
