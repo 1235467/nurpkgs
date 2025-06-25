@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "c46f7c34837a12b7f9333a57084fd6e244d073a2";
+    version = "b6eced0e6fc1446c7195376ab177fd479fe1a867";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "c46f7c34837a12b7f9333a57084fd6e244d073a2";
+      rev = "b6eced0e6fc1446c7195376ab177fd479fe1a867";
       fetchSubmodules = false;
-      sha256 = "sha256-KtdUzzjUDe1JBSfuFCs8DNIgImvOcEAc929M5i+YUhk=";
+      sha256 = "sha256-U7EkcMRrRf6Eku8jdD6a318ExYxItrXLvgYODO150M0=";
     };
-    date = "2025-06-19";
+    date = "2025-06-24";
   };
   bypy = {
     pname = "bypy";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "cf7e3aa448f8c9e0d9e8f407e6ed730da55acc69";
+    version = "5a348fb7dfaf398922c119d21acb7d7f831f8688";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "cf7e3aa448f8c9e0d9e8f407e6ed730da55acc69";
+      rev = "5a348fb7dfaf398922c119d21acb7d7f831f8688";
       fetchSubmodules = true;
-      sha256 = "sha256-rUWN0S4WFjjTrCcuynppHHAsNQNuGZfivnWZOMoaJvo=";
+      sha256 = "sha256-ZbEH1NdqmscB3DF4HPZG6kPCJugFuWL1lz4RgRDPL8M=";
     };
-    date = "2025-06-23";
+    date = "2025-06-24";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -305,16 +305,16 @@
   };
   wayland = {
     pname = "wayland";
-    version = "eecf3f7635586c41d985e0f443fd4f8930751487";
+    version = "90187031e6ee0ab5cf2b3ec243a314babf4e8561";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland";
-      rev = "eecf3f7635586c41d985e0f443fd4f8930751487";
+      rev = "90187031e6ee0ab5cf2b3ec243a314babf4e8561";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-2LKvnAHDvjWXFOTkrK95jCs2518EmuKClF9CTg50a4s=";
+      sha256 = "sha256-B2mUwnpZ/kLBQGfJ+3MfNYEp1q/EpbsClaR2s8KpVOQ=";
     };
-    date = "2025-06-21";
+    date = "2025-06-25";
   };
   wayland-protocols = {
     pname = "wayland-protocols";
