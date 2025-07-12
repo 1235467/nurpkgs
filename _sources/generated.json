@@ -21,7 +21,7 @@
     },
     "aichat": {
         "cargoLocks": null,
-        "date": "2025-07-07",
+        "date": "2025-07-12",
         "extract": null,
         "name": "aichat",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "sigoden",
             "repo": "aichat",
-            "rev": "430416d914896c3534c04b84c0226910c64e3e66",
-            "sha256": "sha256-xgTGii1xGtCc1OLoC53HAtQ+KVZNO1plB2GVtVBBlqs=",
+            "rev": "75cd648949767aaa03510ad4d3aacd605f710c67",
+            "sha256": "sha256-Ny98HiheOvvKkhLWYvOTNf4ve1ppcFs1+vj0+1EopzY=",
             "type": "github"
         },
-        "version": "430416d914896c3534c04b84c0226910c64e3e66"
+        "version": "75cd648949767aaa03510ad4d3aacd605f710c67"
     },
     "av1an": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-07-10",
+        "date": "2025-07-11",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "b5433bb75324a95dd27eb5492141565466c2cdd6",
-            "sha256": "sha256-yxOOrCXrzUwnkwFj5hdtisjG/tpgEWZL7WHf1AaUAMc=",
+            "rev": "6821723b4421bdf163f1a1cc6fd472516d44b1e7",
+            "sha256": "sha256-Kp+r8+HCxU8jHzdDiDYpCyC6gz/HgC6SnUxKGYlKJZo=",
             "type": "github"
         },
-        "version": "b5433bb75324a95dd27eb5492141565466c2cdd6"
+        "version": "6821723b4421bdf163f1a1cc6fd472516d44b1e7"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -372,11 +372,11 @@
             "name": null,
             "owner": "hypengw",
             "repo": "Qcm",
-            "rev": "d67b0bd440c66c6b690e10b93d919926b59159a7",
-            "sha256": "sha256-z/7eYpV83Wdl3C0Lpyo3Istr4dpUWAcBYH9ISGQZQZo=",
+            "rev": "c8182dbcc1280df77b777fadc3703e93193056fc",
+            "sha256": "sha256-kJdz6VBc93Kwu5CkClGt5TnhUlot/Rasc6ZiCctmCbs=",
             "type": "github"
         },
-        "version": "d67b0bd440c66c6b690e10b93d919926b59159a7"
+        "version": "c8182dbcc1280df77b777fadc3703e93193056fc"
     },
     "reflac": {
         "cargoLocks": null,
