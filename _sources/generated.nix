@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "df6cdb577e3de1cb11a6526ea2b8a39559941d15";
+    version = "6d4381e8d3f8aca58862a48a41fa30b0df82638c";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "df6cdb577e3de1cb11a6526ea2b8a39559941d15";
+      rev = "6d4381e8d3f8aca58862a48a41fa30b0df82638c";
       fetchSubmodules = false;
-      sha256 = "sha256-pCFK/uC5lTBcpZ1tmfXywGwyofa4o6rTJvGEJI9sFMk=";
+      sha256 = "sha256-D3sH87pzg8vqZavAfFvckdAZUDCewePZydpJ7oKSAJU=";
     };
-    date = "2025-07-12";
+    date = "2025-07-13";
   };
   bypy = {
     pname = "bypy";
