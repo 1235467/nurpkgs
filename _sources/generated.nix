@@ -15,27 +15,27 @@
   };
   aichat = {
     pname = "aichat";
-    version = "75cd648949767aaa03510ad4d3aacd605f710c67";
+    version = "0cebc27a038bdeb77b591d9288b7e8a5a248230c";
     src = fetchFromGitHub {
       owner = "sigoden";
       repo = "aichat";
-      rev = "75cd648949767aaa03510ad4d3aacd605f710c67";
+      rev = "0cebc27a038bdeb77b591d9288b7e8a5a248230c";
       fetchSubmodules = false;
-      sha256 = "sha256-Ny98HiheOvvKkhLWYvOTNf4ve1ppcFs1+vj0+1EopzY=";
+      sha256 = "sha256-U9GnO02ckr5jo7sBrVu+2ifLYzMsVOdX2miHOxGTIPs=";
     };
-    date = "2025-07-12";
+    date = "2025-07-14";
   };
   av1an = {
     pname = "av1an";
-    version = "6d4381e8d3f8aca58862a48a41fa30b0df82638c";
+    version = "b025cb5bcf53f3809f41ed2bcf852e3b490e160f";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "6d4381e8d3f8aca58862a48a41fa30b0df82638c";
+      rev = "b025cb5bcf53f3809f41ed2bcf852e3b490e160f";
       fetchSubmodules = false;
-      sha256 = "sha256-D3sH87pzg8vqZavAfFvckdAZUDCewePZydpJ7oKSAJU=";
+      sha256 = "sha256-lzZucea2+JlvvZSTKUsbcVkhMds8Kj9fcRRbErJEdS0=";
     };
-    date = "2025-07-13";
+    date = "2025-07-14";
   };
   bypy = {
     pname = "bypy";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "d0f58baf296a2cdd5df0f82212fe17dfbef8438e";
+    version = "bc764f7065c8e46b4e62cbb511b419034712c509";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "d0f58baf296a2cdd5df0f82212fe17dfbef8438e";
+      rev = "bc764f7065c8e46b4e62cbb511b419034712c509";
       fetchSubmodules = true;
-      sha256 = "sha256-VOAOSIBGvWUKkgnk0wfJp+3yFzQW9D8/ullDBOTNhVk=";
+      sha256 = "sha256-OmuSBLqQ5lu01/rpegJLl5K2x8XL84RaWxx6IjsPtME=";
     };
-    date = "2025-07-12";
+    date = "2025-07-14";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -136,15 +136,15 @@
   };
   mieru = {
     pname = "mieru";
-    version = "47c22c0f4af2b483cd451d3d6cca6a8bb9c55309";
+    version = "b406502304747958afef440a6e951f46fded4259";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "47c22c0f4af2b483cd451d3d6cca6a8bb9c55309";
+      rev = "b406502304747958afef440a6e951f46fded4259";
       fetchSubmodules = false;
-      sha256 = "sha256-bgsBFDOW38/X+isYVUiu4C2eyI5Ofz9D3LWstFlHH+I=";
+      sha256 = "sha256-qbRwZx/2sWAMTBDU73nlSF1I6w7xpLXQWtnZZCjVh9c=";
     };
-    date = "2025-07-07";
+    date = "2025-07-14";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
