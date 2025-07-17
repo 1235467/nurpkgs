@@ -85,6 +85,9 @@ rec {
   cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
   misskey = pkgs.misskey;
   koboldcpp = (pkgs.koboldcpp.override { cublasSupport = true; clblastSupport = true; vulkanSupport = true; cudaArches = [ "sm_75" ]; });
+  # Fonts
+  ttf-ms-win10 = pkgs.callPackage ./pkgs/Fonts/ttf-ms-win10 {};
+
   # dream2nix
 
   # dream2nix-packages = dream2nix.lib.importPackages {
