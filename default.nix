@@ -54,6 +54,7 @@ rec {
   Penguin-Subtitle-Player = pkgs.libsForQt5.callPackage ./pkgs-by-lang/C/Penguin-Subtitle-Player { };
   suyu = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/suyu { };
   yuzu-early-access = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
+  rtptun = pkgs.callPackage ./pkgs-by-lang/C/rtptun { };
 
   # Nodejs
 
