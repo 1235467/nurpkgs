@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-07-22",
+        "date": "2025-07-23",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "fdbbad04bbf2382e9a980418c976668fc062f195",
-            "sha256": "sha256-bZvBovQ/c/F26QaOEm3IVOnLCxa17oc9QZ5ot18mqck=",
+            "rev": "2d2a5bebff72c73cd27db3b9e954b8fa2a7623e8",
+            "sha256": "sha256-A2DvUVtYzlgX8x8tc7Cc37Nc8wsdPTcSgWOGv4JnOh8=",
             "type": "github"
         },
-        "version": "fdbbad04bbf2382e9a980418c976668fc062f195"
+        "version": "2d2a5bebff72c73cd27db3b9e954b8fa2a7623e8"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -518,7 +518,7 @@
     },
     "wayland-protocols": {
         "cargoLocks": null,
-        "date": "2025-06-25",
+        "date": "2025-07-21",
         "extract": null,
         "name": "wayland-protocols",
         "passthru": null,
@@ -528,12 +528,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "efbc060534be948b63e1f395d69b583eebba3235",
-            "sha256": "sha256-tdpEK7soY0aKSk6VD4nulH7ORubX8RfjXYmNAd/cWKY=",
+            "rev": "abd33a52d85fa6d1d20056ba62054c15d0ba4068",
+            "sha256": "sha256-psDTJ+mte/O3sC5+IpB5uLJP5Wn6xZF0MVIcOpLZD3c=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols"
         },
-        "version": "efbc060534be948b63e1f395d69b583eebba3235"
+        "version": "abd33a52d85fa6d1d20056ba62054c15d0ba4068"
     },
     "waylyrics": {
         "cargoLocks": null,
