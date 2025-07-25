@@ -220,15 +220,15 @@
   };
   qcm = {
     pname = "qcm";
-    version = "1884fcdca3ce293c2b69beb440a368f6a350f381";
+    version = "525554badd503478a296cf7acd1b70de5cc997cf";
     src = fetchFromGitHub {
       owner = "hypengw";
       repo = "Qcm";
-      rev = "1884fcdca3ce293c2b69beb440a368f6a350f381";
+      rev = "525554badd503478a296cf7acd1b70de5cc997cf";
       fetchSubmodules = true;
-      sha256 = "sha256-vaUL20vVTm0afzpvfdhK0nzRGvAjWG+gtfI1UlGbbeE=";
+      sha256 = "sha256-61+XDKEXK/NIsZsjEUn49HVlPNHhc4igEGL89rEZQWc=";
     };
-    date = "2025-07-21";
+    date = "2025-07-23";
   };
   reflac = {
     pname = "reflac";
@@ -318,16 +318,16 @@
   };
   wayland-protocols = {
     pname = "wayland-protocols";
-    version = "abd33a52d85fa6d1d20056ba62054c15d0ba4068";
+    version = "46f46863b7b5ac8d9c5bcdb167b57ae803d064ac";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland-protocols";
-      rev = "abd33a52d85fa6d1d20056ba62054c15d0ba4068";
+      rev = "46f46863b7b5ac8d9c5bcdb167b57ae803d064ac";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-psDTJ+mte/O3sC5+IpB5uLJP5Wn6xZF0MVIcOpLZD3c=";
+      sha256 = "sha256-c2Q6NfKNDA0KLD+4giUXDHRSpn6v2/XMvslfk1kwP64=";
     };
-    date = "2025-07-21";
+    date = "2025-07-24";
   };
   waylyrics = {
     pname = "waylyrics";
@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "80c7e0f772e38f56376e7953b148b480ca49ef3a";
+    version = "2f2c0dfcc63e68915eaf01e5a89408ecc2c9443b";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "80c7e0f772e38f56376e7953b148b480ca49ef3a";
+      rev = "2f2c0dfcc63e68915eaf01e5a89408ecc2c9443b";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-+brGbuNcr/AtTzqkJRUVkOPmdMZUQLEMDCmBy9mbzXM=";
+      sha256 = "sha256-U/RF8zzvTA1N6cfmZLXWLi9Xw/YTd5ihGEs+rvsEVVI=";
     };
-    date = "2025-07-23";
+    date = "2025-07-24";
   };
 }
