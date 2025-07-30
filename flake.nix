@@ -33,6 +33,23 @@
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
     in
     rec {
+      legacyPackages = forAllSystems (
+        system:
+        import ./default.nix {
+          pkgs = import nixpkgs {
+            inherit system;
+            config.allowUnfree = true;
+          };
+          pkgs-stable = import nixpkgs-stable {
+            inherit system;
+            config.allowUnfree = true;
+          };
+          pkgs-yuzu = import nixpkgs-yuzu {
+            inherit system;
+            config.allowUnfree = true;
+          };
+        }
+      );
       packages = forAllSystems (system:
         let
           pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
