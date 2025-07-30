@@ -21,7 +21,7 @@
     },
     "aichat": {
         "cargoLocks": null,
-        "date": "2025-07-29",
+        "date": "2025-07-30",
         "extract": null,
         "name": "aichat",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "sigoden",
             "repo": "aichat",
-            "rev": "c354f77baaed8df4a9bb114293b6e86d51d8fdaa",
-            "sha256": "sha256-DE1UiJDqthEVUkz8kKOWeY0ZbVVgxTS8qI/dl91RNVk=",
+            "rev": "5cd9c83153d55e33fad997f35ac4fe01186edbe6",
+            "sha256": "sha256-df2R/Yl+S/Q5J5JTZuXIUSd30mxD5RviaKsZ9GTf1Co=",
             "type": "github"
         },
-        "version": "c354f77baaed8df4a9bb114293b6e86d51d8fdaa"
+        "version": "5cd9c83153d55e33fad997f35ac4fe01186edbe6"
     },
     "av1an": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-07-28",
+        "date": "2025-07-30",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "abe29647ae9cf2e6bd40784790b3d99fcc962613",
-            "sha256": "sha256-LWd8FNjVq2emVSJroZ2AUyvWOTjTcGojGRj1ftetPkU=",
+            "rev": "84c5e74459179713d655d35afb8e6bbdafd29704",
+            "sha256": "sha256-W2EO0FzWcm21f3pFgKV5GHD2S/L6HeQgpsHC24F2/60=",
             "type": "github"
         },
-        "version": "abe29647ae9cf2e6bd40784790b3d99fcc962613"
+        "version": "84c5e74459179713d655d35afb8e6bbdafd29704"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
