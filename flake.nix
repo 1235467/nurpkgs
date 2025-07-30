@@ -12,6 +12,10 @@
     };
   };
   inputs.dream2nix.url = "github:nix-community/dream2nix";
+  inputs.flake-compat = {
+    url = "github:edolstra/flake-compat";
+    flake = false;
+  };
 
   outputs =
     { self
@@ -25,28 +29,17 @@
       systems = [ "x86_64-linux" ];
       system = "x86_64-linux";
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
+      pkgsFor = forAllSystems (system: import nixpkgs { inherit system; config.allowUnfree = true; });
     in
     rec {
-      legacyPackages = forAllSystems (
-        system:
-        import ./default.nix {
-          pkgs = import nixpkgs {
-            inherit system;
-            config.allowUnfree = true;
-          };
-          pkgs-stable = import nixpkgs-stable {
-            inherit system;
-            config.allowUnfree = true;
-          };
-          pkgs-yuzu = import nixpkgs-yuzu {
-            inherit system;
-            config.allowUnfree = true;
-          };
+      packages = forAllSystems (system:
+        let 
+        pkgs = pkgsFor.${system};
+        in rec
+        {
+          candy = pkgs.callPackage ./pkgs-by-lang/C/candy { };
         }
       );
-      packages = forAllSystems (
-        system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system}
-      );
-
     };
+
 }

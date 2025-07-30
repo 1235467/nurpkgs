@@ -76,7 +76,7 @@ rec {
     scripts = [ pkgs.mpvScripts.mpris ];
   };
   misskey-new = pkgs.callPackage ./pkgs/Overrides/misskey { };
-  llama-cpp-cuda = (pkgs.llama-cpp.override {config = {cudaSupport=true;rocmSupport=false;};}); 
+  llama-cpp-cuda = (pkgs.llama-cpp.override { config = { cudaSupport = true; rocmSupport = false; }; });
 
   # System Fonts override
   JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;
@@ -87,7 +87,7 @@ rec {
   misskey = pkgs.misskey;
   koboldcpp = (pkgs.koboldcpp.override { cublasSupport = true; clblastSupport = true; vulkanSupport = true; cudaArches = [ "sm_75" ]; });
   # Fonts
-  ttf-ms-win10 = pkgs.callPackage ./pkgs/Fonts/ttf-ms-win10 {};
+  ttf-ms-win10 = pkgs.callPackage ./pkgs/Fonts/ttf-ms-win10 { };
 
   # dream2nix
 
