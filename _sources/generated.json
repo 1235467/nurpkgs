@@ -21,7 +21,7 @@
     },
     "aichat": {
         "cargoLocks": null,
-        "date": "2025-07-30",
+        "date": "2025-07-31",
         "extract": null,
         "name": "aichat",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "sigoden",
             "repo": "aichat",
-            "rev": "5cd9c83153d55e33fad997f35ac4fe01186edbe6",
-            "sha256": "sha256-df2R/Yl+S/Q5J5JTZuXIUSd30mxD5RviaKsZ9GTf1Co=",
+            "rev": "24e3f4859f6e329b63ff2e406397687405da02f4",
+            "sha256": "sha256-VIPnxiGpRHTSEFBcEvGPZusborskTXtbjHAr/DpCTtQ=",
             "type": "github"
         },
-        "version": "5cd9c83153d55e33fad997f35ac4fe01186edbe6"
+        "version": "24e3f4859f6e329b63ff2e406397687405da02f4"
     },
     "av1an": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-07-30",
+        "date": "2025-07-31",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "84c5e74459179713d655d35afb8e6bbdafd29704",
-            "sha256": "sha256-W2EO0FzWcm21f3pFgKV5GHD2S/L6HeQgpsHC24F2/60=",
+            "rev": "3e35797b18d35baae82657bb0438af88156e273f",
+            "sha256": "sha256-AiLcR+4gVhJnJsO2fMEW83dMZbGPYs13d6S8yrbPXew=",
             "type": "github"
         },
-        "version": "84c5e74459179713d655d35afb8e6bbdafd29704"
+        "version": "3e35797b18d35baae82657bb0438af88156e273f"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2025-07-29",
+        "date": "2025-07-31",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "5ffe7b9b0aabdb6969569c4e5a27371d857e9d76",
-            "sha256": "sha256-zhSsoTaQkKglnz73Lt/NL3K4OA4dMlzbPytJXj8RzJg=",
+            "rev": "54840055747c2970f077ff6ab83d16ef0004ca4c",
+            "sha256": "sha256-/6keet7En6mjNmIIDVUlHgYl3voDXHDrph9VkFT0dFY=",
             "type": "github"
         },
-        "version": "5ffe7b9b0aabdb6969569c4e5a27371d857e9d76"
+        "version": "54840055747c2970f077ff6ab83d16ef0004ca4c"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -479,7 +479,7 @@
     },
     "swgp-go": {
         "cargoLocks": null,
-        "date": "2025-07-24",
+        "date": "2025-07-31",
         "extract": null,
         "name": "swgp-go",
         "passthru": null,
@@ -491,11 +491,11 @@
             "name": null,
             "owner": "database64128",
             "repo": "swgp-go",
-            "rev": "bfa5431bd74711bf5fcfada873ea8ac0ee54722e",
-            "sha256": "sha256-YdZiNeM8HbmwQGnMjjX9WtFGs+PcHdyE9RZt60SB3bc=",
+            "rev": "256eae425053a186bb7f281fe49a5fc9350767bd",
+            "sha256": "sha256-zEa3XFaeIPQFNNJyrwFo0YI2q0eVLhMGVxofL7Prwdw=",
             "type": "github"
         },
-        "version": "bfa5431bd74711bf5fcfada873ea8ac0ee54722e"
+        "version": "256eae425053a186bb7f281fe49a5fc9350767bd"
     },
     "wayland": {
         "cargoLocks": null,
@@ -557,7 +557,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2025-07-29",
+        "date": "2025-07-30",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -567,11 +567,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "51a78cb0ed30fb9193e940e77f25bdf13131fcee",
-            "sha256": "sha256-fHklQv6BAB1jgfleaCVlGKSypLjUaHZzp/vxX7u1Chw=",
+            "rev": "c8b7600adc35a31fa86be1bebf1c9bf79246f08a",
+            "sha256": "sha256-qdYEWcbgsIdWPDXhMOcfuqFeBaG2eY1yam9iULG2zvA=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "51a78cb0ed30fb9193e940e77f25bdf13131fcee"
+        "version": "c8b7600adc35a31fa86be1bebf1c9bf79246f08a"
     }
 }
