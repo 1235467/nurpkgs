@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "2be309de1df5e4262175fbcc58e6dd8de4e0e6d3";
+    version = "3c6536d9328280b1811a2dbcc4596c1cafb80abd";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "2be309de1df5e4262175fbcc58e6dd8de4e0e6d3";
+      rev = "3c6536d9328280b1811a2dbcc4596c1cafb80abd";
       fetchSubmodules = true;
-      sha256 = "sha256-eGd6iaeVrsrere8ScbNIPM+lz7IvmD3Dj+yZSzcA378=";
+      sha256 = "sha256-kgqTCdzaKnAxsPzLyk4XIEOU5RkLvDrtrLYRoBQwlbc=";
     };
-    date = "2025-08-04";
+    date = "2025-08-05";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -111,16 +111,16 @@
   };
   libdrm = {
     pname = "libdrm";
-    version = "9ea8a8e93d542fe61d82716d1a721e8d1d257405";
+    version = "d870a12c3abfe0d2347996c37784a34b37457b7a";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/mesa/drm";
-      rev = "9ea8a8e93d542fe61d82716d1a721e8d1d257405";
+      rev = "d870a12c3abfe0d2347996c37784a34b37457b7a";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-5l0mRKj7I7JfOGYk2BDrmlqE5WTnfMBI7Aa85XcD5Yg=";
+      sha256 = "sha256-+SfCE6/UHBETe1XQx6+4msQ7z+RJFfUduWPaPiqzZdQ=";
     };
-    date = "2025-07-14";
+    date = "2025-08-01";
   };
   llamafile = {
     pname = "llamafile";
@@ -136,15 +136,15 @@
   };
   mieru = {
     pname = "mieru";
-    version = "ca5520d1d8b735556c772df1ae58b15149de46ec";
+    version = "cfae29836cf57ad6f1106be8f18e77268b05a4bb";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "ca5520d1d8b735556c772df1ae58b15149de46ec";
+      rev = "cfae29836cf57ad6f1106be8f18e77268b05a4bb";
       fetchSubmodules = false;
-      sha256 = "sha256-e0J23mcSztxc7B/yeev/QWDECl2s1U2NoO89LmlLnR4=";
+      sha256 = "sha256-u+8MiFYMOnLqP2+u7Ua6P5EXitBlg85EiL4NXN26IrA=";
     };
-    date = "2025-08-01";
+    date = "2025-08-05";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
