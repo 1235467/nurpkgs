@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "a0cd358063c43ab5a632d1e0e3c8e38f2eebeca8";
+    version = "8d59346905aa4a95170b7b64266094d71b9f4efc";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "a0cd358063c43ab5a632d1e0e3c8e38f2eebeca8";
+      rev = "8d59346905aa4a95170b7b64266094d71b9f4efc";
       fetchSubmodules = false;
-      sha256 = "sha256-7EvXaIxS233iuRrmMS303tzpvCvEl5Uj6+Zk+SKkcSQ=";
+      sha256 = "sha256-V1I81kWBAbgnMmBSFwoRnzzWemJgGCvHbGV3WnHjwOw=";
     };
-    date = "2025-08-13";
+    date = "2025-08-15";
   };
   bypy = {
     pname = "bypy";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "60d769a89908c29e19100059985db15a7b6bab6a";
+    version = "edc473e8b0c14e768445422080af9978d132bff6";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "60d769a89908c29e19100059985db15a7b6bab6a";
+      rev = "edc473e8b0c14e768445422080af9978d132bff6";
       fetchSubmodules = true;
-      sha256 = "sha256-wx5EEb6CGuCmUJjgHtIQ37kyBYEnxxQzvJpJ2iofP5Q=";
+      sha256 = "sha256-YrmtKABsX8Jdy/+Lyebzr5XUJbd1bHlwPZ51SI0RBJ8=";
     };
-    date = "2025-08-14";
+    date = "2025-08-15";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -318,16 +318,16 @@
   };
   wayland-protocols = {
     pname = "wayland-protocols";
-    version = "6ac53b159fb2de810a43eb0bf80f1667f246c20d";
+    version = "9730142a7fa9f8d8ebbb5ad9dcb76960ea6f0825";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland-protocols";
-      rev = "6ac53b159fb2de810a43eb0bf80f1667f246c20d";
+      rev = "9730142a7fa9f8d8ebbb5ad9dcb76960ea6f0825";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-q3VDqAkK6tMjDzAvV6PI8Gibc8x7h/odN905hRFYLS4=";
+      sha256 = "sha256-aZvj1bPy6yVKhh5PsSh11zrPPkAdSlAYqXSQO8ZADOQ=";
     };
-    date = "2025-08-05";
+    date = "2025-08-15";
   };
   waylyrics = {
     pname = "waylyrics";
