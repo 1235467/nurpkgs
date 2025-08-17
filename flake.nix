@@ -75,6 +75,7 @@
           # Go
           #open-snell = pkgs.callPackage ./pkgs-by-lang/Go/open-snell { };
           #mieru = pkgs.callPackage ./pkgs-by-lang/Go/mieru { };
+          T2D = pkgs.callPackage ./pkgs-by-lang/Go/T2D { };
 
           # Python
           jjwxcCrawler = pkgs.callPackage ./pkgs-by-lang/Python/jjwxcCrawler { };
