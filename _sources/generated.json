@@ -21,7 +21,7 @@
     },
     "aichat": {
         "cargoLocks": null,
-        "date": "2025-08-11",
+        "date": "2025-08-18",
         "extract": null,
         "name": "aichat",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "sigoden",
             "repo": "aichat",
-            "rev": "9a60b5f3a2a0bffa23dbd7960e306bf9683ed951",
-            "sha256": "sha256-WE/92g3+u9hA+jICo24iIZn+y+VhoUpUQw4ivNtt/RY=",
+            "rev": "6536d63f62c995f4f059dec8a3ada7160a13c2b9",
+            "sha256": "sha256-RciSRXCPZ5Z9ITnk9svpt6+OlNSFONUUW4R9udMON74=",
             "type": "github"
         },
-        "version": "9a60b5f3a2a0bffa23dbd7960e306bf9683ed951"
+        "version": "6536d63f62c995f4f059dec8a3ada7160a13c2b9"
     },
     "av1an": {
         "cargoLocks": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "251288ec5942b3544ad31de1299569284d80f0d7",
-            "sha256": "sha256-tydnBQmV8pPHPlvq7sTEOEhkjXnYaeJtMN+77Rf/1NU=",
+            "rev": "d8901786109dba6af3eac03c1e723f807ed0117a",
+            "sha256": "sha256-UVC0KAgug5+OaMtuGQOoAl3/zEKuROAZL5UZG2LcvNw=",
             "type": "github"
         },
-        "version": "251288ec5942b3544ad31de1299569284d80f0d7"
+        "version": "d8901786109dba6af3eac03c1e723f807ed0117a"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -360,7 +360,7 @@
     },
     "qcm": {
         "cargoLocks": null,
-        "date": "2025-08-11",
+        "date": "2025-08-17",
         "extract": null,
         "name": "qcm",
         "passthru": null,
@@ -372,11 +372,11 @@
             "name": null,
             "owner": "hypengw",
             "repo": "Qcm",
-            "rev": "5c159448eabcd2b0264dc3f54b26b187d57920c4",
-            "sha256": "sha256-opZbgelQjgvNqdkhqeXl2C3ALD1+Pqdniorrsv0tlD8=",
+            "rev": "a713de5f1d722e12d40cf783ebd2174ea0c37fa2",
+            "sha256": "sha256-1tZvjXvYAaOQV//aVimoyc7uatei4XJkSQg9/xbzFLs=",
             "type": "github"
         },
-        "version": "5c159448eabcd2b0264dc3f54b26b187d57920c4"
+        "version": "a713de5f1d722e12d40cf783ebd2174ea0c37fa2"
     },
     "reflac": {
         "cargoLocks": null,
