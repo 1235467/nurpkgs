@@ -15,15 +15,15 @@
   };
   aichat = {
     pname = "aichat";
-    version = "6536d63f62c995f4f059dec8a3ada7160a13c2b9";
+    version = "4719fe8de93df1600195074461dd2ba27e41a144";
     src = fetchFromGitHub {
       owner = "sigoden";
       repo = "aichat";
-      rev = "6536d63f62c995f4f059dec8a3ada7160a13c2b9";
+      rev = "4719fe8de93df1600195074461dd2ba27e41a144";
       fetchSubmodules = false;
-      sha256 = "sha256-RciSRXCPZ5Z9ITnk9svpt6+OlNSFONUUW4R9udMON74=";
+      sha256 = "sha256-JFYGi9hxp4J7tn+EXFZe2l2j9joxDhggHDVGK+HiSVA=";
     };
-    date = "2025-08-18";
+    date = "2025-08-25";
   };
   av1an = {
     pname = "av1an";
@@ -75,13 +75,13 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "ced38b1b0f46f9fbdf9d37644d27bdbd2a29af1d";
+    version = "0ed880f3f7dc2c746bf3590eee266c010d737558";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "ced38b1b0f46f9fbdf9d37644d27bdbd2a29af1d";
+      rev = "0ed880f3f7dc2c746bf3590eee266c010d737558";
       fetchSubmodules = true;
-      sha256 = "sha256-2ABxsC0wvS6aYQz97CBvrmxUOEXWFvKQfs4e05Rvt5o=";
+      sha256 = "sha256-FPur4yuDwzM9uHhPFJW6KD3Xys5fz0xmRmZqFfWQD3Y=";
     };
     date = "2025-08-24";
   };
@@ -293,15 +293,15 @@
   };
   swgp-go = {
     pname = "swgp-go";
-    version = "ae83ac304af83b44ad8959eab370b07d4f3147b2";
+    version = "5ba57efe0239fc8c440519fc07c4684452b83ae4";
     src = fetchFromGitHub {
       owner = "database64128";
       repo = "swgp-go";
-      rev = "ae83ac304af83b44ad8959eab370b07d4f3147b2";
+      rev = "5ba57efe0239fc8c440519fc07c4684452b83ae4";
       fetchSubmodules = false;
-      sha256 = "sha256-cpidqSDIhFtcGq0wIUEioCZF8W4+8Uo6G5ZtMwE1g6I=";
+      sha256 = "sha256-Q8f+M2LzahsEq9R+thcUgNi05C2D9QyF9EHA9bkiPno=";
     };
-    date = "2025-08-21";
+    date = "2025-08-25";
   };
   wayland = {
     pname = "wayland";
@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "7431d840d0c29dd90b21c87698b39769e4f2f004";
+    version = "b0c886ec77dba9486beae90f4007c38987f3d4f8";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "7431d840d0c29dd90b21c87698b39769e4f2f004";
+      rev = "b0c886ec77dba9486beae90f4007c38987f3d4f8";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-8WGz3Gkxl/sLhtye02ZfWu7Rrt91KE+mrsbaXJHPabg=";
+      sha256 = "sha256-lKnNXW5RE+oU/4Vrs3MqfnKHHMqZkp92/yGO2wnJglo=";
     };
-    date = "2025-08-18";
+    date = "2025-08-25";
   };
 }
