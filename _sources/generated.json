@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-08-31",
+        "date": "2025-09-02",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "5bb8adbc3228901d199e8d22d6f712bd1d7d4e15",
-            "sha256": "sha256-dSVTEz6ihb1bD/MAwprgGP4qst6P7pWIxyG9HIUSKkg=",
+            "rev": "00423bb738d568f4903412fdabdf53e2c63fde7c",
+            "sha256": "sha256-7RfBVNvZZ0PyQX+kVMHRAxyYeSiO4xDAYHkqbERZnFE=",
             "type": "github"
         },
-        "version": "5bb8adbc3228901d199e8d22d6f712bd1d7d4e15"
+        "version": "00423bb738d568f4903412fdabdf53e2c63fde7c"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -518,7 +518,7 @@
     },
     "wayland-protocols": {
         "cargoLocks": null,
-        "date": "2025-08-27",
+        "date": "2025-09-01",
         "extract": null,
         "name": "wayland-protocols",
         "passthru": null,
@@ -528,16 +528,16 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "57c78b9b8a6761d80fa327046f78ccc7e3a192be",
-            "sha256": "sha256-kh8uclCzaKsXjFoIw1JqbGVbCANM1RmollrlzjPzO80=",
+            "rev": "fff667c829b067500a5a3bf84e7bae1bb293d3aa",
+            "sha256": "sha256-xzmMal4wQx52S4CGOECFutYewOKBZRNASDASSZYaZag=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols"
         },
-        "version": "57c78b9b8a6761d80fa327046f78ccc7e3a192be"
+        "version": "fff667c829b067500a5a3bf84e7bae1bb293d3aa"
     },
     "waylyrics": {
         "cargoLocks": null,
-        "date": "2025-08-30",
+        "date": "2025-09-02",
         "extract": null,
         "name": "waylyrics",
         "passthru": null,
@@ -549,11 +549,11 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "016eee8633dd454fe94af9fbaeff27afec3c713d",
-            "sha256": "sha256-iZIuPV8K7FyvZHWqWuir/8jj/ZZB3jf87IQLOew8+b0=",
+            "rev": "9fd55a62b221adc41baf79a13c091e899c3a4607",
+            "sha256": "sha256-sDbbMy4g6tLsv8cV32VNJT/9kOGr3itFqlB8LiWL2GA=",
             "type": "github"
         },
-        "version": "016eee8633dd454fe94af9fbaeff27afec3c713d"
+        "version": "9fd55a62b221adc41baf79a13c091e899c3a4607"
     },
     "wlroots": {
         "cargoLocks": null,
