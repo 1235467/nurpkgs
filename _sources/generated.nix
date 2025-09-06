@@ -136,15 +136,15 @@
   };
   mieru = {
     pname = "mieru";
-    version = "4799de87192c0d0f1c6963bf2ba4d5cf2df55b9b";
+    version = "62cf8d16dbb3aaee1b0d31b32abd3be9718fe62f";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "4799de87192c0d0f1c6963bf2ba4d5cf2df55b9b";
+      rev = "62cf8d16dbb3aaee1b0d31b32abd3be9718fe62f";
       fetchSubmodules = false;
-      sha256 = "sha256-Dig1IotrXyqudH90jYhMBZo5DVAJzAo/ujTkljmAJJo=";
+      sha256 = "sha256-pJKXx1orUj9fo6zhVWJaiYKADZYDByt1+wYmQOCRgCI=";
     };
-    date = "2025-09-04";
+    date = "2025-09-05";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
