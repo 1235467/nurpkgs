@@ -21,7 +21,7 @@
     },
     "aichat": {
         "cargoLocks": null,
-        "date": "2025-08-25",
+        "date": "2025-09-08",
         "extract": null,
         "name": "aichat",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "sigoden",
             "repo": "aichat",
-            "rev": "4719fe8de93df1600195074461dd2ba27e41a144",
-            "sha256": "sha256-JFYGi9hxp4J7tn+EXFZe2l2j9joxDhggHDVGK+HiSVA=",
+            "rev": "b0d54b60cd2fb1fdc8489712b635ec3754fe32da",
+            "sha256": "sha256-cTw3ewam9RxFktaomSNLWJAfhzbbVC+fdAtsmCy9u+c=",
             "type": "github"
         },
-        "version": "4719fe8de93df1600195074461dd2ba27e41a144"
+        "version": "b0d54b60cd2fb1fdc8489712b635ec3754fe32da"
     },
     "av1an": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-09-06",
+        "date": "2025-09-08",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "bce43f74eb8e4570d0d043f5fc8257eef7a57399",
-            "sha256": "sha256-Ms2/f+vzcYezat/uaYjdnhTb00dtZ81qGvsNGLAE3h0=",
+            "rev": "b619f39555b96c70330f4a933dedde7e897e0d81",
+            "sha256": "sha256-/91c40cXye2No6YQZcoXaMcIDqGkdE0hmRPC4SSTlRU=",
             "type": "github"
         },
-        "version": "bce43f74eb8e4570d0d043f5fc8257eef7a57399"
+        "version": "b619f39555b96c70330f4a933dedde7e897e0d81"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2025-09-06",
+        "date": "2025-09-07",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "6791babb728ad9171a2d51f2ea9522f3f31a3b32",
-            "sha256": "sha256-4TfXQwtmQhOQf5By5MlxJlEuvZDBmTKeLHW4Ef4vp4Y=",
+            "rev": "0f68c201edd74ebd603914f6eab41bf162a5b497",
+            "sha256": "sha256-s5e1P9dixcvbCFqNF/dztX93sh63Wiwa052VQ3XVHI4=",
             "type": "github"
         },
-        "version": "6791babb728ad9171a2d51f2ea9522f3f31a3b32"
+        "version": "0f68c201edd74ebd603914f6eab41bf162a5b497"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -479,7 +479,7 @@
     },
     "swgp-go": {
         "cargoLocks": null,
-        "date": "2025-08-25",
+        "date": "2025-09-08",
         "extract": null,
         "name": "swgp-go",
         "passthru": null,
@@ -491,11 +491,11 @@
             "name": null,
             "owner": "database64128",
             "repo": "swgp-go",
-            "rev": "5ba57efe0239fc8c440519fc07c4684452b83ae4",
-            "sha256": "sha256-Q8f+M2LzahsEq9R+thcUgNi05C2D9QyF9EHA9bkiPno=",
+            "rev": "a777643baf6a854ae80ad5affd0e9066e249ccc8",
+            "sha256": "sha256-JYk7BUE3VTW09Ky74bCO29A8Cq+qenoL5XaO4CrFt5c=",
             "type": "github"
         },
-        "version": "5ba57efe0239fc8c440519fc07c4684452b83ae4"
+        "version": "a777643baf6a854ae80ad5affd0e9066e249ccc8"
     },
     "wayland": {
         "cargoLocks": null,

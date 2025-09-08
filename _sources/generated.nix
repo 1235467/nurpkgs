@@ -15,15 +15,15 @@
   };
   aichat = {
     pname = "aichat";
-    version = "4719fe8de93df1600195074461dd2ba27e41a144";
+    version = "b0d54b60cd2fb1fdc8489712b635ec3754fe32da";
     src = fetchFromGitHub {
       owner = "sigoden";
       repo = "aichat";
-      rev = "4719fe8de93df1600195074461dd2ba27e41a144";
+      rev = "b0d54b60cd2fb1fdc8489712b635ec3754fe32da";
       fetchSubmodules = false;
-      sha256 = "sha256-JFYGi9hxp4J7tn+EXFZe2l2j9joxDhggHDVGK+HiSVA=";
+      sha256 = "sha256-cTw3ewam9RxFktaomSNLWJAfhzbbVC+fdAtsmCy9u+c=";
     };
-    date = "2025-08-25";
+    date = "2025-09-08";
   };
   av1an = {
     pname = "av1an";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "bce43f74eb8e4570d0d043f5fc8257eef7a57399";
+    version = "b619f39555b96c70330f4a933dedde7e897e0d81";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "bce43f74eb8e4570d0d043f5fc8257eef7a57399";
+      rev = "b619f39555b96c70330f4a933dedde7e897e0d81";
       fetchSubmodules = true;
-      sha256 = "sha256-Ms2/f+vzcYezat/uaYjdnhTb00dtZ81qGvsNGLAE3h0=";
+      sha256 = "sha256-/91c40cXye2No6YQZcoXaMcIDqGkdE0hmRPC4SSTlRU=";
     };
-    date = "2025-09-06";
+    date = "2025-09-08";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -136,15 +136,15 @@
   };
   mieru = {
     pname = "mieru";
-    version = "6791babb728ad9171a2d51f2ea9522f3f31a3b32";
+    version = "0f68c201edd74ebd603914f6eab41bf162a5b497";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "6791babb728ad9171a2d51f2ea9522f3f31a3b32";
+      rev = "0f68c201edd74ebd603914f6eab41bf162a5b497";
       fetchSubmodules = false;
-      sha256 = "sha256-4TfXQwtmQhOQf5By5MlxJlEuvZDBmTKeLHW4Ef4vp4Y=";
+      sha256 = "sha256-s5e1P9dixcvbCFqNF/dztX93sh63Wiwa052VQ3XVHI4=";
     };
-    date = "2025-09-06";
+    date = "2025-09-07";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -293,15 +293,15 @@
   };
   swgp-go = {
     pname = "swgp-go";
-    version = "5ba57efe0239fc8c440519fc07c4684452b83ae4";
+    version = "a777643baf6a854ae80ad5affd0e9066e249ccc8";
     src = fetchFromGitHub {
       owner = "database64128";
       repo = "swgp-go";
-      rev = "5ba57efe0239fc8c440519fc07c4684452b83ae4";
+      rev = "a777643baf6a854ae80ad5affd0e9066e249ccc8";
       fetchSubmodules = false;
-      sha256 = "sha256-Q8f+M2LzahsEq9R+thcUgNi05C2D9QyF9EHA9bkiPno=";
+      sha256 = "sha256-JYk7BUE3VTW09Ky74bCO29A8Cq+qenoL5XaO4CrFt5c=";
     };
-    date = "2025-08-25";
+    date = "2025-09-08";
   };
   wayland = {
     pname = "wayland";
