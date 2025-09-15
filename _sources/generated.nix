@@ -281,15 +281,15 @@
   };
   sway = {
     pname = "sway";
-    version = "50a8750e01f197826631db3c231b55ed48a24cc4";
+    version = "a7d9535eb3b2056cea6a88e174fb1e75c33469f2";
     src = fetchFromGitHub {
       owner = "swaywm";
       repo = "sway";
-      rev = "50a8750e01f197826631db3c231b55ed48a24cc4";
+      rev = "a7d9535eb3b2056cea6a88e174fb1e75c33469f2";
       fetchSubmodules = true;
-      sha256 = "sha256-Wtz0GwVXJGS67yjQPisE0/qtmkNZFmfZF4cYG0AJ4gE=";
+      sha256 = "sha256-UeiBBSSvIbjNnkPfynJC/lLDHUzHGMzf8YSjKHXu75Y=";
     };
-    date = "2025-09-12";
+    date = "2025-09-15";
   };
   swgp-go = {
     pname = "swgp-go";
