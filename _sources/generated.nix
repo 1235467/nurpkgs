@@ -51,15 +51,15 @@
   };
   candy = {
     pname = "candy";
-    version = "16920abdc8cb74560ec45c22b19d16732ed4e214";
+    version = "7a88c4ea169ac92ed2e90bf68c83bdd3bad46224";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "16920abdc8cb74560ec45c22b19d16732ed4e214";
+      rev = "7a88c4ea169ac92ed2e90bf68c83bdd3bad46224";
       fetchSubmodules = false;
-      sha256 = "sha256-HrMLJdYlcNuOsnQmUudjqU4qskfZuRJxEGKpTEe++D8=";
+      sha256 = "sha256-0S8VNc17GObYtQpxxVf43WU8ke7qXsKtzZgchCEzJ6g=";
     };
-    date = "2025-07-07";
+    date = "2025-09-17";
   };
   fww-checkin-rs = {
     pname = "fww-checkin-rs";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "559024c3314e4b1180b10b80fce4e9f20bad14c8";
+    version = "5e96fac52fbd353eaf51ac436d1ada16a021e5f2";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "559024c3314e4b1180b10b80fce4e9f20bad14c8";
+      rev = "5e96fac52fbd353eaf51ac436d1ada16a021e5f2";
       fetchSubmodules = true;
-      sha256 = "sha256-OS16EWkyPeZCI/+rhtGHBn66NZVCA68we/PkD3o8iPQ=";
+      sha256 = "sha256-fprMwbppQ+ce2YcLGfVKgPHrRErYihfhqRll5HvxeRE=";
     };
-    date = "2025-09-14";
+    date = "2025-09-16";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -305,16 +305,16 @@
   };
   wayland = {
     pname = "wayland";
-    version = "264da6a92b48ef41661021236c5d51ca52722309";
+    version = "d81525a235e48cc5de3e4005a16ddb1fbdfd9d7c";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland";
-      rev = "264da6a92b48ef41661021236c5d51ca52722309";
+      rev = "d81525a235e48cc5de3e4005a16ddb1fbdfd9d7c";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-T44E5OUcvNFKZwSaQgoa4zw9D3XI7VRF0/4/7DM4eIk=";
+      sha256 = "sha256-n2OdxvE169wiAudsSHJoWR5ZKO/ma0l+ksKyqqYQe3E=";
     };
-    date = "2025-08-03";
+    date = "2025-09-16";
   };
   wayland-protocols = {
     pname = "wayland-protocols";
