@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "07ae6f669b5e5d30aab88d3685f57a34f20c179d";
+    version = "1ac0b9de21a97976fd8b6fa0289c8b06350e0eee";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "07ae6f669b5e5d30aab88d3685f57a34f20c179d";
+      rev = "1ac0b9de21a97976fd8b6fa0289c8b06350e0eee";
       fetchSubmodules = false;
-      sha256 = "sha256-8GID5P29vJuutXW4QpxwB42h0Ov5OaWoM+rR3t/++MI=";
+      sha256 = "sha256-LfhuwsMWzFwystiDnXvvFLygU1P/BonjBiAshLjx78A=";
     };
-    date = "2025-09-11";
+    date = "2025-09-17";
   };
   bypy = {
     pname = "bypy";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "5e96fac52fbd353eaf51ac436d1ada16a021e5f2";
+    version = "1cb8cd3930e2c8410bbc99baa0a5bea91994bd71";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "5e96fac52fbd353eaf51ac436d1ada16a021e5f2";
+      rev = "1cb8cd3930e2c8410bbc99baa0a5bea91994bd71";
       fetchSubmodules = true;
-      sha256 = "sha256-fprMwbppQ+ce2YcLGfVKgPHrRErYihfhqRll5HvxeRE=";
+      sha256 = "sha256-nVAdQxEW8tgAJQa7ypS5EWWbHglnq4tjBuAszLciBbM=";
     };
-    date = "2025-09-16";
+    date = "2025-09-17";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -136,15 +136,15 @@
   };
   mieru = {
     pname = "mieru";
-    version = "cd0f148b010c52ab071103fe770732c28b900034";
+    version = "23455565dc4a524f06ae28d256ab181ea28909bd";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "cd0f148b010c52ab071103fe770732c28b900034";
+      rev = "23455565dc4a524f06ae28d256ab181ea28909bd";
       fetchSubmodules = false;
-      sha256 = "sha256-aOG5iz5EqbZ/mbS96k7mqOGmncEAo12RQjV0K+cc9ho=";
+      sha256 = "sha256-iexulfS71tLz8evZGO74ncCfBp5SjNNj3fT5jsGiNNI=";
     };
-    date = "2025-09-13";
+    date = "2025-09-18";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -281,15 +281,15 @@
   };
   sway = {
     pname = "sway";
-    version = "a7d9535eb3b2056cea6a88e174fb1e75c33469f2";
+    version = "bc96d0acdf8544d81df669566b50032333ce16d9";
     src = fetchFromGitHub {
       owner = "swaywm";
       repo = "sway";
-      rev = "a7d9535eb3b2056cea6a88e174fb1e75c33469f2";
+      rev = "bc96d0acdf8544d81df669566b50032333ce16d9";
       fetchSubmodules = true;
-      sha256 = "sha256-UeiBBSSvIbjNnkPfynJC/lLDHUzHGMzf8YSjKHXu75Y=";
+      sha256 = "sha256-rJLcmiKdIORl5Z+68cBGg5imqF7dINaGpuZNRZ1xalg=";
     };
-    date = "2025-09-15";
+    date = "2025-09-18";
   };
   swgp-go = {
     pname = "swgp-go";
