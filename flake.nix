@@ -16,7 +16,8 @@
     url = "github:edolstra/flake-compat";
     flake = false;
   };
-  inputs.chaotic.url = "github:chaotic-cx/nyx/dc2d9e585f0dac249f4458d107da14bc132482cb";
+  #inputs.chaotic.url = "github:chaotic-cx/nyx/dc2d9e585f0dac249f4458d107da14bc132482cb";
+  inputs.chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";  
 
   outputs =
     { self
