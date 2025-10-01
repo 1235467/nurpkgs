@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-09-29",
+        "date": "2025-10-01",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "38c1e72c9d81fcdad8f173e06102a5da18836230",
-            "sha256": "sha256-SAJKAYq1QeDCx19+JVwkvyfXLpmXJrOyUCRH+Dy7T/c=",
+            "rev": "8c54c9b41226e39564505442245deee1167a5f08",
+            "sha256": "sha256-c1vFHhThMJyPY0DnoZwVn/A1iG2b6rsBJdulvL8iqMc=",
             "type": "github"
         },
-        "version": "38c1e72c9d81fcdad8f173e06102a5da18836230"
+        "version": "8c54c9b41226e39564505442245deee1167a5f08"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -557,7 +557,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2025-09-23",
+        "date": "2025-09-30",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -567,11 +567,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "7cb3393e75667ca349287ad70aef3f7e2d008ec6",
-            "sha256": "sha256-4RdiI0uq/M/22uHPqfXiPk2SJz3rGcpmgK9bTJT3DtY=",
+            "rev": "d039ad8da3a92f41bbed409e685535bcceb39b33",
+            "sha256": "sha256-vbImG4iOXmoHT8ErY2dhLwgwagnd3PfYKyeaW+xEnaY=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "7cb3393e75667ca349287ad70aef3f7e2d008ec6"
+        "version": "d039ad8da3a92f41bbed409e685535bcceb39b33"
     }
 }
