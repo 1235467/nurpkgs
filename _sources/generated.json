@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-10-04",
+        "date": "2025-10-05",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "76d998743ac10e712238c1016db4d8e8d16f1049",
-            "sha256": "sha256-IKNfBuBbuofOVHJujnzBGaSydnmlMBRWl9owIZVVk9k=",
+            "rev": "cfac27251af5df4352f747c4539ea9f65450f05a",
+            "sha256": "sha256-eQpUKN63EZDmpY6Q5l55QTVSlaL6rtOuBLjpE7v9PbY=",
             "type": "github"
         },
-        "version": "76d998743ac10e712238c1016db4d8e8d16f1049"
+        "version": "cfac27251af5df4352f747c4539ea9f65450f05a"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -459,7 +459,7 @@
     },
     "sway": {
         "cargoLocks": null,
-        "date": "2025-10-02",
+        "date": "2025-10-05",
         "extract": null,
         "name": "sway",
         "passthru": null,
@@ -471,11 +471,11 @@
             "name": null,
             "owner": "swaywm",
             "repo": "sway",
-            "rev": "b4a9a1716f70f080edf146f82698aa2c1bb99bcc",
-            "sha256": "sha256-1M5MpQawRNmjpCSNXOW9lFlH2ta/JRLumhG6uV8vgD0=",
+            "rev": "90d3270970cc963454455b572883a051d3f376a1",
+            "sha256": "sha256-X/JYV5lBfi4xnRA8d8bk/+DTaC2UWasNOBz3KYFMFUU=",
             "type": "github"
         },
-        "version": "b4a9a1716f70f080edf146f82698aa2c1bb99bcc"
+        "version": "90d3270970cc963454455b572883a051d3f376a1"
     },
     "swgp-go": {
         "cargoLocks": null,
@@ -557,7 +557,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2025-10-03",
+        "date": "2025-10-05",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -567,11 +567,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "d8fb7adcf041af7e958804b77c9a6669fbff4efd",
-            "sha256": "sha256-oa1wAOb+SpCB8o/05QIFlHbkY//9mrrI56qw532GvC8=",
+            "rev": "5529aae3e65aa182d88cecc1efa4b10a20b553eb",
+            "sha256": "sha256-pvc+SzNe1twhuaSzRUmiuhEQq7d3gYFgilrMlVPsguU=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "d8fb7adcf041af7e958804b77c9a6669fbff4efd"
+        "version": "5529aae3e65aa182d88cecc1efa4b10a20b553eb"
     }
 }
