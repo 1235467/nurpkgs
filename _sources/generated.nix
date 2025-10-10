@@ -15,15 +15,15 @@
   };
   aichat = {
     pname = "aichat";
-    version = "4a57c56e3a01ec8a69becf670c72e33ebe354200";
+    version = "ce3205de44005a7b7f5f9eb4814b928155c406b1";
     src = fetchFromGitHub {
       owner = "sigoden";
       repo = "aichat";
-      rev = "4a57c56e3a01ec8a69becf670c72e33ebe354200";
+      rev = "ce3205de44005a7b7f5f9eb4814b928155c406b1";
       fetchSubmodules = false;
-      sha256 = "sha256-ZyEFvbSfZAmmf5tjtdcf6Tz5r+z25wxzJ6K4ibO+TDY=";
+      sha256 = "sha256-p9E38FW7HDOxrti4FOM4RwD05Nw/sBcfn2v14H75/wY=";
     };
-    date = "2025-09-22";
+    date = "2025-10-10";
   };
   av1an = {
     pname = "av1an";
@@ -136,15 +136,15 @@
   };
   mieru = {
     pname = "mieru";
-    version = "0dc3a71b04236ad4a2d3522406086345b342f39d";
+    version = "861a619c72d98fd1040e3dde2ae3cea4190e5d16";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "0dc3a71b04236ad4a2d3522406086345b342f39d";
+      rev = "861a619c72d98fd1040e3dde2ae3cea4190e5d16";
       fetchSubmodules = false;
-      sha256 = "sha256-blMxLWWnllHe7jxo8PY94naoA4d8TTzy9otdWODrDW4=";
+      sha256 = "sha256-NFLR6oFMSYHv9C4v/DD58izpemtyOuxFM1U1m8REcL4=";
     };
-    date = "2025-09-29";
+    date = "2025-10-09";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -220,15 +220,15 @@
   };
   qcm = {
     pname = "qcm";
-    version = "9a6fbfc7d82fb49340a49c8dfd7b6f2be3c8308b";
+    version = "3ed18191abf1d536417f4bd276ed084fc52ed392";
     src = fetchFromGitHub {
       owner = "hypengw";
       repo = "Qcm";
-      rev = "9a6fbfc7d82fb49340a49c8dfd7b6f2be3c8308b";
+      rev = "3ed18191abf1d536417f4bd276ed084fc52ed392";
       fetchSubmodules = true;
-      sha256 = "sha256-Ixy/nM6vndjTeMXZfARa3LbqLCzvj+zpA4lLQtWOSq4=";
+      sha256 = "sha256-eeHk8ke1g3wYuT/FShbJJx8rXl25HbwWBlBTnVU0Txk=";
     };
-    date = "2025-10-05";
+    date = "2025-10-10";
   };
   reflac = {
     pname = "reflac";
