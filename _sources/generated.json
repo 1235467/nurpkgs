@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-10-11",
+        "date": "2025-10-12",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "d599513d4a72d66ac62ffdedc41d6653fa81b39e",
-            "sha256": "sha256-nHgQ3UTtQXzaOBwGqOFJ/zc69IGaT+U1ddFv4CpSjtU=",
+            "rev": "ed936430216e7aa5f6f53d22eff713f8e9ed69ac",
+            "sha256": "sha256-hdr0zG8CS5MzjhoKCyA3OWdtiEf30jfWROeFSUNu3RY=",
             "type": "github"
         },
-        "version": "d599513d4a72d66ac62ffdedc41d6653fa81b39e"
+        "version": "ed936430216e7aa5f6f53d22eff713f8e9ed69ac"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2025-10-10",
+        "date": "2025-10-12",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "666beec51b731e8c96361b15f392c145fdf58baf",
-            "sha256": "sha256-/7KRew48eM8/CqvzT8Fz0ftJmsiM9f09T/tWbGepbHE=",
+            "rev": "7b89a7a7e9ac73460cda33bdd1af1e35d48cf64e",
+            "sha256": "sha256-6/m8aY0bMD4W8hs7JiL1JVM8DGB4Au7HyBQXzK62GnM=",
             "type": "github"
         },
-        "version": "666beec51b731e8c96361b15f392c145fdf58baf"
+        "version": "7b89a7a7e9ac73460cda33bdd1af1e35d48cf64e"
     },
     "nbfc-linux": {
         "cargoLocks": null,
