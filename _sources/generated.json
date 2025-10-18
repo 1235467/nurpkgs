@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2025-10-16",
+        "date": "2025-10-17",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "4e33ed62c05294f21bfc4757c3ad4218b95f0fe2",
-            "sha256": "sha256-9e2V+WwcBp16DsMf31IzANdMlc/r3KFDYjSCKvKKGwM=",
+            "rev": "a34d1e30e5cdcb54fc46b1264a5f3c9a4b48e916",
+            "sha256": "sha256-/HtXLFV2S06CD1vo6UF3eOms9zcasagNNxk73B44F2c=",
             "type": "github"
         },
-        "version": "4e33ed62c05294f21bfc4757c3ad4218b95f0fe2"
+        "version": "a34d1e30e5cdcb54fc46b1264a5f3c9a4b48e916"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -567,11 +567,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "6d63871f059192b15d2fa0dfacfb391709f4952d",
-            "sha256": "sha256-LShsqWJ96lF8FoVvfatSfmizatOKGlyFUHlxtD3E5pQ=",
+            "rev": "d786e07899481dd970025ffef09a18eb726cd41d",
+            "sha256": "sha256-hpafnkb+yv9fr5ADMLGRFhlQpaEx0ZuF7muQ5YnuL+E=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "6d63871f059192b15d2fa0dfacfb391709f4952d"
+        "version": "d786e07899481dd970025ffef09a18eb726cd41d"
     }
 }
