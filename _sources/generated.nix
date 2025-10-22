@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "46dab01bcc47b2e29f36cd4d35d04091e4134a67";
+    version = "892f642f58e6fcab7c69ecba79afb2d6ab461c89";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "46dab01bcc47b2e29f36cd4d35d04091e4134a67";
+      rev = "892f642f58e6fcab7c69ecba79afb2d6ab461c89";
       fetchSubmodules = true;
-      sha256 = "sha256-eM1kSyA88KiZiY+xqnN/YbAAFeECtzJTrOF62Uuxs+o=";
+      sha256 = "sha256-P0bzumRkqeKJzSJVroATfZsOZRmLRd0fEZW9IV585kA=";
     };
-    date = "2025-10-20";
+    date = "2025-10-21";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -111,16 +111,16 @@
   };
   libdrm = {
     pname = "libdrm";
-    version = "2c1d39eff8b9c8296b57212bffd031029ce74491";
+    version = "871e326ac799ae28ee4d98da9025028050c085cd";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/mesa/drm";
-      rev = "2c1d39eff8b9c8296b57212bffd031029ce74491";
+      rev = "871e326ac799ae28ee4d98da9025028050c085cd";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-tTIdKEZFU9J7mOJj8euDpwYwjtipNijSTFOlBZrrplk=";
+      sha256 = "sha256-yHmqV9QD6sTTNpz1XUCiY/m+z4E9cNe3d/fVfR5qx18=";
     };
-    date = "2025-10-15";
+    date = "2025-10-22";
   };
   llamafile = {
     pname = "llamafile";
@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "989cffe70d32db9fc2b5a776abd4767aabe430f6";
+    version = "879243e370de6167d2c49510396f937b1a93fab5";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "989cffe70d32db9fc2b5a776abd4767aabe430f6";
+      rev = "879243e370de6167d2c49510396f937b1a93fab5";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-vUG90/qmY7wYqyYE6qBebHFSPAmUD1umc+XrgipMrxo=";
+      sha256 = "sha256-vLn4c9OGWUlhHDhMwchG6CeWgLAMkFFoJW5lXMcs9Rc=";
     };
-    date = "2025-10-18";
+    date = "2025-10-20";
   };
 }

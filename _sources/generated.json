@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-10-20",
+        "date": "2025-10-21",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "46dab01bcc47b2e29f36cd4d35d04091e4134a67",
-            "sha256": "sha256-eM1kSyA88KiZiY+xqnN/YbAAFeECtzJTrOF62Uuxs+o=",
+            "rev": "892f642f58e6fcab7c69ecba79afb2d6ab461c89",
+            "sha256": "sha256-P0bzumRkqeKJzSJVroATfZsOZRmLRd0fEZW9IV585kA=",
             "type": "github"
         },
-        "version": "46dab01bcc47b2e29f36cd4d35d04091e4134a67"
+        "version": "892f642f58e6fcab7c69ecba79afb2d6ab461c89"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -181,7 +181,7 @@
     },
     "libdrm": {
         "cargoLocks": null,
-        "date": "2025-10-15",
+        "date": "2025-10-22",
         "extract": null,
         "name": "libdrm",
         "passthru": null,
@@ -191,12 +191,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "2c1d39eff8b9c8296b57212bffd031029ce74491",
-            "sha256": "sha256-tTIdKEZFU9J7mOJj8euDpwYwjtipNijSTFOlBZrrplk=",
+            "rev": "871e326ac799ae28ee4d98da9025028050c085cd",
+            "sha256": "sha256-yHmqV9QD6sTTNpz1XUCiY/m+z4E9cNe3d/fVfR5qx18=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/mesa/drm"
         },
-        "version": "2c1d39eff8b9c8296b57212bffd031029ce74491"
+        "version": "871e326ac799ae28ee4d98da9025028050c085cd"
     },
     "llamafile": {
         "cargoLocks": null,
@@ -557,7 +557,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2025-10-18",
+        "date": "2025-10-20",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -567,11 +567,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "989cffe70d32db9fc2b5a776abd4767aabe430f6",
-            "sha256": "sha256-vUG90/qmY7wYqyYE6qBebHFSPAmUD1umc+XrgipMrxo=",
+            "rev": "879243e370de6167d2c49510396f937b1a93fab5",
+            "sha256": "sha256-vLn4c9OGWUlhHDhMwchG6CeWgLAMkFFoJW5lXMcs9Rc=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "989cffe70d32db9fc2b5a776abd4767aabe430f6"
+        "version": "879243e370de6167d2c49510396f937b1a93fab5"
     }
 }
