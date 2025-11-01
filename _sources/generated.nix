@@ -124,15 +124,15 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "cfa861a69cb9fb3b1101d1c435ec6c2bfa35365c";
+    version = "6b464191def244cd9f97bba098129424672196fb";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "cfa861a69cb9fb3b1101d1c435ec6c2bfa35365c";
+      rev = "6b464191def244cd9f97bba098129424672196fb";
       fetchSubmodules = false;
-      sha256 = "sha256-5uL4bq+05oMSh3fc75VdekVcv0tK+X6m8HQ7DLVH9+4=";
+      sha256 = "sha256-OFKFGzXv1cyBtYB9bmr5BL6TOWz8uFVz5VdmprlIrws=";
     };
-    date = "2025-06-30";
+    date = "2025-10-31";
   };
   mieru = {
     pname = "mieru";
@@ -318,16 +318,16 @@
   };
   wayland-protocols = {
     pname = "wayland-protocols";
-    version = "a652a696db7629c7b1079db643f26ce829f92043";
+    version = "51e5021a125b0d696ee164e284c99c62c165a31f";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland-protocols";
-      rev = "a652a696db7629c7b1079db643f26ce829f92043";
+      rev = "51e5021a125b0d696ee164e284c99c62c165a31f";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-VEee+r4DkiJO81MM8a98UqVpvSvZDf9DXXb4LrnoXSA=";
+      sha256 = "sha256-UR7ewuHB3K0HW9XcUl+5DUtDDoWAEOfaQ8J6aQy+Ot0=";
     };
-    date = "2025-10-30";
+    date = "2025-10-31";
   };
   waylyrics = {
     pname = "waylyrics";
