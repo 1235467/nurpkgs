@@ -181,7 +181,7 @@
     },
     "libdrm": {
         "cargoLocks": null,
-        "date": "2025-10-27",
+        "date": "2025-11-01",
         "extract": null,
         "name": "libdrm",
         "passthru": null,
@@ -191,12 +191,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "aaf8a893e1733e6c9663c869549ba3cf7204a935",
-            "sha256": "sha256-aAwiiT8dSGTLAwEC6B4y6KkDSGHWtbN84rrgtOmahsI=",
+            "rev": "679c4749740eb84dd9f07933291dddf19bdcfcda",
+            "sha256": "sha256-MF4v+U4w2ZfmjYbvP4M4F0hZ+HzAKWv5+VH4EZ1Eyqw=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/mesa/drm"
         },
-        "version": "aaf8a893e1733e6c9663c869549ba3cf7204a935"
+        "version": "679c4749740eb84dd9f07933291dddf19bdcfcda"
     },
     "llamafile": {
         "cargoLocks": null,
@@ -537,7 +537,7 @@
     },
     "waylyrics": {
         "cargoLocks": null,
-        "date": "2025-10-03",
+        "date": "2025-11-02",
         "extract": null,
         "name": "waylyrics",
         "passthru": null,
@@ -549,11 +549,11 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "42543fe56c67cb1394b915fdabfad84c29f5d774",
-            "sha256": "sha256-hVyKhTPNYJYtIqaDLoJ0UaaRUUZXuNF+CWO4b9OT694=",
+            "rev": "d913431558cbc7cdf73b610e75c35c031bae4b97",
+            "sha256": "sha256-NXSEvOnWMeu9SFT2ZkGIBx51TqM37vPNDSMivDjdNTw=",
             "type": "github"
         },
-        "version": "42543fe56c67cb1394b915fdabfad84c29f5d774"
+        "version": "d913431558cbc7cdf73b610e75c35c031bae4b97"
     },
     "wlroots": {
         "cargoLocks": null,

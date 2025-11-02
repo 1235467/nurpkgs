@@ -111,16 +111,16 @@
   };
   libdrm = {
     pname = "libdrm";
-    version = "aaf8a893e1733e6c9663c869549ba3cf7204a935";
+    version = "679c4749740eb84dd9f07933291dddf19bdcfcda";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/mesa/drm";
-      rev = "aaf8a893e1733e6c9663c869549ba3cf7204a935";
+      rev = "679c4749740eb84dd9f07933291dddf19bdcfcda";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-aAwiiT8dSGTLAwEC6B4y6KkDSGHWtbN84rrgtOmahsI=";
+      sha256 = "sha256-MF4v+U4w2ZfmjYbvP4M4F0hZ+HzAKWv5+VH4EZ1Eyqw=";
     };
-    date = "2025-10-27";
+    date = "2025-11-01";
   };
   llamafile = {
     pname = "llamafile";
@@ -331,15 +331,15 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "42543fe56c67cb1394b915fdabfad84c29f5d774";
+    version = "d913431558cbc7cdf73b610e75c35c031bae4b97";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "42543fe56c67cb1394b915fdabfad84c29f5d774";
+      rev = "d913431558cbc7cdf73b610e75c35c031bae4b97";
       fetchSubmodules = false;
-      sha256 = "sha256-hVyKhTPNYJYtIqaDLoJ0UaaRUUZXuNF+CWO4b9OT694=";
+      sha256 = "sha256-NXSEvOnWMeu9SFT2ZkGIBx51TqM37vPNDSMivDjdNTw=";
     };
-    date = "2025-10-03";
+    date = "2025-11-02";
   };
   wlroots = {
     pname = "wlroots";
