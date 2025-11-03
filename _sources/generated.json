@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2025-10-30",
+        "date": "2025-11-02",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "dd1d089af3899c6b9235d8be2b75e83ddf13bc6d",
-            "sha256": "sha256-kEyDDuT30W+R+IxvrTAuMkSgP9/WRGK5nD3pZUhUXtE=",
+            "rev": "68d361feae17f70aa29b2b17f31318948773f664",
+            "sha256": "sha256-527qo5Wx4vDBqNaVi1JWtiGHz+RCsIq22uEY33hMNEA=",
             "type": "github"
         },
-        "version": "dd1d089af3899c6b9235d8be2b75e83ddf13bc6d"
+        "version": "68d361feae17f70aa29b2b17f31318948773f664"
     },
     "nbfc-linux": {
         "cargoLocks": null,
