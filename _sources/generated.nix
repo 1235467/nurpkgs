@@ -15,27 +15,27 @@
   };
   aichat = {
     pname = "aichat";
-    version = "ce3205de44005a7b7f5f9eb4814b928155c406b1";
+    version = "dc2df96435a35a157433d4532c68ac7fcb97c808";
     src = fetchFromGitHub {
       owner = "sigoden";
       repo = "aichat";
-      rev = "ce3205de44005a7b7f5f9eb4814b928155c406b1";
+      rev = "dc2df96435a35a157433d4532c68ac7fcb97c808";
       fetchSubmodules = false;
-      sha256 = "sha256-p9E38FW7HDOxrti4FOM4RwD05Nw/sBcfn2v14H75/wY=";
+      sha256 = "sha256-qlqYUQ9W6DOAVYJvDqXyTlPhpIl6UIJBsPOTEs1Y480=";
     };
-    date = "2025-10-10";
+    date = "2025-11-03";
   };
   av1an = {
     pname = "av1an";
-    version = "23100896f1980dc6456777432b548c8911fdfd82";
+    version = "fed7fc0cf579a1af8c1b08862fad16a66233cf65";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "23100896f1980dc6456777432b548c8911fdfd82";
+      rev = "fed7fc0cf579a1af8c1b08862fad16a66233cf65";
       fetchSubmodules = false;
-      sha256 = "sha256-EGrQXchwnLPn8ECdyFBzQfQmT+HQ4x8A5HyKplyfSOk=";
+      sha256 = "sha256-em29WYrQPaTumJpM6GUKokyu1vx5PZTCisQJuHSOCRI=";
     };
-    date = "2025-10-30";
+    date = "2025-11-03";
   };
   bypy = {
     pname = "bypy";
@@ -111,40 +111,40 @@
   };
   libdrm = {
     pname = "libdrm";
-    version = "679c4749740eb84dd9f07933291dddf19bdcfcda";
+    version = "39680280583eefda7eb56744802942ecbd4604db";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/mesa/drm";
-      rev = "679c4749740eb84dd9f07933291dddf19bdcfcda";
+      rev = "39680280583eefda7eb56744802942ecbd4604db";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-MF4v+U4w2ZfmjYbvP4M4F0hZ+HzAKWv5+VH4EZ1Eyqw=";
+      sha256 = "sha256-lc9s/ZIs99mSnsNM+U+VXxLRn+UcUfZzYtr0yl+EXU0=";
     };
-    date = "2025-11-01";
+    date = "2025-11-03";
   };
   llamafile = {
     pname = "llamafile";
-    version = "6b464191def244cd9f97bba098129424672196fb";
+    version = "7ee25fea6360a2a2f8b45006ca004d2db74158b2";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "6b464191def244cd9f97bba098129424672196fb";
+      rev = "7ee25fea6360a2a2f8b45006ca004d2db74158b2";
       fetchSubmodules = false;
-      sha256 = "sha256-OFKFGzXv1cyBtYB9bmr5BL6TOWz8uFVz5VdmprlIrws=";
+      sha256 = "sha256-K1mZcHg2PUrntemwl82xO6FB/7bf5L/1pdFGL5Ttyis=";
     };
-    date = "2025-10-31";
+    date = "2025-11-03";
   };
   mieru = {
     pname = "mieru";
-    version = "68d361feae17f70aa29b2b17f31318948773f664";
+    version = "02b22a5f20185a5919831ae44e724843e0b90fa7";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "68d361feae17f70aa29b2b17f31318948773f664";
+      rev = "02b22a5f20185a5919831ae44e724843e0b90fa7";
       fetchSubmodules = false;
-      sha256 = "sha256-527qo5Wx4vDBqNaVi1JWtiGHz+RCsIq22uEY33hMNEA=";
+      sha256 = "sha256-mB5cAVVu8mKMoSFDh+KlDVj0Er4U/pJPCiuqEqphqn0=";
     };
-    date = "2025-11-02";
+    date = "2025-11-04";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
