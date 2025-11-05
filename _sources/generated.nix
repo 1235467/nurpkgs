@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "8e9add2afda58d233a75e4c5ce8503b24fa59ceb";
+    version = "46b71eda6423cc9c3b19cb310c3344e81ac624c5";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "8e9add2afda58d233a75e4c5ce8503b24fa59ceb";
+      rev = "46b71eda6423cc9c3b19cb310c3344e81ac624c5";
       fetchSubmodules = true;
-      sha256 = "sha256-CiKN7TRaCk3MF/FAwCMEO91TKFWS6bONhF8mhYPKhAU=";
+      sha256 = "sha256-gaKYPBWXAS0+GhEbrGVBGFJbWGHcPElhY6Vcsx9OEhg=";
     };
-    date = "2025-10-31";
+    date = "2025-11-04";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -124,15 +124,15 @@
   };
   llamafile = {
     pname = "llamafile";
-    version = "7ee25fea6360a2a2f8b45006ca004d2db74158b2";
+    version = "9d975d095e6cfceac01f4586ad601136efaeaed4";
     src = fetchFromGitHub {
       owner = "Mozilla-Ocho";
       repo = "llamafile";
-      rev = "7ee25fea6360a2a2f8b45006ca004d2db74158b2";
+      rev = "9d975d095e6cfceac01f4586ad601136efaeaed4";
       fetchSubmodules = false;
-      sha256 = "sha256-K1mZcHg2PUrntemwl82xO6FB/7bf5L/1pdFGL5Ttyis=";
+      sha256 = "sha256-T+w+6siwRsIfgW8hfTRNbSmRgK5oaT5429C5Z35zGlc=";
     };
-    date = "2025-11-03";
+    date = "2025-11-04";
   };
   mieru = {
     pname = "mieru";
@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "604fcdb1db36d8bad0ada101d17c2d45e7510017";
+    version = "47d0a90274be1c1ab3cb75fe741c9e2a98e781b4";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "604fcdb1db36d8bad0ada101d17c2d45e7510017";
+      rev = "47d0a90274be1c1ab3cb75fe741c9e2a98e781b4";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-trR0P7XN1ioLhuBOlGXNjvKIu1uCdNgiX6JSl3NEeic=";
+      sha256 = "sha256-E6sCJTnuc15DBCMryMv0pV95U3mzKlzUJP8hegYCsOI=";
     };
-    date = "2025-10-29";
+    date = "2025-11-04";
   };
 }
