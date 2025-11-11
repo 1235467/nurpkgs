@@ -111,16 +111,16 @@
   };
   libdrm = {
     pname = "libdrm";
-    version = "39680280583eefda7eb56744802942ecbd4604db";
+    version = "35a21916c8f621b35a67f3c5994280ae59a4981a";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/mesa/drm";
-      rev = "39680280583eefda7eb56744802942ecbd4604db";
+      rev = "35a21916c8f621b35a67f3c5994280ae59a4981a";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-lc9s/ZIs99mSnsNM+U+VXxLRn+UcUfZzYtr0yl+EXU0=";
+      sha256 = "sha256-G936lhB9AeJokgLjcnb1r5SevbyDp1Uq5D3dFShMevA=";
     };
-    date = "2025-11-03";
+    date = "2025-11-10";
   };
   llamafile = {
     pname = "llamafile";
