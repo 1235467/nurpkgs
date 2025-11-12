@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "0b1d690676589503f0addece30e936a240733699";
+    version = "308226a4fc2c9b63fa19894d5f85e79e05d75e03";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "0b1d690676589503f0addece30e936a240733699";
+      rev = "308226a4fc2c9b63fa19894d5f85e79e05d75e03";
       fetchSubmodules = true;
-      sha256 = "sha256-lXEBpx5Q2LdGZCXKTa1v7NhlaSxOvcvnepRi0r38+jg=";
+      sha256 = "sha256-Cb+SW2Fvdz6njcDFVgJf8V6SMwS1qxy2nbw6aZassOk=";
     };
-    date = "2025-11-10";
+    date = "2025-11-11";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -293,15 +293,15 @@
   };
   swgp-go = {
     pname = "swgp-go";
-    version = "3ec9215ac24860cfa63382485e64380609bdb409";
+    version = "a0d3de8946682b8f311de8b602a6cb95b23cbf0d";
     src = fetchFromGitHub {
       owner = "database64128";
       repo = "swgp-go";
-      rev = "3ec9215ac24860cfa63382485e64380609bdb409";
+      rev = "a0d3de8946682b8f311de8b602a6cb95b23cbf0d";
       fetchSubmodules = false;
-      sha256 = "sha256-ppQCNgp3XwOyUWret2Vg3thLvEEzDw+N4sAWEuUsc5c=";
+      sha256 = "sha256-PXEpp4NVPSvNdZt3yzlcKsTSvj/Vw4HKzz5XVcokgwg=";
     };
-    date = "2025-11-08";
+    date = "2025-11-11";
   };
   wayland = {
     pname = "wayland";
@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "8f7d763ad1bd76e659d96e12374a507368eed4cc";
+    version = "0d24cdb8220757c8515702210bfc4d0c76c4f758";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "8f7d763ad1bd76e659d96e12374a507368eed4cc";
+      rev = "0d24cdb8220757c8515702210bfc4d0c76c4f758";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-MJc/bVNTd5ACxYZoAhlpBgQnL+g2UU55mA4H37d2too=";
+      sha256 = "sha256-1yl3Pz0sFJbimVf611u0+gQHREbhQnytXIAFdOvbPoE=";
     };
-    date = "2025-11-06";
+    date = "2025-11-11";
   };
 }
