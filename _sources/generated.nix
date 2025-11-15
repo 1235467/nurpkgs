@@ -136,27 +136,27 @@
   };
   mieru = {
     pname = "mieru";
-    version = "bc4f90d69e30cf3e0724855aee6371e3460de802";
+    version = "2ae75ce0f0f3407f48acdc1102f63328c28b2d91";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "bc4f90d69e30cf3e0724855aee6371e3460de802";
+      rev = "2ae75ce0f0f3407f48acdc1102f63328c28b2d91";
       fetchSubmodules = false;
-      sha256 = "sha256-NJO+D6QnXq02+kW6Kww04LJtqQW5VS0py3CwOm3ZrWE=";
+      sha256 = "sha256-5lRd4LFBpddA43T5Cem2Yl4VNQJMv3l+IM9vS14rhyQ=";
     };
-    date = "2025-11-13";
+    date = "2025-11-15";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "daabceff76aace8ef1a71ed7bf8086b75cb35b62";
+    version = "9f04e1759d736e9186c6cf8be7ce074b4b5688fc";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "daabceff76aace8ef1a71ed7bf8086b75cb35b62";
+      rev = "9f04e1759d736e9186c6cf8be7ce074b4b5688fc";
       fetchSubmodules = false;
-      sha256 = "sha256-kNTa6gDII6U5dBxWW5CLTUc5SXbZFuQ0zeFinVR6h20=";
+      sha256 = "sha256-xEFQ9NeeDSYTcUkq4ydpkVl70xPVx3f3O1CTX3i+Ajc=";
     };
-    date = "2025-07-23";
+    date = "2025-11-15";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";
@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "fa7b66bcf479777e50c5c67eba839fd55192b502";
+    version = "106f0f950639924d706df21f48545b09db8197ed";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "fa7b66bcf479777e50c5c67eba839fd55192b502";
+      rev = "106f0f950639924d706df21f48545b09db8197ed";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-Nm/jNpHlfUOI7QivehJEJqExWAPxFhQG6VC1ZyzKjAQ=";
+      sha256 = "sha256-Xybhb4hdvrfLCa0HopnKa6HP4b5gaepK5Y54YUg/TKM=";
     };
-    date = "2025-11-13";
+    date = "2025-11-14";
   };
 }
