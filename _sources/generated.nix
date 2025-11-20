@@ -51,15 +51,15 @@
   };
   candy = {
     pname = "candy";
-    version = "6a11611511dcdbbb641a2154ad50e94e01408850";
+    version = "901e6478d8d4caee57f94ad2f28b5aac067740b9";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "6a11611511dcdbbb641a2154ad50e94e01408850";
+      rev = "901e6478d8d4caee57f94ad2f28b5aac067740b9";
       fetchSubmodules = false;
-      sha256 = "sha256-+U3vd303OymSw+1NCXrYizhhCf4O5Zi6pIbBGfGWaA0=";
+      sha256 = "sha256-QEM1Um8oeylXCaww9dj87eWO+VVREAUzuTcGtqsFSQA=";
     };
-    date = "2025-10-23";
+    date = "2025-11-19";
   };
   fww-checkin-rs = {
     pname = "fww-checkin-rs";
@@ -75,13 +75,13 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "fbb31503f1b69402eeda81ba75a547c862c88bf2";
+    version = "f9d1da66678dbe645408aa8c6919d7debf88245d";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "fbb31503f1b69402eeda81ba75a547c862c88bf2";
+      rev = "f9d1da66678dbe645408aa8c6919d7debf88245d";
       fetchSubmodules = true;
-      sha256 = "sha256-TiSQXI2QECYFSBm7ap0oLGCnpqS7PpJYUB9BrOTiKL0=";
+      sha256 = "sha256-+7LJsvJYn2SjwuzLyJ5AvinKXVwTJlE4hJ6YPkLmIDE=";
     };
     date = "2025-11-19";
   };
@@ -293,15 +293,15 @@
   };
   swgp-go = {
     pname = "swgp-go";
-    version = "a0d3de8946682b8f311de8b602a6cb95b23cbf0d";
+    version = "6f0c5a5f1a26327b82327ba93e2f798455879c56";
     src = fetchFromGitHub {
       owner = "database64128";
       repo = "swgp-go";
-      rev = "a0d3de8946682b8f311de8b602a6cb95b23cbf0d";
+      rev = "6f0c5a5f1a26327b82327ba93e2f798455879c56";
       fetchSubmodules = false;
-      sha256 = "sha256-PXEpp4NVPSvNdZt3yzlcKsTSvj/Vw4HKzz5XVcokgwg=";
+      sha256 = "sha256-vsd2uQ8ANuHNAL4NzuixMoclQ8cd9aymNciDrM16XeY=";
     };
-    date = "2025-11-11";
+    date = "2025-11-19";
   };
   wayland = {
     pname = "wayland";
