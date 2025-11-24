@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "e584a8bade2617899d69ae6f83011d0c1d2a9df7";
+    version = "2b0fd417d32278159d0ca1d23fb997588c37995b";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "e584a8bade2617899d69ae6f83011d0c1d2a9df7";
+      rev = "2b0fd417d32278159d0ca1d23fb997588c37995b";
       fetchSubmodules = true;
-      sha256 = "sha256-+15R22Y+xM+GM93qHaUE82XxpyxZUXOkd5F1Gy32uOc=";
+      sha256 = "sha256-1mdM539nkqTWVHTHPCGHGrLu/UwsxeYWnrnHQaUh1qQ=";
     };
-    date = "2025-11-22";
+    date = "2025-11-23";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -318,16 +318,16 @@
   };
   wayland-protocols = {
     pname = "wayland-protocols";
-    version = "ce96b5f1778d4ee82c061bb083d619ab483070d5";
+    version = "6141e1154303dadd5c3e480bc4a16e26f1dcb2af";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland-protocols";
-      rev = "ce96b5f1778d4ee82c061bb083d619ab483070d5";
+      rev = "6141e1154303dadd5c3e480bc4a16e26f1dcb2af";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-uJgYk00GduVUnEtKl0ea7MUxDLt7glVqwxm7lBpshx0=";
+      sha256 = "sha256-Z1YM2I/N8xxeyOTbcaDzbHLDr6DD741RKlRoCZ3QXD0=";
     };
-    date = "2025-11-18";
+    date = "2025-11-23";
   };
   waylyrics = {
     pname = "waylyrics";
@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "106f0f950639924d706df21f48545b09db8197ed";
+    version = "9b9d7d845db1917644045a52a4047bbb15ff68b4";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "106f0f950639924d706df21f48545b09db8197ed";
+      rev = "9b9d7d845db1917644045a52a4047bbb15ff68b4";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-Xybhb4hdvrfLCa0HopnKa6HP4b5gaepK5Y54YUg/TKM=";
+      sha256 = "sha256-XyPkRjhUMoeCNBvIrA4k2afO/S6j7FqinbzK4dEgOX4=";
     };
-    date = "2025-11-14";
+    date = "2025-11-23";
   };
 }
