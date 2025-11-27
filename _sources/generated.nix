@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "210930bef93916b6271685277e54b0dedb46214e";
+    version = "379ee99c681d45626604ad0253527438960ed374";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "210930bef93916b6271685277e54b0dedb46214e";
+      rev = "379ee99c681d45626604ad0253527438960ed374";
       fetchSubmodules = true;
-      sha256 = "sha256-BZmEH0Rl8pasFdQjluZVoGwYZzHqF2nuXVCIff3vJBs=";
+      sha256 = "sha256-j3nnSNmNizSstwiJKYvqTE2ayM5XBxNVm58RBOnLi/Y=";
     };
-    date = "2025-11-25";
+    date = "2025-11-26";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -136,15 +136,15 @@
   };
   mieru = {
     pname = "mieru";
-    version = "1f8144092e59528cc3553126620f18b7b331eaaf";
+    version = "1ad3baabd37555ff6bff40a7fe8d3de421ddb511";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "1f8144092e59528cc3553126620f18b7b331eaaf";
+      rev = "1ad3baabd37555ff6bff40a7fe8d3de421ddb511";
       fetchSubmodules = false;
-      sha256 = "sha256-PoA+LbaF6ayRgaon6VsQHar9MH0EhXQTaRHxrjZAxPI=";
+      sha256 = "sha256-Xea2Flr+CLqmr+fjTJHzjNe3g5ZfjDbUftTGVVXgfDQ=";
     };
-    date = "2025-11-25";
+    date = "2025-11-27";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
@@ -305,16 +305,16 @@
   };
   wayland = {
     pname = "wayland";
-    version = "d81525a235e48cc5de3e4005a16ddb1fbdfd9d7c";
+    version = "dfab16e2363ec171b6db3c447dd5dfd2a9e89115";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wayland/wayland";
-      rev = "d81525a235e48cc5de3e4005a16ddb1fbdfd9d7c";
+      rev = "dfab16e2363ec171b6db3c447dd5dfd2a9e89115";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-n2OdxvE169wiAudsSHJoWR5ZKO/ma0l+ksKyqqYQe3E=";
+      sha256 = "sha256-XB4DfP4C7nI2/4PB1q1PZFvbazT3zKFfd9mIL1LuvYQ=";
     };
-    date = "2025-09-16";
+    date = "2025-11-26";
   };
   wayland-protocols = {
     pname = "wayland-protocols";
