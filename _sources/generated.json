@@ -161,7 +161,7 @@
     },
     "idntag": {
         "cargoLocks": null,
-        "date": "2025-09-06",
+        "date": "2025-11-29",
         "extract": null,
         "name": "idntag",
         "passthru": null,
@@ -173,11 +173,11 @@
             "name": null,
             "owner": "d99kris",
             "repo": "idntag",
-            "rev": "b0bd596bab34d7f24be64a2901ec56d7ff4c4cd1",
-            "sha256": "sha256-+sRc+V8h0VAY/h41Byou4cK6apTx/0F/JckzUVPcmPo=",
+            "rev": "62ddd08b6597fdfa8f2cb60ef6b1ce13cbe64c4d",
+            "sha256": "sha256-71Fhl7ZKSSpwhaT3hAILZ44BdglfhJNFMLBjHSEKA7s=",
             "type": "github"
         },
-        "version": "b0bd596bab34d7f24be64a2901ec56d7ff4c4cd1"
+        "version": "62ddd08b6597fdfa8f2cb60ef6b1ce13cbe64c4d"
     },
     "libdrm": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2025-11-27",
+        "date": "2025-11-29",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "1ad3baabd37555ff6bff40a7fe8d3de421ddb511",
-            "sha256": "sha256-Xea2Flr+CLqmr+fjTJHzjNe3g5ZfjDbUftTGVVXgfDQ=",
+            "rev": "fc380481582d0d67d43db817e69e661fb661ba9a",
+            "sha256": "sha256-0FjG98MjyshHgvMuloSMDsW5wpe4kVsQpDhfs+hYhSQ=",
             "type": "github"
         },
-        "version": "1ad3baabd37555ff6bff40a7fe8d3de421ddb511"
+        "version": "fc380481582d0d67d43db817e69e661fb661ba9a"
     },
     "nbfc-linux": {
         "cargoLocks": null,

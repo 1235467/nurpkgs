@@ -99,15 +99,15 @@
   };
   idntag = {
     pname = "idntag";
-    version = "b0bd596bab34d7f24be64a2901ec56d7ff4c4cd1";
+    version = "62ddd08b6597fdfa8f2cb60ef6b1ce13cbe64c4d";
     src = fetchFromGitHub {
       owner = "d99kris";
       repo = "idntag";
-      rev = "b0bd596bab34d7f24be64a2901ec56d7ff4c4cd1";
+      rev = "62ddd08b6597fdfa8f2cb60ef6b1ce13cbe64c4d";
       fetchSubmodules = false;
-      sha256 = "sha256-+sRc+V8h0VAY/h41Byou4cK6apTx/0F/JckzUVPcmPo=";
+      sha256 = "sha256-71Fhl7ZKSSpwhaT3hAILZ44BdglfhJNFMLBjHSEKA7s=";
     };
-    date = "2025-09-06";
+    date = "2025-11-29";
   };
   libdrm = {
     pname = "libdrm";
@@ -136,15 +136,15 @@
   };
   mieru = {
     pname = "mieru";
-    version = "1ad3baabd37555ff6bff40a7fe8d3de421ddb511";
+    version = "fc380481582d0d67d43db817e69e661fb661ba9a";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "1ad3baabd37555ff6bff40a7fe8d3de421ddb511";
+      rev = "fc380481582d0d67d43db817e69e661fb661ba9a";
       fetchSubmodules = false;
-      sha256 = "sha256-Xea2Flr+CLqmr+fjTJHzjNe3g5ZfjDbUftTGVVXgfDQ=";
+      sha256 = "sha256-0FjG98MjyshHgvMuloSMDsW5wpe4kVsQpDhfs+hYhSQ=";
     };
-    date = "2025-11-27";
+    date = "2025-11-29";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
