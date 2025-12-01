@@ -15,15 +15,15 @@
   };
   aichat = {
     pname = "aichat";
-    version = "dc2df96435a35a157433d4532c68ac7fcb97c808";
+    version = "4ddc28d40c238bb67d750d022bd3ca8a1a31cd0c";
     src = fetchFromGitHub {
       owner = "sigoden";
       repo = "aichat";
-      rev = "dc2df96435a35a157433d4532c68ac7fcb97c808";
+      rev = "4ddc28d40c238bb67d750d022bd3ca8a1a31cd0c";
       fetchSubmodules = false;
-      sha256 = "sha256-qlqYUQ9W6DOAVYJvDqXyTlPhpIl6UIJBsPOTEs1Y480=";
+      sha256 = "sha256-M79OlEcj4g0PIWDRcBvEjPbkjoeHz1drq6oEFSnz8Do=";
     };
-    date = "2025-11-03";
+    date = "2025-12-01";
   };
   av1an = {
     pname = "av1an";
@@ -51,15 +51,15 @@
   };
   candy = {
     pname = "candy";
-    version = "781d112eb409418e8cc036e1d077c7f0114f6024";
+    version = "f5e40a02b9e7dd2692cd92efcca68b1168a9426e";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "781d112eb409418e8cc036e1d077c7f0114f6024";
+      rev = "f5e40a02b9e7dd2692cd92efcca68b1168a9426e";
       fetchSubmodules = false;
-      sha256 = "sha256-lNLOEzQcv2vSvNibYQEa+u/6GRPtafs59CWhn8SGrcQ=";
+      sha256 = "sha256-NjW2zK0eC2iPFMkspc7izn0XTSPW0+GNJ8pyVpwQRZM=";
     };
-    date = "2025-11-20";
+    date = "2025-11-30";
   };
   fww-checkin-rs = {
     pname = "fww-checkin-rs";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "f11cf6f1de708b6b3811788e8ff7984ff05a9546";
+    version = "bb963fb00263bac78a0c633d1d0d02ae4763222c";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "f11cf6f1de708b6b3811788e8ff7984ff05a9546";
+      rev = "bb963fb00263bac78a0c633d1d0d02ae4763222c";
       fetchSubmodules = true;
-      sha256 = "sha256-EYJ1FVbr5Zg8bsyHq7Im3WY4IDmsjGtWwPvRclhf6d8=";
+      sha256 = "sha256-zcdDK03dYNmpCM1IxJhWJqZ+tN7ok+qlRjdiQPh6u6M=";
     };
-    date = "2025-11-29";
+    date = "2025-11-30";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -136,13 +136,13 @@
   };
   mieru = {
     pname = "mieru";
-    version = "bb44fb359f82ba477999ca663ad02f768d2e8b97";
+    version = "cefcd9a035e37fc28c25be09fed44a5ebeffe0cd";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "bb44fb359f82ba477999ca663ad02f768d2e8b97";
+      rev = "cefcd9a035e37fc28c25be09fed44a5ebeffe0cd";
       fetchSubmodules = false;
-      sha256 = "sha256-605SXJybdiRkLbWzZNQCybDMAf6oOlCdYrm420c0FP0=";
+      sha256 = "sha256-EE1lG8LGvkvambNqjExVWqZg/aIUNzqpNl4o9UVF4XI=";
     };
     date = "2025-11-30";
   };
