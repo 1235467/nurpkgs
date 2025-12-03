@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "f82a8630d7a51dab4cc70924f500bf70e723db12";
+    version = "3cf0280b11f370c11e6839275e547779a33f4a19";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "f82a8630d7a51dab4cc70924f500bf70e723db12";
+      rev = "3cf0280b11f370c11e6839275e547779a33f4a19";
       fetchSubmodules = true;
-      sha256 = "sha256-FHuK+nkiimVTey4OJK9NpPpaV1ag3PGoqO2GATrMnRg=";
+      sha256 = "sha256-a6+hZ+ARIP+8yV9nzt4cRJlkDpLt+w5xUeA40JiM4u8=";
     };
-    date = "2025-12-01";
+    date = "2025-12-03";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -111,16 +111,16 @@
   };
   libdrm = {
     pname = "libdrm";
-    version = "a8e5e10a873f67f557dc70e5407af4553f35edd9";
+    version = "a050f86ed8115eac8cb86b34f2d7fd0cd20600cc";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/mesa/drm";
-      rev = "a8e5e10a873f67f557dc70e5407af4553f35edd9";
+      rev = "a050f86ed8115eac8cb86b34f2d7fd0cd20600cc";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-W1g7RSxVzft6ajSIfpX/VuV48x8FwbU8A7mAruBdC9w=";
+      sha256 = "sha256-aIKwewp6HmwEJJu8eaD8PgB9WXntYtKC0CSUB9VOYgA=";
     };
-    date = "2025-11-17";
+    date = "2025-12-02";
   };
   llamafile = {
     pname = "llamafile";
@@ -148,15 +148,15 @@
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "3cbc1a4abbb15773ed59a0c13bcbc45443033840";
+    version = "95683e1e639828be69db37171ee272d6008d1d01";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "3cbc1a4abbb15773ed59a0c13bcbc45443033840";
+      rev = "95683e1e639828be69db37171ee272d6008d1d01";
       fetchSubmodules = false;
-      sha256 = "sha256-3r9GJHTV0cXUG9OR+ePg94VfHCPUz89Vner8zTee9c4=";
+      sha256 = "sha256-fgJf/62lk3A75Bl7QSox8MqUFS9MDekykBmFgemNvDg=";
     };
-    date = "2025-11-15";
+    date = "2025-12-02";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";
