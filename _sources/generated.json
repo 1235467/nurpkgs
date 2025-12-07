@@ -41,7 +41,7 @@
     },
     "av1an": {
         "cargoLocks": null,
-        "date": "2025-11-29",
+        "date": "2025-12-07",
         "extract": null,
         "name": "av1an",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "master-of-zen",
             "repo": "av1an",
-            "rev": "08646e3d3aed68059eeeae1e3af6d03728d61af0",
-            "sha256": "sha256-GVc4vl5Ki45UaILg8kOFxIi4vP4EPNvyR4h3QA28EcU=",
+            "rev": "4ce01e0359fb303479ad11af9d3a976ce65960cd",
+            "sha256": "sha256-8YSsjy4xE8LgDxhHErDvnivUtnWwkoZbnZTyhzXaI3Q=",
             "type": "github"
         },
-        "version": "08646e3d3aed68059eeeae1e3af6d03728d61af0"
+        "version": "4ce01e0359fb303479ad11af9d3a976ce65960cd"
     },
     "bypy": {
         "cargoLocks": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "cedadf4fdc63e04ab41cab00c0417ba248ce748e",
-            "sha256": "sha256-j6UKiZKxNZNZ3pY2OLR+b/n4rRA+sBGmahtxkwerRTo=",
+            "rev": "f8d5aad1a1f61e1b6443c27394a38c8c54d39e9e",
+            "sha256": "sha256-K9nX/n7EG+/6YUeRttdsNZHmaaO/0jHQ4qBD5Rsj0hE=",
             "type": "github"
         },
-        "version": "cedadf4fdc63e04ab41cab00c0417ba248ce748e"
+        "version": "f8d5aad1a1f61e1b6443c27394a38c8c54d39e9e"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2025-12-01",
+        "date": "2025-12-07",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "ad452dec87ace41bfc094bbbb25ab5a1c2a9e567",
-            "sha256": "sha256-h9914P5SyHDp5GsRXhta20VeUDFuGqpet8W8usY4DvE=",
+            "rev": "99761fbf74abe917eaa961fca7c8642246cf51d9",
+            "sha256": "sha256-OavVV8dFHK75JDUboQ3laymQjjmzWRV5bpz5lAjcjxc=",
             "type": "github"
         },
-        "version": "ad452dec87ace41bfc094bbbb25ab5a1c2a9e567"
+        "version": "99761fbf74abe917eaa961fca7c8642246cf51d9"
     },
     "nbfc-linux": {
         "cargoLocks": null,
