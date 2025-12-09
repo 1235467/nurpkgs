@@ -41,7 +41,7 @@
     },
     "av1an": {
         "cargoLocks": null,
-        "date": "2025-12-07",
+        "date": "2025-12-08",
         "extract": null,
         "name": "av1an",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "master-of-zen",
             "repo": "av1an",
-            "rev": "4ce01e0359fb303479ad11af9d3a976ce65960cd",
-            "sha256": "sha256-8YSsjy4xE8LgDxhHErDvnivUtnWwkoZbnZTyhzXaI3Q=",
+            "rev": "93b4948d0c3fb705decc8b06b240db11019a8808",
+            "sha256": "sha256-P2m8xD3w0D8pz1bUzw3HXK689v4tkLzR5Ej3PWWI5AA=",
             "type": "github"
         },
-        "version": "4ce01e0359fb303479ad11af9d3a976ce65960cd"
+        "version": "93b4948d0c3fb705decc8b06b240db11019a8808"
     },
     "bypy": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-12-07",
+        "date": "2025-12-08",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "a5b7c91329313503e8864761f24ef43fb630f35c",
-            "sha256": "sha256-Bfuj2CO4HuLLU2e8FDMZ3tdi4X6Ig4fM1VrhPoOwJJ8=",
+            "rev": "efe665b4558370af6e89921c487cd92890183961",
+            "sha256": "sha256-BPdoVHbvfMKf9mpmfGDTsEmqYfZIeQ/A5AJ8tprpMTY=",
             "type": "github"
         },
-        "version": "a5b7c91329313503e8864761f24ef43fb630f35c"
+        "version": "efe665b4558370af6e89921c487cd92890183961"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -181,7 +181,7 @@
     },
     "libdrm": {
         "cargoLocks": null,
-        "date": "2025-12-04",
+        "date": "2025-12-08",
         "extract": null,
         "name": "libdrm",
         "passthru": null,
@@ -191,12 +191,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "b71953a1995ffc1683e1f636a9cfedaeed0646e1",
-            "sha256": "sha256-CfEEulciy3jEQd0P1A8yBjG9LXeJq1OBxXp7akFOr6o=",
+            "rev": "523534ee018b01fb93a62d88afca1a41a732c929",
+            "sha256": "sha256-259/EPZqNVc0z6KxR6m3fLW3QhWk+8gJqOtzhTtqiTE=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/mesa/drm"
         },
-        "version": "b71953a1995ffc1683e1f636a9cfedaeed0646e1"
+        "version": "523534ee018b01fb93a62d88afca1a41a732c929"
     },
     "llamafile": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2025-12-07",
+        "date": "2025-12-08",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "99761fbf74abe917eaa961fca7c8642246cf51d9",
-            "sha256": "sha256-OavVV8dFHK75JDUboQ3laymQjjmzWRV5bpz5lAjcjxc=",
+            "rev": "4372b4a78cd5472d0e46a0a664c7f3965a067df1",
+            "sha256": "sha256-jJLcK/kyQZxQt1+FCyfoATgJGt5gazG9AzKatNbNdtk=",
             "type": "github"
         },
-        "version": "99761fbf74abe917eaa961fca7c8642246cf51d9"
+        "version": "4372b4a78cd5472d0e46a0a664c7f3965a067df1"
     },
     "nbfc-linux": {
         "cargoLocks": null,
@@ -479,7 +479,7 @@
     },
     "swgp-go": {
         "cargoLocks": null,
-        "date": "2025-11-20",
+        "date": "2025-12-08",
         "extract": null,
         "name": "swgp-go",
         "passthru": null,
@@ -491,11 +491,11 @@
             "name": null,
             "owner": "database64128",
             "repo": "swgp-go",
-            "rev": "131d32ca7a35e6156449f78152ba737c08c30002",
-            "sha256": "sha256-tUPvDxKHnwdgfxwDVqTAYoXESePgWqoLPCiA5rmQwIY=",
+            "rev": "48e88d50e619e88d5c809cd79bab01f30db3ba6d",
+            "sha256": "sha256-VfUtbWhGPeud4ZlJcG96nHvGFkp6b2o9eeE+0fnpaw0=",
             "type": "github"
         },
-        "version": "131d32ca7a35e6156449f78152ba737c08c30002"
+        "version": "48e88d50e619e88d5c809cd79bab01f30db3ba6d"
     },
     "wayland": {
         "cargoLocks": null,
