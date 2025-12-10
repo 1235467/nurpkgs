@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-12-08",
+        "date": "2025-12-09",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "efe665b4558370af6e89921c487cd92890183961",
-            "sha256": "sha256-BPdoVHbvfMKf9mpmfGDTsEmqYfZIeQ/A5AJ8tprpMTY=",
+            "rev": "f58c80fd3942034d58934ec4e4d93bfcfa3c786e",
+            "sha256": "sha256-qaY6vBIqwrEezN4TBfOyTRJSyL6QvaYf3UVBOOsEs8Q=",
             "type": "github"
         },
-        "version": "efe665b4558370af6e89921c487cd92890183961"
+        "version": "f58c80fd3942034d58934ec4e4d93bfcfa3c786e"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -240,7 +240,7 @@
     },
     "nbfc-linux": {
         "cargoLocks": null,
-        "date": "2025-12-02",
+        "date": "2025-12-10",
         "extract": null,
         "name": "nbfc-linux",
         "passthru": null,
@@ -252,11 +252,11 @@
             "name": null,
             "owner": "nbfc-linux",
             "repo": "nbfc-linux",
-            "rev": "95683e1e639828be69db37171ee272d6008d1d01",
-            "sha256": "sha256-fgJf/62lk3A75Bl7QSox8MqUFS9MDekykBmFgemNvDg=",
+            "rev": "7e7c20af7e42699052a9a577c40468ef7a553efe",
+            "sha256": "sha256-iuTN1BSYT++ub1wBN67Gz18KCTr7wBDGuFPq5FmGv/8=",
             "type": "github"
         },
-        "version": "95683e1e639828be69db37171ee272d6008d1d01"
+        "version": "7e7c20af7e42699052a9a577c40468ef7a553efe"
     },
     "ncmdump_rs": {
         "cargoLocks": null,
