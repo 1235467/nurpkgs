@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2025-12-09",
+        "date": "2025-12-11",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "f58c80fd3942034d58934ec4e4d93bfcfa3c786e",
-            "sha256": "sha256-qaY6vBIqwrEezN4TBfOyTRJSyL6QvaYf3UVBOOsEs8Q=",
+            "rev": "9aa313402b1be3df2925076bb1292d03e68bb47f",
+            "sha256": "sha256-ZOCh98RNbj+ijF8LwIV+mrEhm4rjwBhzA4WHVNCdVMg=",
             "type": "github"
         },
-        "version": "f58c80fd3942034d58934ec4e4d93bfcfa3c786e"
+        "version": "9aa313402b1be3df2925076bb1292d03e68bb47f"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -181,7 +181,7 @@
     },
     "libdrm": {
         "cargoLocks": null,
-        "date": "2025-12-08",
+        "date": "2025-12-11",
         "extract": null,
         "name": "libdrm",
         "passthru": null,
@@ -191,12 +191,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "523534ee018b01fb93a62d88afca1a41a732c929",
-            "sha256": "sha256-259/EPZqNVc0z6KxR6m3fLW3QhWk+8gJqOtzhTtqiTE=",
+            "rev": "b7861fb536092dafade791030a6595a9a3531ce9",
+            "sha256": "sha256-Rkd2TApK/RIJuEdkxcto+OyZlFWzH85QY1Z4AFGzX9Q=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/mesa/drm"
         },
-        "version": "523534ee018b01fb93a62d88afca1a41a732c929"
+        "version": "b7861fb536092dafade791030a6595a9a3531ce9"
     },
     "llamafile": {
         "cargoLocks": null,
