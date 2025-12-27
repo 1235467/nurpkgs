@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "93b4948d0c3fb705decc8b06b240db11019a8808";
+    version = "a2152d510e8b4912c684ea240feb1b5333b535ba";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "93b4948d0c3fb705decc8b06b240db11019a8808";
+      rev = "a2152d510e8b4912c684ea240feb1b5333b535ba";
       fetchSubmodules = false;
-      sha256 = "sha256-P2m8xD3w0D8pz1bUzw3HXK689v4tkLzR5Ej3PWWI5AA=";
+      sha256 = "sha256-xKt4FdEAnTfIVsl5CXJr5+HgooQ9+T1ZJS2xQq1i+2s=";
     };
-    date = "2025-12-08";
+    date = "2025-12-27";
   };
   bypy = {
     pname = "bypy";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "1f1a39d46c6b1e4e1757b3618decab4f83c5789a";
+    version = "d7f26038ee2b44f3d02fe2a7556bafb91a02f46e";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "1f1a39d46c6b1e4e1757b3618decab4f83c5789a";
+      rev = "d7f26038ee2b44f3d02fe2a7556bafb91a02f46e";
       fetchSubmodules = true;
-      sha256 = "sha256-M+8zme+hgA7qRSH1ieyX1SUhph36DTetPCgWaOuECJQ=";
+      sha256 = "sha256-XlzzBFXQHEh6Pz24EeCdpEhk9bdzzgPlJmOkzcC/TLQ=";
     };
-    date = "2025-12-25";
+    date = "2025-12-26";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -148,15 +148,15 @@
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "4b24c0a7c0f274ec948b5edcd3e12d639177ddf3";
+    version = "56bf86f980e62bfbc15f097cb06d78bc46c98d85";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "4b24c0a7c0f274ec948b5edcd3e12d639177ddf3";
+      rev = "56bf86f980e62bfbc15f097cb06d78bc46c98d85";
       fetchSubmodules = false;
-      sha256 = "sha256-GpCDz4ZJGjV36cgyfbkNy2HSvXg8BtOpQzTOUg2T/Lo=";
+      sha256 = "sha256-aQHFgdSiNUUwXmCcvg3ki0Ew7q9/DI+CGI645XGOq/8=";
     };
-    date = "2025-12-22";
+    date = "2025-12-26";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";
@@ -220,15 +220,15 @@
   };
   qcm = {
     pname = "qcm";
-    version = "9760efd2f2e58d51cd5932a49b1657450aa2baaf";
+    version = "3bd0814993ee01c958c54b5d2988410742ac5fe2";
     src = fetchFromGitHub {
       owner = "hypengw";
       repo = "Qcm";
-      rev = "9760efd2f2e58d51cd5932a49b1657450aa2baaf";
+      rev = "3bd0814993ee01c958c54b5d2988410742ac5fe2";
       fetchSubmodules = true;
-      sha256 = "sha256-b9LKiRgD0V4zo639Rs15RmhHvqc7iYNo4/2sm1H+UhA=";
+      sha256 = "sha256-IMQMMgycAP3+x+f68fwJ+csbXZcDm+XaMlYCQJ8acyM=";
     };
-    date = "2025-12-23";
+    date = "2025-12-27";
   };
   reflac = {
     pname = "reflac";
