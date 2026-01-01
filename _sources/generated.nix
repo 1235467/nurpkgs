@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "39d6f3d6f63c876d9722a8f82bcf27b44f5f1e35";
+    version = "b94edc29589eecedfe8a7fe93fddbdd07581bfb2";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "39d6f3d6f63c876d9722a8f82bcf27b44f5f1e35";
+      rev = "b94edc29589eecedfe8a7fe93fddbdd07581bfb2";
       fetchSubmodules = false;
-      sha256 = "sha256-wkT2ag8Jp2gkdDenQ+eijZCPH45g4r7TGslFv42T4rY=";
+      sha256 = "sha256-0VlCQnSBzXMHD0g7NloWrGCcw7yoacohnbxi8KIrW38=";
     };
-    date = "2025-12-30";
+    date = "2025-12-31";
   };
   bypy = {
     pname = "bypy";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "529559712bbfa9c8d79fe01770a77e925a7a0496";
+    version = "48a024e0322bbd7c4c88126498ec478444ec4cb2";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "529559712bbfa9c8d79fe01770a77e925a7a0496";
+      rev = "48a024e0322bbd7c4c88126498ec478444ec4cb2";
       fetchSubmodules = true;
-      sha256 = "sha256-7XrgU4xgewDZ5Aq4tTqcIGgkx2TiHwtJRQeHdfgmIVA=";
+      sha256 = "sha256-4BUM06GqP5YAVnWvxkdeYuweMF6n+oKdxJI5S9TmA1E=";
     };
-    date = "2025-12-30";
+    date = "2025-12-31";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -220,15 +220,15 @@
   };
   qcm = {
     pname = "qcm";
-    version = "362d46c3b510c1555539922126383c9b7f0c41f0";
+    version = "c8cf2fc33bfdc7251c8df02db2cbba5052a14671";
     src = fetchFromGitHub {
       owner = "hypengw";
       repo = "Qcm";
-      rev = "362d46c3b510c1555539922126383c9b7f0c41f0";
+      rev = "c8cf2fc33bfdc7251c8df02db2cbba5052a14671";
       fetchSubmodules = true;
-      sha256 = "sha256-tqELpMhaUIQ47bSGf8eWfD6aNZ/n0/auiGA03oGyOY4=";
+      sha256 = "sha256-MVnf8Yj/JOEGxNq1XdozfrcVsNbr4jI2/IAVlIfSDtw=";
     };
-    date = "2025-12-28";
+    date = "2026-01-01";
   };
   reflac = {
     pname = "reflac";
@@ -331,15 +331,15 @@
   };
   waylyrics = {
     pname = "waylyrics";
-    version = "1a5f411af9c58fe5ac3c2f29f066d97995597bb9";
+    version = "2782208b7cace962aff35276a939bf9bcda7d578";
     src = fetchFromGitHub {
       owner = "waylyrics";
       repo = "waylyrics";
-      rev = "1a5f411af9c58fe5ac3c2f29f066d97995597bb9";
+      rev = "2782208b7cace962aff35276a939bf9bcda7d578";
       fetchSubmodules = false;
-      sha256 = "sha256-IG1fDNukL+ccsZwkk7a/9fIcvSJa2CbXs2C55k8t+Ac=";
+      sha256 = "sha256-d7Kdlmrq26gYIstigcYp3NA9ZdBZ5La98q41qJB+77k=";
     };
-    date = "2025-12-14";
+    date = "2026-01-01";
   };
   wlroots = {
     pname = "wlroots";
