@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2026-01-01",
+        "date": "2026-01-02",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "31d3181e1ee91e338fb4fb8207d64b8d689310fc",
-            "sha256": "sha256-lGE1j1bEuNp7XoDP+oyyF/c+MzYAs6S+sz0NK71nXZE=",
+            "rev": "ee67278038b5b6597172b2a3ee9d57f6ad0eafc7",
+            "sha256": "sha256-A1xVTPjg03POTuEDBEGTgf+F7w5TKFw6TwjSWJ8zdxo=",
             "type": "github"
         },
-        "version": "31d3181e1ee91e338fb4fb8207d64b8d689310fc"
+        "version": "ee67278038b5b6597172b2a3ee9d57f6ad0eafc7"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2026-01-01",
+        "date": "2026-01-02",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,15 +232,15 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "066b27a55d8bd2c8d5c673154e2c4d6b49001087",
-            "sha256": "sha256-9WspTVQYvubI5tUXxTDwIPcbpnRVBUI2XyZ+u7oSP8k=",
+            "rev": "f8da0f9c8127f1c87ef1bacfe956fc0227ffbf17",
+            "sha256": "sha256-BP8wePB+/suOZfYK9CDGJ+HoJm2pQCfi/Cu2+g5fH0o=",
             "type": "github"
         },
-        "version": "066b27a55d8bd2c8d5c673154e2c4d6b49001087"
+        "version": "f8da0f9c8127f1c87ef1bacfe956fc0227ffbf17"
     },
     "nbfc-linux": {
         "cargoLocks": null,
-        "date": "2026-01-01",
+        "date": "2026-01-03",
         "extract": null,
         "name": "nbfc-linux",
         "passthru": null,
@@ -252,11 +252,11 @@
             "name": null,
             "owner": "nbfc-linux",
             "repo": "nbfc-linux",
-            "rev": "882ae6939e08d9f923d9bff1e60c9ece791b4369",
-            "sha256": "sha256-7P7osx6eaG+YlLZtXNCEtmpQ5Q8E2uk/fCOwyxtGf1U=",
+            "rev": "c67cbbee467d50c14eb07cd668b5993b9d0a48f6",
+            "sha256": "sha256-l+KwwPhMYUF8tozOB4uTLoqloV9oP65cQghlEn6a3uE=",
             "type": "github"
         },
-        "version": "882ae6939e08d9f923d9bff1e60c9ece791b4369"
+        "version": "c67cbbee467d50c14eb07cd668b5993b9d0a48f6"
     },
     "ncmdump_rs": {
         "cargoLocks": null,
