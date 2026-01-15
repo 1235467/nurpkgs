@@ -148,15 +148,15 @@
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "24280dc7625dc309c6562148aa334b5a260bb886";
+    version = "2564310e9a2eb10d2d9a10f0468eadcc706b1586";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "24280dc7625dc309c6562148aa334b5a260bb886";
+      rev = "2564310e9a2eb10d2d9a10f0468eadcc706b1586";
       fetchSubmodules = false;
-      sha256 = "sha256-6CSh4nu+gOc2BokRRP+DB+uPdiKq68NAzH/42TrijYY=";
+      sha256 = "sha256-hCyzPl+/y2mKfvTV4Ai8Jnol9oOvfSGe02XrtBXk5EY=";
     };
-    date = "2026-01-09";
+    date = "2026-01-14";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";
