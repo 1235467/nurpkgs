@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "b50f9f8d09f61952423f94e5a63a7aecc507c17b";
+    version = "77c2cbae519aebbf1355d9e29cb5ff883565d978";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "b50f9f8d09f61952423f94e5a63a7aecc507c17b";
+      rev = "77c2cbae519aebbf1355d9e29cb5ff883565d978";
       fetchSubmodules = false;
-      sha256 = "sha256-av/2yPkHPHiv/2B9SFmY/UrAHkOiBF9Dh2avnha9Jis=";
+      sha256 = "sha256-HX+Q04oikE5eGdZGHqBOLeTWUtlxVcH1KuGBsHf5ZeM=";
     };
-    date = "2026-01-12";
+    date = "2026-01-16";
   };
   bypy = {
     pname = "bypy";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "0b13d398fe597c9b30beb8207828586718b8a9b0";
+    version = "92a3b9199939c8b7b61281d1d59dbaa9cc2b2d6c";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "0b13d398fe597c9b30beb8207828586718b8a9b0";
+      rev = "92a3b9199939c8b7b61281d1d59dbaa9cc2b2d6c";
       fetchSubmodules = true;
-      sha256 = "sha256-1vJtgCsQL2wlM4cGTg52RRWuliD5B50gQOKoLH9jSVs=";
+      sha256 = "sha256-hNrM4WtccSDpxledw4+t/NHRZOy64peM9Qw2l1PalZo=";
     };
-    date = "2026-01-16";
+    date = "2026-01-17";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -148,15 +148,15 @@
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "ef931c81bb0742de7791951c5730bc73e4654a81";
+    version = "05958afcc5f28d90630b3aecc8256a8ada3453b8";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "ef931c81bb0742de7791951c5730bc73e4654a81";
+      rev = "05958afcc5f28d90630b3aecc8256a8ada3453b8";
       fetchSubmodules = false;
-      sha256 = "sha256-B+9NbdUeZZUKncnFRQNV5yq9CubMeQ/PKQVJEsv65JE=";
+      sha256 = "sha256-jLkLDAJS9HKm3cNtNEWbf/yz58bRb44uI/gJKTyRAB0=";
     };
-    date = "2026-01-15";
+    date = "2026-01-16";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";
