@@ -27,15 +27,15 @@
   };
   av1an = {
     pname = "av1an";
-    version = "33a7a35c73a4c9343a46be93f089bb0617cfbd86";
+    version = "ee72471a34286626c38b36dea0a91df1110488f2";
     src = fetchFromGitHub {
       owner = "master-of-zen";
       repo = "av1an";
-      rev = "33a7a35c73a4c9343a46be93f089bb0617cfbd86";
+      rev = "ee72471a34286626c38b36dea0a91df1110488f2";
       fetchSubmodules = false;
-      sha256 = "sha256-e8xWRrzGMgZnsSlRpPv6aVEXsY38DAL6AcUBDANtfqo=";
+      sha256 = "sha256-kxz+fsSQURZOkWM0c+VgV+rUVYnyBOiV1THzpNRT69Q=";
     };
-    date = "2026-01-17";
+    date = "2026-01-19";
   };
   bypy = {
     pname = "bypy";
@@ -343,15 +343,15 @@
   };
   wlroots = {
     pname = "wlroots";
-    version = "b7312b4f9585781eb5ab0e884b7616ad5f73ba4c";
+    version = "91c08d5a53a191669487eb2a8dff9096db1cbac6";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/wlroots/wlroots";
-      rev = "b7312b4f9585781eb5ab0e884b7616ad5f73ba4c";
+      rev = "91c08d5a53a191669487eb2a8dff9096db1cbac6";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-9vURzmPRI9ZkU5GvsKhiX4fshDuH6/98fZH/9WZz32U=";
+      sha256 = "sha256-i69NCe4FkaX38C9HlVOUm7jYa55GWEFpD8vYvG4eAO0=";
     };
-    date = "2026-01-18";
+    date = "2026-01-20";
   };
 }
