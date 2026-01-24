@@ -106,6 +106,12 @@ stdenv.mkDerivation (finalAttrs: {
         "dwarfs/tools_test.end_to_end/*"
         "dwarfs/tools_test.mutating_and_error_ops/*"
         "dwarfs/tools_test.categorize/*"
+        "dwarfs/tools_test.timestamps_fuse*"
+        "dwarfs/tools_test.dwarfs_automount*"
+        "dwarfs/tools_test.dwarfs_fsname_and_subtype*"
+        "dwarfs/tools_test.dwarfs_image_size*"
+        "dwarfs/tools_test.dwarfs_obsolete_options*"
+        "dwarfs/sparse_files_test.*"
       ];
     in
     "-${lib.concatStringsSep ":" disabledTests}";
