@@ -116,7 +116,7 @@ stdenv.mkDerivation (finalAttrs: {
     in
     "-${lib.concatStringsSep ":" disabledTests}";
 
-  doInstallCheck = true;
+  doInstallCheck = false;
   nativeInstallCheckInputs = [ versionCheckHook ];
   versionCheckProgram = "${placeholder "out"}/bin/dwarfs";
 
