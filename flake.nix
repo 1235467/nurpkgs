@@ -93,7 +93,8 @@
           suyu = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/suyu { };
           yuzu-early-access = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
           rtptun = pkgs.callPackage ./pkgs-by-lang/C/rtptun { };
-
+          dwarfs = pkgs.callPackage ./pkgs-by-lang/C/dwarfs { };         
+ 
           # Nodejs
 
           # Shell
