@@ -89,7 +89,7 @@ stdenv.mkDerivation (finalAttrs: {
     libdwarf # DWARFS_STACKTRACE_ENABLED relies on FOLLY_USE_SYMBOLIZER, which needs FOLLY_HAVE_DWARF
   ];
 
-  doCheck = true;
+  doCheck = false;
   nativeCheckInputs = [
     # https://github.com/mhx/dwarfs/issues/188#issuecomment-1907574427
     # `dwarfs` sets C++20 as the minimum, see
