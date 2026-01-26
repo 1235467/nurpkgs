@@ -136,27 +136,27 @@
   };
   mieru = {
     pname = "mieru";
-    version = "be00df4e4783dfaa13990a7ecfc97f8b47b287e4";
+    version = "aae1e9806100d1762bc16f64bdd16d6378428100";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "be00df4e4783dfaa13990a7ecfc97f8b47b287e4";
+      rev = "aae1e9806100d1762bc16f64bdd16d6378428100";
       fetchSubmodules = false;
-      sha256 = "sha256-aSGVAVzEpPCV1MQ7GW51mvNtwC4HDfmrn+RbToaK1Cc=";
+      sha256 = "sha256-rUX3zCnwCw34dujpctTaEH6tmUN2iMraO6awavldiUI=";
     };
-    date = "2026-01-25";
+    date = "2026-01-26";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "ba98968bf9166836f4774f2dc92a20ead92a4781";
+    version = "8e94132848c98eaf7033bdfa29d906dcc5c982c8";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "ba98968bf9166836f4774f2dc92a20ead92a4781";
+      rev = "8e94132848c98eaf7033bdfa29d906dcc5c982c8";
       fetchSubmodules = false;
-      sha256 = "sha256-qfX7zoHySKa/RlpEVqC1be6TxJ1LhVo6bIpabrYZU/U=";
+      sha256 = "sha256-6jv40onL4SAhnwORNr4GGU12otK5gMcsC18UaMoTNco=";
     };
-    date = "2026-01-23";
+    date = "2026-01-25";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";

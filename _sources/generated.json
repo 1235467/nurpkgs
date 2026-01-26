@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2026-01-25",
+        "date": "2026-01-26",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,15 +232,15 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "be00df4e4783dfaa13990a7ecfc97f8b47b287e4",
-            "sha256": "sha256-aSGVAVzEpPCV1MQ7GW51mvNtwC4HDfmrn+RbToaK1Cc=",
+            "rev": "aae1e9806100d1762bc16f64bdd16d6378428100",
+            "sha256": "sha256-rUX3zCnwCw34dujpctTaEH6tmUN2iMraO6awavldiUI=",
             "type": "github"
         },
-        "version": "be00df4e4783dfaa13990a7ecfc97f8b47b287e4"
+        "version": "aae1e9806100d1762bc16f64bdd16d6378428100"
     },
     "nbfc-linux": {
         "cargoLocks": null,
-        "date": "2026-01-23",
+        "date": "2026-01-25",
         "extract": null,
         "name": "nbfc-linux",
         "passthru": null,
@@ -252,11 +252,11 @@
             "name": null,
             "owner": "nbfc-linux",
             "repo": "nbfc-linux",
-            "rev": "ba98968bf9166836f4774f2dc92a20ead92a4781",
-            "sha256": "sha256-qfX7zoHySKa/RlpEVqC1be6TxJ1LhVo6bIpabrYZU/U=",
+            "rev": "8e94132848c98eaf7033bdfa29d906dcc5c982c8",
+            "sha256": "sha256-6jv40onL4SAhnwORNr4GGU12otK5gMcsC18UaMoTNco=",
             "type": "github"
         },
-        "version": "ba98968bf9166836f4774f2dc92a20ead92a4781"
+        "version": "8e94132848c98eaf7033bdfa29d906dcc5c982c8"
     },
     "ncmdump_rs": {
         "cargoLocks": null,
