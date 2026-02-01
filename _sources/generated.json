@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2026-01-30",
+        "date": "2026-01-31",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "ec120d57328e5ae4bfc93a7e809ace47d98f2dc3",
-            "sha256": "sha256-VNzAGXvGqg95orkFuQFnOLZbwkCOArs3tnHWVfylO9Q=",
+            "rev": "db6114c6c53edc4a60695a12d7f857308b6cd6cd",
+            "sha256": "sha256-RlZMgFz666Bc5ZxLUd+poTfs5RBIVKawuNRSkf5MyJ4=",
             "type": "github"
         },
-        "version": "ec120d57328e5ae4bfc93a7e809ace47d98f2dc3"
+        "version": "db6114c6c53edc4a60695a12d7f857308b6cd6cd"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -537,7 +537,7 @@
     },
     "waylyrics": {
         "cargoLocks": null,
-        "date": "2026-01-09",
+        "date": "2026-02-01",
         "extract": null,
         "name": "waylyrics",
         "passthru": null,
@@ -549,11 +549,11 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "7e2fc1c460d1f0c250ddab391b9c9b73ca060c37",
-            "sha256": "sha256-T+iOWmQZ0QWQdfL3wqqDLCCWSg2GB0EYZ823Q1bq2Ns=",
+            "rev": "359dddf6f33e7436f8606255f344e8d0610326cb",
+            "sha256": "sha256-3FX12U1lv/0kxsuujmREhcNwOIL4UUPy+rB4YfQfkIg=",
             "type": "github"
         },
-        "version": "7e2fc1c460d1f0c250ddab391b9c9b73ca060c37"
+        "version": "359dddf6f33e7436f8606255f344e8d0610326cb"
     },
     "wlroots": {
         "cargoLocks": null,
