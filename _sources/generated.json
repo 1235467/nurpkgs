@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "1bc857b12c434b7255119de009a50237856a90b2",
-            "sha256": "sha256-Th0ZiW+kKDP77ki4mT7VvNsqLM/n0PCC/lkgSmSwv6M=",
+            "rev": "02ff413002eddd7419ba70eb0f9f92acd2d97ddc",
+            "sha256": "sha256-6zqlqYFnR8nFJgLOkW+OILtwETtQH5b0PFXgayz++sg=",
             "type": "github"
         },
-        "version": "1bc857b12c434b7255119de009a50237856a90b2"
+        "version": "02ff413002eddd7419ba70eb0f9f92acd2d97ddc"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -240,7 +240,7 @@
     },
     "nbfc-linux": {
         "cargoLocks": null,
-        "date": "2026-02-01",
+        "date": "2026-02-04",
         "extract": null,
         "name": "nbfc-linux",
         "passthru": null,
@@ -252,11 +252,11 @@
             "name": null,
             "owner": "nbfc-linux",
             "repo": "nbfc-linux",
-            "rev": "cf39c7bb8ea0566ed722615a559e9c7a2b03132a",
-            "sha256": "sha256-1QBVGjktGx+UDAmNYBbXZWJy+EbsJ4s/66TRNHpB/wE=",
+            "rev": "4ba6f6cfae1559b9ae074ab67f1410f2d821a72d",
+            "sha256": "sha256-UzNkuqLZK8H5WNAJNRKpD3TuBAg7UZVAtPs3npxa7+I=",
             "type": "github"
         },
-        "version": "cf39c7bb8ea0566ed722615a559e9c7a2b03132a"
+        "version": "4ba6f6cfae1559b9ae074ab67f1410f2d821a72d"
     },
     "ncmdump_rs": {
         "cargoLocks": null,
@@ -499,7 +499,7 @@
     },
     "wayland": {
         "cargoLocks": null,
-        "date": "2026-02-02",
+        "date": "2026-02-04",
         "extract": null,
         "name": "wayland",
         "passthru": null,
@@ -509,16 +509,16 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "dbf45d11a324fffdc1122a303c691898f942c508",
-            "sha256": "sha256-3uoGMgxHcDz/KdEZatjsU+awJHA9ni3GcMES2xE/ErM=",
+            "rev": "e12bbe496941e546165055f9520745b7ba4366ce",
+            "sha256": "sha256-f1jKBHPbOVTFVryfn2tcVxcPhO4DDi4Ppyeu9b1AV1U=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland"
         },
-        "version": "dbf45d11a324fffdc1122a303c691898f942c508"
+        "version": "e12bbe496941e546165055f9520745b7ba4366ce"
     },
     "wayland-protocols": {
         "cargoLocks": null,
-        "date": "2026-02-03",
+        "date": "2026-02-05",
         "extract": null,
         "name": "wayland-protocols",
         "passthru": null,
@@ -528,12 +528,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ea7ff8255e07cd11d5250fb99810d9c89c2b9602",
-            "sha256": "sha256-9bzXNkmbpvi+yChFDs0ob6VGpXV9uxLXmKkWcLFruhY=",
+            "rev": "fedde2456ed1572ad4d46fff119220cb845e79d6",
+            "sha256": "sha256-DXGNurA3Tqvxmmy8ILtp68y07m7dXaxGESo/dBcqgUo=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols"
         },
-        "version": "ea7ff8255e07cd11d5250fb99810d9c89c2b9602"
+        "version": "fedde2456ed1572ad4d46fff119220cb845e79d6"
     },
     "waylyrics": {
         "cargoLocks": null,
@@ -557,7 +557,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2026-02-03",
+        "date": "2026-02-04",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -567,11 +567,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "7cb4e30bfdc3f1043867aaac667ca5c47d2d1cbd",
-            "sha256": "sha256-ctG1fQmC5Nvp+SpbfEWM9otm/Z4rIA+OsFQohI151y8=",
+            "rev": "90f9f59041b9d02809d4d64f45ca6ff2e61a722e",
+            "sha256": "sha256-SL8AwuMBLQ86D+mUWLxs5nDlrUALuUvyGsoyWEcn8NY=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "7cb4e30bfdc3f1043867aaac667ca5c47d2d1cbd"
+        "version": "90f9f59041b9d02809d4d64f45ca6ff2e61a722e"
     }
 }
