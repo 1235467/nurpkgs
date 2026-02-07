@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2026-02-05",
+        "date": "2026-02-06",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "562171ab668e7ee98a9d2bbb62a9477ad2b1e24e",
-            "sha256": "sha256-qRpFh1OC6wxsGfoZswH3TiVk86t8gwd2tryymtIhb/U=",
+            "rev": "63eb6b3bda71e7e5a1043f585ae39e878cb56b55",
+            "sha256": "sha256-ecqppi62QE6HQyA0uMsxuMlHqFDH/odKy02HcJjAXqM=",
             "type": "github"
         },
-        "version": "562171ab668e7ee98a9d2bbb62a9477ad2b1e24e"
+        "version": "63eb6b3bda71e7e5a1043f585ae39e878cb56b55"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "mieru": {
         "cargoLocks": null,
-        "date": "2026-02-06",
+        "date": "2026-02-07",
         "extract": null,
         "name": "mieru",
         "passthru": null,
@@ -232,15 +232,15 @@
             "name": null,
             "owner": "enfein",
             "repo": "mieru",
-            "rev": "a83b5636a0b5dacef18eddd9ec73578f1e098bc4",
-            "sha256": "sha256-JwpoxovdUgYn9RmmnnV3ecL2dWQYPEdyvuzttxL5/MM=",
+            "rev": "e2eed902a333b5d649898ec5999752a44122e380",
+            "sha256": "sha256-4HNtL3h5IsOgL+eB5jvk40kvh6Tl2kkwAtSUP27TRrU=",
             "type": "github"
         },
-        "version": "a83b5636a0b5dacef18eddd9ec73578f1e098bc4"
+        "version": "e2eed902a333b5d649898ec5999752a44122e380"
     },
     "nbfc-linux": {
         "cargoLocks": null,
-        "date": "2026-02-04",
+        "date": "2026-02-07",
         "extract": null,
         "name": "nbfc-linux",
         "passthru": null,
@@ -252,11 +252,11 @@
             "name": null,
             "owner": "nbfc-linux",
             "repo": "nbfc-linux",
-            "rev": "4ba6f6cfae1559b9ae074ab67f1410f2d821a72d",
-            "sha256": "sha256-UzNkuqLZK8H5WNAJNRKpD3TuBAg7UZVAtPs3npxa7+I=",
+            "rev": "45ceafe6561e88d04b135a32618ed7a69c39cabe",
+            "sha256": "sha256-BqCY3uPFoDYtPJ6CZNU0S8Uq8CCiT1mLoydPRiaxKH0=",
             "type": "github"
         },
-        "version": "4ba6f6cfae1559b9ae074ab67f1410f2d821a72d"
+        "version": "45ceafe6561e88d04b135a32618ed7a69c39cabe"
     },
     "ncmdump_rs": {
         "cargoLocks": null,
@@ -528,12 +528,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "00dd05f34ba36f008ca766c1b58d9a0fbd840332",
-            "sha256": "sha256-Rf8V2B3gqD7uOnMyW7pTxIUlr5LgN91y4TqxtRjF+P4=",
+            "rev": "ee95f9899e22df14035557e8977c2b99a7678f3b",
+            "sha256": "sha256-2ixLGspkn8BVrUhP582kTZXdj0e+mNb2FsL6hvZsizM=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols"
         },
-        "version": "00dd05f34ba36f008ca766c1b58d9a0fbd840332"
+        "version": "ee95f9899e22df14035557e8977c2b99a7678f3b"
     },
     "waylyrics": {
         "cargoLocks": null,
@@ -557,7 +557,7 @@
     },
     "wlroots": {
         "cargoLocks": null,
-        "date": "2026-02-06",
+        "date": "2026-02-07",
         "extract": null,
         "name": "wlroots",
         "passthru": null,
@@ -567,11 +567,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "dfccf5ff02eaea45d76edb40d2f92683de190800",
-            "sha256": "sha256-vdLRi4zy4cAclLenMy4BDQQe51NFdEWyqqsyL8KjlyU=",
+            "rev": "436bcf9a4755b24f7fadc100ba8deaa7f343ba86",
+            "sha256": "sha256-QdY0mw0dx2RhwlL1+bp1r8cC13PWP86yAtK48nLFsiI=",
             "type": "git",
             "url": "https://gitlab.freedesktop.org/wlroots/wlroots"
         },
-        "version": "dfccf5ff02eaea45d76edb40d2f92683de190800"
+        "version": "436bcf9a4755b24f7fadc100ba8deaa7f343ba86"
     }
 }
