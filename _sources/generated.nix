@@ -136,27 +136,27 @@
   };
   mieru = {
     pname = "mieru";
-    version = "e2eed902a333b5d649898ec5999752a44122e380";
+    version = "d18bf7883fce4baab52d4e743c25b6edc0c946f9";
     src = fetchFromGitHub {
       owner = "enfein";
       repo = "mieru";
-      rev = "e2eed902a333b5d649898ec5999752a44122e380";
+      rev = "d18bf7883fce4baab52d4e743c25b6edc0c946f9";
       fetchSubmodules = false;
-      sha256 = "sha256-4HNtL3h5IsOgL+eB5jvk40kvh6Tl2kkwAtSUP27TRrU=";
+      sha256 = "sha256-ROlq+ck5M3k02nyVbv4mLnCVtMfTE1QzRbey2SgtqJU=";
     };
-    date = "2026-02-07";
+    date = "2026-02-08";
   };
   nbfc-linux = {
     pname = "nbfc-linux";
-    version = "45ceafe6561e88d04b135a32618ed7a69c39cabe";
+    version = "717c69abc5d26bdbbaf047d0095d8ce3ce834ed8";
     src = fetchFromGitHub {
       owner = "nbfc-linux";
       repo = "nbfc-linux";
-      rev = "45ceafe6561e88d04b135a32618ed7a69c39cabe";
+      rev = "717c69abc5d26bdbbaf047d0095d8ce3ce834ed8";
       fetchSubmodules = false;
-      sha256 = "sha256-BqCY3uPFoDYtPJ6CZNU0S8Uq8CCiT1mLoydPRiaxKH0=";
+      sha256 = "sha256-cctL8XzEaFyEgL/Lq92G0dv/XsABSGR3+EdVIE5MFT4=";
     };
-    date = "2026-02-07";
+    date = "2026-02-08";
   };
   ncmdump_rs = {
     pname = "ncmdump_rs";
@@ -293,15 +293,15 @@
   };
   swgp-go = {
     pname = "swgp-go";
-    version = "c777fe096437251136fcc7488adc52757b7b3523";
+    version = "acc48bf3484b25dfb0ef8658862ad43a4e04fbab";
     src = fetchFromGitHub {
       owner = "database64128";
       repo = "swgp-go";
-      rev = "c777fe096437251136fcc7488adc52757b7b3523";
+      rev = "acc48bf3484b25dfb0ef8658862ad43a4e04fbab";
       fetchSubmodules = false;
-      sha256 = "sha256-or8HnkfMgVhqN+KuQepnKSHzhUueU02n+A4BbWdSpqc=";
+      sha256 = "sha256-/5taM6+CJFmz/xJVVQXyRtPns266DReLTGtupDy4x0U=";
     };
-    date = "2026-02-02";
+    date = "2026-02-08";
   };
   wayland = {
     pname = "wayland";
