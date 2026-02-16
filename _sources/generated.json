@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "e6ca1413648407c9a7b14f33673f67c31b296410",
-            "sha256": "sha256-MoprbflLjlLKIAB3/J/aG7+t5Nr8hpYIuS1kpincjXQ=",
+            "rev": "6716b8a0e32b1adf68cd158ea38acec73f3fc22e",
+            "sha256": "sha256-7HNX0Dy6liSZo8H/Od3JTPIH2gs+yuXKvf5kIkgJqI8=",
             "type": "github"
         },
-        "version": "e6ca1413648407c9a7b14f33673f67c31b296410"
+        "version": "6716b8a0e32b1adf68cd158ea38acec73f3fc22e"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
