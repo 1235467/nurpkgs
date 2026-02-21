@@ -121,7 +121,7 @@
     },
     "hyprland": {
         "cargoLocks": null,
-        "date": "2026-02-19",
+        "date": "2026-02-20",
         "extract": null,
         "name": "hyprland",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "hyprwm",
             "repo": "Hyprland",
-            "rev": "9ea6d0e15fddccf321c035e83b007a55d6829dd9",
-            "sha256": "sha256-dqnkEwXPWuI8MW38kKjs880qaVA+WEWziz5liznzLYA=",
+            "rev": "d91952c555085758117f1eb360d4ace120ee5d65",
+            "sha256": "sha256-QadYHeQ7UYljqP7at2qZZFn8o8PRqDzJN4M2ZeIJUrI=",
             "type": "github"
         },
-        "version": "9ea6d0e15fddccf321c035e83b007a55d6829dd9"
+        "version": "d91952c555085758117f1eb360d4ace120ee5d65"
     },
     "hyprwayland-scanner": {
         "cargoLocks": null,
@@ -240,7 +240,7 @@
     },
     "nbfc-linux": {
         "cargoLocks": null,
-        "date": "2026-02-19",
+        "date": "2026-02-21",
         "extract": null,
         "name": "nbfc-linux",
         "passthru": null,
@@ -252,11 +252,11 @@
             "name": null,
             "owner": "nbfc-linux",
             "repo": "nbfc-linux",
-            "rev": "4554dda1f84133cc9fd04c821f6eb57e7c563c36",
-            "sha256": "sha256-xBqph14G9S3IgNalIuB99HHL6G9f6bB2to+TPt2IXxQ=",
+            "rev": "ba55e3b2802da395796d78ace52dc7a694dd6814",
+            "sha256": "sha256-xqa1XPb0donzzDhEVzPwWTk2zvfcrmBRbvqBafsi16I=",
             "type": "github"
         },
-        "version": "4554dda1f84133cc9fd04c821f6eb57e7c563c36"
+        "version": "ba55e3b2802da395796d78ace52dc7a694dd6814"
     },
     "ncmdump_rs": {
         "cargoLocks": null,
@@ -537,7 +537,7 @@
     },
     "waylyrics": {
         "cargoLocks": null,
-        "date": "2026-02-06",
+        "date": "2026-02-21",
         "extract": null,
         "name": "waylyrics",
         "passthru": null,
@@ -549,11 +549,11 @@
             "name": null,
             "owner": "waylyrics",
             "repo": "waylyrics",
-            "rev": "51934ecf42fa509defde2a124ea2e04b070373de",
-            "sha256": "sha256-am7y6LhuXanTjylnw5xQjoNw8Z3WkWurB1I0T2j8uB4=",
+            "rev": "fec17000115267405db48b5fbfcea1e81a01ee0c",
+            "sha256": "sha256-19vBdBAFqpo789vcmiEjHBLEPex2+56RunnEe/HKxL8=",
             "type": "github"
         },
-        "version": "51934ecf42fa509defde2a124ea2e04b070373de"
+        "version": "fec17000115267405db48b5fbfcea1e81a01ee0c"
     },
     "wlroots": {
         "cargoLocks": null,
