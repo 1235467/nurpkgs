@@ -51,15 +51,15 @@
   };
   candy = {
     pname = "candy";
-    version = "2fdc9451bae9f384f0c6f866365372447b2c15b3";
+    version = "fa41f0172719076b55a33ead2698d32cfc1d533d";
     src = fetchFromGitHub {
       owner = "lanthora";
       repo = "candy";
-      rev = "2fdc9451bae9f384f0c6f866365372447b2c15b3";
+      rev = "fa41f0172719076b55a33ead2698d32cfc1d533d";
       fetchSubmodules = false;
-      sha256 = "sha256-oC5ZRcxXUoYllmIdwAPbWa3+RzWF16i27fGqsgqrfZk=";
+      sha256 = "sha256-j4VKJpUJjGTMdPYtGlEhDFNBwks7Pz+94MWvTCUciC0=";
     };
-    date = "2026-02-24";
+    date = "2026-02-25";
   };
   fww-checkin-rs = {
     pname = "fww-checkin-rs";
@@ -75,15 +75,15 @@
   };
   hyprland = {
     pname = "hyprland";
-    version = "c60b3cb2ed0404d9573b2801b51ba7be1da999d9";
+    version = "1e06ab464ff1aa1e8d3f79b4aa702cab101edfb0";
     src = fetchFromGitHub {
       owner = "hyprwm";
       repo = "Hyprland";
-      rev = "c60b3cb2ed0404d9573b2801b51ba7be1da999d9";
+      rev = "1e06ab464ff1aa1e8d3f79b4aa702cab101edfb0";
       fetchSubmodules = true;
-      sha256 = "sha256-vfvvuUu6X6bF4z6Wagcd5dz+EtPdkPo+9FZLj1JieMI=";
+      sha256 = "sha256-WQJuA5K3L8PdgIYccqsQbdQbsBWpEg4z8u1CzNTPK/M=";
     };
-    date = "2026-02-24";
+    date = "2026-02-25";
   };
   hyprwayland-scanner = {
     pname = "hyprwayland-scanner";
@@ -111,16 +111,16 @@
   };
   libdrm = {
     pname = "libdrm";
-    version = "bd856bed23ea431a97c6adc777cda9e7cd9ca6b2";
+    version = "15cdcfe9e1c4b00f2a819bc1f4b3efa1326ac6bc";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/mesa/drm";
-      rev = "bd856bed23ea431a97c6adc777cda9e7cd9ca6b2";
+      rev = "15cdcfe9e1c4b00f2a819bc1f4b3efa1326ac6bc";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-RGxEegkBj6l3sVnbXj3l70j6sXF2z2KpOxqSQxUFFE4=";
+      sha256 = "sha256-vH+C4kLX7n4OAEA/fiVdcQhLUC2H5+SH4AS7vUdEr/M=";
     };
-    date = "2026-02-23";
+    date = "2026-02-25";
   };
   llamafile = {
     pname = "llamafile";
