@@ -91,6 +91,7 @@
           kagi-cli-shortcut = pkgs.callPackage ./pkgs-by-lang/C/kagi-cli-shortcut { };
           #koboldcpp = pkgs.callPackage ./pkgs-by-lang/C/koboldcpp { };
           Penguin-Subtitle-Player = pkgs.libsForQt5.callPackage ./pkgs-by-lang/C/Penguin-Subtitle-Player { };
+          slipstream = pkgs.callPackage ./pkgs-by-lang/C/slipstream { };
           suyu = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/suyu { };
           yuzu-early-access = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
           rtptun = pkgs.callPackage ./pkgs-by-lang/C/rtptun { };
