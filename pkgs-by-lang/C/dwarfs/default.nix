@@ -45,6 +45,10 @@ stdenv.mkDerivation (finalAttrs: {
 
   cmakeFlags = [
     "-DNIXPKGS_DWARFS_VERSION_OVERRIDE=v${finalAttrs.version}" # see https://github.com/mhx/dwarfs/issues/155
+    # Upstream composes DESTDIR + CMAKE_INSTALL_PREFIX + CMAKE_INSTALL_SBINDIR
+    # in a create_link() install script. Keep SBINDIR relative to avoid
+    # nested nix/store path creation in the output.
+    "-DCMAKE_INSTALL_SBINDIR=sbin"
     "-DWITH_LEGACY_FUSE=ON"
     "-DWITH_TESTS=OFF"
   ];
@@ -85,6 +89,7 @@ stdenv.mkDerivation (finalAttrs: {
   ];
 
   doCheck = false;
+  dontMoveSbin = true;
 
   doInstallCheck = true;
   nativeInstallCheckInputs = [ versionCheckHook ];
