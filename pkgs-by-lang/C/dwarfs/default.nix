@@ -33,14 +33,14 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "dwarfs";
-  version = "0.14.1";
+  version = "0.15.3";
 
   src = fetchFromGitHub {
     owner = "mhx";
     repo = "dwarfs";
     tag = "v${finalAttrs.version}";
     fetchSubmodules = true;
-    hash = "sha256-8uTHZRlmpWCzltq/E9SbW0NVOlVSiG5YD6OF5KvVYs4=";
+    hash = "sha256-OEA8TwnA+HPi/KaeFiuy2zD+PwKsougnuxPVL5/Xf9g=";
   };
 
   cmakeFlags = [
