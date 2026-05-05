@@ -30,6 +30,8 @@
    - Packages are organized by language under `./pkgs-by-lang/<Language>/<name>/default.nix`.
    - Always register the new package in `flake.nix` or the corresponding language-specific overlay.
 
+7. **git cli is available**
+
 ## Reference Documentation
 
 - `docs_for_agents/nixpkgs_manual.md` contains Nix packaging reference material.

@@ -83,6 +83,7 @@
           jjwxcCrawler = pkgs.callPackage ./pkgs-by-lang/Python/jjwxcCrawler { };
           pynat = pkgs.callPackage ./pkgs-by-lang/Python/pynat { };
           pystun3 = pkgs.callPackage ./pkgs-by-lang/Python/pystun3 { };
+          kani = pkgs.callPackage ./pkgs-by-lang/Python/kani { };
           #LinguaGacha = pkgs.callPackage ./pkgs-by-lang/Python/LinguaGacha { };
 
           # C
