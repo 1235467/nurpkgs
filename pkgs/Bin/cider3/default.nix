@@ -25,7 +25,7 @@ let
 
   };
   steam-run = (pkgs.steam.override {
-    extraPkgs = p: (with pkgs; [ resource nss  ]);
+    extraPkgs = p: (with pkgs; [ resource nss ]);
     #runtimeOnly = true;
   }).run;
   startScript = pkgs.writeShellScript "cider" ''
@@ -35,7 +35,7 @@ let
   #libs = lib.makeLibraryPath  (with pkgs; [ dbus stdenv.cc.cc.lib glib nss]);
 in
 
-  
+
 stdenv.mkDerivation {
   pname = "cider";
   version = "3.1.8";

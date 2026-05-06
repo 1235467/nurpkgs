@@ -17,8 +17,13 @@
     flake = false;
   };
   #inputs.chaotic.url = "github:chaotic-cx/nyx/dc2d9e585f0dac249f4458d107da14bc132482cb";
-  inputs.chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";  
-
+  inputs.chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+  inputs.go-overlay = {
+    url = "github:purpleclay/go-overlay";
+    inputs = {
+      nixpkgs.follows = "nixpkgs";
+    };
+  };
   outputs =
     { self
     , nixpkgs
@@ -79,6 +84,27 @@
           #mieru = pkgs.callPackage ./pkgs-by-lang/Go/mieru { };
           T2D = pkgs.callPackage ./pkgs-by-lang/Go/T2D { };
 
+          # Go packages requiring newer Go toolchain (via go-overlay)
+          pkgs-go = import nixpkgs {
+            inherit system;
+            config.allowUnfree = true;
+            overlays = [ inputs.go-overlay.overlays.default ];
+          };
+          bifrost-src = pkgs-go.fetchFromGitHub {
+            owner = "maximhq";
+            repo = "bifrost";
+            rev = "transports/v1.4.9";
+            sha256 = "sha256-/ZRl3f3DtcbviaI0TOtNMkwCD0eljQ1JbIM2DBlHakA=";
+          };
+          bifrost-ui = pkgs-go.callPackage ./pkgs-by-lang/Node/bifrost-ui {
+            src = bifrost-src;
+            version = "1.4.9";
+          };
+          bifrost = pkgs-go.callPackage ./pkgs-by-lang/Go/bifrost {
+            src = bifrost-src;
+            bifrost-ui = bifrost-ui;
+          };
+
           # Python
           jjwxcCrawler = pkgs.callPackage ./pkgs-by-lang/Python/jjwxcCrawler { };
           pynat = pkgs.callPackage ./pkgs-by-lang/Python/pynat { };
@@ -97,8 +123,8 @@
           suyu = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/suyu { };
           yuzu-early-access = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
           rtptun = pkgs.callPackage ./pkgs-by-lang/C/rtptun { };
-          dwarfs = pkgs.callPackage ./pkgs-by-lang/C/dwarfs { };         
- 
+          dwarfs = pkgs.callPackage ./pkgs-by-lang/C/dwarfs { };
+
           # Nodejs
 
           # Shell

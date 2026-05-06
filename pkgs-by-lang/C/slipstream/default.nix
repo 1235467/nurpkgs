@@ -1,13 +1,13 @@
-{
-  lib,
-  fetchFromGitHub,
-  stdenv,
-  cmake,
-  makeWrapper,
-  meson,
-  ninja,
-  openssl,
-  pkg-config,
+{ lib
+, fetchFromGitHub
+, stdenv
+, cmake
+, makeWrapper
+, meson
+, ninja
+, openssl
+, pkg-config
+,
 }:
 
 let
