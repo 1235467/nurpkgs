@@ -32,6 +32,7 @@ rec {
   #waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
   aichat = pkgs.callPackage ./pkgs-by-lang/Rust/aichat { };
   fww-checkin-rs = pkgs.callPackage ./pkgs-by-lang/Rust/fww-checkin-rs { };
+  quarkdrive-webdav = pkgs.callPackage ./pkgs-by-lang/Rust/quarkdrive-webdav { };
 
   # Dotnet
   BBDown = pkgs.callPackage ./pkgs-by-lang/Dotnet/BBDown { };

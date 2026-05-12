@@ -27,6 +27,7 @@
 * ncmdump-rs
 * pynat
 * pystun3
+* quarkdrive-webdav
 * reflac
 * rescrobbled
 * rtptun
