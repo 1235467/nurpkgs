@@ -81,6 +81,7 @@
 
           # Go
           dnstt = pkgs.callPackage ./pkgs-by-lang/Go/dnstt { };
+          fofax = pkgs.callPackage ./pkgs-by-lang/Go/fofax { };
           #open-snell = pkgs.callPackage ./pkgs-by-lang/Go/open-snell { };
           #mieru = pkgs.callPackage ./pkgs-by-lang/Go/mieru { };
           T2D = pkgs.callPackage ./pkgs-by-lang/Go/T2D { };
@@ -155,9 +156,6 @@
 
           # Garnix generate cache
           mongodb = pkgs-stable.mongodb;
-          cudatoolkit = pkgs.cudaPackages_12.cudatoolkit;
-          misskey = pkgs.misskey;
-          koboldcpp = (pkgs.koboldcpp.override { cublasSupport = true; clblastSupport = true; vulkanSupport = true; cudaArches = [ "sm_75" ]; });
           # Fonts
           ttf-ms-win10 = pkgs.callPackage ./pkgs/Fonts/ttf-ms-win10 { };
         }
