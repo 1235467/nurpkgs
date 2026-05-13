@@ -30,6 +30,17 @@ state != 3 { next }
 /^[[:space:]]*pkgs-go = import nixpkgs/ {
   in_skip = 1; skip_depth = 1; next
 }
+# Skip bifrost packages (depend on pkgs-go via go-overlay, not NUR-friendly)
+/^[[:space:]]*# Go packages requiring newer Go toolchain/ { next }
+/^[[:space:]]*bifrost(-src|-ui)?[[:space:]]*=[[:space:]]*pkgs-go/ {
+  in_skip = 1; skip_depth = 1; next
+}
+# Skip rust packages whose cargoLock.lockFile reads from sources.<x>.src/Cargo.lock
+# (IFD on a FOD src; NUR's restricted eval can't realise the src during evaluation)
+/^[[:space:]]*(aichat|fww-checkin-rs|ncmdump-rs|rescrobbled)[[:space:]]*=[[:space:]]*pkgs\.callPackage/ { next }
+# Skip Garnix cache helpers (not useful to NUR consumers)
+/^[[:space:]]*# Garnix generate cache/ { next }
+/^[[:space:]]*mongodb[[:space:]]*=[[:space:]]*pkgs-stable\.mongodb/ { next }
 in_skip {
   n_open  = gsub(/\{/, "&")
   n_close = gsub(/\}/, "&")

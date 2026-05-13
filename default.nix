@@ -9,10 +9,6 @@
 { pkgs ? import <nixpkgs> { }
 , pkgs-stable ? import <nixpkgs> { }
 , pkgs-yuzu ? import <nixpkgs> { }
-, pkgs-go ? import <nixpkgs> {
-    config.allowUnfree = true;
-    overlays = [ (builtins.getFlake "github:purpleclay/go-overlay").overlays.default ];
-  }
 , pkgs-chaotic ? null
 ,
 }:
@@ -30,11 +26,7 @@ rec {
   buildtools = pkgs-stable.callPackage ./buildtools/shell { };
 
   # Rust
-  ncmdump-rs = pkgs.callPackage ./pkgs-by-lang/Rust/ncmdump.rs { };
-  rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
   #waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
-  aichat = pkgs.callPackage ./pkgs-by-lang/Rust/aichat { };
-  fww-checkin-rs = pkgs.callPackage ./pkgs-by-lang/Rust/fww-checkin-rs { };
   quarkdrive-webdav = pkgs.callPackage ./pkgs-by-lang/Rust/quarkdrive-webdav { };
 
   # Dotnet
@@ -47,21 +39,6 @@ rec {
   #mieru = pkgs.callPackage ./pkgs-by-lang/Go/mieru { };
   T2D = pkgs.callPackage ./pkgs-by-lang/Go/T2D { };
 
-  # Go packages requiring newer Go toolchain (via go-overlay)
-  bifrost-src = pkgs-go.fetchFromGitHub {
-    owner = "maximhq";
-    repo = "bifrost";
-    rev = "transports/v1.4.9";
-    sha256 = "sha256-/ZRl3f3DtcbviaI0TOtNMkwCD0eljQ1JbIM2DBlHakA=";
-  };
-  bifrost-ui = pkgs-go.callPackage ./pkgs-by-lang/Node/bifrost-ui {
-    src = bifrost-src;
-    version = "1.4.9";
-  };
-  bifrost = pkgs-go.callPackage ./pkgs-by-lang/Go/bifrost {
-    src = bifrost-src;
-    bifrost-ui = bifrost-ui;
-  };
 
   # Python
   jjwxcCrawler = pkgs.callPackage ./pkgs-by-lang/Python/jjwxcCrawler { };
@@ -113,8 +90,6 @@ rec {
   # System Fonts override
   JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;
 
-  # Garnix generate cache
-  mongodb = pkgs-stable.mongodb;
   # Fonts
   ttf-ms-win10 = pkgs.callPackage ./pkgs/Fonts/ttf-ms-win10 { };
 

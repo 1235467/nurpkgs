@@ -67,10 +67,6 @@ generate() {
 { pkgs ? import <nixpkgs> { }
 , pkgs-stable ? import <nixpkgs> { }
 , pkgs-yuzu ? import <nixpkgs> { }
-, pkgs-go ? import <nixpkgs> {
-    config.allowUnfree = true;
-    overlays = [ (builtins.getFlake "github:purpleclay/go-overlay").overlays.default ];
-  }
 , pkgs-chaotic ? null
 ,
 }:
