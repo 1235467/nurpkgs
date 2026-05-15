@@ -95,8 +95,8 @@
           bifrost-src = pkgs-go.fetchFromGitHub {
             owner = "maximhq";
             repo = "bifrost";
-            rev = "transports/v1.4.9";
-            sha256 = "sha256-/ZRl3f3DtcbviaI0TOtNMkwCD0eljQ1JbIM2DBlHakA=";
+            rev = "transports/v1.5.2";
+            sha256 = "sha256-5hZoTEoKrt1cjkHxTjKUs44wXn1fpqL9LoxbfF5Q4NE=";
           };
           bifrost-ui = pkgs-go.callPackage ./pkgs-by-lang/Node/bifrost-ui {
             src = bifrost-src;
@@ -150,6 +150,8 @@
           linux_cachyos-lto-x86_64-v3 = (pkgs-chaotic.linuxPackages_cachyos-lto.cachyOverride { mArch = "GENERIC_V3"; }).kernel; # for cache
           inputplumber = pkgs.callPackage ./pkgs-by-lang/Rust/inputplumber { };
           #xivlauncher-cn = pkgs.callPackage ./pkgs/Overrides/xivlauncher { };
+          mesa_git = pkgs.callPackage ./pkgs/Overrides/mesa-git { };
+          mesa32_git = pkgs.pkgsi686Linux.callPackage ./pkgs/Overrides/mesa-git { };
 
           # System Fonts override
           JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;

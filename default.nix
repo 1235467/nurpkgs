@@ -86,6 +86,8 @@ rec {
     else null;
   inputplumber = pkgs.callPackage ./pkgs-by-lang/Rust/inputplumber { };
   #xivlauncher-cn = pkgs.callPackage ./pkgs/Overrides/xivlauncher { };
+  mesa_git = pkgs.callPackage ./pkgs/Overrides/mesa-git { };
+  mesa32_git = pkgs.pkgsi686Linux.callPackage ./pkgs/Overrides/mesa-git { };
 
   # System Fonts override
   JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;
