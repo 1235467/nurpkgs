@@ -1,0 +1,245 @@
+diff --git a/app/dns/config.go b/app/dns/config.go
+index 3859b0d..354f3f9 100644
+--- a/app/dns/config.go
++++ b/app/dns/config.go
+@@ -84,5 +84,5 @@ func toReqTypes(option dns.IPOption) []dnsmessage.Type {
+ 
+ func generateRandomTag() string {
+ 	id := uuid.New()
+-	return "v2ray.system." + id.String()
++	return "influx.dns." + id.String()
+ }
+diff --git a/app/dns/dns.go b/app/dns/dns.go
+index 306a352..9be4a18 100644
+--- a/app/dns/dns.go
++++ b/app/dns/dns.go
+@@ -405,7 +405,7 @@ func init() {
+ 	common.Must(common.RegisterConfig((*SimplifiedConfig)(nil), func(ctx context.Context, config interface{}) (interface{}, error) {
+ 		ctx = cfgcommon.NewConfigureLoadingContext(ctx)
+ 
+-		geoloadername := platform.NewEnvFlag("v2ray.conf.geoloader").GetValue(func() string {
++		geoloadername := platform.NewEnvFlag("influx.conf.geoloader").GetValue(func() string {
+ 			return "standard"
+ 		})
+ 
+diff --git a/app/router/router.go b/app/router/router.go
+index 0327d77..f1cbdbe 100644
+--- a/app/router/router.go
++++ b/app/router/router.go
+@@ -154,7 +154,7 @@ func init() {
+ 	common.Must(common.RegisterConfig((*SimplifiedConfig)(nil), func(ctx context.Context, config interface{}) (interface{}, error) {
+ 		ctx = cfgcommon.NewConfigureLoadingContext(ctx)
+ 
+-		geoloadername := platform.NewEnvFlag("v2ray.conf.geoloader").GetValue(func() string {
++		geoloadername := platform.NewEnvFlag("influx.conf.geoloader").GetValue(func() string {
+ 			return "standard"
+ 		})
+ 
+diff --git a/common/buf/readv_reader.go b/common/buf/readv_reader.go
+index 7801e7f..2ac5875 100644
+--- a/common/buf/readv_reader.go
++++ b/common/buf/readv_reader.go
+@@ -139,7 +139,7 @@ var useReadv = false
+ 
+ func init() {
+ 	const defaultFlagValue = "NOT_DEFINED_AT_ALL"
+-	value := platform.NewEnvFlag("v2ray.buf.readv").GetValue(func() string { return defaultFlagValue })
++	value := platform.NewEnvFlag("influx.buf.readv").GetValue(func() string { return defaultFlagValue })
+ 	switch value {
+ 	case defaultFlagValue, "auto":
+ 		if (runtime.GOARCH == "386" || runtime.GOARCH == "amd64" || runtime.GOARCH == "s390x") && (runtime.GOOS == "linux" || runtime.GOOS == "darwin" || runtime.GOOS == "windows") {
+diff --git a/common/platform/others.go b/common/platform/others.go
+index 5a4b9d5..c1ee08c 100644
+--- a/common/platform/others.go
++++ b/common/platform/others.go
+@@ -15,10 +15,10 @@ func LineSeparator() string {
+ 
+ // GetAssetLocation search for `file` in certain locations
+ func GetAssetLocation(file string) string {
+-	const name = "v2ray.location.asset"
++	const name = "influx.location.asset"
+ 	assetPath := NewEnvFlag(name).GetValue(getExecutableDir)
+ 	defPath := filepath.Join(assetPath, file)
+-	relPath := filepath.Join("v2ray", file)
++	relPath := filepath.Join( "influx", file)
+ 	fullPath, err := xdg.SearchDataFile(relPath)
+ 	if err != nil {
+ 		return defPath
+diff --git a/common/platform/platform.go b/common/platform/platform.go
+index 845782b..46e2d68 100644
+--- a/common/platform/platform.go
++++ b/common/platform/platform.go
+@@ -67,20 +67,20 @@ func getExecutableSubDir(dir string) func() string {
+ }
+ 
+ func GetPluginDirectory() string {
+-	const name = "v2ray.location.plugin"
++	const name = "influx.location.plugin"
+ 	pluginDir := NewEnvFlag(name).GetValue(getExecutableSubDir("plugins"))
+ 	return pluginDir
+ }
+ 
+ func GetConfigurationPath() string {
+-	const name = "v2ray.location.config"
++	const name = "influx.location.config"
+ 	configPath := NewEnvFlag(name).GetValue(getExecutableDir)
+ 	return filepath.Join(configPath, "config.json")
+ }
+ 
+-// GetConfDirPath reads "v2ray.location.confdir"
++// GetConfDirPath reads "influx.location.confdir"
+ func GetConfDirPath() string {
+-	const name = "v2ray.location.confdir"
++	const name = "influx.location.confdir"
+ 	configPath := NewEnvFlag(name).GetValue(func() string { return "" })
+ 	return configPath
+ }
+diff --git a/common/platform/windows.go b/common/platform/windows.go
+index 78179e3..0e8dfc8 100644
+--- a/common/platform/windows.go
++++ b/common/platform/windows.go
+@@ -11,7 +11,7 @@ func LineSeparator() string {
+ 
+ // GetAssetLocation search for `file` in the excutable dir
+ func GetAssetLocation(file string) string {
+-	const name = "v2ray.location.asset"
++	const name = "influx.location.asset"
+ 	assetPath := NewEnvFlag(name).GetValue(getExecutableDir)
+ 	return filepath.Join(assetPath, file)
+ }
+diff --git a/core.go b/core.go
+index 96da415..862c878 100644
+--- a/core.go
++++ b/core.go
+@@ -20,8 +20,8 @@ import (
+ var (
+ 	version  = "5.47.0"
+ 	build    = "Custom"
+-	codename = "V2Fly, a community-driven edition of V2Ray."
+-	intro    = "A unified platform for anti-censorship."
++	codename = "Influx"
++	intro    = "A platform for data processing."
+ )
+ 
+ // Version returns V2Ray's version as a string, in the form of "x.y.z" where x, y and z are numbers.
+@@ -33,7 +33,7 @@ func Version() string {
+ // VersionStatement returns a list of strings representing the full version info.
+ func VersionStatement() []string {
+ 	return []string{
+-		serial.Concat("V2Ray ", Version(), " (", codename, ") ", build, " (", runtime.Version(), " ", runtime.GOOS, "/", runtime.GOARCH, ")"),
++		serial.Concat("Influx ", Version(), " (", codename, ") ", build, " (", runtime.Version(), " ", runtime.GOOS, "/", runtime.GOARCH, ")"),
+ 		intro,
+ 	}
+ }
+diff --git a/features/policy/policy.go b/features/policy/policy.go
+index 40becf0..951d2f3 100644
+--- a/features/policy/policy.go
++++ b/features/policy/policy.go
+@@ -84,7 +84,7 @@ func ManagerType() interface{} {
+ var defaultBufferSize int32
+ 
+ func init() {
+-	const key = "v2ray.ray.buffer.size"
++	const key = "influx.buffer.size"
+ 	const defaultValue = -17
+ 	size := platform.EnvFlag{
+ 		Name:    key,
+diff --git a/infra/conf/synthetic/dns/dns.go b/infra/conf/synthetic/dns/dns.go
+index e7519e3..2cf3664 100644
+--- a/infra/conf/synthetic/dns/dns.go
++++ b/infra/conf/synthetic/dns/dns.go
+@@ -275,7 +275,7 @@ func (c *DNSConfig) Build() (*dns.Config, error) {
+ 	if c.cfgctx == nil {
+ 		c.cfgctx = cfgcommon.NewConfigureLoadingContext(context.Background())
+ 
+-		geoloadername := platform.NewEnvFlag("v2ray.conf.geoloader").GetValue(func() string {
++		geoloadername := platform.NewEnvFlag("influx.conf.geoloader").GetValue(func() string {
+ 			return "standard"
+ 		})
+ 
+diff --git a/infra/conf/synthetic/router/router.go b/infra/conf/synthetic/router/router.go
+index b32519c..7ce45bb 100644
+--- a/infra/conf/synthetic/router/router.go
++++ b/infra/conf/synthetic/router/router.go
+@@ -125,7 +125,7 @@ func (c *RouterConfig) Build() (*router.Config, error) {
+ 	if c.cfgctx == nil {
+ 		c.cfgctx = cfgcommon.NewConfigureLoadingContext(context.Background())
+ 
+-		geoloadername := platform.NewEnvFlag("v2ray.conf.geoloader").GetValue(func() string {
++		geoloadername := platform.NewEnvFlag("influx.conf.geoloader").GetValue(func() string {
+ 			return "standard"
+ 		})
+ 
+diff --git a/infra/conf/v5cfg/root.go b/infra/conf/v5cfg/root.go
+index 6489e41..4db2ccb 100644
+--- a/infra/conf/v5cfg/root.go
++++ b/infra/conf/v5cfg/root.go
+@@ -96,7 +96,7 @@ func loadJSONConfig(data []byte) (*core.Config, error) {
+ 
+ 	buildctx := cfgcommon.NewConfigureLoadingContext(context.Background())
+ 
+-	geoloadername := platform.NewEnvFlag("v2ray.conf.geoloader").GetValue(func() string {
++	geoloadername := platform.NewEnvFlag("influx.conf.geoloader").GetValue(func() string {
+ 		return "standard"
+ 	})
+ 
+diff --git a/main/commands/all/tls/cert.go b/main/commands/all/tls/cert.go
+index b34d047..dbd7786 100644
+--- a/main/commands/all/tls/cert.go
++++ b/main/commands/all/tls/cert.go
+@@ -57,8 +57,8 @@ var (
+ 		return true
+ 	}()
+ 
+-	certCommonName   = cmdCert.Flag.String("name", "V2Ray Inc", "")
+-	certOrganization = cmdCert.Flag.String("org", "V2Ray Inc", "")
++	certCommonName   = cmdCert.Flag.String("name", "InfluxData Inc", "")
++	certOrganization = cmdCert.Flag.String("org", "InfluxData Inc", "")
+ 	certIsCA         = cmdCert.Flag.Bool("ca", false, "")
+ 	certJSONOutput   = cmdCert.Flag.Bool("json", true, "")
+ 	certFileOutput   = cmdCert.Flag.String("file", "", "")
+diff --git a/proxy/vmess/inbound/inbound.go b/proxy/vmess/inbound/inbound.go
+index 34b62ab..4993c36 100644
+--- a/proxy/vmess/inbound/inbound.go
++++ b/proxy/vmess/inbound/inbound.go
+@@ -387,7 +387,7 @@ func init() {
+ 
+ 	defaultFlagValue := "true_by_default_2022"
+ 
+-	isAeadForced := platform.NewEnvFlag("v2ray.vmess.aead.forced").GetValue(func() string { return defaultFlagValue })
++	isAeadForced := platform.NewEnvFlag("influx.vmess.aead.forced").GetValue(func() string { return defaultFlagValue })
+ 	if isAeadForced == "true" {
+ 		aeadForced = true
+ 	}
+diff --git a/proxy/vmess/outbound/outbound.go b/proxy/vmess/outbound/outbound.go
+index a0463c8..48a90c4 100644
+--- a/proxy/vmess/outbound/outbound.go
++++ b/proxy/vmess/outbound/outbound.go
+@@ -232,12 +232,12 @@ func init() {
+ 
+ 	const defaultFlagValue = "NOT_DEFINED_AT_ALL"
+ 
+-	paddingValue := platform.NewEnvFlag("v2ray.vmess.padding").GetValue(func() string { return defaultFlagValue })
++	paddingValue := platform.NewEnvFlag("influx.vmess.padding").GetValue(func() string { return defaultFlagValue })
+ 	if paddingValue != defaultFlagValue {
+ 		enablePadding = true
+ 	}
+ 
+-	isAeadDisabled := platform.NewEnvFlag("v2ray.vmess.aead.disabled").GetValue(func() string { return defaultFlagValue })
++	isAeadDisabled := platform.NewEnvFlag("influx.vmess.aead.disabled").GetValue(func() string { return defaultFlagValue })
+ 	if isAeadDisabled == "true" {
+ 		aeadDisabled = true
+ 	}
+diff --git a/v2ray.go b/v2ray.go
+index 80905d6..7be2375 100644
+--- a/v2ray.go
++++ b/v2ray.go
+@@ -377,7 +377,7 @@ func (s *Instance) Start() error {
+ 		}
+ 	}
+ 
+-	newError("V2Ray ", Version(), " started").AtWarning().WriteToLog()
++	newError("Influx ", Version(), " started").AtWarning().WriteToLog()
+ 
+ 	return nil
+ }

@@ -32,6 +32,16 @@
 
 7. **git cli is available**
 
+8. **When nix build .#<program> 2>&1 | tail -5   exit without errors, the build is already done
+    example
+     ```
+     fetching git input 'git+file:///home/hakutaku/nurpkgs'
+     warning: Git tree '/home/hakutaku/nurpkgs' is dirty
+     this derivation will be built:
+       /nix/store/wx3h50q58r9mdh2g9z9s3c4k8yn9c6fb-influx-5.41.0.drv
+     building '/nix/store/wx3h50q58r9mdh2g9z9s3c4k8yn9c6fb-influx-5.41.0.drv'...
+     ```
+     the artifact  will be in ./result
 ## Reference Documentation
 
 - `docs_for_agents/nixpkgs_manual.md` contains Nix packaging reference material.

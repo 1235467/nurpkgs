@@ -152,6 +152,7 @@
           #xivlauncher-cn = pkgs.callPackage ./pkgs/Overrides/xivlauncher { };
           mesa_git = pkgs.callPackage ./pkgs/Overrides/mesa-git { };
           mesa32_git = pkgs.pkgsi686Linux.callPackage ./pkgs/Overrides/mesa-git { };
+          influx = pkgs.callPackage ./pkgs/Overrides/influx { };
 
           # System Fonts override
           JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;
