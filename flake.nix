@@ -128,6 +128,7 @@
           dwarfs = pkgs.callPackage ./pkgs-by-lang/C/dwarfs { };
 
           # Nodejs
+          pi-agent = pkgs.callPackage ./pkgs-by-lang/Node/pi-agent { };
 
           # Shell
           reflac = pkgs.callPackage ./pkgs-by-lang/Shell/reflac { };
