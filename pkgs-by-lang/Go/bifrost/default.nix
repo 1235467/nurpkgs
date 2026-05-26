@@ -1,7 +1,7 @@
 { lib, buildGoModule, go-bin, pkg-config, gcc, sqlite, src, bifrost-ui }:
 
 let
-  version = "1.5.2";
+  version = "1.5.4";
   go = go-bin.versions."1.26.2";
   buildGoModule' = buildGoModule.override { inherit go; };
 
@@ -28,7 +28,7 @@ buildGoModule' {
 
   modRoot = "transports";
   subPackages = [ "bifrost-http" ];
-  vendorHash = "sha256-V25rN89agoRd7rtsbKQTQIX8KUUtqIzEw0TnwczQmao=";
+  vendorHash = "sha256-Z9cZMX/Dszn5/yLTDPdLN/GRJ3dOEuiKiXPd/T/Hdc0=";
 
   doCheck = false;
 

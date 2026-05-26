@@ -9,6 +9,7 @@
    - Use `lib.fakeHash` or `sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=` as a placeholder.
    - Run `nix build .#<pkg>` and capture the "got:" hash from the error message.
    - Use the built-in `apply_patch` tool (or equivalent editor) to update the hash, **not** `sed` or `cat`.
+   - **Note**: When updating a package version, you often need to update multiple hashes: the source hash (in `flake.nix`), the dependency hash (e.g., `vendorHash` for Go or `npmDepsHash` for Node), and potentially the version string in the `default.nix` file.
 
 3. **Build Outputs (`result` symlink)**:
    - `nix build` usually creates a `./result` symlink in the repo root (or `result-2`, `result-3`, etc. if one already exists).

@@ -5,7 +5,7 @@ buildNpmPackage {
   inherit version src;
   sourceRoot = "source/ui";
 
-  npmDepsHash = "sha256-6DmtaiLUjYbhldYGEig0sx3e6PUuQVjA2FLU95fqQ+Y=";
+  npmDepsHash = "sha256-YniwFXRYyS8PpfabAAK0csyQLGrwUjONLTGXF7HINaI=";
 
   # Patch layout to avoid Google Fonts fetch at build time (Nix sandbox has no network)
   postPatch = ''
