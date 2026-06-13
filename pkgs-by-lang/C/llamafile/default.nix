@@ -9,7 +9,13 @@
 , ...
 } @ args:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "Mozilla-Ocho";
+    repo = "llamafile";
+    rev = "7e7d33cd825972b1e122f7635a8375da123c38f5";
+    sha256 = "sha256-W9QNxfo+HkrEK2/TkUBgDO9K60ajiQc72i89wZU3Klw=";
+  };
+  version = "7e7d33cd825972b1e122f7635a8375da123c38f5";
   cosmocc = pkgs.fetchzip {
     url = "https://github.com/jart/cosmopolitan/releases/download/3.3.4/cosmocc-3.3.4.zip";
     sha256 = "sha256-SQFbuO05+ROQzghU+L/oFdAkN2a89v57X1zuutz0IaM=";
@@ -17,7 +23,7 @@ let
   };
 in
 stdenv.mkDerivation rec {
-  inherit (sources.llamafile) version src;
+  inherit src version;
   pname = "llamafile";
   preConfigure = ''
   '';

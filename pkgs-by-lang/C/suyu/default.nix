@@ -39,11 +39,17 @@
 let
   nx_tzdb = pkgs.callPackage ../../../_deps/yuzu/nx_tzdb.nix { };
   compat-list = pkgs.callPackage ../../../_deps/yuzu/compat-list.nix { };
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = pkgs.fetchgit {
+    url = "https://git.suyu.dev/suyu/suyu";
+    rev = "ee365bad9501c73ff49936e72ec91cd9c3ce5c24";
+    fetchSubmodules = true;
+    sha256 = "sha256-vw9VcSbCaG4MS0PL/fJ73CDALLbd3n0CBT7gkyp5hRc=";
+  };
+  version = "ee365bad9501c73ff49936e72ec91cd9c3ce5c24";
 in
 stdenv.mkDerivation rec {
   pname = "suyu";
-  inherit (sources.suyu) version src;
+  inherit src version;
 
   nativeBuildInputs = [
     cmake

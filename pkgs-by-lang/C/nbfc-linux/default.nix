@@ -7,11 +7,17 @@
 , ...
 } @ args:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "nbfc-linux";
+    repo = "nbfc-linux";
+    rev = "db29a1cea0790f08876386e9ec0987a1deaa3c42";
+    sha256 = "sha256-epQh2YihPfXlz0saeb7xjf6htWUiJeQjjML6GPy+PPU=";
+  };
+  version = "db29a1cea0790f08876386e9ec0987a1deaa3c42";
 in
 stdenv.mkDerivation rec {
   # 指定包名和版本
-  inherit (sources.nbfc-linux) version src;
+  inherit src version;
   pname = "nbfc-linux";
   enableParallelBuilding = true;
 

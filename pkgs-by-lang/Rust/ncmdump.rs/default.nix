@@ -1,18 +1,19 @@
 { lib
 , fetchFromGitHub
 , rustPlatform
-, callPackage
   #, ffmpeg
 , ...
 }:
-let
+rustPlatform.buildRustPackage rec{
   pname = "ncmdump.rs";
-  sources = callPackage ../../../_sources/generated.nix { };
-in
-rustPlatform.buildRustPackage {
-  inherit pname;
-  inherit (sources.ncmdump_rs) version src;
-  cargoLock.lockFile = "${sources.ncmdump_rs.src}/Cargo.lock";
+  version = "2e7f77779f55f914fb505d996b16e829028240e3";
+  src = fetchFromGitHub {
+    owner = "iqiziqi";
+    repo = "ncmdump.rs";
+    rev = "2e7f77779f55f914fb505d996b16e829028240e3";
+    sha256 = "sha256-ryxjZFTknWEGHESo0OcoBv/+rCx+rCifoSsqNUaF+FM=";
+  };
+  cargoLock.lockFile = "${src}/Cargo.lock";
 
   nativeBuildInputs = [
     #pkg-config

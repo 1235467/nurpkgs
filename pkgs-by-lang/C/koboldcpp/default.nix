@@ -17,13 +17,20 @@
 , ...
 } @ args:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "LostRuins";
+    repo = "koboldcpp";
+    rev = "5174f9de7b9d30dc12174a865c0cef612658f5aa";
+    sha256 = "sha256-KEzxxRWUnEwK5ObNEFKEzEa6go1BRfFWP81v4BD0ssg=";
+    fetchSubmodules = true;
+  };
+  version = "5174f9de7b9d30dc12174a865c0cef612658f5aa";
 in
 
 stdenv.mkDerivation rec {
   # 指定包名和版本
   pname = "koboldcpp";
-  inherit (sources.koboldcpp) version src;
+  inherit src version;
   #   version = "5174f9de7b9d30dc12174a865c0cef612658f5aa";
   #
   #   # 从 GitHub 下载源代码

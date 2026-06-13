@@ -12,16 +12,17 @@
   python3
 , python3Packages
 , makeWrapper
-, callPackage
 ,
 }:
-let
-  pname = "idntag";
-  sources = callPackage ../../../_sources/generated.nix { };
-in
 stdenv.mkDerivation rec {
-  inherit pname;
-  inherit (sources.idntag) version src;
+  pname = "idntag";
+  version = "62ddd08b6597fdfa8f2cb60ef6b1ce13cbe64c4d";
+  src = fetchFromGitHub {
+    owner = "d99kris";
+    repo = "idntag";
+    rev = "62ddd08b6597fdfa8f2cb60ef6b1ce13cbe64c4d";
+    sha256 = "sha256-71Fhl7ZKSSpwhaT3hAILZ44BdglfhJNFMLBjHSEKA7s=";
+  };
 
   nativeBuildInputs = [
     cmake

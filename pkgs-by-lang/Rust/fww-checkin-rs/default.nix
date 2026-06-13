@@ -1,19 +1,20 @@
 { lib
 , fetchFromGitHub
 , rustPlatform
-, callPackage
 , ...
 }:
-let
+rustPlatform.buildRustPackage rec {
   pname = "fww-checkin-rs";
-  sources = callPackage ../../../_sources/generated.nix { };
-in
-rustPlatform.buildRustPackage {
-  inherit pname;
-  inherit (sources.fww-checkin-rs) version src;
+  version = "92ce21ff1556e709384c6e817157488db2a9eb7d";
+  src = fetchFromGitHub {
+    owner = "1235467";
+    repo = "fww-checkin-rs";
+    rev = "92ce21ff1556e709384c6e817157488db2a9eb7d";
+    sha256 = "sha256-aGYHwuMhot9RQ2PXJhQBzHljXBVcbuaO3r6/gWK/jIU=";
+  };
 
   cargoLock = {
-    lockFile = "${sources.fww-checkin-rs.src}/Cargo.lock";
+    lockFile = "${src}/Cargo.lock";
     #outputHashes = {
     #};
   };

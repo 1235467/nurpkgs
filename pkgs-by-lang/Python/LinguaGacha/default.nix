@@ -1,7 +1,4 @@
-{ lib, python3Packages, fetchFromGitHub, callPackage }:
-let
-  sources = callPackage ../../../_sources/generated.nix { };
-in
+{ lib, python3Packages, fetchFromGitHub, pkgs }:
 with python3Packages;
 buildPythonApplication rec {
   pname = "LinguaGacha";

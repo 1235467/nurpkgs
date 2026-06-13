@@ -16,10 +16,16 @@
 , ...
 } @ args:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "lanthora";
+    repo = "candy";
+    rev = "fa41f0172719076b55a33ead2698d32cfc1d533d";
+    sha256 = "sha256-j4VKJpUJjGTMdPYtGlEhDFNBwks7Pz+94MWvTCUciC0=";
+  };
+  version = "fa41f0172719076b55a33ead2698d32cfc1d533d";
 in
 stdenv.mkDerivation rec {
-  inherit (sources.candy) version src;
+  inherit src version;
   pname = "candy";
   #    preConfigure = ''
   #     mkdir -p build/_deps

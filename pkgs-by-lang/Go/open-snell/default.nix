@@ -1,10 +1,16 @@
 { lib, fetchFromGitHub, buildGoModule, pkgs }:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "icpz";
+    repo = "open-snell";
+    rev = "8d2645b8394b20dba744a860655e3092fc8ae052";
+    sha256 = "sha256-/gILrDXOXDYQ3cTUMbjHAzITdtC2O+4XO0pp1ulRAM4=";
+  };
+  version = "8d2645b8394b20dba744a860655e3092fc8ae052";
 in
 buildGoModule rec{
   pname = "open-snell";
-  inherit (sources.open-snell) version src;
+  inherit src version;
 
   vendorHash = "sha256-CcpUJefr1xouQYltcs4tojBS0aYcmk2x6I1fwcAaSMQ=";
   doCheck = false;

@@ -9,12 +9,17 @@
 }:
 let
   pname = "onedrive-fuse";
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "oxalica";
+    repo = "onedrive-fuse";
+    rev = "15f8e5ee98b20d18ea40cdbbb63d1ae1a30d285f";
+    sha256 = "sha256-1O2DfG+cRK8EOTQiStH37erD4nvfz7YnxPITe4TB5hQ=";
+  };
+  version = "15f8e5ee98b20d18ea40cdbbb63d1ae1a30d285f";
 in
 rustPlatform.buildRustPackage {
-  inherit pname;
-  inherit (sources.onedrive-fuse) version src;
-  cargoLock.lockFile = "${sources.onedrive-fuse.src}/Cargo.lock";
+  inherit pname src version;
+  cargoLock.lockFile = "${src}/Cargo.lock";
 
   nativeBuildInputs = [
     pkg-config

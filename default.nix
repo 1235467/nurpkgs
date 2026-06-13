@@ -20,7 +20,6 @@ rec {
   overlays = import ./overlays; # nixpkgs overlays
 
   # Eval Helper
-  sources = pkgs.callPackage ./_sources/generated.nix { };
 
   # Build Helper
   buildtools = pkgs-stable.callPackage ./buildtools/shell { };

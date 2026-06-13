@@ -16,12 +16,17 @@
 }:
 let
   pname = "av1an";
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "master-of-zen";
+    repo = "av1an";
+    rev = "328fe3c5f8ee68bed7ea21cf2d153932d259607c";
+    sha256 = "sha256-cFiVu6t9ktuy8O7X36dyUtSKPu/EGuf81gsENZ+9Mmc=";
+  };
+  version = "328fe3c5f8ee68bed7ea21cf2d153932d259607c";
 in
 rustPlatform.buildRustPackage {
-  inherit pname;
-  inherit (sources.av1an) version src;
-  cargoLock.lockFile = "${sources.av1an.src}/Cargo.lock";
+  inherit pname src version;
+  cargoLock.lockFile = "${src}/Cargo.lock";
   nativeBuildInputs = [
     pkg-config
     nasm

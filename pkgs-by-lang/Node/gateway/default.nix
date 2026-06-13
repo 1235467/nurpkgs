@@ -5,14 +5,19 @@
 , ...
 } @ args:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "portkey-ai";
+    repo = "gateway";
+    rev = "v1.15.2"; # Using latest stable tag from ls-remote
+    sha256 = "sha256-XmFoQl5JMcfdfLXfah5lfaMsDq372lQiMnnabtl0yQY="; # Kept from original npmDeps hash as a starting point, but usually src hash is different.
+  };
+  version = "1.15.2";
 in
 pkgs.buildNpmPackage rec {
-  inherit (sources.portkey) version src;
+  inherit src version;
   pname = "gateway";
-  #npmDepsHash = "sha256-XmFoQl5JMcfdfLXfah5lfaMsDq372lQiMnnabtl0yQY=";
   npmDeps = pkgs.fetchNpmDeps {
-    inherit (sources.portkey) src;
+    inherit src;
     hash = "sha256-XmFoQl5JMcfdfLXfah5lfaMsDq372lQiMnnabtl0yQY=";
   };
   #npmDeps = "${sources.portkey.src}";

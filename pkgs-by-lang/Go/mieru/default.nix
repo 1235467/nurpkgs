@@ -1,10 +1,16 @@
 { lib, fetchFromGitHub, buildGoModule, pkgs }:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "enfein";
+    repo = "mieru";
+    rev = "cc7d65230ad094cec0043b91df5dc90e02780a28";
+    sha256 = "sha256-Zk9W/cZDFiKd6GT/FlJZDC9aeQ5ojWgKmcgks5ssGf0=";
+  };
+  version = "cc7d65230ad094cec0043b91df5dc90e02780a28";
 in
 buildGoModule rec{
   pname = "mieru";
-  inherit (sources.mieru) version src;
+  inherit src version;
 
   vendorHash = "sha256-8wIPivchmhEZYhX9LfbmriMMRnxvtXhLjz7u+ukJPxo=";
   doCheck = false;

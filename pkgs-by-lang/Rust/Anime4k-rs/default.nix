@@ -9,14 +9,19 @@
 }:
 let
   pname = "Anime4K-rs";
-  sources = callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "andraantariksa";
+    repo = "Anime4K-rs";
+    rev = "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29";
+    sha256 = "sha256-7CvYbc4U9kIwV2ELkd4lqKC1ynCwqizpXBXJamSGDig=";
+  };
+  version = "a47a8ac21f81d6a3bcbdf6fc338b6546f1a51d29";
 in
 rustPlatform.buildRustPackage {
-  inherit pname;
-  inherit (sources.Anime4K-rs) version src;
+  inherit pname src version;
 
   cargoLock = {
-    lockFile = "${sources.Anime4K-rs.src}/Cargo.lock";
+    lockFile = "${src}/Cargo.lock";
     outputHashes = {
       "raster-0.2.1" = "sha256-V1QDXECg64zamrL+hEE74FBAIjwjeVDvWhgdezM0MIo=";
     };

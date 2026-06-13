@@ -1,13 +1,19 @@
 { lib, fetchFromGitHub, rustPlatform, gtk4, pkg-config, openssl, dbus, wrapGAppsHook4, glib, makeDesktopItem, pkgs, ... }:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "waylyrics";
+    repo = "waylyrics";
+    rev = "9be3e3b79a2afb46edcabd90589ea346b2546fd3";
+    sha256 = "sha256-AdFNlpOhoVorlXDNO42rYds3Q51Tmzt++BOdN0I0SZs=";
+  };
+  version = "9be3e3b79a2afb46edcabd90589ea346b2546fd3";
 in
 rustPlatform.buildRustPackage rec
 {
   pname = "waylyrics";
-  inherit (sources.waylyrics) version src;
+  inherit src version;
 
-  cargoLock.lockFile = "${sources.waylyrics.src}/Cargo.lock";
+  cargoLock.lockFile = "${src}/Cargo.lock";
   cargoLock.outputHashes = {
     #"ncmapi-0.1.13" = "sha256-gwFMmMzQywlsQC2GljgLwXoP2Cca0r24iEDmV0k/xG0=";
     #"qqmusic-rs-0.1.0" = "sha256-woLsO0n+m3EBUI+PRLio7iLp0UPQSliWK0djCSZEaZc=";

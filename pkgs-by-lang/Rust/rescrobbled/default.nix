@@ -11,13 +11,18 @@
 , ...
 }:
 let
-  sources = pkgs.callPackage ../../../_sources/generated.nix { };
+  src = fetchFromGitHub {
+    owner = "InputUsername";
+    repo = "rescrobbled";
+    rev = "7bc66c765221e5f6f59d7181a6b3b916c097447a";
+    sha256 = "sha256-5ImUKsWGKFBl/imCT9mGOHSwSrpn8hHbp8TPhyXnw5g=";
+  };
+  version = "7bc66c765221e5f6f59d7181a6b3b916c097447a";
   pname = "rescrobbled";
 in
 rustPlatform.buildRustPackage {
-  inherit pname;
-  inherit (sources.rescrobbled) version src;
-  cargoLock.lockFile = "${sources.rescrobbled.src}/Cargo.lock";
+  inherit pname src version;
+  cargoLock.lockFile = "${src}/Cargo.lock";
 
   nativeBuildInputs = [
     pkg-config

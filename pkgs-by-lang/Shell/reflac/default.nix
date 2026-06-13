@@ -5,16 +5,17 @@
 , flac
 , bash
 , makeWrapper
-, callPackage
 , ...
 }:
-let
-  pname = "reflac";
-  sources = callPackage ../../../_sources/generated.nix { };
-in
 stdenv.mkDerivation rec {
-  inherit pname;
-  inherit (sources.reflac) version src;
+  pname = "reflac";
+  version = "a2dcaa2f5d3d23cf121934d5ff0e4d169a8f7a64";
+  src = fetchFromGitHub {
+    owner = "chungy";
+    repo = "reflac";
+    rev = "a2dcaa2f5d3d23cf121934d5ff0e4d169a8f7a64";
+    sha256 = "sha256-vrHDzDTrLPaDHXwgWJplCOQT6YdcWaEu28Rx1yXlgNk=";
+  };
 
   nativeBuildInputs = [
     makeWrapper
