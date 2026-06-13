@@ -95,12 +95,12 @@
           bifrost-src = pkgs-go.fetchFromGitHub {
             owner = "maximhq";
             repo = "bifrost";
-            rev = "transports/v1.5.4";
-            sha256 = "sha256-CZ6DmXtlCd0ngHGgf+hfEdYLYe7BWoJWULrrgdMZgw4=";
+            rev = "transports/v1.5.13";
+            sha256 = "sha256-MFrUGTVaUmws90/SQS40W+nFIpG5Qa+a3u1XmDzUcJw=";
           };
           bifrost-ui = pkgs-go.callPackage ./pkgs-by-lang/Node/bifrost-ui {
             src = bifrost-src;
-            version = "1.4.9";
+            version = "1.5.13";
           };
           bifrost = pkgs-go.callPackage ./pkgs-by-lang/Go/bifrost {
             src = bifrost-src;
