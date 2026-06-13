@@ -1,5 +1,8 @@
 builds:
- exclude: ["packages.aarch64-linux.cider","packages.aarch64-linux.av1an"]
+ exclude:
+  - "packages.aarch64-linux.cider"
+  - "packages.aarch64-linux.av1an"
+  - "packages.x86_64-linux.pkgs-go"
  include:
  - '*.x86_64-linux.*'
  - 'defaultPackage.x86_64-linux'
