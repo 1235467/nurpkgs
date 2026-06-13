@@ -13,13 +13,13 @@ let
   src = fetchFromGitHub {
     owner = "me-asri";
     repo = "rtptun";
-    rev = "e2e2cea76b4c187d4e7da9270049f56feea4c31c";
-    sha256 = "sha256-/A1KPD+TZylWMUnKI9PorHrfziAV9IctjevSN5U0aTc=";
+    rev = "v0.4";
+    sha256 = "sha256-IHNdC2wxj/Ksra6u0DsYbrsyBlyd+aARqJOiL6t+HY4=";
   };
 in
 stdenv.mkDerivation rec {
   inherit src;
-  version = "0.1.0";
+  version = "0.4";
   pname = "rtptun";
   doCheck = false;
   enableParallelBuilding = true;

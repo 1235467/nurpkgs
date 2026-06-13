@@ -14,10 +14,10 @@ let
   src = fetchFromGitHub {
     owner = "InputUsername";
     repo = "rescrobbled";
-    rev = "7bc66c765221e5f6f59d7181a6b3b916c097447a";
-    sha256 = "sha256-5ImUKsWGKFBl/imCT9mGOHSwSrpn8hHbp8TPhyXnw5g=";
+    rev = "v0.9.0";
+    sha256 = "sha256-/p9SY4XZNXl1ApB2gI8PMAp53lOBl0gcSPybRJe5MtE=";
   };
-  version = "7bc66c765221e5f6f59d7181a6b3b916c097447a";
+  version = "0.9.0";
   pname = "rescrobbled";
 in
 rustPlatform.buildRustPackage {

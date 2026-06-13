@@ -5,12 +5,12 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "aichat";
-  version = "82976d349ad97ac9aae0655ad631dace5e2a6385";
+  version = "0.30.0";
   src = fetchFromGitHub {
     owner = "sigoden";
     repo = "aichat";
-    rev = "82976d349ad97ac9aae0655ad631dace5e2a6385";
-    sha256 = "sha256-+x7PYyYJC7JgX40x8895Zfgr73/UjBuVy0IH0Qag9KA=";
+    rev = "v0.30.0";
+    sha256 = "sha256-xgTGii1xGtCc1OLoC53HAtQ+KVZNO1plB2GVtVBBlqs=";
   };
 
   cargoLock = {
