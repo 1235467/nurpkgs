@@ -7,6 +7,7 @@
 #     nix-build -A mypackage
 
 { pkgs ? import <nixpkgs> { }
+, pkgs-unstable ? import <nixpkgs> { }
 , pkgs-stable ? import <nixpkgs> { }
 , pkgs-yuzu ? import <nixpkgs> { }
 , pkgs-chaotic ? null

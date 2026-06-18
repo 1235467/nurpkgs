@@ -2,6 +2,9 @@
   description = "My personal NUR repository";
   inputs = {
     nixpkgs = {
+      url = "github:NixOS/nixpkgs/0147c2f1d54b30b5dd6d4a8c8542e8d7edf93b5d";
+    };
+    nixpkgs-unstable = {
       url = "github:NixOS/nixpkgs/nixos-unstable";
     };
     nixpkgs-stable = {
@@ -27,6 +30,7 @@
   outputs =
     { self
     , nixpkgs
+    , nixpkgs-unstable
     , nixpkgs-stable
     , nixpkgs-yuzu
     , dream2nix
@@ -46,6 +50,10 @@
             inherit system;
             config.allowUnfree = true;
           };
+          pkgs-unstable = import nixpkgs-unstable {
+            inherit system;
+            config.allowUnfree = true;
+          };
           pkgs-stable = import nixpkgs-stable {
             inherit system;
             config.allowUnfree = true;
@@ -59,6 +67,7 @@
       packages = forAllSystems (system:
         let
           pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
+          pkgs-unstable = import nixpkgs-unstable { inherit system; config.allowUnfree = true; };
           pkgs-stable = import nixpkgs-stable { inherit system; config.allowUnfree = true; };
           pkgs-yuzu = import nixpkgs-yuzu { inherit system; config.allowUnfree = true; };
           pkgs-chaotic = inputs.chaotic.legacyPackages.${system};
@@ -154,6 +163,7 @@
           mesa_git = pkgs.callPackage ./pkgs/Overrides/mesa-git { };
           mesa32_git = pkgs.pkgsi686Linux.callPackage ./pkgs/Overrides/mesa-git { };
           influx = pkgs.callPackage ./pkgs/Overrides/influx { };
+          niri = pkgs-unstable.callPackage ./pkgs/Overrides/niri { };
 
           # System Fonts override
           JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;
