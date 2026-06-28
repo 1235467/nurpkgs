@@ -5,7 +5,7 @@ buildNpmPackage {
   inherit version src;
   sourceRoot = "source/ui";
 
-  npmDepsHash = "sha256-edQVjsyVf1A9ffhQjTdWN9GWvzNOK+JyFpk8tZDni1M=";
+  npmDepsHash = "sha256-Hrt3+Lv4IDKZRc34IFF+FtFmy1tjgowWRYQY1Ezwpmc=";
 
   # Fonts are self-hosted (Geist), no Google Fonts network fetch needed.
   npmBuildScript = "build-enterprise";
