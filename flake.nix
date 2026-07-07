@@ -122,6 +122,7 @@
           pystun3 = pkgs.callPackage ./pkgs-by-lang/Python/pystun3 { };
           kani = pkgs.callPackage ./pkgs-by-lang/Python/kani { };
           routellm = pkgs.callPackage ./pkgs-by-lang/Python/routellm { };
+          sextractor-galgame = pkgs.callPackage ./pkgs-by-lang/Python/sextractor-galgame { };
           #LinguaGacha = pkgs.callPackage ./pkgs-by-lang/Python/LinguaGacha { };
 
           # C
@@ -136,6 +137,7 @@
           rtptun = pkgs.callPackage ./pkgs-by-lang/C/rtptun { };
           dwarfs = pkgs.callPackage ./pkgs-by-lang/C/dwarfs { };
           sextractor = pkgs.callPackage ./pkgs-by-lang/C/sextractor { };
+          yumekey = pkgs.callPackage ./pkgs-by-lang/C/yumekey { };
 
           # Nodejs
           pi-agent = pkgs.callPackage ./pkgs-by-lang/Node/pi-agent { };
