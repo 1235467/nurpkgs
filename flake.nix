@@ -135,6 +135,7 @@
           yuzu-early-access = pkgs-yuzu.qt6.callPackage ./pkgs-by-lang/C/yuzu { };
           rtptun = pkgs.callPackage ./pkgs-by-lang/C/rtptun { };
           dwarfs = pkgs.callPackage ./pkgs-by-lang/C/dwarfs { };
+          sextractor = pkgs.callPackage ./pkgs-by-lang/C/sextractor { };
 
           # Nodejs
           pi-agent = pkgs.callPackage ./pkgs-by-lang/Node/pi-agent { };
