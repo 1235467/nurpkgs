@@ -141,6 +141,7 @@
 
           # Nodejs
           pi-agent = pkgs.callPackage ./pkgs-by-lang/Node/pi-agent { };
+          kimi-code = pkgs-unstable.callPackage ./pkgs-by-lang/Node/kimi-code { };
 
           # Shell
           reflac = pkgs.callPackage ./pkgs-by-lang/Shell/reflac { };

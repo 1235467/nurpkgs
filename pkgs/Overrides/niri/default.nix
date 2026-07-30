@@ -6,8 +6,8 @@ let
   src = pkgs.fetchFromGitHub {
     owner = "1235467";
     repo = "niri";
-    rev = "f6ecc30bc2e5b0bcdc891fb80f55a62d39128c0e";
-    hash = "sha256-AVD5vaf2MvXt2cMDcXrbQR2GW3NamD+N0IVnom3PwYg=";
+    rev = "a199c8d715927afcd6980b5f0370f09cd31c60e5";
+    hash = "sha256-xQ+TMzgugfWsXWkVHwvU+NlpIcudcs1wodJ5W910Dvc=";
   };
 in
 pkgs.niri.overrideAttrs (prev: {
