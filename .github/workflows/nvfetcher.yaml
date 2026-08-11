@@ -32,6 +32,6 @@ jobs:
 
     - name: Commit changes
       #if: ${{ env.COMMIT_MSG != null }}
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: "chore: update pkgs"
