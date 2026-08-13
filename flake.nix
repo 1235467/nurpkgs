@@ -2,7 +2,8 @@
   description = "My personal NUR repository";
   inputs = {
     nixpkgs = {
-      url = "github:NixOS/nixpkgs/0147c2f1d54b30b5dd6d4a8c8542e8d7edf93b5d";
+      #url = "github:NixOS/nixpkgs/0147c2f1d54b30b5dd6d4a8c8542e8d7edf93b5d";
+      url = "github:NixOS/nixpkgs/nixos-unstable";
     };
     nixpkgs-unstable = {
       url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -138,6 +139,15 @@
           dwarfs = pkgs.callPackage ./pkgs-by-lang/C/dwarfs { };
           sextractor = pkgs.callPackage ./pkgs-by-lang/C/sextractor { };
           yumekey = pkgs.callPackage ./pkgs-by-lang/C/yumekey { };
+          john = (pkgs.john.override { withOpenCL = false; }).overrideAttrs (old: {
+            version = "1.9.0-Jumbo-1-unstable-2026-07-07";
+            src = pkgs.fetchFromGitHub {
+              owner = "openwall";
+              repo = "john";
+              rev = "b544069b36ac166fb0a2fb19d0dc144ca72da6bb";
+              hash = "sha256-dSdezI0+WSufYVLNChNJQ04VzuKczbfBLrI/5smR1fA=";
+            };
+          });
 
           # Nodejs
           pi-agent = pkgs.callPackage ./pkgs-by-lang/Node/pi-agent { };
