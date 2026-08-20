@@ -85,6 +85,7 @@
           aichat = pkgs.callPackage ./pkgs-by-lang/Rust/aichat { };
           fww-checkin-rs = pkgs.callPackage ./pkgs-by-lang/Rust/fww-checkin-rs { };
           quarkdrive-webdav = pkgs.callPackage ./pkgs-by-lang/Rust/quarkdrive-webdav { };
+          bbdown-rs = pkgs.callPackage ./pkgs-by-lang/Rust/bbdown-rs { };
 
           # Dotnet
           BBDown = pkgs.callPackage ./pkgs-by-lang/Dotnet/BBDown { };
