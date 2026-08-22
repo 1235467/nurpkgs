@@ -2,11 +2,11 @@
 
 buildGoModule rec {
   pname = "dnstt";
-  version = "1.20260311.0";
+  version = "1.20260501.0";
 
   src = fetchgit {
     url = "https://www.bamsoftware.com/git/dnstt.git";
-    hash = "sha256-fO//1YpnPShyYLGsAPNDVytdn6ZZrruVAVarAODdNMM=";
+    hash = "sha256-516XWM/dP0Ts5oFkTTGc51qcLKlRSkTGuYqNOdYbNZQ=";
   };
 
   vendorHash = "sha256-fWH2pwLRDemFZP3yqxG15YpvdtyIjJvpmLckhaloMvA=";
