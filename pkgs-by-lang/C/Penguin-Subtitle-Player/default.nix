@@ -1,4 +1,4 @@
-{ lib, fetchFromGitHub, pkg-config, wrapGAppsHook, wrapQtAppsHook, qtbase, fontconfig, freetype, libglvnd, mkDerivation, ... }:
+{ lib, fetchFromGitHub, pkg-config, wrapGAppsHook3, wrapQtAppsHook, qtbase, fontconfig, freetype, libglvnd, mkDerivation, ... }:
 
 mkDerivation rec {
   pname = "Penguin-Subtitle-Player";
@@ -12,7 +12,7 @@ mkDerivation rec {
     fetchSubmodules = true;
   };
 
-  nativeBuildInputs = [ pkg-config wrapGAppsHook wrapQtAppsHook fontconfig freetype libglvnd qtbase ];
+  nativeBuildInputs = [ pkg-config wrapGAppsHook3 wrapQtAppsHook fontconfig freetype libglvnd qtbase ];
   buildInputs = [ qtbase ];
 
   dontWrapGApps = false;

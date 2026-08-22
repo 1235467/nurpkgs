@@ -60,7 +60,7 @@ pkgs.stdenv.mkDerivation rec {
     expat
   ];
   nativeBuildInputs = with pkgs; [
-    wrapGAppsHook
+    wrapGAppsHook3
     autoPatchelfHook
     makeWrapper
     dpkg
