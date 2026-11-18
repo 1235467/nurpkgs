@@ -86,6 +86,7 @@
           fww-checkin-rs = pkgs.callPackage ./pkgs-by-lang/Rust/fww-checkin-rs { };
           quarkdrive-webdav = pkgs.callPackage ./pkgs-by-lang/Rust/quarkdrive-webdav { };
           bbdown-rs = pkgs.callPackage ./pkgs-by-lang/Rust/bbdown-rs { };
+          nix-cache-watcher = pkgs.callPackage ./pkgs-by-lang/Rust/nix-cache-watcher { };
 
           # Dotnet
           BBDown = pkgs.callPackage ./pkgs-by-lang/Dotnet/BBDown { };
