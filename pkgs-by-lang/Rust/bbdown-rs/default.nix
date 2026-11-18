@@ -8,6 +8,7 @@
 , ffmpeg
 , llvmPackages
 , stdenv
+, zstd
 }:
 rustPlatform.buildRustPackage rec {
   pname = "bbdown-rs";
@@ -33,6 +34,7 @@ rustPlatform.buildRustPackage rec {
 
   buildInputs = [
     ffmpeg
+    zstd
   ];
 
   env = {

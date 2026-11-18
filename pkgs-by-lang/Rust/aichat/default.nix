@@ -1,6 +1,8 @@
 { lib
 , fetchFromGitHub
 , rustPlatform
+, pkg-config
+, oniguruma
 , ...
 }:
 rustPlatform.buildRustPackage rec {
@@ -20,10 +22,14 @@ rustPlatform.buildRustPackage rec {
   };
 
   nativeBuildInputs = [
+    pkg-config
   ];
 
   buildInputs = [
+    oniguruma
   ];
+
+  env.RUSTONIG_SYSTEM_LIBONIG = true;
 
   meta = with lib; {
     description = "A simple chatbot written in Rust";
