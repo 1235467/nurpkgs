@@ -182,7 +182,8 @@
 
           # System Fonts override
           JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;
-
+          
+          opencode = pkgs-unstable.opencode;
           # Garnix generate cache
           mongodb = pkgs-stable.mongodb;
           # Fonts
