@@ -170,8 +170,8 @@
             mpv = (pkgs.mpv-unwrapped.override { cddaSupport = true; });
             scripts = [ pkgs.mpvScripts.mpris ];
           };
-          llama-cpp-cuda = (pkgs.llama-cpp.override { config = { cudaSupport = true; rocmSupport = false; }; });
-          linux_cachyos-lto-x86_64-v3 = (pkgs-chaotic.linuxPackages_cachyos-lto.cachyOverride { mArch = "GENERIC_V3"; }).kernel; # for cache
+          #llama-cpp-cuda = (pkgs.llama-cpp.override { config = { cudaSupport = true; rocmSupport = false; }; });
+          #linux_cachyos-lto-x86_64-v3 = (pkgs-chaotic.linuxPackages_cachyos-lto.cachyOverride { mArch = "GENERIC_V3"; }).kernel; # for cache
           inputplumber = pkgs.callPackage ./pkgs-by-lang/Rust/inputplumber { };
           #xivlauncher-cn = pkgs.callPackage ./pkgs/Overrides/xivlauncher { };
           #mesa_git = pkgs.callPackage ./pkgs/Overrides/mesa-git { };
@@ -182,7 +182,7 @@
           # System Fonts override
           JetBrainsMono-nerdfonts = pkgs.nerd-fonts.jetbrains-mono;
           
-          opencode = pkgs-unstable.opencode;
+          #opencode = pkgs-unstable.opencode;
           # Garnix generate cache
           mongodb = pkgs-stable.mongodb;
           # Fonts
