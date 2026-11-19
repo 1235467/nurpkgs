@@ -80,16 +80,14 @@
 
           # Rust
           ncmdump-rs = pkgs.callPackage ./pkgs-by-lang/Rust/ncmdump.rs { };
-          rescrobbled = pkgs.callPackage ./pkgs-by-lang/Rust/rescrobbled { };
           #waylyrics = pkgs.callPackage ./pkgs-by-lang/Rust/waylyrics { };
-          aichat = pkgs.callPackage ./pkgs-by-lang/Rust/aichat { };
           fww-checkin-rs = pkgs.callPackage ./pkgs-by-lang/Rust/fww-checkin-rs { };
           quarkdrive-webdav = pkgs.callPackage ./pkgs-by-lang/Rust/quarkdrive-webdav { };
           bbdown-rs = pkgs.callPackage ./pkgs-by-lang/Rust/bbdown-rs { };
           nix-cache-watcher = pkgs.callPackage ./pkgs-by-lang/Rust/nix-cache-watcher { };
 
           # Dotnet
-          BBDown = pkgs.callPackage ./pkgs-by-lang/Dotnet/BBDown { };
+          #BBDown = pkgs.callPackage ./pkgs-by-lang/Dotnet/BBDown { };
 
           # Go
           dnstt = pkgs.callPackage ./pkgs-by-lang/Go/dnstt { };
@@ -123,8 +121,8 @@
           jjwxcCrawler = pkgs.callPackage ./pkgs-by-lang/Python/jjwxcCrawler { };
           pynat = pkgs.callPackage ./pkgs-by-lang/Python/pynat { };
           pystun3 = pkgs.callPackage ./pkgs-by-lang/Python/pystun3 { };
-          kani = pkgs.callPackage ./pkgs-by-lang/Python/kani { };
-          routellm = pkgs.callPackage ./pkgs-by-lang/Python/routellm { };
+          #kani = pkgs.callPackage ./pkgs-by-lang/Python/kani { };
+          #routellm = pkgs.callPackage ./pkgs-by-lang/Python/routellm { };
           sextractor-galgame = pkgs.callPackage ./pkgs-by-lang/Python/sextractor-galgame { };
           #LinguaGacha = pkgs.callPackage ./pkgs-by-lang/Python/LinguaGacha { };
 
@@ -153,17 +151,17 @@
 
           # Nodejs
           pi-agent = pkgs.callPackage ./pkgs-by-lang/Node/pi-agent { };
-          kimi-code = pkgs-unstable.callPackage ./pkgs-by-lang/Node/kimi-code { };
+          #kimi-code = pkgs-unstable.callPackage ./pkgs-by-lang/Node/kimi-code { };
 
           # Shell
           reflac = pkgs.callPackage ./pkgs-by-lang/Shell/reflac { };
 
           # AppImage
-          cider = pkgs.callPackage ./pkgs/AppImage/cider { };
+          #cider = pkgs.callPackage ./pkgs/AppImage/cider { };
           hydrogen-music = pkgs.callPackage ./pkgs/AppImage/hydrogen-music { };
 
           # Bin
-          feishu = pkgs.callPackage ./pkgs/Bin/feishu { };
+          #feishu = pkgs.callPackage ./pkgs/Bin/feishu { };
           wechat = pkgs.callPackage ./pkgs/Bin/wechat { };
           cider3 = pkgs.callPackage ./pkgs/Bin/cider3 { };
 
@@ -176,8 +174,8 @@
           linux_cachyos-lto-x86_64-v3 = (pkgs-chaotic.linuxPackages_cachyos-lto.cachyOverride { mArch = "GENERIC_V3"; }).kernel; # for cache
           inputplumber = pkgs.callPackage ./pkgs-by-lang/Rust/inputplumber { };
           #xivlauncher-cn = pkgs.callPackage ./pkgs/Overrides/xivlauncher { };
-          mesa_git = pkgs.callPackage ./pkgs/Overrides/mesa-git { };
-          mesa32_git = pkgs.pkgsi686Linux.callPackage ./pkgs/Overrides/mesa-git { };
+          #mesa_git = pkgs.callPackage ./pkgs/Overrides/mesa-git { };
+          #mesa32_git = pkgs.pkgsi686Linux.callPackage ./pkgs/Overrides/mesa-git { };
           influx = pkgs.callPackage ./pkgs/Overrides/influx { };
           niri = pkgs-unstable.callPackage ./pkgs/Overrides/niri { };
 
